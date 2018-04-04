@@ -1,0 +1,14 @@
+Package: fgeo.opendata
+Title: Open Datasets of ForestGEO
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Mauro", "Lepore", , "leporem@si.edu", role = c("aut", "ctr", "cre")),
+    person("CTFS-ForestGEO", , , "ForestGEO@si.edu", role = c("cph", "fnd"))
+    )
+Description: Open datasets of ForestGEO.
+Depends: R (>= 3.4.4)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1
