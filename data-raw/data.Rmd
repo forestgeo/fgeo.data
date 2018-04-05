@@ -118,3 +118,13 @@ glimpse(vft_random_bci)
 use_data(vft_random_bci, overwrite = TRUE)
 ```
 
+# Elevation
+
+```{r}
+load(here(dir_path, "CTFSElev_bci.rdata"))
+elevation_bci <- CTFSElev_bci
+
+glimpse(elevation_bci)
+use_data(elevation_bci, overwrite = TRUE)
+```
+

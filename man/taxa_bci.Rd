@@ -9,7 +9,10 @@
 taxa_bci
 }
 \description{
-Slightly cleaned version of a ViewTaxonomy table. For a raw .csv version see
-\url{http://bit.ly/fgeo-opendata-taxa-bci}.
+This is a slightly cleaned version of a ViewTaxonomy table. For a raw .csv
+version see \url{http://bit.ly/fgeo-opendata-taxa-bci}.
+}
+\examples{
+str(taxa_bci)
 }
 \keyword{datasets}

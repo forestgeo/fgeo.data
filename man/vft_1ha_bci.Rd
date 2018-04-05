@@ -13,4 +13,11 @@ One hectare of data for hectare: \code{px >= 700} and \code{px < 800}; and \code
 and \code{py < 200}. The data includes only those records from census 2005 and
 census 2010.
 }
+\details{
+This is a slightly cleaned version from a ViewFullTable table.
+For a raw .csv version see \url{http://bit.ly/fgeo-opendata-vft-1ha-bci}.
+}
+\examples{
+str(vft_1ha_bci)
+}
 \keyword{datasets}
