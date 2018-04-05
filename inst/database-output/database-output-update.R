@@ -1,0 +1,21 @@
+# Updates raw data in inst/database-output/ from data stored in data-raw/
+
+library(fs)
+library(here)
+
+path <- "inst/database-output/data-raw"
+data_raw_has_already_been_deleted <- !fs::dir_exists(path)
+stopifnot(data_raw_has_already_been_deleted)
+
+dir_copy(
+  here("data-raw/database-output"),
+  here("inst/database-output/data-raw")
+)
+
+message(
+  "1. Remove any previous database-output.zip\n",
+  "2. Manually create a new database-output.zip file containing the following:\n",
+  "    * database-output.Rproj\n",
+  "    * data-raw/\n",
+  "3. Manually remove data-raw"
+)

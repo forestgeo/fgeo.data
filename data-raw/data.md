@@ -36,12 +36,12 @@ See https://github.com/forestgeo/fgeo.opendata/issues/1.
 library(here)
 #> here() starts at C:/Users/LeporeM/Dropbox/git_repos/fgeo.opendata
 library(tidyverse)
-#> -- Attaching packages ------------------------------------------- tidyverse 1.2.1 --
+#> -- Attaching packages -------------------------------------------- tidyverse 1.2.1 --
 #> v ggplot2 2.2.1     v purrr   0.2.4
 #> v tibble  1.4.2     v dplyr   0.7.4
 #> v tidyr   0.8.0     v stringr 1.3.0
 #> v readr   1.1.1     v forcats 0.3.0
-#> -- Conflicts ---------------------------------------------- tidyverse_conflicts() --
+#> -- Conflicts ----------------------------------------------- tidyverse_conflicts() --
 #> x dplyr::filter() masks stats::filter()
 #> x dplyr::lag()    masks stats::lag()
 library(fgeo.tool)
@@ -49,11 +49,9 @@ library(fgeo.tool)
 
 # Data
 
-(The complexity of this path is explained at https://github.com/forestgeo/fgeo.opendata/issues/2.)
-
 
 ```r
-dir_path <- "data-raw/database-output/data-raw"
+dir_path <- "data-raw/database-output"
 ```
 
 ## vft_bci_taxa
