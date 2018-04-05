@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 tmp.R
+data-raw/private
+tmp.html

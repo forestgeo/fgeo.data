@@ -10,6 +10,20 @@ In the terminal
 git add .
 git commit -a -m "Add infrastructure to add raw data."
 ```
-Back in R
+In R
 
 ```R
+use_directory("data-raw/private")
+use_git_ignore("data-raw/private")
+```
+Manually add data
+
+```bash
+git add .
+git commit -a -m "Add infrastructure to add raw data."
+```
+
+```{r}
+
+```
+
