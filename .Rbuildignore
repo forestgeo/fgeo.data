@@ -9,3 +9,4 @@
 ^docs$
 ^data-raw$
 ^tmp\.Rmd$
+^inst/database-output$
