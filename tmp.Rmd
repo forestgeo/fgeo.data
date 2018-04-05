@@ -1,16 +1,26 @@
 ```R
+library(usethis)
+library(fs)
+```
+
+```R
 use_data_raw()
 use_r("data.R")
 fs::file_copy("R/data.R", "data-raw/data.R")
 ```
 
-In the terminal
+---
+
+In the terminal (Send from R srcript with Control + Alt + Enter)
 
 ```bash
+git checkout -b dev
 git add .
 git commit -a -m "Add infrastructure to add raw data."
+git pull
+git push
 ```
-In R
+---
 
 ```R
 use_directory("data-raw/private")
@@ -18,12 +28,38 @@ use_git_ignore("data-raw/private")
 ```
 Manually add data
 
+---
+
+In the terminal (Send from R srcript with Control + Alt + Enter)
+
 ```bash
 git add .
-git commit -a -m "Add infrastructure to add raw data."
+git commit -a -m "Add private data to be ."
+git pull
+git push
 ```
+
+---
+
+Confirm the private data hasn't been pushed to dev branch.
+
+```R
+browse_github()
+```
+
+Browse to branch dev > data-raw.
+
+![](https://i.imgur.com/dHYoQy4.png)
+
+Compare with local version.
+
+![](https://i.imgur.com/WA9hYNT.png)
 
 ```{r}
 
 ```
+
+Note that private/ exists in local but not remote version. Your private data lives nowhere online.
+
+__WARNING: It is not under version control -- Git isn't tracking it.__
 

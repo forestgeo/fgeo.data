@@ -1,0 +1,114 @@
+---
+title: "md and themed html documents"
+subtitle: Subtitle
+author: "Your name"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: yes
+    toc_depth: '3'
+    theme: united
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+# This chunk named setup will run before any other code (https://goo.gl/BeM2Uu)
+set.seed(1014)
+knitr::opts_chunk$set(
+  echo = TRUE,
+  comment = "#>",
+  collapse = TRUE,
+  cache = FALSE,
+  # Figures (http://r4ds.had.co.nz/)
+  out.width = "70%",
+  fig.align = "center",
+  fig.width = 6,
+  fig.asp = 0.618,
+  fig.show = "hold"
+)
+```
+
+---
+Reuse the style and options of this document
+
+The yaml header and the setup chunk of this document come from a template. To access this template, install __fgeo.templates__ (see [how](https://forestgeo.github.io/fgeo.templates/#installation)).
+
+![](https://i.imgur.com/zAf37YI.png)
+
+---
+
+# Source
+
+* On Mon, Mar 19, 2018 at 11:31 PM, Lao, Suzanne <LAOZ@si.edu>
+* On Mon, Mar 19, 2018 at 11:34 PM, Lao, Suzanne <LAOZ@si.edu>
+
+See https://github.com/forestgeo/fgeo.opendata/issues/1.
+
+# Setup
+
+```{r}
+library(here)
+library(tidyverse)
+library(fgeo.tool)
+```
+
+# Data
+
+```{r dir-path}
+dir_path <- "data-raw/"
+```
+
+## vft_bci_taxa
+
+`vft_bci_taxa`: Complete ViewTaxonomy table.
+
+### Load
+
+Reading tab delimited data, with strict specification of expected column type. 
+If the imported data is parsed as expected, the output should be silent (should print no message).
+
+```{r taxa}
+path_taxa <- here::here(dir_path, "ViewTaxonomy.csv")
+vft_bci_taxa <- read_tsv(path_taxa, col_types = fgeo.tool::type_taxa())
+```
+
+### Clean
+
+```{r}
+glimpse(vft_bci_taxa)
+```
+
+Replacing literal "NULL" by a representation of missing text-values (`NA_character_`).
+
+```{r}
+vft_bci_taxa <- fgeo.tool::replace_null(vft_bci_taxa)
+glimpse(vft_bci_taxa)
+
+vft_bci_taxa
+```
+
+## One hectare of data for hectare: px>=700 and px<800 and py>=100 and py<200. The data includes only those records from census 2005 and census 2010.
+
+
+
+
+
+
+
+
+
+## 1000 randomly chosen trees from the whole plot. Only included data from census 2005 and census 2010.
+
+```{r, eval=FALSE}
+file_path <- here::here(dir_path, "ViewFullTable_random.csv")
+vft_bci_ <- read_csv(file_path, col_types = fgeo.tool::type_vft())
+
+vft_reference <- yosemite::ViewFullTable_yosemite
+
+(nms_vft_reference <- names(vft_reference))
+
+(nms_vft_bci_20182003 <- names(vft_bci_20182003))
+
+setdiff(nms_vft_reference, nms_vft_bci_20182003)
+```
+
