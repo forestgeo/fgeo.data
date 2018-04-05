@@ -40,6 +40,9 @@
 
 #' Elevation data from Barro Colorado Island.
 #'
+#' This dataset can be downloaded directly from
+#' \url{http://bit.ly/fgeo-opendata-elevation-bci}.
+#'
 #' @examples
 #' str(elevation_bci)
 "elevation_bci"
