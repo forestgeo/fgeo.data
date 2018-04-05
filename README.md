@@ -28,10 +28,12 @@ article](https://goo.gl/dQKEeg).
 ## Database output (raw data)
 
   - The database output (raw data) on which this data-package is based
-    can be downloaded from <http://bit.ly/database-output>. This is
-    useful for examples using the data exactly as it is delivered from
-    the database to the users – particularly for examples of reading
-    .csv files and data cleaning.
+    can be downloaded directly from <http://bit.ly/database-output>.
+    This is useful for examples using the data exactly as it is
+    delivered from the database to the users – particularly for examples
+    of reading .csv files and data cleaning. You can also download
+    specific files, as follows. You can also download each raw dataset
+    individually – see the help file of each dataset.
 
 ## Code of Conduct
 

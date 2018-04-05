@@ -58,9 +58,9 @@ library(fgeo.tool)
 dir_path <- "data-raw/database-output"
 ```
 
-## vft_bci_taxa
+## taxa_bci
 
-`vft_bci_taxa`: Complete ViewTaxonomy table.
+`taxa_bci`: Complete ViewTaxonomy table.
 
 ### Load
 
@@ -69,33 +69,35 @@ If the imported data is parsed as expected, the output should be silent (should 
 
 ```{r taxa}
 path_taxa <- here::here(dir_path, "ViewTaxonomy.csv")
-vft_bci_taxa <- read_tsv(path_taxa, col_types = fgeo.tool::type_taxa())
+taxa_bci <- read_tsv(path_taxa, col_types = fgeo.tool::type_taxa())
 ```
 
 ### Clean
 
 ```{r}
-glimpse(vft_bci_taxa)
+glimpse(taxa_bci)
 ```
 
 Replacing literal "NULL" by a representation of missing text-values (`NA_character_`).
 
 ```{r}
-vft_bci_taxa <- fgeo.tool::replace_null(vft_bci_taxa)
-glimpse(vft_bci_taxa)
+taxa_bci <- fgeo.tool::replace_null(taxa_bci)
+glimpse(taxa_bci)
 
-vft_bci_taxa
+taxa_bci
+use_data(taxa_bci, overwrite = TRUE)
 ```
 
+
+
+
+
+
+
+
+
+
 ## One hectare of data for hectare: px>=700 and px<800 and py>=100 and py<200. The data includes only those records from census 2005 and census 2010.
-
-
-
-
-
-
-
-
 
 ## 1000 randomly chosen trees from the whole plot. Only included data from census 2005 and census 2010.
 
