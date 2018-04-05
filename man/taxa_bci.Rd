@@ -10,6 +10,6 @@ taxa_bci
 }
 \description{
 Slightly cleaned version of a ViewTaxonomy table. For a raw .csv version see
-\link{http://bit.ly/fgeo-opendata-taxa-bci}.
+\url{http://bit.ly/fgeo-opendata-taxa-bci}.
 }
 \keyword{datasets}

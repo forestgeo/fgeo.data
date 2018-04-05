@@ -1,7 +1,7 @@
 #' Complete ViewTaxonomy table from Barro Colorado Island.
 #'
 #' Slightly cleaned version of a ViewTaxonomy table. For a raw .csv version see
-#' [http://bit.ly/fgeo-opendata-taxa-bci].
+#' [http://bit.ly/fgeo-opendata-taxa-bci](http://bit.ly/fgeo-opendata-taxa-bci).
 #'
 "taxa_bci"
 
