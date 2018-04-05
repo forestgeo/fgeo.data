@@ -1,0 +1,15 @@
+```R
+use_data_raw()
+use_r("data.R")
+fs::file_copy("R/data.R", "data-raw/data.R")
+```
+
+In the terminal
+
+```bash
+git add .
+git commit -a -m "Add infrastructure to add raw data."
+```
+Back in R
+
+```R
