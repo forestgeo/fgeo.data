@@ -48,8 +48,17 @@ See https://github.com/forestgeo/fgeo.opendata/issues/1.
 
 ```{r}
 library(here)
-library(tidyverse)
+library(readr)
+library(dplyr)
 library(fgeo.tool)
+library(usethis)
+
+warn_if_nms_differ <- function(x, y) {
+  nms_differ <- length(setdiff(names(x), names(y)))
+  if (nms_differ) {
+    warning("Detected unexpected names.")
+  }
+}
 ```
 
 # Data
@@ -58,59 +67,54 @@ library(fgeo.tool)
 dir_path <- "data-raw/database-output"
 ```
 
-## taxa_bci
+## ViewTaxonomy
 
-`taxa_bci`: Complete ViewTaxonomy table.
-
-### Load
-
-Reading tab delimited data, with strict specification of expected column type. 
-If the imported data is parsed as expected, the output should be silent (should print no message).
+Complete ViewTaxonomy table.
 
 ```{r taxa}
 path_taxa <- here::here(dir_path, "ViewTaxonomy.csv")
-taxa_bci <- read_tsv(path_taxa, col_types = fgeo.tool::type_taxa())
-```
+taxa_bci <- read_tsv(
+  path_taxa, 
+  col_types = fgeo.tool::type_taxa(), 
+  na = c("", "NA", "NULL")
+)
+warn_if_nms_differ(taxa_bci, fgeo.tool::type_taxa())
 
-### Clean
-
-```{r}
 glimpse(taxa_bci)
-```
-
-Replacing literal "NULL" by a representation of missing text-values (`NA_character_`).
-
-```{r}
-taxa_bci <- fgeo.tool::replace_null(taxa_bci)
-glimpse(taxa_bci)
-
-taxa_bci
 use_data(taxa_bci, overwrite = TRUE)
 ```
 
+## All trees in one hectare
 
+One hectare of data for hectare: `px >= 700` and `px < 800`; and `py >=100` and `py < 200`. The data includes only those records from census 2005 and census 2010.
 
+```{r}
+path_vft_1ha_bci <- here::here(dir_path, "ViewFullTable_hec37.csv")
+vft_1ha_bci <- read_tsv(
+  path_vft_1ha_bci, 
+  col_types = fgeo.tool::type_vft(),
+  na = c("", "NA", "NULL")
+)
+warn_if_nms_differ(vft_1ha_bci, fgeo.tool::type_vft())
 
+glimpse(vft_1ha_bci)
+use_data(vft_1ha_bci, overwrite = TRUE)
+```
 
+## One thousand trees, selected at random
 
+1000 randomly chosen trees from the whole plot. Only included data from census 2005 and census 2010.
 
+```{r}
+path_vft_random_bci <- here::here(dir_path, "ViewFullTable_random.csv")
+vft_random_bci <- read_tsv(
+  path_vft_random_bci, 
+  col_types = fgeo.tool::type_vft(),
+  na = c("", "NA", "NULL")
+)
+warn_if_nms_differ(vft_random_bci, fgeo.tool::type_vft())
 
-
-
-## One hectare of data for hectare: px>=700 and px<800 and py>=100 and py<200. The data includes only those records from census 2005 and census 2010.
-
-## 1000 randomly chosen trees from the whole plot. Only included data from census 2005 and census 2010.
-
-```{r, eval=FALSE}
-file_path <- here::here(dir_path, "ViewFullTable_random.csv")
-vft_bci_ <- read_csv(file_path, col_types = fgeo.tool::type_vft())
-
-vft_reference <- yosemite::ViewFullTable_yosemite
-
-(nms_vft_reference <- names(vft_reference))
-
-(nms_vft_bci_20182003 <- names(vft_bci_20182003))
-
-setdiff(nms_vft_reference, nms_vft_bci_20182003)
+glimpse(vft_random_bci)
+use_data(vft_random_bci, overwrite = TRUE)
 ```
 
