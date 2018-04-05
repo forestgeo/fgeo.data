@@ -49,9 +49,11 @@ library(fgeo.tool)
 
 # Data
 
+(The complexity of this path is explained at https://github.com/forestgeo/fgeo.opendata/issues/2.)
+
 
 ```r
-dir_path <- "data-raw/"
+dir_path <- "data-raw/database-output/data-raw"
 ```
 
 ## vft_bci_taxa
