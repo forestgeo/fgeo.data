@@ -14,8 +14,8 @@ dir_copy(
 
 message(
   "1. Remove any previous database-output.zip\n",
-  "2. Manually create a new database-output.zip file containing the following:\n",
-  "    * database-output.Rproj\n",
-  "    * data-raw/\n",
-  "3. Manually remove data-raw"
+  "2. Manually send to compressed folder database-output.zip containing:\n",
+  "    * database-output.Rproj.\n",
+  "    * data-raw/.\n",
+  "3. Manually remove data-raw."
 )
