@@ -31,12 +31,53 @@ For details on how to install packages from GitHub, see [this article](https://g
 ## Example
 
 ```{r example}
-## TODO: Add example
+library(fgeo.opendata)
+
+str(vft_random_bci, give.attr = FALSE)
+
+# Similar to `vft_random_bci`; truncating list output for space
+str(vft_1ha_bci, give.attr = FALSE, list.len = 5)
+
+str(taxa_bci, give.attr = FALSE)
+
+str(elevation_bci)
+sapply(elevation_bci, class)
+str(elevation_bci$col)
 ```
 
 ## Raw data (database output)
 
-* The raw daat (database output) on which this data-package is based can be downloaded directly from http://bit.ly/database-output. This is useful for examples using the data exactly as it is delivered from the database to the users -- particularly for examples of reading .csv files and data cleaning. You can also download specific files, as follows. To find links to download each raw dataset individually see the help file of each dataset.
+* The raw data (database output) on which this data-package is based can be downloaded directly from http://bit.ly/database-output. This is useful for examples using the data exactly as it is delivered from the database to the users -- particularly for examples of reading .csv files and data cleaning. You can also download specific files, as follows. To find links to download each raw dataset individually see the help file of each dataset.
+
+```{r}
+# If reading raw data -- e.g. .csv files delivered by the ForestGEO's database.
+
+# Raw data (normally you would have a .csv file stored in your computer)
+from_url <- "http://bit.ly/fgeo-opendata-taxa-bci"
+
+# TO AVOID CRIPTIC ERRORS
+# Specify columns class explicitely (for an example showing only some columns)
+column_classes <- c(
+  ViewID = "integer", 
+  SpeciesID = "integer", 
+  SubspeciesID = "integer", 
+  Family = "character", 
+  Mnemonic = "character"
+)
+# Specify how to interprate missing values
+na_strings <- c("", "NA", "NULL")
+
+raw_taxa_bci <- read.delim(
+  file = from_url, 
+  na.strings = na_strings, 
+  colClasses = column_classes
+)
+
+some_rows <- some_columns <- 1:5
+raw_taxa_bci[some_rows, some_columns]
+
+sapply(raw_taxa_bci[some_rows, some_columns], class)
+```
 
 ## Code of Conduct
 
