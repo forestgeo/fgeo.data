@@ -124,7 +124,7 @@ For a raw .csv version see <a href='http://bit.ly/fgeo-opendata-vft-1ha-bci'>htt
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>vft_1ha_bci</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	10543 obs. of  32 variables:
+    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>vft_1ha_bci</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	10543 obs. of  32 variables:
 #&gt;  $ DBHID           : int  148842 150985 148877 148912 151013 149016 151095 149050 151122 149083 ...
 #&gt;  $ PlotName        : chr  "bci" "bci" "bci" "bci" ...
 #&gt;  $ PlotID          : int  1 1 1 1 1 1 1 1 1 1 ...
@@ -156,77 +156,7 @@ For a raw .csv version see <a href='http://bit.ly/fgeo-opendata-vft-1ha-bci'>htt
 #&gt;  $ ListOfTSM       : chr  NA NA "B;cylN" "B;cylN" ...
 #&gt;  $ HighHOM         : int  1 1 0 1 1 1 1 1 1 0 ...
 #&gt;  $ LargeStem       : chr  NA NA NA NA ...
-#&gt;  $ Status          : chr  "alive" "alive" "alive" "alive" ...
-#&gt;  - attr(*, "spec")=List of 2
-#&gt;   ..$ cols   :List of 32
-#&gt;   .. ..$ DBHID           : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_integer" "collector"
-#&gt;   .. ..$ PlotName        : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ PlotID          : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_integer" "collector"
-#&gt;   .. ..$ Family          : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ Genus           : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ SpeciesName     : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ Mnemonic        : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ Subspecies      : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ SpeciesID       : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_integer" "collector"
-#&gt;   .. ..$ SubspeciesID    : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ QuadratName     : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ QuadratID       : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_integer" "collector"
-#&gt;   .. ..$ PX              : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
-#&gt;   .. ..$ PY              : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
-#&gt;   .. ..$ QX              : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
-#&gt;   .. ..$ QY              : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
-#&gt;   .. ..$ TreeID          : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_integer" "collector"
-#&gt;   .. ..$ Tag             : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ StemID          : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_integer" "collector"
-#&gt;   .. ..$ StemNumber      : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_integer" "collector"
-#&gt;   .. ..$ StemTag         : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_integer" "collector"
-#&gt;   .. ..$ PrimaryStem     : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ CensusID        : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_integer" "collector"
-#&gt;   .. ..$ PlotCensusNumber: list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_integer" "collector"
-#&gt;   .. ..$ DBH             : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
-#&gt;   .. ..$ HOM             : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
-#&gt;   .. ..$ ExactDate       :List of 1
-#&gt;   .. .. ..$ format: chr ""
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_date" "collector"
-#&gt;   .. ..$ Date            : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_integer" "collector"
-#&gt;   .. ..$ ListOfTSM       : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ HighHOM         : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_integer" "collector"
-#&gt;   .. ..$ LargeStem       : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ Status          : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   ..$ default: list()
-#&gt;   .. ..- attr(*, "class")= chr  "collector_guess" "collector"
-#&gt;   ..- attr(*, "class")= chr "col_spec"</div></pre>
+#&gt;  $ Status          : chr  "alive" "alive" "alive" "alive" ...</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

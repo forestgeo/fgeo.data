@@ -4,7 +4,7 @@
 #' version see \url{http://bit.ly/fgeo-opendata-taxa-bci}.
 #'
 #' @examples
-#' str(taxa_bci)
+#' str(taxa_bci, give.attr = FALSE)
 "taxa_bci"
 
 
@@ -19,7 +19,7 @@
 #' For a raw .csv version see \url{http://bit.ly/fgeo-opendata-vft-1ha-bci}.
 #'
 #' @examples
-#' str(vft_1ha_bci)
+#' str(vft_1ha_bci, give.attr = FALSE)
 "vft_1ha_bci"
 
 
@@ -33,7 +33,10 @@
 #' For a raw .csv version see \url{http://bit.ly/fgeo-opendata-vft-random-bci}.
 #'
 #' @examples
-#' str(vft_random_bci)
+#' str(vft_random_bci, give.attr = FALSE)
+#'
+#' show_some_values_of_each_column <- function(x) head(unique(x))
+#' lapply(vft_random_bci, show_some_values_of_each_column)
 "vft_random_bci"
 
 
@@ -45,4 +48,6 @@
 #'
 #' @examples
 #' str(elevation_bci)
+#' sapply(elevation_bci, class)
+#' str(elevation_bci$col)
 "elevation_bci"

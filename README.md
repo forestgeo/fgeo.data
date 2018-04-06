@@ -24,6 +24,7 @@ article](https://goo.gl/dQKEeg).
 ``` r
 library(fgeo.opendata)
 
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/vft_random_bci
 str(vft_random_bci, give.attr = FALSE)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    2257 obs. of  32 variables:
 #>  $ DBHID           : int  1621522 1619521 1632477 1630644 1077531 1074697 826469 823306 1006845 1003843 ...
@@ -59,6 +60,7 @@ str(vft_random_bci, give.attr = FALSE)
 #>  $ LargeStem       : chr  NA NA NA NA ...
 #>  $ Status          : chr  "alive" "alive" "broken below" "dead" ...
 
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/vft_1ha_bci
 # Similar to `vft_random_bci`; truncating list output for space
 str(vft_1ha_bci, give.attr = FALSE, list.len = 5)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    10543 obs. of  32 variables:
@@ -69,6 +71,7 @@ str(vft_1ha_bci, give.attr = FALSE, list.len = 5)
 #>  $ Genus           : chr  "Simarouba" "Simarouba" "Pouteria" "Pouteria" ...
 #>   [list output truncated]
 
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/taxa_bci
 str(taxa_bci, give.attr = FALSE)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    1428 obs. of  21 variables:
 #>  $ ViewID        : int  1 2 3 4 5 6 7 8 9 10 ...
@@ -93,6 +96,7 @@ str(taxa_bci, give.attr = FALSE)
 #>  $ Specimens     : chr  NA NA NA NA ...
 #>  $ Reference     : chr  NA NA NA NA ...
 
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/elevation_bci
 str(elevation_bci)
 #> List of 4
 #>  $ col :'data.frame':    20301 obs. of  3 variables:
@@ -102,14 +106,6 @@ str(elevation_bci)
 #>  $ mat : num [1:101, 1:201] 121 121 121 121 121 ...
 #>  $ xdim: int 1000
 #>  $ ydim: int 500
-sapply(elevation_bci, class)
-#>          col          mat         xdim         ydim 
-#> "data.frame"     "matrix"    "integer"    "integer"
-str(elevation_bci$col)
-#> 'data.frame':    20301 obs. of  3 variables:
-#>  $ x   : int  0 0 0 0 0 0 0 0 0 0 ...
-#>  $ y   : int  0 5 10 15 20 25 30 35 40 45 ...
-#>  $ elev: num  121 121 121 121 121 ...
 ```
 
 ## Raw data (database output)
@@ -126,12 +122,12 @@ dataset.
 <!-- end list -->
 
 ``` r
-# If reading raw data -- e.g. .csv files delivered by the ForestGEO's database.
+# IMPORTANT if reading raw data (e.g. .csv files from ForestGEO's database)
 
 # Raw data (normally you would have a .csv file stored in your computer)
-from_url <- "http://bit.ly/fgeo-opendata-taxa-bci"
+url <- "http://bit.ly/fgeo-opendata-taxa-bci"
 
-# TO AVOID CRIPTIC ERRORS
+# TO AVOID ERRORS
 # Specify columns class explicitely (for an example showing only some columns)
 column_classes <- c(
   ViewID = "integer", 
@@ -144,7 +140,7 @@ column_classes <- c(
 na_strings <- c("", "NA", "NULL")
 
 raw_taxa_bci <- read.delim(
-  file = from_url, 
+  file = url, 
   na.strings = na_strings, 
   colClasses = column_classes
 )
@@ -158,6 +154,7 @@ raw_taxa_bci[some_rows, some_columns]
 #> 4      4         5           NA Fabaceae-mimosoideae    acac1
 #> 5      5         6           NA        Euphorbiaceae   acaldi
 
+# Note these are the same as `column_classes` defined above
 sapply(raw_taxa_bci[some_rows, some_columns], class)
 #>       ViewID    SpeciesID SubspeciesID       Family     Mnemonic 
 #>    "integer"    "integer"    "integer"  "character"  "character"

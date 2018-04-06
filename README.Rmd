@@ -30,19 +30,21 @@ For details on how to install packages from GitHub, see [this article](https://g
 
 ## Example
 
-```{r example}
+```{r}
 library(fgeo.opendata)
 
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/vft_random_bci
 str(vft_random_bci, give.attr = FALSE)
 
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/vft_1ha_bci
 # Similar to `vft_random_bci`; truncating list output for space
 str(vft_1ha_bci, give.attr = FALSE, list.len = 5)
 
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/taxa_bci
 str(taxa_bci, give.attr = FALSE)
 
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/elevation_bci
 str(elevation_bci)
-sapply(elevation_bci, class)
-str(elevation_bci$col)
 ```
 
 ## Raw data (database output)
@@ -50,12 +52,12 @@ str(elevation_bci$col)
 * The raw data (database output) on which this data-package is based can be downloaded directly from http://bit.ly/database-output. This is useful for examples using the data exactly as it is delivered from the database to the users -- particularly for examples of reading .csv files and data cleaning. You can also download specific files, as follows. To find links to download each raw dataset individually see the help file of each dataset.
 
 ```{r}
-# If reading raw data -- e.g. .csv files delivered by the ForestGEO's database.
+# IMPORTANT if reading raw data (e.g. .csv files from ForestGEO's database)
 
 # Raw data (normally you would have a .csv file stored in your computer)
-from_url <- "http://bit.ly/fgeo-opendata-taxa-bci"
+url <- "http://bit.ly/fgeo-opendata-taxa-bci"
 
-# TO AVOID CRIPTIC ERRORS
+# TO AVOID ERRORS
 # Specify columns class explicitely (for an example showing only some columns)
 column_classes <- c(
   ViewID = "integer", 
@@ -68,7 +70,7 @@ column_classes <- c(
 na_strings <- c("", "NA", "NULL")
 
 raw_taxa_bci <- read.delim(
-  file = from_url, 
+  file = url, 
   na.strings = na_strings, 
   colClasses = column_classes
 )
@@ -76,6 +78,7 @@ raw_taxa_bci <- read.delim(
 some_rows <- some_columns <- 1:5
 raw_taxa_bci[some_rows, some_columns]
 
+# Note these are the same as `column_classes` defined above
 sapply(raw_taxa_bci[some_rows, some_columns], class)
 ```
 

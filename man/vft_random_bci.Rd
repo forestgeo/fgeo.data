@@ -17,6 +17,9 @@ This is a slightly cleaned version from a ViewFullTable table.
 For a raw .csv version see \url{http://bit.ly/fgeo-opendata-vft-random-bci}.
 }
 \examples{
-str(vft_random_bci)
+str(vft_random_bci, give.attr = FALSE)
+
+show_some_values_of_each_column <- function(x) head(unique(x))
+lapply(vft_random_bci, show_some_values_of_each_column)
 }
 \keyword{datasets}

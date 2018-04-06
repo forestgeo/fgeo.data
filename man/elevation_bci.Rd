@@ -14,5 +14,7 @@ This dataset can be downloaded directly from
 }
 \examples{
 str(elevation_bci)
+sapply(elevation_bci, class)
+str(elevation_bci$col)
 }
 \keyword{datasets}

@@ -18,6 +18,6 @@ This is a slightly cleaned version from a ViewFullTable table.
 For a raw .csv version see \url{http://bit.ly/fgeo-opendata-vft-1ha-bci}.
 }
 \examples{
-str(vft_1ha_bci)
+str(vft_1ha_bci, give.attr = FALSE)
 }
 \keyword{datasets}
