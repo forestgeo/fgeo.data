@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • fgeo.opendata</title>
+<title>Unique identifiers of the most commonly used tables. — unique_id • fgeo.opendata</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -25,7 +25,10 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Unique identifiers of the most commonly used tables. — unique_id" />
+
+<meta property="og:description" content="Unique identifiers of the most commonly used tables." />
+<meta name="twitter:card" content="summary" />
 
 
 <!-- mathjax -->
@@ -42,7 +45,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -94,79 +97,40 @@
       </header>
 
       <div class="row">
-  <div class="col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Unique identifiers of the most commonly used tables.</h1>
+    <small>Source: <a href='https://github.com/forestgeo/fgeo.opendata/blob/master/R/data-other.R'><code>R/data-other.R</code></a></small>
     </div>
 
-    <div class="contents">
-      <table class="ref-index">
+    
+    <p>Unique identifiers of the most commonly used tables.</p>
+    
 
-      <colgroup>
-        <col class="alias" />
-        <col class="title" />
-      </colgroup>
+    <pre class="usage"><span class='no'>unique_id</span></pre>
+        
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-      <tbody>
-        <tr>
-          <th colspan="2">
-            <h2 id="section-datasets" class="hasAnchor"><a href="#section-datasets" class="anchor"></a>Datasets</h2>
-            <p class="section-desc"></p>
-          </th>
-        </tr>
-        <tr>
-          <!--  -->
-          <td>
-            <p><code><a href="census_bci.html">stem6_1ha_bci</a></code> <code><a href="census_bci.html">stem7_1ha_bci</a></code> <code><a href="census_bci.html">tree6_1ha_bci</a></code> <code><a href="census_bci.html">tree7_1ha_bci</a></code> <code><a href="census_bci.html">stem6_random_bci</a></code> <code><a href="census_bci.html">stem7_random_bci</a></code> <code><a href="census_bci.html">tree6_random_bci</a></code> <code><a href="census_bci.html">tree7_random_bci</a></code> </p>
-          </td>
-          <td><p>Tree and stem tables from Barro Colorado Island (bci).</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="census_description.html">census_description</a></code> </p>
-          </td>
-          <td><p>General description of census tables: tree and stem.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="elevation_bci.html">elevation_bci</a></code> </p>
-          </td>
-          <td><p>Elevation data from Barro Colorado Island.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="taxa_bci.html">taxa_bci</a></code> </p>
-          </td>
-          <td><p>Complete ViewTaxonomy (taxa) table from Barro Colorado Island (bci).</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="unique_id.html">unique_id</a></code> </p>
-          </td>
-          <td><p>Unique identifiers of the most commonly used tables.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="vft_bci.html">vft_1ha_bci</a></code> <code><a href="vft_bci.html">vft_random_bci</a></code> </p>
-          </td>
-          <td><p>ViewFullTable (vft) from Barro Colorado Island (bci).</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="vft_description.html">vft_description</a></code> </p>
-          </td>
-          <td><p>ViewFullTable (vft): Generic description.</p></td>
-        </tr>
-      </tbody>
-      </table>
-    </div>
+    <p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 3 rows and 2 columns.</p>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='no'>unique_id</span></div><div class='output co'>#&gt; # A tibble: 3 x 2
+#&gt;   table         column
+#&gt;   &lt;chr&gt;         &lt;chr&gt; 
+#&gt; 1 tree          TreeID
+#&gt; 2 stem          StemID
+#&gt; 3 ViewFullTable DBHID </div></pre>
   </div>
-
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-datasets">Datasets</a></li>
+      
+      <li><a href="#format">Format</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
     </ul>
+
   </div>
 </div>
 

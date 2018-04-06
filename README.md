@@ -160,6 +160,14 @@ sapply(raw_taxa_bci[some_rows, some_columns], class)
 #>    "integer"    "integer"    "integer"  "character"  "character"
 ```
 
+## Unique identifier by table
+
+    Table: unique identifier
+    -------------------------
+    Tree tables:  TreeID
+    Stem tables:  StemID
+    ViewFullTable:  DBHID
+
 ## Code of Conduct
 
 Please note that this project is released with a [Contributor Code of

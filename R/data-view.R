@@ -1,0 +1,54 @@
+#' Complete ViewTaxonomy (taxa) table from Barro Colorado Island (bci).
+#'
+#' This is a slightly cleaned version of a ViewTaxonomy table. For a raw .csv
+#' version see \url{http://bit.ly/fgeo-opendata-taxa-bci}.
+#'
+#' @examples
+#' str(taxa_bci, give.attr = FALSE)
+"taxa_bci"
+
+
+
+#' ViewFullTable (vft) from Barro Colorado Island (bci).
+#'
+#' Slightly cleaned versions from a ViewFullTable table, from census 2005 and
+#' census 2010 (see columns definition at [vft_description]):
+#' * `vft_1ha_bci`: All threes in one hectare (coordinates: `px >= 700`, `px <
+#'   800`, `py >=100`, `py < 200`). Raw .csv file available at
+#' \url{http://bit.ly/fgeo-opendata-vft-1ha-bci}.
+#' * `vft_random_bci`: One thousand randomly-chosen trees (from the whole plot).
+#'   Raw .csv file available at \url{http://bit.ly/fgeo-opendata-vft-random-bci}).
+#'
+#' @seealso [vft_description], [unique_id].
+#'
+#' @examples
+#' str(vft_1ha_bci, give.attr = FALSE)
+#'
+#' str(vft_random_bci, give.attr = FALSE)
+#'
+#' show_some_values_of_each_column <- function(x) head(unique(x))
+#' lapply(vft_random_bci, show_some_values_of_each_column)
+#' @name vft_bci
+NULL
+
+#' @rdname vft_bci
+"vft_1ha_bci"
+
+#' @rdname vft_bci
+"vft_random_bci"
+
+
+
+#' ViewFullTable (vft): Generic description.
+#'
+#' Reproduced from \url{http://bit.ly/vft-definitions}:
+#' > _ViewFullTable_ table. Merges all the relevant variables from the
+#' corresponding tables in the database back into a flat file. Each record
+#' represents one measurement and/or attribute of one stem of one tree of one
+#' plot from one census. Because buttresses can grow, for trees with buttresses,
+#' a stem may be measured at more than one height. So some stems may have more
+#' than one measurement in a census, but at different hom.
+#'
+#' @examples
+#' print(vft_description, n = nrow(vft_description))
+"vft_description"
