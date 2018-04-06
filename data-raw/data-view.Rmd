@@ -3,12 +3,7 @@ title: "md and themed html documents"
 subtitle: Subtitle
 author: "Your name"
 date: "`r Sys.Date()`"
-output:
-  html_document:
-    toc: yes
-    toc_depth: '3'
-    theme: united
-    keep_md: true
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -117,14 +112,3 @@ warn_if_nms_differ(vft_random_bci, fgeo.tool::type_vft())
 glimpse(vft_random_bci)
 use_data(vft_random_bci, overwrite = TRUE)
 ```
-
-# Elevation
-
-```{r}
-load(here(dir_path, "CTFSElev_bci.rdata"))
-elevation_bci <- CTFSElev_bci
-
-glimpse(elevation_bci)
-use_data(elevation_bci, overwrite = TRUE)
-```
-

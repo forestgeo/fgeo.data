@@ -1,38 +1,18 @@
----
-title: "md and themed html documents"
-subtitle: Subtitle
-author: "Your name"
-date: "2018-04-05"
-output:
-  html_document:
-    toc: yes
-    toc_depth: '3'
-    theme: united
-    keep_md: true
----
-
-
-
----
-Reuse the style and options of this document
-
-The yaml header and the setup chunk of this document come from a template. To access this template, install __fgeo.templates__ (see [how](https://forestgeo.github.io/fgeo.templates/#installation)).
-
-![](https://i.imgur.com/zAf37YI.png)
-
----
+md and themed html documents
+================
+Your name
+2018-04-06
 
 # Source
 
-* On Mon, Mar 19, 2018 at 11:31 PM, Lao, Suzanne <LAOZ@si.edu>
-* On Mon, Mar 19, 2018 at 11:34 PM, Lao, Suzanne <LAOZ@si.edu>
+  - On Mon, Mar 19, 2018 at 11:31 PM, Lao, Suzanne <LAOZ@si.edu>
+  - On Mon, Mar 19, 2018 at 11:34 PM, Lao, Suzanne <LAOZ@si.edu>
 
-See https://github.com/forestgeo/fgeo.opendata/issues/1.
+See <https://github.com/forestgeo/fgeo.opendata/issues/1>.
 
 # Setup
 
-
-```r
+``` r
 library(here)
 #> here() starts at C:/Users/LeporeM/Dropbox/git_repos/fgeo.opendata
 library(readr)
@@ -58,8 +38,7 @@ warn_if_nms_differ <- function(x, y) {
 
 # Data
 
-
-```r
+``` r
 dir_path <- "data-raw/database-output"
 ```
 
@@ -67,8 +46,7 @@ dir_path <- "data-raw/database-output"
 
 Complete ViewTaxonomy table.
 
-
-```r
+``` r
 path_taxa <- here::here(dir_path, "ViewTaxonomy.csv")
 taxa_bci <- read_tsv(
   path_taxa, 
@@ -107,10 +85,11 @@ use_data(taxa_bci, overwrite = TRUE)
 
 ## All trees in one hectare
 
-One hectare of data for hectare: `px >= 700` and `px < 800`; and `py >=100` and `py < 200`. The data includes only those records from census 2005 and census 2010.
+One hectare of data for hectare: `px >= 700` and `px < 800`; and `py
+>=100` and `py < 200`. The data includes only those records from census
+2005 and census 2010.
 
-
-```r
+``` r
 path_vft_1ha_bci <- here::here(dir_path, "ViewFullTable_hec37.csv")
 vft_1ha_bci <- read_tsv(
   path_vft_1ha_bci, 
@@ -160,10 +139,10 @@ use_data(vft_1ha_bci, overwrite = TRUE)
 
 ## One thousand trees, selected at random
 
-1000 randomly chosen trees from the whole plot. Only included data from census 2005 and census 2010.
+1000 randomly chosen trees from the whole plot. Only included data from
+census 2005 and census 2010.
 
-
-```r
+``` r
 path_vft_random_bci <- here::here(dir_path, "ViewFullTable_random.csv")
 vft_random_bci <- read_tsv(
   path_vft_random_bci, 
@@ -210,24 +189,3 @@ glimpse(vft_random_bci)
 use_data(vft_random_bci, overwrite = TRUE)
 #> <U+2714> Saving vft_random_bci to data/vft_random_bci.rda
 ```
-
-# Elevation
-
-
-```r
-load(here(dir_path, "CTFSElev_bci.rdata"))
-elevation_bci <- CTFSElev_bci
-
-glimpse(elevation_bci)
-#> List of 4
-#>  $ col :'data.frame':	20301 obs. of  3 variables:
-#>   ..$ x   : int [1:20301] 0 0 0 0 0 0 0 0 0 0 ...
-#>   ..$ y   : int [1:20301] 0 5 10 15 20 25 30 35 40 45 ...
-#>   ..$ elev: num [1:20301] 121 121 121 121 121 ...
-#>  $ mat : num [1:101, 1:201] 121 121 121 121 121 ...
-#>  $ xdim: int 1000
-#>  $ ydim: int 500
-use_data(elevation_bci, overwrite = TRUE)
-#> <U+2714> Saving elevation_bci to data/elevation_bci.rda
-```
-
