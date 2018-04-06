@@ -50,5 +50,5 @@ NULL
 #' than one measurement in a census, but at different hom.
 #'
 #' @examples
-#' print(vft_description, n = nrow(vft_description))
+#' vft_description
 "vft_description"

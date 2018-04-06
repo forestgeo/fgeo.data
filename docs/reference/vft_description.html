@@ -127,41 +127,20 @@ than one measurement in a census, but at different hom.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>print</span>(<span class='no'>vft_description</span>, <span class='kw'>n</span> <span class='kw'>=</span> <span class='fu'>nrow</span>(<span class='no'>vft_description</span>))</div><div class='output co'>#&gt; # A tibble: 32 x 2
-#&gt;    columns          definitions                                                
-#&gt;    &lt;chr&gt;            &lt;chr&gt;                                                      
-#&gt;  1 DBHID            Foreign Key to DBH table.                                  
-#&gt;  2 PlotName         Descriptive name of the site also referred to as the plot. 
-#&gt;  3 PlotID           Foreign Key to Site table.                                 
-#&gt;  4 Family           Taxonomic family name (from the Angiosperm Phylogeny Group~
-#&gt;  5 Genus            Genus of the plant, according to the APG system.           
-#&gt;  6 SpeciesName      Species part of Latin name, may be a morphospecies name.   
-#&gt;  7 Mnemonic         Code used in the field for designating the species, usuall~
-#&gt;  8 Subspecies       Subspecies portion of the Latin name, may be a subspecies ~
-#&gt;  9 SpeciesID        Foreign Key to Species table.                              
-#&gt; 10 SubspeciesID     FIXME: Define SubspeciesID                                 
-#&gt; 11 QuadratName      Descriptive name for the quadrat used in the field. The fi~
-#&gt; 12 QuadratID        Foreign Key to Quadrat table.                              
-#&gt; 13 PX               Distance from the plot origin (lower left corner) in meter~
-#&gt; 14 PY               Distance from the plot origin (lower left corner) in meter~
-#&gt; 15 QX               Distance from the lower left corner of the quadrat in mete~
-#&gt; 16 QY               Distance from the lower left corner of the quadrat in mete~
-#&gt; 17 TreeID           Foreign Key to Tree table.                                 
-#&gt; 18 Tag              Tag number on the tree in the field, should be unique with~
-#&gt; 19 StemID           Foreign Key to Stem table.                                 
-#&gt; 20 StemNumber       Column used to carry stemid from previous database version.
-#&gt; 21 StemTag          The stem tag used in the field to identify the different s~
-#&gt; 22 PrimaryStem      A character description of the stem, whether it is the pri~
-#&gt; 23 CensusID         Foreign Key to Census table.                               
-#&gt; 24 PlotCensusNumber Census number, an integer, 1=first census, etc.            
-#&gt; 25 DBH              Stem diameter, usually at breast height. Units are user de~
-#&gt; 26 HOM              Height (in meters) on the stem at which the diameter was m~
-#&gt; 27 ExactDate        Date on which the measurement was taken (format is yyyy-mm~
-#&gt; 28 Date             FIXME: Define Date                                         
-#&gt; 29 ListOfTSM        Codes indicating the attributes or condition of the tree, ~
-#&gt; 30 HighHOM          FIXME: Define HighHOM                                      
-#&gt; 31 LargeStem        FIXME: Define LargeStem                                    
-#&gt; 32 Status           Indicates the status of the tree or stem. Possible values ~</div></pre>
+    <pre class="examples"><div class='input'><span class='no'>vft_description</span></div><div class='output co'>#&gt; # A tibble: 32 x 2
+#&gt;    columns      definitions                                                    
+#&gt;    &lt;chr&gt;        &lt;chr&gt;                                                          
+#&gt;  1 DBHID        Foreign Key to DBH table.                                      
+#&gt;  2 PlotName     Descriptive name of the site also referred to as the plot.     
+#&gt;  3 PlotID       Foreign Key to Site table.                                     
+#&gt;  4 Family       Taxonomic family name (from the Angiosperm Phylogeny Group - A~
+#&gt;  5 Genus        Genus of the plant, according to the APG system.               
+#&gt;  6 SpeciesName  Species part of Latin name, may be a morphospecies name.       
+#&gt;  7 Mnemonic     Code used in the field for designating the species, usually 6 ~
+#&gt;  8 Subspecies   Subspecies portion of the Latin name, may be a subspecies or v~
+#&gt;  9 SpeciesID    Foreign Key to Species table.                                  
+#&gt; 10 SubspeciesID FIXME: Define SubspeciesID                                     
+#&gt; # ... with 22 more rows</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

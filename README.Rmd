@@ -33,6 +33,9 @@ For details on how to install packages from GitHub, see [this article](https://g
 ```{r}
 library(fgeo.opendata)
 
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/taxa_bci
+str(taxa_bci, give.attr = FALSE)
+
 # Details: https://forestgeo.github.io/fgeo.opendata/reference/vft_random_bci
 str(vft_random_bci, give.attr = FALSE)
 
@@ -40,8 +43,11 @@ str(vft_random_bci, give.attr = FALSE)
 # Similar to `vft_random_bci`; truncating list output for space
 str(vft_1ha_bci, give.attr = FALSE, list.len = 5)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/taxa_bci
-str(taxa_bci, give.attr = FALSE)
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/census_bci
+str(tree6_random_bci, give.attr = FALSE)
+
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/census_bci
+str(stem7_1ha_bci, give.attr = FALSE)
 
 # Details: https://forestgeo.github.io/fgeo.opendata/reference/elevation_bci
 str(elevation_bci)
@@ -80,16 +86,6 @@ raw_taxa_bci[some_rows, some_columns]
 
 # Note these are the same as `column_classes` defined above
 sapply(raw_taxa_bci[some_rows, some_columns], class)
-```
-
-## Unique identifier by table
-
-```
-Table: unique identifier
--------------------------
-Tree tables:  TreeID
-Stem tables:  StemID
-ViewFullTable:  DBHID
 ```
 
 ## Code of Conduct
