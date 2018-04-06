@@ -14,7 +14,7 @@ whole plot). Only included data from census 2005 and census 2010.
 }
 \details{
 This is a slightly cleaned version from a ViewFullTable table.
-For a raw .csv version see url{http://bit.ly/fgeo-opendata-vft-random-bci}.
+For a raw .csv version see \url{http://bit.ly/fgeo-opendata-vft-random-bci}.
 }
 \examples{
 str(vft_random_bci)
