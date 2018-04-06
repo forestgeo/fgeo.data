@@ -1,0 +1,6 @@
+```{r}
+library(rtbl)
+library(fgeo.opendata)
+rtbl(vft_random_bci, taxa_bci, plotname = "random_bci")
+```
+
