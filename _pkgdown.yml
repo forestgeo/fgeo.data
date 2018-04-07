@@ -26,6 +26,9 @@ navbar:
       href: reference/index.html
 
   right:
+    - text: Documenting datasets
+      href: articles/documenting-datasets.html
+
     - text: News
       href: news/index.html
 

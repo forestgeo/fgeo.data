@@ -1,25 +1,25 @@
-#' General description of census tables, tree and stem.
+#' General description of tree and stem tables.
 #'
-#' Each tree and stem table -- collectively called _census_ tables -- is a
-#' dataframes that stores data of one census of one plot. That is, for any given
-#' plot one tree table stores data recorded during one specific census, and each
-#' row records the data from one specific tree. And for any given plot one stem
-#' table stores data recorded during one specific census , and each row records
-#' the data from one specific stem. For example, if plot X was censused twice,
-#' then it has two tree tables and two stem tables.
+#' Each tree and stem table is a dataframes that stores data of one census of
+#' one plot. That is, for any given plot one tree table stores data recorded
+#' during one specific census, and each row records the data from one specific
+#' tree. And for any given plot one stem table stores data recorded during one
+#' specific census , and each row records the data from one specific stem. For
+#' example, if plot X was censused twice, then it has two tree tables and two
+#' stem tables.
 #'
-#' Each census table has two remarkable properties:
+#' Each tree or stem table has two remarkable properties:
 #' * The number of rows equals the number of trees or stems that were ever found
 #' in the plot (in any census). This implies that the number of rows is
-#' identical to that of any other census table of the same plot; also, that
-#' trees or stems appear in tree or stem tables before they recruit, while they
-#' are alive, and after they die.
-#' * The order of the rows is identical to that of any other census table of the
-#' same plot. This implies that you can compare data accross censuses even if
-#' the row order is important for your analyses. Also, you can easily repeat
-#' analyses with different censuses with minimal effort. For example, this
-#' structure makes helps to calculate demographic rates between any pair of
-#' censuses.
+#' identical to that of any other tree or stem table of the same plot; also,
+#' that trees or stems appear in tree or stem tables before they recruit, while
+#' they are alive, and after they die.
+#' * The order of the rows is identical to that of any other tree or stem
+#' table of the same plot. This implies that you can compare data accross
+#' censuses even if the row order is important for your analyses. Also, you can
+#' easily repeat analyses with different censuses with minimal effort. For
+#' example, this structure makes helps to calculate demographic rates between
+#' any pair of censuses.
 #'
 #' @section Definition of Variables in tree tables:
 #'
@@ -149,10 +149,11 @@ NULL
 
 #' Tree and stem tables from Barro Colorado Island (bci).
 #'
-#' For a description see [census_description]. Tree and stem tables of the same
-#' trees selected in [vft_1ha_bci] and [vft_random_bci]. The nuber after `stem`
-#' or `census` matches a value of the column `CensusID` in the corresponding
-#' ViewFullTable.
+#' For a general description see [census_description]. These datasets are tree
+#' and stem tables of the same trees selected to create the tables [vft_1ha_bci]
+#' and [vft_random_bci]. In the name of the tree and stem tables documented
+#' here, the number after `stem` or `census` matches a value of the column
+#' `PlotCensusNumber` in the corresponding ViewFullTable.
 #'
 #' @format See examples.
 #'
