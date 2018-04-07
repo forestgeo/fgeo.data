@@ -45,8 +45,19 @@ navbar:
 
 reference:
 
-  - title: Datasets
+  - title: ViewFullTable
     contents:
-      - matches("EDIT-MATCH")
-      - starts_with("EDIT-START")
-      - end_with("EDIT-END")
+      - vft_description
+      - matches("bci_vft")
+
+  - title: Census tree and stem
+    contents:
+      - census_description
+      - matches("bci_tree")
+      - matches("bci_stem")
+      
+  - title: Other
+    contents:
+      - bci_elevation
+      - bci_taxa
+      - unique_id

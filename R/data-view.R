@@ -48,6 +48,8 @@ NULL
 #' plot from one census. Because buttresses can grow, for trees with buttresses,
 #' a stem may be measured at more than one height. So some stems may have more
 #' than one measurement in a census, but at different hom.
+#' 
+#' See column definitions at \url{https://bit.ly/fgeo-data-vft-description}.
 #'
 #' @examples
 #' vft_description

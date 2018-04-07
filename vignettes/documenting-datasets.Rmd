@@ -42,6 +42,8 @@ Generic datasets (e.g. ViwFullTable) should have these components:
     * A section `@seealso`, linking to specific datasets.
     * If the meta-dataset `generic_description` exists, a section `@examples`, that prints `generic_description`.
 
+### `vft_description`
+
 ```{r, echo=FALSE, fig.cap= "The 'meta-dataset' associated to a generic ViewFullTable"}
 cap <- paste0(
   "The 'meta-dataset' `vft_description` of a generic ViewFullTable, ",
@@ -56,7 +58,7 @@ knitr::kable(
 
 # Documenting specific datasets
 
-Datasets from a specific site should be named with the format `site_generic_info`: 
+Datasets from a specific site should be named with the format `site_generic_info`:
 
 * `site` should be a single string uniquely identifying your site among all other sites in the ForestGEO network; it may be a well know nickname (e.g. bci). 
 * `generic` should be one of the same as in _`generic`_`_description`. 
@@ -64,6 +66,8 @@ Datasets from a specific site should be named with the format `site_generic_info
 * `info` should be a single short string indicating the most prominent characteristic of the specific dataset -- commonly referring to the criteria used to subset a larger dataset (e.g. `bci_stem6_random`).
 
 For example, if your data comes from Barro Colorado Island, and it is a ViewFullTable containing a random subset of a few trees, a good name for it would be `bci_vft_random`. This format works well with auto-completion in RStudio.
+
+<img src="https://i.imgur.com/nFiBnrn.png" align="center" height=150 />
 
 The documentation of `site_generic_info` should include the following (e.g. `?`[bci_vft_random](https://forestgeo.github.io/fgeo.data/reference/vft_bci.html)):
 
