@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • fgeo.opendata</title>
+<title>Elevation data from Barro Colorado Island (bci). — bci_elevation • fgeo.opendata</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -25,7 +25,11 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Elevation data from Barro Colorado Island (bci). — bci_elevation" />
+
+<meta property="og:description" content="This dataset can be downloaded directly from
+http://bit.ly/fgeo-opendata-elevation-bci." />
+<meta name="twitter:card" content="summary" />
 
 
 <!-- mathjax -->
@@ -42,7 +46,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -97,79 +101,53 @@
       </header>
 
       <div class="row">
-  <div class="col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Elevation data from Barro Colorado Island (bci).</h1>
+    <small>Source: <a href='https://github.com/forestgeo/fgeo.opendata/blob/master/R/data-other.R'><code>R/data-other.R</code></a></small>
     </div>
 
-    <div class="contents">
-      <table class="ref-index">
+    
+    <p>This dataset can be downloaded directly from
+<a href='http://bit.ly/fgeo-opendata-elevation-bci'>http://bit.ly/fgeo-opendata-elevation-bci</a>.</p>
+    
 
-      <colgroup>
-        <col class="alias" />
-        <col class="title" />
-      </colgroup>
+    <pre class="usage"><span class='no'>bci_elevation</span></pre>
+        
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-      <tbody>
-        <tr>
-          <th colspan="2">
-            <h2 id="section-datasets" class="hasAnchor"><a href="#section-datasets" class="anchor"></a>Datasets</h2>
-            <p class="section-desc"></p>
-          </th>
-        </tr>
-        <tr>
-          <!--  -->
-          <td>
-            <p><code><a href="bci_elevation.html">bci_elevation</a></code> </p>
-          </td>
-          <td><p>Elevation data from Barro Colorado Island (bci).</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="bci_taxa.html">bci_taxa</a></code> </p>
-          </td>
-          <td><p>Complete ViewTaxonomy (taxa) table from Barro Colorado Island (bci).</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="bci_vft.html">bci_vft_1ha</a></code> <code><a href="bci_vft.html">bci_vft_random</a></code> </p>
-          </td>
-          <td><p>ViewFullTable (vft) from Barro Colorado Island (bci).</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="census_bci.html">bci_stem6_1ha</a></code> <code><a href="census_bci.html">bci_stem7_1ha</a></code> <code><a href="census_bci.html">bci_tree6_1ha</a></code> <code><a href="census_bci.html">bci_tree7_1ha</a></code> <code><a href="census_bci.html">bci_stem6_random</a></code> <code><a href="census_bci.html">bci_stem7_random</a></code> <code><a href="census_bci.html">bci_tree6_random</a></code> <code><a href="census_bci.html">bci_tree7_random</a></code> </p>
-          </td>
-          <td><p>Tree and stem tables from Barro Colorado Island (bci).</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="census_description.html">census_description</a></code> </p>
-          </td>
-          <td><p>General description of tree and stem tables.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="unique_id.html">unique_id</a></code> </p>
-          </td>
-          <td><p>Unique identifiers of the most commonly used tables.</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="vft_description.html">vft_description</a></code> </p>
-          </td>
-          <td><p>General description of a ViewFullTable (vft).</p></td>
-        </tr>
-      </tbody>
-      </table>
-    </div>
+    <p>An object of class <code>list</code> of length 4.</p>
+    
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <p>unique_id</p>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>bci_elevation</span>)</div><div class='output co'>#&gt; List of 4
+#&gt;  $ col :'data.frame':	20301 obs. of  3 variables:
+#&gt;   ..$ x   : int [1:20301] 0 0 0 0 0 0 0 0 0 0 ...
+#&gt;   ..$ y   : int [1:20301] 0 5 10 15 20 25 30 35 40 45 ...
+#&gt;   ..$ elev: num [1:20301] 121 121 121 121 121 ...
+#&gt;  $ mat : num [1:101, 1:201] 121 121 121 121 121 ...
+#&gt;  $ xdim: int 1000
+#&gt;  $ ydim: int 500</div><div class='input'><span class='fu'>sapply</span>(<span class='no'>bci_elevation</span>, <span class='no'>class</span>)</div><div class='output co'>#&gt;          col          mat         xdim         ydim 
+#&gt; "data.frame"     "matrix"    "integer"    "integer" </div><div class='input'><span class='fu'>str</span>(<span class='no'>bci_elevation</span>$<span class='no'>col</span>)</div><div class='output co'>#&gt; 'data.frame':	20301 obs. of  3 variables:
+#&gt;  $ x   : int  0 0 0 0 0 0 0 0 0 0 ...
+#&gt;  $ y   : int  0 5 10 15 20 25 30 35 40 45 ...
+#&gt;  $ elev: num  121 121 121 121 121 ...</div></pre>
   </div>
-
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-datasets">Datasets</a></li>
+      
+      <li><a href="#format">Format</a></li>
+
+      <li><a href="#see-also">See also</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
     </ul>
+
   </div>
 </div>
 

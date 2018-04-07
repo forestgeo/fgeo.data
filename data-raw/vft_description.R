@@ -89,7 +89,7 @@ definition <- c(
 vft_description <- tibble(column, definition)
 
 # Order rows of vft_description as column of vft
-cols_order <- match(names(vft_1ha_bci), vft_description$column)
+cols_order <- match(names(bci_vft_1ha), vft_description$column)
 vft_description <- vft_description[cols_order, ]
 
 use_data(vft_description, overwrite = TRUE)

@@ -54,18 +54,18 @@ load("data-raw/private/bcifiles/bci.stem6.rdata")
 bci_stem6 <- as_tibble(bci.stem6)
 rm(bci.stem6)
 # Use only permitted trees
-ids_1ha <- unique(fgeo.opendata::vft_1ha_bci$TreeID)
-stem6_1ha_bci <- filter(bci_stem6, treeID %in% ids_1ha)
-use_data(stem6_1ha_bci, overwrite = TRUE)
+ids_1ha <- unique(fgeo.opendata::bci_vft_1ha$TreeID)
+bci_stem6_1ha <- filter(bci_stem6, treeID %in% ids_1ha)
+use_data(bci_stem6_1ha, overwrite = TRUE)
 
 # Whole data
 load("data-raw/private/bcifiles/bci.stem7.rdata")
 bci_stem7 <- as_tibble(bci.stem7)
 rm(bci.stem7)
 # Use only permitted trees
-ids_1ha <- unique(fgeo.opendata::vft_1ha_bci$TreeID)
-stem7_1ha_bci <- filter(bci_stem7, treeID %in% ids_1ha)
-use_data(stem7_1ha_bci, overwrite = TRUE)
+ids_1ha <- unique(fgeo.opendata::bci_vft_1ha$TreeID)
+bci_stem7_1ha <- filter(bci_stem7, treeID %in% ids_1ha)
+use_data(bci_stem7_1ha, overwrite = TRUE)
 
 # TREE
 
@@ -74,18 +74,18 @@ load("data-raw/private/bcifiles/bci.tree6.rdata")
 bci_tree6 <- as_tibble(bci.tree6)
 rm(bci.tree6)
 # Use only permitted trees
-ids_1ha <- unique(fgeo.opendata::vft_1ha_bci$TreeID)
-tree6_1ha_bci <- filter(bci_tree6, treeID %in% ids_1ha)
-use_data(tree6_1ha_bci, overwrite = TRUE)
+ids_1ha <- unique(fgeo.opendata::bci_vft_1ha$TreeID)
+bci_tree6_1ha <- filter(bci_tree6, treeID %in% ids_1ha)
+use_data(bci_tree6_1ha, overwrite = TRUE)
 
 # Whole data
 load("data-raw/private/bcifiles/bci.tree7.rdata")
 bci_tree7 <- as_tibble(bci.tree7)
 rm(bci.tree7)
 # Use only permitted trees
-ids_1ha <- unique(fgeo.opendata::vft_1ha_bci$TreeID)
-tree7_1ha_bci <- filter(bci_tree7, treeID %in% ids_1ha)
-use_data(tree7_1ha_bci, overwrite = TRUE)
+ids_1ha <- unique(fgeo.opendata::bci_vft_1ha$TreeID)
+bci_tree7_1ha <- filter(bci_tree7, treeID %in% ids_1ha)
+use_data(bci_tree7_1ha, overwrite = TRUE)
 
 # Subset random -----------------------------------------------------------
 
@@ -96,18 +96,18 @@ load("data-raw/private/bcifiles/bci.stem6.rdata")
 bci_stem6 <- as_tibble(bci.stem6)
 rm(bci.stem6)
 # Use only permitted trees
-ids_random <- unique(fgeo.opendata::vft_random_bci$TreeID)
-stem6_random_bci <- filter(bci_stem6, treeID %in% ids_random)
-use_data(stem6_random_bci, overwrite = TRUE)
+ids_random <- unique(fgeo.opendata::bci_vft_random$TreeID)
+bci_stem6_random <- filter(bci_stem6, treeID %in% ids_random)
+use_data(bci_stem6_random, overwrite = TRUE)
 
 # Whole data
 load("data-raw/private/bcifiles/bci.stem7.rdata")
 bci_stem7 <- as_tibble(bci.stem7)
 rm(bci.stem7)
 # Use only permitted trees
-ids_random <- unique(fgeo.opendata::vft_random_bci$TreeID)
-stem7_random_bci <- filter(bci_stem7, treeID %in% ids_random)
-use_data(stem7_random_bci, overwrite = TRUE)
+ids_random <- unique(fgeo.opendata::bci_vft_random$TreeID)
+bci_stem7_random <- filter(bci_stem7, treeID %in% ids_random)
+use_data(bci_stem7_random, overwrite = TRUE)
 
 # TREE
 
@@ -116,15 +116,15 @@ load("data-raw/private/bcifiles/bci.tree6.rdata")
 bci_tree6 <- as_tibble(bci.tree6)
 rm(bci.tree6)
 # Use only permitted trees
-ids_random <- unique(fgeo.opendata::vft_random_bci$TreeID)
-tree6_random_bci <- filter(bci_tree6, treeID %in% ids_random)
-use_data(tree6_random_bci, overwrite = TRUE)
+ids_random <- unique(fgeo.opendata::bci_vft_random$TreeID)
+bci_tree6_random <- filter(bci_tree6, treeID %in% ids_random)
+use_data(bci_tree6_random, overwrite = TRUE)
 
 # Whole data
 load("data-raw/private/bcifiles/bci.tree7.rdata")
 bci_tree7 <- as_tibble(bci.tree7)
 rm(bci.tree7)
 # Use only permitted trees
-ids_random <- unique(fgeo.opendata::vft_random_bci$TreeID)
-tree7_random_bci <- filter(bci_tree7, treeID %in% ids_random)
-use_data(tree7_random_bci, overwrite = TRUE)
+ids_random <- unique(fgeo.opendata::bci_vft_random$TreeID)
+bci_tree7_random <- filter(bci_tree7, treeID %in% ids_random)
+use_data(bci_tree7_random, overwrite = TRUE)

@@ -1,7 +1,7 @@
 md and themed html documents
 ================
 Your name
-2018-04-06
+2018-04-07
 
 # Source
 
@@ -48,14 +48,14 @@ Complete ViewTaxonomy table.
 
 ``` r
 path_taxa <- here::here(dir_path, "ViewTaxonomy.csv")
-taxa_bci <- read_tsv(
+bci_taxa <- read_tsv(
   path_taxa, 
   col_types = fgeo.tool::type_taxa(), 
   na = c("", "NA", "NULL")
 )
-warn_if_nms_differ(taxa_bci, fgeo.tool::type_taxa())
+warn_if_nms_differ(bci_taxa, fgeo.tool::type_taxa())
 
-glimpse(taxa_bci)
+glimpse(bci_taxa)
 #> Observations: 1,428
 #> Variables: 21
 #> $ ViewID         <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, ...
@@ -79,8 +79,8 @@ glimpse(taxa_bci)
 #> $ ListOfOldNames <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
 #> $ Specimens      <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
 #> $ Reference      <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,...
-use_data(taxa_bci, overwrite = TRUE)
-#> <U+2714> Saving taxa_bci to data/taxa_bci.rda
+use_data(bci_taxa, overwrite = TRUE)
+#> <U+2714> Saving bci_taxa to data/bci_taxa.rda
 ```
 
 ## All trees in one hectare
@@ -90,15 +90,15 @@ One hectare of data for hectare: `px >= 700` and `px < 800`; and `py
 2005 and census 2010.
 
 ``` r
-path_vft_1ha_bci <- here::here(dir_path, "ViewFullTable_hec37.csv")
-vft_1ha_bci <- read_tsv(
-  path_vft_1ha_bci, 
+path_bci_vft_1ha <- here::here(dir_path, "ViewFullTable_hec37.csv")
+bci_vft_1ha <- read_tsv(
+  path_bci_vft_1ha, 
   col_types = fgeo.tool::type_vft(),
   na = c("", "NA", "NULL")
 )
-warn_if_nms_differ(vft_1ha_bci, fgeo.tool::type_vft())
+warn_if_nms_differ(bci_vft_1ha, fgeo.tool::type_vft())
 
-glimpse(vft_1ha_bci)
+glimpse(bci_vft_1ha)
 #> Observations: 10,543
 #> Variables: 32
 #> $ DBHID            <int> 148842, 150985, 148877, 148912, 151013, 14901...
@@ -133,8 +133,8 @@ glimpse(vft_1ha_bci)
 #> $ HighHOM          <int> 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, ...
 #> $ LargeStem        <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
 #> $ Status           <chr> "alive", "alive", "alive", "alive", "alive", ...
-use_data(vft_1ha_bci, overwrite = TRUE)
-#> <U+2714> Saving vft_1ha_bci to data/vft_1ha_bci.rda
+use_data(bci_vft_1ha, overwrite = TRUE)
+#> <U+2714> Saving bci_vft_1ha to data/bci_vft_1ha.rda
 ```
 
 ## One thousand trees, selected at random
@@ -143,15 +143,15 @@ use_data(vft_1ha_bci, overwrite = TRUE)
 census 2005 and census 2010.
 
 ``` r
-path_vft_random_bci <- here::here(dir_path, "ViewFullTable_random.csv")
-vft_random_bci <- read_tsv(
-  path_vft_random_bci, 
+path_bci_vft_random <- here::here(dir_path, "ViewFullTable_random.csv")
+bci_vft_random <- read_tsv(
+  path_bci_vft_random, 
   col_types = fgeo.tool::type_vft(),
   na = c("", "NA", "NULL")
 )
-warn_if_nms_differ(vft_random_bci, fgeo.tool::type_vft())
+warn_if_nms_differ(bci_vft_random, fgeo.tool::type_vft())
 
-glimpse(vft_random_bci)
+glimpse(bci_vft_random)
 #> Observations: 2,257
 #> Variables: 32
 #> $ DBHID            <int> 1621522, 1619521, 1632477, 1630644, 1077531, ...
@@ -186,6 +186,6 @@ glimpse(vft_random_bci)
 #> $ HighHOM          <int> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
 #> $ LargeStem        <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
 #> $ Status           <chr> "alive", "alive", "broken below", "dead", "al...
-use_data(vft_random_bci, overwrite = TRUE)
-#> <U+2714> Saving vft_random_bci to data/vft_random_bci.rda
+use_data(bci_vft_random, overwrite = TRUE)
+#> <U+2714> Saving bci_vft_random to data/bci_vft_random.rda
 ```

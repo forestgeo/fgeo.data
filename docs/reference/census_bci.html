@@ -28,8 +28,8 @@
 <meta property="og:title" content="Tree and stem tables from Barro Colorado Island (bci). — census_bci" />
 
 <meta property="og:description" content="For a general description see census_description. These datasets are tree
-and stem tables of the same trees selected to create the tables vft_1ha_bci
-and vft_random_bci. In the name of the tree and stem tables documented
+and stem tables of the same trees selected to create the tables bci_vft_1ha
+and bci_vft_random. In the name of the tree and stem tables documented
 here, the number after stem or census matches a value of the column
 PlotCensusNumber in the corresponding ViewFullTable." />
 <meta name="twitter:card" content="summary" />
@@ -112,27 +112,27 @@ PlotCensusNumber in the corresponding ViewFullTable." />
 
     
     <p>For a general description see <a href='census_description.html'>census_description</a>. These datasets are tree
-and stem tables of the same trees selected to create the tables <a href='vft_bci.html'>vft_1ha_bci</a>
-and <a href='vft_bci.html'>vft_random_bci</a>. In the name of the tree and stem tables documented
+and stem tables of the same trees selected to create the tables <a href='bci_vft.html'>bci_vft_1ha</a>
+and <a href='bci_vft.html'>bci_vft_random</a>. In the name of the tree and stem tables documented
 here, the number after <code>stem</code> or <code>census</code> matches a value of the column
 <code>PlotCensusNumber</code> in the corresponding ViewFullTable.</p>
     
 
-    <pre class="usage"><span class='no'>stem6_1ha_bci</span>
+    <pre class="usage"><span class='no'>bci_stem6_1ha</span>
 
-<span class='no'>stem7_1ha_bci</span>
+<span class='no'>bci_stem7_1ha</span>
 
-<span class='no'>tree6_1ha_bci</span>
+<span class='no'>bci_tree6_1ha</span>
 
-<span class='no'>tree7_1ha_bci</span>
+<span class='no'>bci_tree7_1ha</span>
 
-<span class='no'>stem6_random_bci</span>
+<span class='no'>bci_stem6_random</span>
 
-<span class='no'>stem7_random_bci</span>
+<span class='no'>bci_stem7_random</span>
 
-<span class='no'>tree6_random_bci</span>
+<span class='no'>bci_tree6_random</span>
 
-<span class='no'>tree7_random_bci</span></pre>
+<span class='no'>bci_tree7_random</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
@@ -140,11 +140,11 @@ here, the number after <code>stem</code> or <code>census</code> matches a value 
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p><a href='vft_bci.html'>vft_1ha_bci</a>, <a href='vft_bci.html'>vft_random_bci</a>, <a href='census_description.html'>census_description</a>.</p>
+    <p><a href='bci_vft.html'>bci_vft_1ha</a>, <a href='bci_vft.html'>bci_vft_random</a>, <a href='census_description.html'>census_description</a>.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>stem6_1ha_bci</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	10373 obs. of  16 variables:
+    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>bci_stem6_1ha</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	10373 obs. of  16 variables:
 #&gt;  $ treeID   : num  1853 1857 1861 1864 1866 ...
 #&gt;  $ stemID   : num  1853 1857 1861 1864 1866 ...
 #&gt;  $ tag      : chr  "001854" "001858" "001862" "001865" ...
@@ -161,7 +161,7 @@ here, the number after <code>stem</code> or <code>census</code> matches a value 
 #&gt;  $ date     : num  16635 16709 16721 16631 16708 ...
 #&gt;  $ status   : chr  "A" "A" "A" "A" ...
 #&gt;  $ agb      : num  1.761 2.193 5.749 0.658 2.285 ...</div><div class='input'>
-<span class='fu'>str</span>(<span class='no'>tree7_1ha_bci</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	4822 obs. of  16 variables:
+<span class='fu'>str</span>(<span class='no'>bci_tree7_1ha</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	4822 obs. of  16 variables:
 #&gt;  $ treeID   : num  1853 1857 1861 1864 1866 ...
 #&gt;  $ tag      : chr  "001854" "001858" "001862" "001865" ...
 #&gt;  $ sp       : chr  "simaam" "poutre" "quaras" "guargr" ...
@@ -178,7 +178,7 @@ here, the number after <code>stem</code> or <code>census</code> matches a value 
 #&gt;  $ nostems  : int  1 1 1 1 1 1 1 1 1 1 ...
 #&gt;  $ agb      : num  2.189 2.763 5.819 0.681 2.336 ...
 #&gt;  $ ba       : num  0.2419 0.1626 0.4754 0.0726 0.1619 ...</div><div class='input'>
-<span class='fu'>str</span>(<span class='no'>stem7_random_bci</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	2266 obs. of  16 variables:
+<span class='fu'>str</span>(<span class='no'>bci_stem7_random</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	2266 obs. of  16 variables:
 #&gt;  $ treeID   : num  590 1057 1451 2362 2867 ...
 #&gt;  $ stemID   : num  590 1057 1451 2362 2867 ...
 #&gt;  $ tag      : chr  "000580" "001054" "001449" "002369" ...
@@ -195,7 +195,7 @@ here, the number after <code>stem</code> or <code>census</code> matches a value 
 #&gt;  $ date     : num  18526 18514 18518 18515 18506 ...
 #&gt;  $ status   : chr  "A" "A" "A" "A" ...
 #&gt;  $ agb      : num  0.572 1.07 4.765 3.723 1.613 ...</div><div class='input'>
-<span class='fu'>str</span>(<span class='no'>tree6_random_bci</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	1000 obs. of  16 variables:
+<span class='fu'>str</span>(<span class='no'>bci_tree6_random</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	1000 obs. of  16 variables:
 #&gt;  $ treeID   : num  590 1057 1451 2362 2867 ...
 #&gt;  $ tag      : chr  "000580" "001054" "001449" "002369" ...
 #&gt;  $ sp       : chr  "virosp" "alsebl" "quaras" "quaras" ...

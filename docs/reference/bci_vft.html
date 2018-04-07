@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ViewFullTable (vft) from Barro Colorado Island (bci). — vft_bci • fgeo.opendata</title>
+<title>ViewFullTable (vft) from Barro Colorado Island (bci). — bci_vft • fgeo.opendata</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -25,13 +25,13 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-<meta property="og:title" content="ViewFullTable (vft) from Barro Colorado Island (bci). — vft_bci" />
+<meta property="og:title" content="ViewFullTable (vft) from Barro Colorado Island (bci). — bci_vft" />
 
 <meta property="og:description" content="Slightly cleaned versions from a ViewFullTable table, from census 2005 and
 census 2010 (see columns definition at vft_description):
-vft_1ha_bci: All threes in one hectare (coordinates: px &gt;= 700, px &lt; 800, py &gt;=100, py &lt; 200). Raw .csv file available at
+bci_vft_1ha: All threes in one hectare (coordinates: px &gt;= 700, px &lt; 800, py &gt;=100, py &lt; 200). Raw .csv file available at
 http://bit.ly/fgeo-opendata-vft-1ha-bci.
-vft_random_bci: One thousand randomly-chosen trees (from the whole plot).
+bci_vft_random: One thousand randomly-chosen trees (from the whole plot).
 Raw .csv file available at http://bit.ly/fgeo-opendata-vft-random-bci).
 " />
 <meta name="twitter:card" content="summary" />
@@ -115,16 +115,16 @@ Raw .csv file available at http://bit.ly/fgeo-opendata-vft-random-bci).
     
     <p>Slightly cleaned versions from a ViewFullTable table, from census 2005 and
 census 2010 (see columns definition at <a href='vft_description.html'>vft_description</a>):</p><ul>
-<li><p><code>vft_1ha_bci</code>: All threes in one hectare (coordinates: <code>px &gt;= 700</code>, <code>px &lt; 800</code>, <code>py &gt;=100</code>, <code>py &lt; 200</code>). Raw .csv file available at
+<li><p><code>bci_vft_1ha</code>: All threes in one hectare (coordinates: <code>px &gt;= 700</code>, <code>px &lt; 800</code>, <code>py &gt;=100</code>, <code>py &lt; 200</code>). Raw .csv file available at
 <a href='http://bit.ly/fgeo-opendata-vft-1ha-bci'>http://bit.ly/fgeo-opendata-vft-1ha-bci</a>.</p></li>
-<li><p><code>vft_random_bci</code>: One thousand randomly-chosen trees (from the whole plot).
+<li><p><code>bci_vft_random</code>: One thousand randomly-chosen trees (from the whole plot).
 Raw .csv file available at <a href='http://bit.ly/fgeo-opendata-vft-random-bci'>http://bit.ly/fgeo-opendata-vft-random-bci</a>).</p></li>
 </ul>
     
 
-    <pre class="usage"><span class='no'>vft_1ha_bci</span>
+    <pre class="usage"><span class='no'>bci_vft_1ha</span>
 
-<span class='no'>vft_random_bci</span></pre>
+<span class='no'>bci_vft_random</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
@@ -136,7 +136,7 @@ Raw .csv file available at <a href='http://bit.ly/fgeo-opendata-vft-random-bci'>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>vft_1ha_bci</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	10543 obs. of  32 variables:
+    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>bci_vft_1ha</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	10543 obs. of  32 variables:
 #&gt;  $ DBHID           : int  148842 150985 148877 148912 151013 149016 151095 149050 151122 149083 ...
 #&gt;  $ PlotName        : chr  "bci" "bci" "bci" "bci" ...
 #&gt;  $ PlotID          : int  1 1 1 1 1 1 1 1 1 1 ...
@@ -169,7 +169,7 @@ Raw .csv file available at <a href='http://bit.ly/fgeo-opendata-vft-random-bci'>
 #&gt;  $ HighHOM         : int  1 1 0 1 1 1 1 1 1 0 ...
 #&gt;  $ LargeStem       : chr  NA NA NA NA ...
 #&gt;  $ Status          : chr  "alive" "alive" "alive" "alive" ...</div><div class='input'>
-<span class='fu'>str</span>(<span class='no'>vft_random_bci</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	2257 obs. of  32 variables:
+<span class='fu'>str</span>(<span class='no'>bci_vft_random</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	2257 obs. of  32 variables:
 #&gt;  $ DBHID           : int  1621522 1619521 1632477 1630644 1077531 1074697 826469 823306 1006845 1003843 ...
 #&gt;  $ PlotName        : chr  "bci" "bci" "bci" "bci" ...
 #&gt;  $ PlotID          : int  1 1 1 1 1 1 1 1 1 1 ...
@@ -203,7 +203,7 @@ Raw .csv file available at <a href='http://bit.ly/fgeo-opendata-vft-random-bci'>
 #&gt;  $ LargeStem       : chr  NA NA NA NA ...
 #&gt;  $ Status          : chr  "alive" "alive" "broken below" "dead" ...</div><div class='input'>
 <span class='no'>show_some_values_of_each_column</span> <span class='kw'>&lt;-</span> <span class='kw'>function</span>(<span class='no'>x</span>) <span class='fu'>head</span>(<span class='fu'>unique</span>(<span class='no'>x</span>))
-<span class='fu'>lapply</span>(<span class='no'>vft_random_bci</span>, <span class='no'>show_some_values_of_each_column</span>)</div><div class='output co'>#&gt; $DBHID
+<span class='fu'>lapply</span>(<span class='no'>bci_vft_random</span>, <span class='no'>show_some_values_of_each_column</span>)</div><div class='output co'>#&gt; $DBHID
 #&gt; [1] 1621522 1619521 1632477 1630644 1077531 1074697
 #&gt; 
 #&gt; $PlotName

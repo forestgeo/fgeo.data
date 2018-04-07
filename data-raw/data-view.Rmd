@@ -68,15 +68,15 @@ Complete ViewTaxonomy table.
 
 ```{r taxa}
 path_taxa <- here::here(dir_path, "ViewTaxonomy.csv")
-taxa_bci <- read_tsv(
+bci_taxa <- read_tsv(
   path_taxa, 
   col_types = fgeo.tool::type_taxa(), 
   na = c("", "NA", "NULL")
 )
-warn_if_nms_differ(taxa_bci, fgeo.tool::type_taxa())
+warn_if_nms_differ(bci_taxa, fgeo.tool::type_taxa())
 
-glimpse(taxa_bci)
-use_data(taxa_bci, overwrite = TRUE)
+glimpse(bci_taxa)
+use_data(bci_taxa, overwrite = TRUE)
 ```
 
 ## All trees in one hectare
@@ -84,16 +84,16 @@ use_data(taxa_bci, overwrite = TRUE)
 One hectare of data for hectare: `px >= 700` and `px < 800`; and `py >=100` and `py < 200`. The data includes only those records from census 2005 and census 2010.
 
 ```{r}
-path_vft_1ha_bci <- here::here(dir_path, "ViewFullTable_hec37.csv")
-vft_1ha_bci <- read_tsv(
-  path_vft_1ha_bci, 
+path_bci_vft_1ha <- here::here(dir_path, "ViewFullTable_hec37.csv")
+bci_vft_1ha <- read_tsv(
+  path_bci_vft_1ha, 
   col_types = fgeo.tool::type_vft(),
   na = c("", "NA", "NULL")
 )
-warn_if_nms_differ(vft_1ha_bci, fgeo.tool::type_vft())
+warn_if_nms_differ(bci_vft_1ha, fgeo.tool::type_vft())
 
-glimpse(vft_1ha_bci)
-use_data(vft_1ha_bci, overwrite = TRUE)
+glimpse(bci_vft_1ha)
+use_data(bci_vft_1ha, overwrite = TRUE)
 ```
 
 ## One thousand trees, selected at random
@@ -101,14 +101,14 @@ use_data(vft_1ha_bci, overwrite = TRUE)
 1000 randomly chosen trees from the whole plot. Only included data from census 2005 and census 2010.
 
 ```{r}
-path_vft_random_bci <- here::here(dir_path, "ViewFullTable_random.csv")
-vft_random_bci <- read_tsv(
-  path_vft_random_bci, 
+path_bci_vft_random <- here::here(dir_path, "ViewFullTable_random.csv")
+bci_vft_random <- read_tsv(
+  path_bci_vft_random, 
   col_types = fgeo.tool::type_vft(),
   na = c("", "NA", "NULL")
 )
-warn_if_nms_differ(vft_random_bci, fgeo.tool::type_vft())
+warn_if_nms_differ(bci_vft_random, fgeo.tool::type_vft())
 
-glimpse(vft_random_bci)
-use_data(vft_random_bci, overwrite = TRUE)
+glimpse(bci_vft_random)
+use_data(bci_vft_random, overwrite = TRUE)
 ```

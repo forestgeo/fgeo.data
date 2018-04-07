@@ -24,8 +24,8 @@ article](https://goo.gl/dQKEeg).
 ``` r
 library(fgeo.opendata)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/taxa_bci
-str(taxa_bci, give.attr = FALSE)
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_taxa
+str(bci_taxa, give.attr = FALSE)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    1428 obs. of  21 variables:
 #>  $ ViewID        : int  1 2 3 4 5 6 7 8 9 10 ...
 #>  $ SpeciesID     : int  1 3 4 5 6 7 8 9 10 11 ...
@@ -49,8 +49,8 @@ str(taxa_bci, give.attr = FALSE)
 #>  $ Specimens     : chr  NA NA NA NA ...
 #>  $ Reference     : chr  NA NA NA NA ...
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/vft_random_bci
-str(vft_random_bci, give.attr = FALSE)
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_vft_random
+str(bci_vft_random, give.attr = FALSE)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    2257 obs. of  32 variables:
 #>  $ DBHID           : int  1621522 1619521 1632477 1630644 1077531 1074697 826469 823306 1006845 1003843 ...
 #>  $ PlotName        : chr  "bci" "bci" "bci" "bci" ...
@@ -85,9 +85,9 @@ str(vft_random_bci, give.attr = FALSE)
 #>  $ LargeStem       : chr  NA NA NA NA ...
 #>  $ Status          : chr  "alive" "alive" "broken below" "dead" ...
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/vft_1ha_bci
-# Similar to `vft_random_bci`; truncating list output for space
-str(vft_1ha_bci, give.attr = FALSE, list.len = 5)
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_vft_1ha
+# Similar to `bci_vft_random`; truncating list output for space
+str(bci_vft_1ha, give.attr = FALSE, list.len = 5)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    10543 obs. of  32 variables:
 #>  $ DBHID           : int  148842 150985 148877 148912 151013 149016 151095 149050 151122 149083 ...
 #>  $ PlotName        : chr  "bci" "bci" "bci" "bci" ...
@@ -97,7 +97,7 @@ str(vft_1ha_bci, give.attr = FALSE, list.len = 5)
 #>   [list output truncated]
 
 # Details: https://forestgeo.github.io/fgeo.opendata/reference/census_bci
-str(tree6_random_bci, give.attr = FALSE)
+str(bci_tree6_random, give.attr = FALSE)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    1000 obs. of  16 variables:
 #>  $ treeID   : num  590 1057 1451 2362 2867 ...
 #>  $ tag      : chr  "000580" "001054" "001449" "002369" ...
@@ -117,7 +117,7 @@ str(tree6_random_bci, give.attr = FALSE)
 #>  $ ba       : num  0.0855 0.0929 0.5768 0.3217 0.1327 ...
 
 # Details: https://forestgeo.github.io/fgeo.opendata/reference/census_bci
-str(stem7_1ha_bci, give.attr = FALSE)
+str(bci_stem7_1ha, give.attr = FALSE)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    10373 obs. of  16 variables:
 #>  $ treeID   : num  1853 1857 1861 1864 1866 ...
 #>  $ stemID   : num  1853 1857 1861 1864 1866 ...
@@ -136,8 +136,8 @@ str(stem7_1ha_bci, give.attr = FALSE)
 #>  $ status   : chr  "A" "A" "A" "A" ...
 #>  $ agb      : num  2.189 2.763 5.819 0.681 2.336 ...
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/elevation_bci
-str(elevation_bci)
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_elevation
+str(bci_elevation)
 #> List of 4
 #>  $ col :'data.frame':    20301 obs. of  3 variables:
 #>   ..$ x   : int [1:20301] 0 0 0 0 0 0 0 0 0 0 ...
@@ -179,14 +179,14 @@ column_classes <- c(
 # Specify how to interprate missing values
 na_strings <- c("", "NA", "NULL")
 
-raw_taxa_bci <- read.delim(
+raw_bci_taxa <- read.delim(
   file = url, 
   na.strings = na_strings, 
   colClasses = column_classes
 )
 
 some_rows <- some_columns <- 1:5
-raw_taxa_bci[some_rows, some_columns]
+raw_bci_taxa[some_rows, some_columns]
 #>   ViewID SpeciesID SubspeciesID               Family Mnemonic
 #> 1      1         1           NA Fabaceae-mimosoideae   pit1ba
 #> 2      2         3           NA Fabaceae-mimosoideae   acacco
@@ -195,7 +195,7 @@ raw_taxa_bci[some_rows, some_columns]
 #> 5      5         6           NA        Euphorbiaceae   acaldi
 
 # Note these are the same as `column_classes` defined above
-sapply(raw_taxa_bci[some_rows, some_columns], class)
+sapply(raw_bci_taxa[some_rows, some_columns], class)
 #>       ViewID    SpeciesID SubspeciesID       Family     Mnemonic 
 #>    "integer"    "integer"    "integer"  "character"  "character"
 ```

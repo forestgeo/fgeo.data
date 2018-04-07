@@ -3,7 +3,7 @@
 \docType{data}
 \name{vft_description}
 \alias{vft_description}
-\title{ViewFullTable (vft): Generic description.}
+\title{General description of a ViewFullTable (vft).}
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 32 rows and 2 columns.}
 \usage{
 vft_description

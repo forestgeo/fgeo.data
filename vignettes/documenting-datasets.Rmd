@@ -61,7 +61,7 @@ Datasets from a specific site should be named with the format `site_generic_info
 * `site` should be a single string uniquely identifying your site among all other sites in the ForestGEO network; it may be a well know nickname (e.g. bci). 
 * `generic` should be one of the same as in _`generic`_`_description`. 
 
-* `info` should be a single short string indicating the most prominent characteristic of the specific dataset -- commonly referring to the criteria used to subset a larger dataset (e.g. `stem6_random_bci`).
+* `info` should be a single short string indicating the most prominent characteristic of the specific dataset -- commonly referring to the criteria used to subset a larger dataset (e.g. `bci_stem6_random`).
 
 For example, if your data comes from Barro Colorado Island, and it is a ViewFullTable containing a random subset of a few trees, a good name for it would be `bci_vft_random`. This format works well with auto-completion in RStudio.
 

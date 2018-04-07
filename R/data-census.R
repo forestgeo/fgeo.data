@@ -15,7 +15,7 @@
 #' that trees or stems appear in tree or stem tables before they recruit, while
 #' they are alive, and after they die.
 #' * The order of the rows is identical to that of any other tree or stem
-#' table of the same plot. This implies that you can compare data accross
+#' table of the same plot. This implies that you can compare data across
 #' censuses even if the row order is important for your analyses. Also, you can
 #' easily repeat analyses with different censuses with minimal effort. For
 #' example, this structure makes helps to calculate demographic rates between
@@ -27,7 +27,7 @@
 #' in matching trees.
 #'
 #' * `stemID`: The unique stem identifier in CTFS database. Useful to be certain
-#'   in matching stems. FIXME: Missing in `tree6_1ha_bci`
+#'   in matching stems. FIXME: Missing in `bci_tree6_1ha`
 #'
 #' * `tag`: Tag number used in the field.
 #'
@@ -44,7 +44,7 @@
 #' * `gy`: The y plot coordinate.
 #'
 #' * `MeasureID`: The unique identifier of a single measurement in the CTFS
-#'   database. FIXME: Missing in `tree6_1ha_bci`
+#'   database. FIXME: Missing in `bci_tree6_1ha`
 #'
 #' * `CensusID`: The numeric identifier of the census.
 #'
@@ -75,7 +75,7 @@
 #'
 #' * `status`: Indicates the status of the entire tree. For example, if any stem
 #'   is alive, the tree is alive; if every stem is dead, the tree is dead:
-#'     * `A`: Aalive.
+#'     * `A`: Alive.
 #'     * `D`: Dead.
 #'     * `M`: Missing.
 #'     * `P`: Prior. It indicates a tree had not yet recruited at this census.
@@ -111,13 +111,13 @@
 #' * `gy`: See tree table.
 #'
 #' * `MeasureID`: The unique identifier of a single measurement in the CTFS
-#'   database. FIXME: Missing in `stem6_1ha_bci`
+#'   database. FIXME: Missing in `bci_stem6_1ha`
 #'
-#' * `CensusID`: See tree table. FIXME: Misisng from `stem6_1ha_bci`.`
+#' * `CensusID`: See tree table. FIXME: Missing from `bci_stem6_1ha`.`
 #'
 #' * `dbh`: Diameter of the stem.
 #'
-#' * `pom`: See tree table. FIXME: Misisng from `stem6_1ha_bci`.
+#' * `pom`: See tree table. FIXME: Misisng from `bci_stem6_1ha`.
 #'
 #' * `hom`: See tree table.
 #'
@@ -131,14 +131,14 @@
 #' * `codes`: The codes for the measurement as recorded in the field.
 #'
 #' * `countPOM`: The number of POMs (HOMs) for the same stem in this census.
-#' FIXME: Misisng from `stem6_1ha_bci`.
+#' FIXME: Misisng from `bci_stem6_1ha`.
 #'
 #' * `status`: See tree table.
 #'
 #' * `date`: See tree table.
 #'
 #' * `agb`: Same, but notice that some may be NA. FIXME: Remove from
-#' `stem6_1ha_bci`. It shouldn't be here as it is not in the output of `rtbl()`.
+#' `bci_stem6_1ha`. It shouldn't be here as it is not in the output of `rtbl()`.
 #'
 #' @source \url{http://ctfs.si.edu/Public/CTFSRPackage/index.php/web/data_format}
 #' @seealso census_bci
@@ -150,43 +150,43 @@ NULL
 #' Tree and stem tables from Barro Colorado Island (bci).
 #'
 #' For a general description see [census_description]. These datasets are tree
-#' and stem tables of the same trees selected to create the tables [vft_1ha_bci]
-#' and [vft_random_bci]. In the name of the tree and stem tables documented
+#' and stem tables of the same trees selected to create the tables [bci_vft_1ha]
+#' and [bci_vft_random]. In the name of the tree and stem tables documented
 #' here, the number after `stem` or `census` matches a value of the column
 #' `PlotCensusNumber` in the corresponding ViewFullTable.
 #'
 #' @format See examples.
 #'
-#' @seealso [vft_1ha_bci], [vft_random_bci], [census_description].
+#' @seealso [bci_vft_1ha], [bci_vft_random], [census_description].
 #'
 #' @examples
-#' str(stem6_1ha_bci, give.attr = FALSE)
+#' str(bci_stem6_1ha, give.attr = FALSE)
 #'
-#' str(tree7_1ha_bci, give.attr = FALSE)
+#' str(bci_tree7_1ha, give.attr = FALSE)
 #'
-#' str(stem7_random_bci, give.attr = FALSE)
+#' str(bci_stem7_random, give.attr = FALSE)
 #'
-#' str(tree6_random_bci, give.attr = FALSE)
+#' str(bci_tree6_random, give.attr = FALSE)
 #'
 #' @name census_bci
 NULL
 
 # Subset 1ha
 #' @rdname census_bci
-"stem6_1ha_bci"
+"bci_stem6_1ha"
 #' @rdname census_bci
-"stem7_1ha_bci"
+"bci_stem7_1ha"
 #' @rdname census_bci
-"tree6_1ha_bci"
+"bci_tree6_1ha"
 #' @rdname census_bci
-"tree7_1ha_bci"
+"bci_tree7_1ha"
 
 # Subset random
 #' @rdname census_bci
-"stem6_random_bci"
+"bci_stem6_random"
 #' @rdname census_bci
-"stem7_random_bci"
+"bci_stem7_random"
 #' @rdname census_bci
-"tree6_random_bci"
+"bci_tree6_random"
 #' @rdname census_bci
-"tree7_random_bci"
+"bci_tree7_random"

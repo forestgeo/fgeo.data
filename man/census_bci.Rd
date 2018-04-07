@@ -3,51 +3,51 @@
 \docType{data}
 \name{census_bci}
 \alias{census_bci}
-\alias{stem6_1ha_bci}
-\alias{stem7_1ha_bci}
-\alias{tree6_1ha_bci}
-\alias{tree7_1ha_bci}
-\alias{stem6_random_bci}
-\alias{stem7_random_bci}
-\alias{tree6_random_bci}
-\alias{tree7_random_bci}
+\alias{bci_stem6_1ha}
+\alias{bci_stem7_1ha}
+\alias{bci_tree6_1ha}
+\alias{bci_tree7_1ha}
+\alias{bci_stem6_random}
+\alias{bci_stem7_random}
+\alias{bci_tree6_random}
+\alias{bci_tree7_random}
 \title{Tree and stem tables from Barro Colorado Island (bci).}
 \format{See examples.}
 \usage{
-stem6_1ha_bci
+bci_stem6_1ha
 
-stem7_1ha_bci
+bci_stem7_1ha
 
-tree6_1ha_bci
+bci_tree6_1ha
 
-tree7_1ha_bci
+bci_tree7_1ha
 
-stem6_random_bci
+bci_stem6_random
 
-stem7_random_bci
+bci_stem7_random
 
-tree6_random_bci
+bci_tree6_random
 
-tree7_random_bci
+bci_tree7_random
 }
 \description{
 For a general description see \link{census_description}. These datasets are tree
-and stem tables of the same trees selected to create the tables \link{vft_1ha_bci}
-and \link{vft_random_bci}. In the name of the tree and stem tables documented
+and stem tables of the same trees selected to create the tables \link{bci_vft_1ha}
+and \link{bci_vft_random}. In the name of the tree and stem tables documented
 here, the number after \code{stem} or \code{census} matches a value of the column
 \code{PlotCensusNumber} in the corresponding ViewFullTable.
 }
 \examples{
-str(stem6_1ha_bci, give.attr = FALSE)
+str(bci_stem6_1ha, give.attr = FALSE)
 
-str(tree7_1ha_bci, give.attr = FALSE)
+str(bci_tree7_1ha, give.attr = FALSE)
 
-str(stem7_random_bci, give.attr = FALSE)
+str(bci_stem7_random, give.attr = FALSE)
 
-str(tree6_random_bci, give.attr = FALSE)
+str(bci_tree6_random, give.attr = FALSE)
 
 }
 \seealso{
-\link{vft_1ha_bci}, \link{vft_random_bci}, \link{census_description}.
+\link{bci_vft_1ha}, \link{bci_vft_random}, \link{census_description}.
 }
 \keyword{datasets}

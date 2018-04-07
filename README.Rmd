@@ -33,24 +33,24 @@ For details on how to install packages from GitHub, see [this article](https://g
 ```{r}
 library(fgeo.opendata)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/taxa_bci
-str(taxa_bci, give.attr = FALSE)
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_taxa
+str(bci_taxa, give.attr = FALSE)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/vft_random_bci
-str(vft_random_bci, give.attr = FALSE)
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_vft_random
+str(bci_vft_random, give.attr = FALSE)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/vft_1ha_bci
-# Similar to `vft_random_bci`; truncating list output for space
-str(vft_1ha_bci, give.attr = FALSE, list.len = 5)
-
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/census_bci
-str(tree6_random_bci, give.attr = FALSE)
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_vft_1ha
+# Similar to `bci_vft_random`; truncating list output for space
+str(bci_vft_1ha, give.attr = FALSE, list.len = 5)
 
 # Details: https://forestgeo.github.io/fgeo.opendata/reference/census_bci
-str(stem7_1ha_bci, give.attr = FALSE)
+str(bci_tree6_random, give.attr = FALSE)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/elevation_bci
-str(elevation_bci)
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/census_bci
+str(bci_stem7_1ha, give.attr = FALSE)
+
+# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_elevation
+str(bci_elevation)
 ```
 
 ## Raw data (database output)
@@ -75,17 +75,17 @@ column_classes <- c(
 # Specify how to interprate missing values
 na_strings <- c("", "NA", "NULL")
 
-raw_taxa_bci <- read.delim(
+raw_bci_taxa <- read.delim(
   file = url, 
   na.strings = na_strings, 
   colClasses = column_classes
 )
 
 some_rows <- some_columns <- 1:5
-raw_taxa_bci[some_rows, some_columns]
+raw_bci_taxa[some_rows, some_columns]
 
 # Note these are the same as `column_classes` defined above
-sapply(raw_taxa_bci[some_rows, some_columns], class)
+sapply(raw_bci_taxa[some_rows, some_columns], class)
 ```
 
 ## Code of Conduct

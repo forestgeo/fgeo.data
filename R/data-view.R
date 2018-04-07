@@ -4,8 +4,8 @@
 #' version see \url{http://bit.ly/fgeo-opendata-taxa-bci}.
 #'
 #' @examples
-#' str(taxa_bci, give.attr = FALSE)
-"taxa_bci"
+#' str(bci_taxa, give.attr = FALSE)
+"bci_taxa"
 
 
 
@@ -13,33 +13,33 @@
 #'
 #' Slightly cleaned versions from a ViewFullTable table, from census 2005 and
 #' census 2010 (see columns definition at [vft_description]):
-#' * `vft_1ha_bci`: All threes in one hectare (coordinates: `px >= 700`, `px <
+#' * `bci_vft_1ha`: All threes in one hectare (coordinates: `px >= 700`, `px <
 #'   800`, `py >=100`, `py < 200`). Raw .csv file available at
 #' \url{http://bit.ly/fgeo-opendata-vft-1ha-bci}.
-#' * `vft_random_bci`: One thousand randomly-chosen trees (from the whole plot).
+#' * `bci_vft_random`: One thousand randomly-chosen trees (from the whole plot).
 #'   Raw .csv file available at \url{http://bit.ly/fgeo-opendata-vft-random-bci}).
 #'
 #' @seealso [vft_description], [unique_id].
 #'
 #' @examples
-#' str(vft_1ha_bci, give.attr = FALSE)
+#' str(bci_vft_1ha, give.attr = FALSE)
 #'
-#' str(vft_random_bci, give.attr = FALSE)
+#' str(bci_vft_random, give.attr = FALSE)
 #'
 #' show_some_values_of_each_column <- function(x) head(unique(x))
-#' lapply(vft_random_bci, show_some_values_of_each_column)
-#' @name vft_bci
+#' lapply(bci_vft_random, show_some_values_of_each_column)
+#' @name bci_vft
 NULL
 
-#' @rdname vft_bci
-"vft_1ha_bci"
+#' @rdname bci_vft
+"bci_vft_1ha"
 
-#' @rdname vft_bci
-"vft_random_bci"
+#' @rdname bci_vft
+"bci_vft_random"
 
 
 
-#' ViewFullTable (vft): Generic description.
+#' General description of a ViewFullTable (vft).
 #'
 #' Reproduced from \url{http://bit.ly/vft-definitions}:
 #' > _ViewFullTable_ table. Merges all the relevant variables from the

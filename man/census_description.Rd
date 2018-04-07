@@ -24,7 +24,7 @@ identical to that of any other tree or stem table of the same plot; also,
 that trees or stems appear in tree or stem tables before they recruit, while
 they are alive, and after they die.
 \item The order of the rows is identical to that of any other tree or stem
-table of the same plot. This implies that you can compare data accross
+table of the same plot. This implies that you can compare data across
 censuses even if the row order is important for your analyses. Also, you can
 easily repeat analyses with different censuses with minimal effort. For
 example, this structure makes helps to calculate demographic rates between
@@ -37,7 +37,7 @@ any pair of censuses.
 \item \code{treeID}: The unique tree identifier in CTFS database. Useful to be certain
 in matching trees.
 \item \code{stemID}: The unique stem identifier in CTFS database. Useful to be certain
-in matching stems. FIXME: Missing in \code{tree6_1ha_bci}
+in matching stems. FIXME: Missing in \code{bci_tree6_1ha}
 \item \code{tag}: Tag number used in the field.
 \item \code{StemTag}: Tag number on the individual stem, if present.
 \item \code{sp}: The species mnemonic. To get full species names, the taxonomy table
@@ -47,7 +47,7 @@ http://ctfs.arnarb.harvard.edu/CTFSReports
 \item \code{gx}: The x coordinate within the plot, relative to one edge of the plot.
 \item \code{gy}: The y plot coordinate.
 \item \code{MeasureID}: The unique identifier of a single measurement in the CTFS
-database. FIXME: Missing in \code{tree6_1ha_bci}
+database. FIXME: Missing in \code{bci_tree6_1ha}
 \item \code{CensusID}: The numeric identifier of the census.
 \item \code{dbh}: Diameter of one stem on the tree, the stem whose stemID is given.
 \item \code{pom}: The point-of-measure, where the diameter was taken, identical to hom,
@@ -72,7 +72,7 @@ value of \code{dbh}, so it is not certain whether the tree was alive or dead.
 \item \code{status}: Indicates the status of the entire tree. For example, if any stem
 is alive, the tree is alive; if every stem is dead, the tree is dead:
 \itemize{
-\item \code{A}: Aalive.
+\item \code{A}: Alive.
 \item \code{D}: Dead.
 \item \code{M}: Missing.
 \item \code{P}: Prior. It indicates a tree had not yet recruited at this census.
@@ -102,10 +102,10 @@ exist for stem tables.
 \item \code{gx}: See tree table.
 \item \code{gy}: See tree table.
 \item \code{MeasureID}: The unique identifier of a single measurement in the CTFS
-database. FIXME: Missing in \code{stem6_1ha_bci}
-\item \code{CensusID}: See tree table. FIXME: Misisng from \code{stem6_1ha_bci}.`
+database. FIXME: Missing in \code{bci_stem6_1ha}
+\item \code{CensusID}: See tree table. FIXME: Missing from \code{bci_stem6_1ha}.`
 \item \code{dbh}: Diameter of the stem.
-\item \code{pom}: See tree table. FIXME: Misisng from \code{stem6_1ha_bci}.
+\item \code{pom}: See tree table. FIXME: Misisng from \code{bci_stem6_1ha}.
 \item \code{hom}: See tree table.
 \item \code{ExactDate}: See tree table.
 \item \code{DFstatus}: The codes are the same as in tree tables except that stems may
@@ -114,11 +114,11 @@ stem which formerly had a measurement does not in this census. This happens
 in some plots, where individual stems do not have tags and cannot be tracked.
 \item \code{codes}: The codes for the measurement as recorded in the field.
 \item \code{countPOM}: The number of POMs (HOMs) for the same stem in this census.
-FIXME: Misisng from \code{stem6_1ha_bci}.
+FIXME: Misisng from \code{bci_stem6_1ha}.
 \item \code{status}: See tree table.
 \item \code{date}: See tree table.
 \item \code{agb}: Same, but notice that some may be NA. FIXME: Remove from
-\code{stem6_1ha_bci}. It shouldn't be here as it is not in the output of \code{rtbl()}.
+\code{bci_stem6_1ha}. It shouldn't be here as it is not in the output of \code{rtbl()}.
 }
 }
 
