@@ -1,5 +1,5 @@
 # Updates raw data in inst/database-output/ from data stored in data-raw/
-# See https://github.com/forestgeo/fgeo.opendata/issues/2
+# See https://github.com/forestgeo/fgeo.data/issues/2
 
 library(fs)
 library(here)

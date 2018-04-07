@@ -8,13 +8,13 @@ Your name
   - On Mon, Mar 19, 2018 at 11:31 PM, Lao, Suzanne <LAOZ@si.edu>
   - On Mon, Mar 19, 2018 at 11:34 PM, Lao, Suzanne <LAOZ@si.edu>
 
-See <https://github.com/forestgeo/fgeo.opendata/issues/1>.
+See <https://github.com/forestgeo/fgeo.data/issues/1>.
 
 # Setup
 
 ``` r
 library(here)
-#> here() starts at C:/Users/LeporeM/Dropbox/git_repos/fgeo.opendata
+#> here() starts at C:/Users/LeporeM/Dropbox/git_repos/fgeo.data
 library(readr)
 library(dplyr)
 #> 

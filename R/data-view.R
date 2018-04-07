@@ -1,7 +1,7 @@
 #' Complete ViewTaxonomy (taxa) table from Barro Colorado Island (bci).
 #'
 #' This is a slightly cleaned version of a ViewTaxonomy table. For a raw .csv
-#' version see \url{http://bit.ly/fgeo-opendata-taxa-bci}.
+#' version see \url{http://bit.ly/fgeo-data-bci-taxa}.
 #'
 #' @examples
 #' str(bci_taxa, give.attr = FALSE)
@@ -15,9 +15,9 @@
 #' census 2010 (see columns definition at [vft_description]):
 #' * `bci_vft_1ha`: All threes in one hectare (coordinates: `px >= 700`, `px <
 #'   800`, `py >=100`, `py < 200`). Raw .csv file available at
-#' \url{http://bit.ly/fgeo-opendata-vft-1ha-bci}.
+#' \url{http://bit.ly/fgeo-data-bci-vft-1ha}.
 #' * `bci_vft_random`: One thousand randomly-chosen trees (from the whole plot).
-#'   Raw .csv file available at \url{http://bit.ly/fgeo-opendata-vft-random-bci}).
+#'   Raw .csv file available at \url{http://bit.ly/fgeo-data-bci-vft-random}).
 #'
 #' @seealso [vft_description], [unique_id].
 #'

@@ -11,19 +11,19 @@ knitr::opts_chunk$set(
 )
 ```
 
-# <img src="https://i.imgur.com/39pvr4n.png" align="right" height=44 /> fgeo.opendata
+# <img src="https://i.imgur.com/39pvr4n.png" align="right" height=44 /> fgeo.data
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/fgeo.opendata)](https://cran.r-project.org/package=fgeo.opendata)
-[![Travis build status](https://travis-ci.org/forestgeo/fgeo.opendata.svg?branch=master)](https://travis-ci.org/forestgeo/fgeo.opendata)
+[![CRAN status](https://www.r-pkg.org/badges/version/fgeo.data)](https://cran.r-project.org/package=fgeo.data)
+[![Travis build status](https://travis-ci.org/forestgeo/fgeo.data.svg?branch=master)](https://travis-ci.org/forestgeo/fgeo.data)
 
-The goal of __fgeo.opendata__ provides open datasets of ForestGEO.
+The goal of __fgeo.data__ provides open datasets of ForestGEO.
 
 ## Installation
 
 ```
 # install.packages("remotes")
-remotes::install_github("forestgeo/fgeo.opendata")
+remotes::install_github("forestgeo/fgeo.data")
 ```
 
 For details on how to install packages from GitHub, see [this article](https://goo.gl/dQKEeg).
@@ -31,25 +31,25 @@ For details on how to install packages from GitHub, see [this article](https://g
 ## Example
 
 ```{r}
-library(fgeo.opendata)
+library(fgeo.data)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_taxa
+# Details: https://forestgeo.github.io/fgeo.data/reference/bci_taxa
 str(bci_taxa, give.attr = FALSE)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_vft_random
+# Details: https://forestgeo.github.io/fgeo.data/reference/bci_vft_random
 str(bci_vft_random, give.attr = FALSE)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_vft_1ha
+# Details: https://forestgeo.github.io/fgeo.data/reference/bci_vft_1ha
 # Similar to `bci_vft_random`; truncating list output for space
 str(bci_vft_1ha, give.attr = FALSE, list.len = 5)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/census_bci
+# Details: https://forestgeo.github.io/fgeo.data/reference/census_bci
 str(bci_tree6_random, give.attr = FALSE)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/census_bci
+# Details: https://forestgeo.github.io/fgeo.data/reference/census_bci
 str(bci_stem7_1ha, give.attr = FALSE)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_elevation
+# Details: https://forestgeo.github.io/fgeo.data/reference/bci_elevation
 str(bci_elevation)
 ```
 
@@ -61,7 +61,7 @@ str(bci_elevation)
 # IMPORTANT if reading raw data (e.g. .csv files from ForestGEO's database)
 
 # Raw data (normally you would have a .csv file stored in your computer)
-url <- "http://bit.ly/fgeo-opendata-taxa-bci"
+url <- "http://bit.ly/fgeo-data-bci-taxa"
 
 # TO AVOID ERRORS
 # Specify columns class explicitely (for an example showing only some columns)

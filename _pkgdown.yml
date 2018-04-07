@@ -1,4 +1,4 @@
-url: https://forestgeo.github.io/fgeo.opendata/
+url: https://forestgeo.github.io/fgeo.data/
 
 authors:
   Mauro Lepore:
@@ -36,7 +36,7 @@ navbar:
       href: https://github.com/maurolepore
 
     - icon: fa-github
-      href: https://github.com/forestgeo/fgeo.opendata
+      href: https://github.com/forestgeo/fgeo.data
 
     - text: fgeo
       href: https://forestgeo.github.io/fgeo/

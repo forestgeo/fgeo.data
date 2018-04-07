@@ -1,5 +1,5 @@
 library(tibble)
-library(fgeo.opendata)
+library(fgeo.data)
 
 column <- c(
   "DBHID",

@@ -1,20 +1,20 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# <img src="https://i.imgur.com/39pvr4n.png" align="right" height=44 /> fgeo.opendata
+# <img src="https://i.imgur.com/39pvr4n.png" align="right" height=44 /> fgeo.data
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![CRAN
-status](https://www.r-pkg.org/badges/version/fgeo.opendata)](https://cran.r-project.org/package=fgeo.opendata)
+status](https://www.r-pkg.org/badges/version/fgeo.data)](https://cran.r-project.org/package=fgeo.data)
 [![Travis build
-status](https://travis-ci.org/forestgeo/fgeo.opendata.svg?branch=master)](https://travis-ci.org/forestgeo/fgeo.opendata)
+status](https://travis-ci.org/forestgeo/fgeo.data.svg?branch=master)](https://travis-ci.org/forestgeo/fgeo.data)
 
-The goal of **fgeo.opendata** provides open datasets of ForestGEO.
+The goal of **fgeo.data** provides open datasets of ForestGEO.
 
 ## Installation
 
     # install.packages("remotes")
-    remotes::install_github("forestgeo/fgeo.opendata")
+    remotes::install_github("forestgeo/fgeo.data")
 
 For details on how to install packages from GitHub, see [this
 article](https://goo.gl/dQKEeg).
@@ -22,9 +22,9 @@ article](https://goo.gl/dQKEeg).
 ## Example
 
 ``` r
-library(fgeo.opendata)
+library(fgeo.data)
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_taxa
+# Details: https://forestgeo.github.io/fgeo.data/reference/bci_taxa
 str(bci_taxa, give.attr = FALSE)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    1428 obs. of  21 variables:
 #>  $ ViewID        : int  1 2 3 4 5 6 7 8 9 10 ...
@@ -49,7 +49,7 @@ str(bci_taxa, give.attr = FALSE)
 #>  $ Specimens     : chr  NA NA NA NA ...
 #>  $ Reference     : chr  NA NA NA NA ...
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_vft_random
+# Details: https://forestgeo.github.io/fgeo.data/reference/bci_vft_random
 str(bci_vft_random, give.attr = FALSE)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    2257 obs. of  32 variables:
 #>  $ DBHID           : int  1621522 1619521 1632477 1630644 1077531 1074697 826469 823306 1006845 1003843 ...
@@ -85,7 +85,7 @@ str(bci_vft_random, give.attr = FALSE)
 #>  $ LargeStem       : chr  NA NA NA NA ...
 #>  $ Status          : chr  "alive" "alive" "broken below" "dead" ...
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_vft_1ha
+# Details: https://forestgeo.github.io/fgeo.data/reference/bci_vft_1ha
 # Similar to `bci_vft_random`; truncating list output for space
 str(bci_vft_1ha, give.attr = FALSE, list.len = 5)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    10543 obs. of  32 variables:
@@ -96,7 +96,7 @@ str(bci_vft_1ha, give.attr = FALSE, list.len = 5)
 #>  $ Genus           : chr  "Simarouba" "Simarouba" "Pouteria" "Pouteria" ...
 #>   [list output truncated]
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/census_bci
+# Details: https://forestgeo.github.io/fgeo.data/reference/census_bci
 str(bci_tree6_random, give.attr = FALSE)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    1000 obs. of  16 variables:
 #>  $ treeID   : num  590 1057 1451 2362 2867 ...
@@ -116,7 +116,7 @@ str(bci_tree6_random, give.attr = FALSE)
 #>  $ agb      : num  0.706 0.919 7.294 3.654 1.414 ...
 #>  $ ba       : num  0.0855 0.0929 0.5768 0.3217 0.1327 ...
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/census_bci
+# Details: https://forestgeo.github.io/fgeo.data/reference/census_bci
 str(bci_stem7_1ha, give.attr = FALSE)
 #> Classes 'tbl_df', 'tbl' and 'data.frame':    10373 obs. of  16 variables:
 #>  $ treeID   : num  1853 1857 1861 1864 1866 ...
@@ -136,7 +136,7 @@ str(bci_stem7_1ha, give.attr = FALSE)
 #>  $ status   : chr  "A" "A" "A" "A" ...
 #>  $ agb      : num  2.189 2.763 5.819 0.681 2.336 ...
 
-# Details: https://forestgeo.github.io/fgeo.opendata/reference/bci_elevation
+# Details: https://forestgeo.github.io/fgeo.data/reference/bci_elevation
 str(bci_elevation)
 #> List of 4
 #>  $ col :'data.frame':    20301 obs. of  3 variables:
