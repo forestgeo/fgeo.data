@@ -165,7 +165,7 @@ dataset.
 # IMPORTANT if reading raw data (e.g. .csv files from ForestGEO's database)
 
 # Raw data (normally you would have a .csv file stored in your computer)
-url <- "http://bit.ly/fgeo-opendata-taxa-bci"
+url <- "http://bit.ly/fgeo-data-bci-taxa"
 
 # TO AVOID ERRORS
 # Specify columns class explicitely (for an example showing only some columns)
