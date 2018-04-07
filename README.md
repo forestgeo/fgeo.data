@@ -9,7 +9,7 @@ status](https://www.r-pkg.org/badges/version/fgeo.data)](https://cran.r-project.
 [![Travis build
 status](https://travis-ci.org/forestgeo/fgeo.data.svg?branch=master)](https://travis-ci.org/forestgeo/fgeo.data)
 
-The goal of **fgeo.data** provides open datasets of ForestGEO.
+**fgeo.data** provides open datasets of ForestGEO.
 
 ## Installation
 

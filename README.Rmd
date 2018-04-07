@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/fgeo.data)](https://cran.r-project.org/package=fgeo.data)
 [![Travis build status](https://travis-ci.org/forestgeo/fgeo.data.svg?branch=master)](https://travis-ci.org/forestgeo/fgeo.data)
 
-The goal of __fgeo.data__ provides open datasets of ForestGEO.
+__fgeo.data__ provides open datasets of ForestGEO.
 
 ## Installation
 
