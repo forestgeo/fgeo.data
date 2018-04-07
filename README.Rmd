@@ -33,23 +33,17 @@ For details on how to install packages from GitHub, see [this article](https://g
 ```{r}
 library(fgeo.data)
 
-# Details: https://forestgeo.github.io/fgeo.data/reference/bci_taxa
 str(bci_taxa, give.attr = FALSE)
 
-# Details: https://forestgeo.github.io/fgeo.data/reference/bci_vft_random
 str(bci_vft_random, give.attr = FALSE)
 
-# Details: https://forestgeo.github.io/fgeo.data/reference/bci_vft_1ha
 # Similar to `bci_vft_random`; truncating list output for space
 str(bci_vft_1ha, give.attr = FALSE, list.len = 5)
 
-# Details: https://forestgeo.github.io/fgeo.data/reference/census_bci
 str(bci_tree6_random, give.attr = FALSE)
 
-# Details: https://forestgeo.github.io/fgeo.data/reference/census_bci
 str(bci_stem7_1ha, give.attr = FALSE)
 
-# Details: https://forestgeo.github.io/fgeo.data/reference/bci_elevation
 str(bci_elevation)
 ```
 
