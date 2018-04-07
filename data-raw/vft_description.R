@@ -1,7 +1,7 @@
 library(tibble)
 library(fgeo.opendata)
 
-columns <- c(
+column <- c(
   "DBHID",
   "PlotID",
   "PlotName",
@@ -41,7 +41,7 @@ columns <- c(
   "LargeStem"
 )
 
-definitions <- c(
+definition <- c(
   "Foreign Key to DBH table.",
   "Foreign Key to Site table.",
   "Descriptive name of the site also referred to as the plot.",
@@ -86,10 +86,10 @@ definitions <- c(
 
 
 
-vft_description <- tibble(columns, definitions)
+vft_description <- tibble(column, definition)
 
-# Order rows of vft_description as columns of vft
-cols_order <- match(names(vft_1ha_bci), vft_description$columns)
+# Order rows of vft_description as column of vft
+cols_order <- match(names(vft_1ha_bci), vft_description$column)
 vft_description <- vft_description[cols_order, ]
 
 use_data(vft_description, overwrite = TRUE)

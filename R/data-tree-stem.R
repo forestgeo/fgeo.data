@@ -1,25 +1,25 @@
-#' General description of census tables: tree and stem.
+#' General description of census tables, tree and stem.
 #'
-#' Tree and stem tables are dataframes that store data from one specific census
-#' of one specific census plot. For any given plot one tree table stores data
-#' recorded during one specific census, and each row records the data from one
-#' specific tree. Similarly, for any given plot one stem table stores data
-#' recorded during one specific census , and each row records the data from one
-#' specific stem. For example, if plot X was censused twice, then it has two
-#' tree tables and two stem tables.
+#' Each tree and stem table -- collectively called _census_ tables -- is a
+#' dataframes that stores data of one census of one plot. That is, for any given
+#' plot one tree table stores data recorded during one specific census, and each
+#' row records the data from one specific tree. And for any given plot one stem
+#' table stores data recorded during one specific census , and each row records
+#' the data from one specific stem. For example, if plot X was censused twice,
+#' then it has two tree tables and two stem tables.
 #'
-#' Each tree (or stem) table of a census plot has two remarkable properties:
-#' * The number of rows equals the number of trees (or stems) that were ever
-#' found in the plot (in any census). This implies that the number of rows is
-#' identical to that of any other tree (or stem) table of the same plot; also,
-#' that trees (or stems) appear in tree (or stem) tables before they recruit,
-#' while they are alive, and after they die.
-#' * The order of the rows is identical to that of any other tree (or stem)
-#' table of the same plot. This implies that you can compare data accross
-#' censuses even if the row order is important for your analyses. Also, you can
-#' easily repeat analyses with different censuses with minimal effort. For
-#' example, this structure makes helps to calculate demographic rates between
-#' any pair of censuses.
+#' Each census table has two remarkable properties:
+#' * The number of rows equals the number of trees or stems that were ever found
+#' in the plot (in any census). This implies that the number of rows is
+#' identical to that of any other census table of the same plot; also, that
+#' trees or stems appear in tree or stem tables before they recruit, while they
+#' are alive, and after they die.
+#' * The order of the rows is identical to that of any other census table of the
+#' same plot. This implies that you can compare data accross censuses even if
+#' the row order is important for your analyses. Also, you can easily repeat
+#' analyses with different censuses with minimal effort. For example, this
+#' structure makes helps to calculate demographic rates between any pair of
+#' censuses.
 #'
 #' @section Definition of Variables in tree tables:
 #'
@@ -27,7 +27,7 @@
 #' in matching trees.
 #'
 #' * `stemID`: The unique stem identifier in CTFS database. Useful to be certain
-#'   in matching stems.
+#'   in matching stems. FIXME: Missing in `tree6_1ha_bci`
 #'
 #' * `tag`: Tag number used in the field.
 #'
@@ -44,7 +44,7 @@
 #' * `gy`: The y plot coordinate.
 #'
 #' * `MeasureID`: The unique identifier of a single measurement in the CTFS
-#'   database.
+#'   database. FIXME: Missing in `tree6_1ha_bci`
 #'
 #' * `CensusID`: The numeric identifier of the census.
 #'
@@ -69,6 +69,8 @@
 #'     value of `dbh`, so it is not certain whether the tree was alive or dead.
 #'     `P`: Prior. It indicates a tree had not yet recruited at this census.
 #'
+#' * `codes`: The codes for the measurement as recorded in the field.
+#'
 #' * `nostems`: The number of living stems on the date of measurement.
 #'
 #' * `status`: Indicates the status of the entire tree. For example, if any stem
@@ -82,7 +84,9 @@
 #' * `date`: The julian date, for date arithmetic.
 #'
 #' * `agb`: Above-ground-biomass of all stems on the tree, in Mg (equal to
-#'   metric tons or 106 g). Note that `agb = 0` for dead trees.
+#' metric tons or 106 g). Note that `agb = 0` for dead trees. FIXME: This
+#' variable should probably be removed. It doesn't exist in the output of
+#' rtbl().
 #'
 #' @section Definition of Variables in stem tables:
 #' Compared to tree tables, the the variables are and mean the same. But notice
@@ -106,13 +110,14 @@
 #'
 #' * `gy`: See tree table.
 #'
-#' * `MeasureID`: See tree table.
+#' * `MeasureID`: The unique identifier of a single measurement in the CTFS
+#'   database. FIXME: Missing in `stem6_1ha_bci`
 #'
-#' * `CensusID`: See tree table.
+#' * `CensusID`: See tree table. FIXME: Misisng from `stem6_1ha_bci`.`
 #'
 #' * `dbh`: Diameter of the stem.
 #'
-#' * `pom`: See tree table.
+#' * `pom`: See tree table. FIXME: Misisng from `stem6_1ha_bci`.
 #'
 #' * `hom`: See tree table.
 #'
@@ -126,14 +131,17 @@
 #' * `codes`: The codes for the measurement as recorded in the field.
 #'
 #' * `countPOM`: The number of POMs (HOMs) for the same stem in this census.
+#' FIXME: Misisng from `stem6_1ha_bci`.
 #'
 #' * `status`: See tree table.
 #'
 #' * `date`: See tree table.
 #'
-#' * `agb`: Same, but notice that some may be NA.
+#' * `agb`: Same, but notice that some may be NA. FIXME: Remove from
+#' `stem6_1ha_bci`. It shouldn't be here as it is not in the output of `rtbl()`.
 #'
 #' @source \url{http://ctfs.si.edu/Public/CTFSRPackage/index.php/web/data_format}
+#' @seealso census_bci
 #' @name census_description
 NULL
 

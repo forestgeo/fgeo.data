@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>General description of census tables: tree and stem. — census_description • fgeo.opendata</title>
+<title>General description of census tables, tree and stem. — census_description • fgeo.opendata</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -25,15 +25,15 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-<meta property="og:title" content="General description of census tables: tree and stem. — census_description" />
+<meta property="og:title" content="General description of census tables, tree and stem. — census_description" />
 
-<meta property="og:description" content="Tree and stem tables are dataframes that store data from one specific census
-of one specific census plot. For any given plot one tree table stores data
-recorded during one specific census, and each row records the data from one
-specific tree. Similarly, for any given plot one stem table stores data
-recorded during one specific census , and each row records the data from one
-specific stem. For example, if plot X was censused twice, then it has two
-tree tables and two stem tables." />
+<meta property="og:description" content="Each tree and stem table -- collectively called census tables -- is a
+dataframes that stores data of one census of one plot. That is, for any given
+plot one tree table stores data recorded during one specific census, and each
+row records the data from one specific tree. And for any given plot one stem
+table stores data recorded during one specific census , and each row records
+the data from one specific stem. For example, if plot X was censused twice,
+then it has two tree tables and two stem tables." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -105,18 +105,18 @@ tree tables and two stem tables." />
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>General description of census tables: tree and stem.</h1>
+    <h1>General description of census tables, tree and stem.</h1>
     <small>Source: <a href='https://github.com/forestgeo/fgeo.opendata/blob/master/R/data-tree-stem.R'><code>R/data-tree-stem.R</code></a></small>
     </div>
 
     
-    <p>Tree and stem tables are dataframes that store data from one specific census
-of one specific census plot. For any given plot one tree table stores data
-recorded during one specific census, and each row records the data from one
-specific tree. Similarly, for any given plot one stem table stores data
-recorded during one specific census , and each row records the data from one
-specific stem. For example, if plot X was censused twice, then it has two
-tree tables and two stem tables.</p>
+    <p>Each tree and stem table -- collectively called <em>census</em> tables -- is a
+dataframes that stores data of one census of one plot. That is, for any given
+plot one tree table stores data recorded during one specific census, and each
+row records the data from one specific tree. And for any given plot one stem
+table stores data recorded during one specific census , and each row records
+the data from one specific stem. For example, if plot X was censused twice,
+then it has two tree tables and two stem tables.</p>
     
 
         
@@ -126,18 +126,18 @@ tree tables and two stem tables.</p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Each tree (or stem) table of a census plot has two remarkable properties:</p><ul>
-<li><p>The number of rows equals the number of trees (or stems) that were ever
-found in the plot (in any census). This implies that the number of rows is
-identical to that of any other tree (or stem) table of the same plot; also,
-that trees (or stems) appear in tree (or stem) tables before they recruit,
-while they are alive, and after they die.</p></li>
-<li><p>The order of the rows is identical to that of any other tree (or stem)
-table of the same plot. This implies that you can compare data accross
-censuses even if the row order is important for your analyses. Also, you can
-easily repeat analyses with different censuses with minimal effort. For
-example, this structure makes helps to calculate demographic rates between
-any pair of censuses.</p></li>
+    <p>Each census table has two remarkable properties:</p><ul>
+<li><p>The number of rows equals the number of trees or stems that were ever found
+in the plot (in any census). This implies that the number of rows is
+identical to that of any other census table of the same plot; also, that
+trees or stems appear in tree or stem tables before they recruit, while they
+are alive, and after they die.</p></li>
+<li><p>The order of the rows is identical to that of any other census table of the
+same plot. This implies that you can compare data accross censuses even if
+the row order is important for your analyses. Also, you can easily repeat
+analyses with different censuses with minimal effort. For example, this
+structure makes helps to calculate demographic rates between any pair of
+censuses.</p></li>
 </ul>
     
     <h2 class="hasAnchor" id="definition-of-variables-in-tree-tables"><a class="anchor" href="#definition-of-variables-in-tree-tables"></a>Definition of Variables in tree tables</h2>
@@ -147,7 +147,7 @@ any pair of censuses.</p></li>
 <li><p><code>treeID</code>: The unique tree identifier in CTFS database. Useful to be certain
 in matching trees.</p></li>
 <li><p><code>stemID</code>: The unique stem identifier in CTFS database. Useful to be certain
-in matching stems.</p></li>
+in matching stems. FIXME: Missing in <code>tree6_1ha_bci</code></p></li>
 <li><p><code>tag</code>: Tag number used in the field.</p></li>
 <li><p><code>StemTag</code>: Tag number on the individual stem, if present.</p></li>
 <li><p><code>sp</code>: The species mnemonic. To get full species names, the taxonomy table
@@ -157,7 +157,7 @@ http://ctfs.arnarb.harvard.edu/CTFSReports</p></li>
 <li><p><code>gx</code>: The x coordinate within the plot, relative to one edge of the plot.</p></li>
 <li><p><code>gy</code>: The y plot coordinate.</p></li>
 <li><p><code>MeasureID</code>: The unique identifier of a single measurement in the CTFS
-database.</p></li>
+database. FIXME: Missing in <code>tree6_1ha_bci</code></p></li>
 <li><p><code>CensusID</code>: The numeric identifier of the census.</p></li>
 <li><p><code>dbh</code>: Diameter of one stem on the tree, the stem whose stemID is given.</p></li>
 <li><p><code>pom</code>: The point-of-measure, where the diameter was taken, identical to hom,
@@ -176,6 +176,7 @@ a tree's measurement changed stems between censuses.</p></li>
 value of <code>dbh</code>, so it is not certain whether the tree was alive or dead.
 <code>P</code>: Prior. It indicates a tree had not yet recruited at this census.</p></li>
 </ul></li>
+<li><p><code>codes</code>: The codes for the measurement as recorded in the field.</p></li>
 <li><p><code>nostems</code>: The number of living stems on the date of measurement.</p></li>
 <li><p><code>status</code>: Indicates the status of the entire tree. For example, if any stem
 is alive, the tree is alive; if every stem is dead, the tree is dead:</p><ul>
@@ -187,7 +188,9 @@ is alive, the tree is alive; if every stem is dead, the tree is dead:</p><ul>
 </ul></li>
 <li><p><code>date</code>: The julian date, for date arithmetic.</p></li>
 <li><p><code>agb</code>: Above-ground-biomass of all stems on the tree, in Mg (equal to
-metric tons or 106 g). Note that <code>agb = 0</code> for dead trees.</p></li>
+metric tons or 106 g). Note that <code>agb = 0</code> for dead trees. FIXME: This
+variable should probably be removed. It doesn't exist in the output of
+rtbl().</p></li>
 </ul>
     
     <h2 class="hasAnchor" id="definition-of-variables-in-stem-tables"><a class="anchor" href="#definition-of-variables-in-stem-tables"></a>Definition of Variables in stem tables</h2>
@@ -205,10 +208,11 @@ exist for stem tables.</p><ul>
 <li><p><code>quadrat</code>: See tree table.</p></li>
 <li><p><code>gx</code>: See tree table.</p></li>
 <li><p><code>gy</code>: See tree table.</p></li>
-<li><p><code>MeasureID</code>: See tree table.</p></li>
-<li><p><code>CensusID</code>: See tree table.</p></li>
+<li><p><code>MeasureID</code>: The unique identifier of a single measurement in the CTFS
+database. FIXME: Missing in <code>stem6_1ha_bci</code></p></li>
+<li><p><code>CensusID</code>: See tree table. FIXME: Misisng from <code>stem6_1ha_bci</code>.`</p></li>
 <li><p><code>dbh</code>: Diameter of the stem.</p></li>
-<li><p><code>pom</code>: See tree table.</p></li>
+<li><p><code>pom</code>: See tree table. FIXME: Misisng from <code>stem6_1ha_bci</code>.</p></li>
 <li><p><code>hom</code>: See tree table.</p></li>
 <li><p><code>ExactDate</code>: See tree table.</p></li>
 <li><p><code>DFstatus</code>: The codes are the same as in tree tables except that stems may
@@ -216,11 +220,17 @@ have the additional status <code>G</code> (gone). <code>G</code> applies when a 
 stem which formerly had a measurement does not in this census. This happens
 in some plots, where individual stems do not have tags and cannot be tracked.</p></li>
 <li><p><code>codes</code>: The codes for the measurement as recorded in the field.</p></li>
-<li><p><code>countPOM</code>: The number of POMs (HOMs) for the same stem in this census.</p></li>
+<li><p><code>countPOM</code>: The number of POMs (HOMs) for the same stem in this census.
+FIXME: Misisng from <code>stem6_1ha_bci</code>.</p></li>
 <li><p><code>status</code>: See tree table.</p></li>
 <li><p><code>date</code>: See tree table.</p></li>
-<li><p><code>agb</code>: Same, but notice that some may be NA.</p></li>
+<li><p><code>agb</code>: Same, but notice that some may be NA. FIXME: Remove from
+<code>stem6_1ha_bci</code>. It shouldn't be here as it is not in the output of <code>rtbl()</code>.</p></li>
 </ul>
+    
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <p>census_bci</p>
     
 
   </div>
@@ -235,6 +245,8 @@ in some plots, where individual stems do not have tags and cannot be tracked.</p
       <li><a href="#definition-of-variables-in-tree-tables">Definition of Variables in tree tables</a></li>
 
       <li><a href="#definition-of-variables-in-stem-tables">Definition of Variables in stem tables</a></li>
+
+      <li><a href="#see-also">See also</a></li>
           </ul>
 
   </div>

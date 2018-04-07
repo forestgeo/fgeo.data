@@ -2,33 +2,33 @@
 % Please edit documentation in R/data-tree-stem.R
 \name{census_description}
 \alias{census_description}
-\title{General description of census tables: tree and stem.}
+\title{General description of census tables, tree and stem.}
 \source{
 \url{http://ctfs.si.edu/Public/CTFSRPackage/index.php/web/data_format}
 }
 \description{
-Tree and stem tables are dataframes that store data from one specific census
-of one specific census plot. For any given plot one tree table stores data
-recorded during one specific census, and each row records the data from one
-specific tree. Similarly, for any given plot one stem table stores data
-recorded during one specific census , and each row records the data from one
-specific stem. For example, if plot X was censused twice, then it has two
-tree tables and two stem tables.
+Each tree and stem table -- collectively called \emph{census} tables -- is a
+dataframes that stores data of one census of one plot. That is, for any given
+plot one tree table stores data recorded during one specific census, and each
+row records the data from one specific tree. And for any given plot one stem
+table stores data recorded during one specific census , and each row records
+the data from one specific stem. For example, if plot X was censused twice,
+then it has two tree tables and two stem tables.
 }
 \details{
-Each tree (or stem) table of a census plot has two remarkable properties:
+Each census table has two remarkable properties:
 \itemize{
-\item The number of rows equals the number of trees (or stems) that were ever
-found in the plot (in any census). This implies that the number of rows is
-identical to that of any other tree (or stem) table of the same plot; also,
-that trees (or stems) appear in tree (or stem) tables before they recruit,
-while they are alive, and after they die.
-\item The order of the rows is identical to that of any other tree (or stem)
-table of the same plot. This implies that you can compare data accross
-censuses even if the row order is important for your analyses. Also, you can
-easily repeat analyses with different censuses with minimal effort. For
-example, this structure makes helps to calculate demographic rates between
-any pair of censuses.
+\item The number of rows equals the number of trees or stems that were ever found
+in the plot (in any census). This implies that the number of rows is
+identical to that of any other census table of the same plot; also, that
+trees or stems appear in tree or stem tables before they recruit, while they
+are alive, and after they die.
+\item The order of the rows is identical to that of any other census table of the
+same plot. This implies that you can compare data accross censuses even if
+the row order is important for your analyses. Also, you can easily repeat
+analyses with different censuses with minimal effort. For example, this
+structure makes helps to calculate demographic rates between any pair of
+censuses.
 }
 }
 \section{Definition of Variables in tree tables}{
@@ -37,7 +37,7 @@ any pair of censuses.
 \item \code{treeID}: The unique tree identifier in CTFS database. Useful to be certain
 in matching trees.
 \item \code{stemID}: The unique stem identifier in CTFS database. Useful to be certain
-in matching stems.
+in matching stems. FIXME: Missing in \code{tree6_1ha_bci}
 \item \code{tag}: Tag number used in the field.
 \item \code{StemTag}: Tag number on the individual stem, if present.
 \item \code{sp}: The species mnemonic. To get full species names, the taxonomy table
@@ -47,7 +47,7 @@ http://ctfs.arnarb.harvard.edu/CTFSReports
 \item \code{gx}: The x coordinate within the plot, relative to one edge of the plot.
 \item \code{gy}: The y plot coordinate.
 \item \code{MeasureID}: The unique identifier of a single measurement in the CTFS
-database.
+database. FIXME: Missing in \code{tree6_1ha_bci}
 \item \code{CensusID}: The numeric identifier of the census.
 \item \code{dbh}: Diameter of one stem on the tree, the stem whose stemID is given.
 \item \code{pom}: The point-of-measure, where the diameter was taken, identical to hom,
@@ -67,6 +67,7 @@ a tree's measurement changed stems between censuses.
 value of \code{dbh}, so it is not certain whether the tree was alive or dead.
 \code{P}: Prior. It indicates a tree had not yet recruited at this census.
 }
+\item \code{codes}: The codes for the measurement as recorded in the field.
 \item \code{nostems}: The number of living stems on the date of measurement.
 \item \code{status}: Indicates the status of the entire tree. For example, if any stem
 is alive, the tree is alive; if every stem is dead, the tree is dead:
@@ -79,7 +80,9 @@ is alive, the tree is alive; if every stem is dead, the tree is dead:
 }
 \item \code{date}: The julian date, for date arithmetic.
 \item \code{agb}: Above-ground-biomass of all stems on the tree, in Mg (equal to
-metric tons or 106 g). Note that \code{agb = 0} for dead trees.
+metric tons or 106 g). Note that \code{agb = 0} for dead trees. FIXME: This
+variable should probably be removed. It doesn't exist in the output of
+rtbl().
 }
 }
 
@@ -98,10 +101,11 @@ exist for stem tables.
 \item \code{quadrat}: See tree table.
 \item \code{gx}: See tree table.
 \item \code{gy}: See tree table.
-\item \code{MeasureID}: See tree table.
-\item \code{CensusID}: See tree table.
+\item \code{MeasureID}: The unique identifier of a single measurement in the CTFS
+database. FIXME: Missing in \code{stem6_1ha_bci}
+\item \code{CensusID}: See tree table. FIXME: Misisng from \code{stem6_1ha_bci}.`
 \item \code{dbh}: Diameter of the stem.
-\item \code{pom}: See tree table.
+\item \code{pom}: See tree table. FIXME: Misisng from \code{stem6_1ha_bci}.
 \item \code{hom}: See tree table.
 \item \code{ExactDate}: See tree table.
 \item \code{DFstatus}: The codes are the same as in tree tables except that stems may
@@ -110,9 +114,14 @@ stem which formerly had a measurement does not in this census. This happens
 in some plots, where individual stems do not have tags and cannot be tracked.
 \item \code{codes}: The codes for the measurement as recorded in the field.
 \item \code{countPOM}: The number of POMs (HOMs) for the same stem in this census.
+FIXME: Misisng from \code{stem6_1ha_bci}.
 \item \code{status}: See tree table.
 \item \code{date}: See tree table.
-\item \code{agb}: Same, but notice that some may be NA.
+\item \code{agb}: Same, but notice that some may be NA. FIXME: Remove from
+\code{stem6_1ha_bci}. It shouldn't be here as it is not in the output of \code{rtbl()}.
 }
 }
 
+\seealso{
+census_bci
+}
