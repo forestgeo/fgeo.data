@@ -10,9 +10,7 @@ column <- c(
   "SpeciesName",
   "Subspecies",
   "SpeciesID",
-
   "SubspeciesID",
-
   "Mnemonic",
   "QuadratID",
   "QuadratName",
@@ -31,12 +29,9 @@ column <- c(
   "DBH",
   "HOM",
   "ExactDate",
-
   "Date",
-
   "ListOfTSM",
   "Status",
-
   "HighHOM",
   "LargeStem"
 )
@@ -50,9 +45,7 @@ definition <- c(
   "Species part of Latin name, may be a morphospecies name.",
   "Subspecies portion of the Latin name, may be a subspecies or variety.",
   "Foreign Key to Species table.",
-
-  "FIXME: Define SubspeciesID",
-
+  "Foreign Key to SubSpecies table, indicating the subspecies if there is one.",
   "Code used in the field for designating the species, usually 6 letters (4 for the genus and 2 for the species).",
   "Foreign Key to Quadrat table.",
   "Descriptive name for the quadrat used in the field. The first two characters (digits) usually refer column and the last two to the row.",
