@@ -123,10 +123,6 @@ stem tables.</p>
     
 
         
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
-
-    <p><a href='http://ctfs.si.edu/Public/CTFSRPackage/index.php/web/data_format'>http://ctfs.si.edu/Public/CTFSRPackage/index.php/web/data_format</a></p>
-    
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>Each tree or stem table has two remarkable properties:</p><ul>
@@ -203,21 +199,14 @@ rtbl().</p></li>
 some differences in <code>DFstatus</code> and <code>agb</code>; also notice the additional
 variables <code>codes</code> and <code>countPOM</code> and that the variable <code>nostems</code> does not
 exist for stem tables.</p><ul>
-<li><p><code>treeID</code>: See tree table.</p></li>
-<li><p><code>stemID</code>: See tree table.</p></li>
-<li><p><code>tag</code>: See tree table.</p></li>
-<li><p><code>StemTag</code>: See tree table.</p></li>
-<li><p><code>sp</code>: See tree table.</p></li>
-<li><p><code>quadrat</code>: See tree table.</p></li>
-<li><p><code>gx</code>: See tree table.</p></li>
-<li><p><code>gy</code>: See tree table.</p></li>
+<li><p><code>treeID</code>, <code>stemID</code>, <code>tag</code>, <code>StemTag</code>, <code>sp</code>, <code>quadrat</code>, <code>gx</code>, <code>gy</code>: See tree
+table.</p></li>
 <li><p><code>MeasureID</code>: The unique identifier of a single measurement in the CTFS
 database. FIXME: Missing in <code>bci_stem6_1ha</code></p></li>
 <li><p><code>CensusID</code>: See tree table. FIXME: Missing from <code>bci_stem6_1ha</code>.`</p></li>
 <li><p><code>dbh</code>: Diameter of the stem.</p></li>
-<li><p><code>pom</code>: See tree table. FIXME: Misisng from <code>bci_stem6_1ha</code>.</p></li>
-<li><p><code>hom</code>: See tree table.</p></li>
-<li><p><code>ExactDate</code>: See tree table.</p></li>
+<li><p><code>pom</code> FIXME: Misisng from <code>bci_stem6_1ha</code>, <code>hom</code>, <code>ExactDate</code>: See tree
+table.</p></li>
 <li><p><code>DFstatus</code>: The codes are the same as in tree tables except that stems may
 have the additional status <code>G</code> (gone). <code>G</code> applies when a tree is alive and a
 stem which formerly had a measurement does not in this census. This happens
@@ -225,8 +214,7 @@ in some plots, where individual stems do not have tags and cannot be tracked.</p
 <li><p><code>codes</code>: The codes for the measurement as recorded in the field.</p></li>
 <li><p><code>countPOM</code>: The number of POMs (HOMs) for the same stem in this census.
 FIXME: Misisng from <code>bci_stem6_1ha</code>.</p></li>
-<li><p><code>status</code>: See tree table.</p></li>
-<li><p><code>date</code>: See tree table.</p></li>
+<li><p><code>status</code>, <code>date</code>: See tree table.</p></li>
 <li><p><code>agb</code>: Same, but notice that some may be NA. FIXME: Remove from
 <code>bci_stem6_1ha</code>. It shouldn't be here as it is not in the output of <code>rtbl()</code>.</p></li>
 </ul>
@@ -234,6 +222,9 @@ FIXME: Misisng from <code>bci_stem6_1ha</code>.</p></li>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <p>census_bci</p>
+<p>More information on columns definition:
+<a href='http://bit.ly/fgeo-tables-column-definition'>http://bit.ly/fgeo-tables-column-definition</a>; 
+<a href='http://bit.ly/fgeo-data-dictionary'>http://bit.ly/fgeo-data-dictionary</a>.</p>
     
 
   </div>
@@ -241,8 +232,6 @@ FIXME: Misisng from <code>bci_stem6_1ha</code>.</p></li>
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
-      <li><a href="#source">Source</a></li>
-
       <li><a href="#details">Details</a></li>
 
       <li><a href="#definition-of-variables-in-tree-tables">Definition of Variables in tree tables</a></li>

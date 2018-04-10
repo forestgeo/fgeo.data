@@ -5,3 +5,4 @@ tmp.R
 tmp.html
 data-raw/private
 inst/doc
+.httr-oauth

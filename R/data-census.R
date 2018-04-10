@@ -94,21 +94,8 @@
 #' variables `codes` and `countPOM` and that the variable `nostems` does not
 #' exist for stem tables.
 #'
-#' * `treeID`: See tree table.
-#'
-#' * `stemID`: See tree table.
-#'
-#' * `tag`: See tree table.
-#'
-#' * `StemTag`: See tree table.
-#'
-#' * `sp`: See tree table.
-#'
-#' * `quadrat`: See tree table.
-#'
-#' * `gx`: See tree table.
-#'
-#' * `gy`: See tree table.
+#' * `treeID`, `stemID`, `tag`, `StemTag`, `sp`, `quadrat`, `gx`, `gy`: See tree
+#'   table.
 #'
 #' * `MeasureID`: The unique identifier of a single measurement in the CTFS
 #'   database. FIXME: Missing in `bci_stem6_1ha`
@@ -117,11 +104,8 @@
 #'
 #' * `dbh`: Diameter of the stem.
 #'
-#' * `pom`: See tree table. FIXME: Misisng from `bci_stem6_1ha`.
-#'
-#' * `hom`: See tree table.
-#'
-#' * `ExactDate`: See tree table.
+#' * `pom` FIXME: Misisng from `bci_stem6_1ha`, `hom`, `ExactDate`: See tree
+#'   table.
 #'
 #' * `DFstatus`: The codes are the same as in tree tables except that stems may
 #' have the additional status `G` (gone). `G` applies when a tree is alive and a
@@ -133,15 +117,15 @@
 #' * `countPOM`: The number of POMs (HOMs) for the same stem in this census.
 #' FIXME: Misisng from `bci_stem6_1ha`.
 #'
-#' * `status`: See tree table.
-#'
-#' * `date`: See tree table.
+#' * `status`, `date`: See tree table.
 #'
 #' * `agb`: Same, but notice that some may be NA. FIXME: Remove from
 #' `bci_stem6_1ha`. It shouldn't be here as it is not in the output of `rtbl()`.
 #'
-#' @source \url{http://ctfs.si.edu/Public/CTFSRPackage/index.php/web/data_format}
+#'
 #' @seealso census_bci
+#' @template column_definition
+#' 
 #' @name census_description
 NULL
 

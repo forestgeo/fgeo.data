@@ -49,10 +49,9 @@ NULL
 #' a stem may be measured at more than one height. So some stems may have more
 #' than one measurement in a census, but at different hom.
 #' 
-#' @source Source of information for column definitions:
-#' * \url{https://bit.ly/fgeo-data-vft-description}.
-#' * \url{http://ctfs.si.edu/Public/DataDict/data_dict.php}.
+#' @template column_definition
 #'
 #' @examples
 #' vft_description
+#' 
 "vft_description"

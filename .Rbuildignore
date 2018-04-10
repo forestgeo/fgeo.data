@@ -10,3 +10,5 @@
 ^data-raw$
 ^tmp\.Rmd$
 ^inst/database-output$
+^\.httr-oauth$
+^man-roxygen$

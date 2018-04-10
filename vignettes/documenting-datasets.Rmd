@@ -50,7 +50,7 @@ cap <- paste0(
   "with column names `column` and `definition`."
 )
 
-knitr::kable(
+DT::datatable(
   fgeo.data::vft_description, 
   caption = cap
 )
@@ -74,3 +74,4 @@ The documentation of `site_generic_info` should include the following (e.g. `?`[
 * A specific description that applies to this particular dataset.
 * A section `@seealso`, linking to `generic_description`.
 * A section `@examples`, that prints `site_generic_info`.
+

@@ -3,9 +3,6 @@
 \name{census_description}
 \alias{census_description}
 \title{General description of tree and stem tables.}
-\source{
-\url{http://ctfs.si.edu/Public/CTFSRPackage/index.php/web/data_format}
-}
 \description{
 Each tree and stem table is a dataframes that stores data of one census of
 one plot. That is, for any given plot one tree table stores data recorded
@@ -93,21 +90,14 @@ some differences in \code{DFstatus} and \code{agb}; also notice the additional
 variables \code{codes} and \code{countPOM} and that the variable \code{nostems} does not
 exist for stem tables.
 \itemize{
-\item \code{treeID}: See tree table.
-\item \code{stemID}: See tree table.
-\item \code{tag}: See tree table.
-\item \code{StemTag}: See tree table.
-\item \code{sp}: See tree table.
-\item \code{quadrat}: See tree table.
-\item \code{gx}: See tree table.
-\item \code{gy}: See tree table.
+\item \code{treeID}, \code{stemID}, \code{tag}, \code{StemTag}, \code{sp}, \code{quadrat}, \code{gx}, \code{gy}: See tree
+table.
 \item \code{MeasureID}: The unique identifier of a single measurement in the CTFS
 database. FIXME: Missing in \code{bci_stem6_1ha}
 \item \code{CensusID}: See tree table. FIXME: Missing from \code{bci_stem6_1ha}.`
 \item \code{dbh}: Diameter of the stem.
-\item \code{pom}: See tree table. FIXME: Misisng from \code{bci_stem6_1ha}.
-\item \code{hom}: See tree table.
-\item \code{ExactDate}: See tree table.
+\item \code{pom} FIXME: Misisng from \code{bci_stem6_1ha}, \code{hom}, \code{ExactDate}: See tree
+table.
 \item \code{DFstatus}: The codes are the same as in tree tables except that stems may
 have the additional status \code{G} (gone). \code{G} applies when a tree is alive and a
 stem which formerly had a measurement does not in this census. This happens
@@ -115,8 +105,7 @@ in some plots, where individual stems do not have tags and cannot be tracked.
 \item \code{codes}: The codes for the measurement as recorded in the field.
 \item \code{countPOM}: The number of POMs (HOMs) for the same stem in this census.
 FIXME: Misisng from \code{bci_stem6_1ha}.
-\item \code{status}: See tree table.
-\item \code{date}: See tree table.
+\item \code{status}, \code{date}: See tree table.
 \item \code{agb}: Same, but notice that some may be NA. FIXME: Remove from
 \code{bci_stem6_1ha}. It shouldn't be here as it is not in the output of \code{rtbl()}.
 }
@@ -124,4 +113,8 @@ FIXME: Misisng from \code{bci_stem6_1ha}.
 
 \seealso{
 census_bci
+
+More information on columns definition:
+\url{http://bit.ly/fgeo-tables-column-definition}; 
+\url{http://bit.ly/fgeo-data-dictionary}.
 }
