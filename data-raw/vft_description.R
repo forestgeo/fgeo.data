@@ -71,17 +71,11 @@ definition <- c(
   "Stem diameter, usually at breast height. Units are user defined, but assumed to be consistent within the database. It is recommended that the dbh be rounded down to the nearest 5 mm for trees <=5 cm dbh.",
   "Height (in meters) on the stem at which the diameter was measured, usually at 1.3 meters.",
   "Date on which the measurement was taken (format is yyyy-mm-dd).",
-
-  "FIXME: Define Date",
-
+  "Number of days since 1960-01-01.",
   "Codes indicating the attributes or condition of the tree, stem, or measurement. Codes are separated by a comma in the case of more than one. An explanation of the codes is found in the TSMAttributes.txt file.",
   "Indicates the status of the tree or stem. Possible values are: alive (tree or stem is alive), dead (tree is dead), lost_stem (stem is dead, not found, or broken, etc. but other stems of the tree are still alive), or missing (tree or stem was not found, so measurement is unknown).",
-
-
-  "FIXME: Define HighHOM",
-
-
-  "FIXME: Define LargeStem"
+  "Indicates whether the current height of measurement is the highest for this stem.",
+  "Indicates whether the current stem is the largest stem of tree."
 )
 
 
