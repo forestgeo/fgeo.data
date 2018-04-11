@@ -5,3 +5,4 @@ test_that("Documented columns are as expected", {
     fgeo.data::vft_description$column, names(fgeo.tool::type_vft())
   )
 })
+
