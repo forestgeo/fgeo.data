@@ -28,7 +28,7 @@ __fgeo.data__ provides open datasets of ForestGEO. To get started run this:
 library(fgeo.data)
 ```
 
-(See [installation](https://forestgeo.github.io/fgeo.data/index.html#installation))
+(See [Installation](https://forestgeo.github.io/fgeo.data/index.html#installation))
 
 For an index of all available datasets and access see [Reference](https://forestgeo.github.io/fgeo.data/reference/index.html).
 
