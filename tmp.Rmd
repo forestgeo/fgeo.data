@@ -1,12 +1,26 @@
-usethis::use_template("SUPPORT.md", package = "fgeo.template")
+```{r}
+library(tidyverse)
+library(rvest)
+dcry <- read_html("http://ctfs.si.edu/Public/DataDict/data_dict.php")
+
+  html_nodes(xpath = "//table//td") %>%
+  html_text() %>% 
+  matrix(ncol = 5)
 
 
-## Information
+```
 
-* [Getting help](SUPPORT.md).
-* [Contributing](CONTRIBUTING.md).
-* [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
 
-## Acknowledgements
+```{r}
+library(rvest)
+lego_movie <- read_html("http://www.imdb.com/title/tt1490017/")
+```
 
-Thanks to Suzanne Lao and Shameema Jafferjee Esufali for sharing their knowledge of the structure of ForestFEO's database.
+```{r}
+lego_movie %>%
+  html_nodes("table") %>%
+  .[[2]] %>%
+  html_table()
+```
+
+
