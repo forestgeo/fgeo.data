@@ -24,7 +24,7 @@ article](https://goo.gl/dQKEeg).
 
 ## Example
 
-(See columns definitions with `?dta_dictionary`.)
+(See columns definitions with `?data_dictionary`.)
 
 ``` r
 library(fgeo.data)

@@ -32,7 +32,7 @@ For details on how to install packages from GitHub, see [this article](https://g
 
 ## Example
 
-(See columns definitions with `?dta_dictionary`.)
+(See columns definitions with `?data_dictionary`.)
 
 ```{r}
 library(fgeo.data)

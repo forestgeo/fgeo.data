@@ -50,7 +50,5 @@ NULL
 #' than one measurement in a census, but at different hom.
 #' 
 #' @seealso [data_dictionary].
-#' @examples
-#' vft_description
 #' @name vft_description
 NULL
