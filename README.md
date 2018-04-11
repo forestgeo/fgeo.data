@@ -42,8 +42,13 @@ str(bci_vft_random, give.attr = FALSE, list.len = 5)
 #>   [list output truncated]
 ```
 
-## Code of Conduct
+## Information
 
-Please note that this project is released with a [Contributor Code of
-Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
-to abide by its terms.
+  - [Getting help](SUPPORT.md).
+  - [Contributing](CONTRIBUTING.md).
+  - [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Acknowledgements
+
+Thanks to Suzanne Lao and Shameema Jafferjee Esufali for sharing their
+knowledge of the structure of ForestGEO’s database.

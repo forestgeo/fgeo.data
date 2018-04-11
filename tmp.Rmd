@@ -1,0 +1,12 @@
+usethis::use_template("SUPPORT.md", package = "fgeo.template")
+
+
+## Information
+
+* [Getting help](SUPPORT.md).
+* [Contributing](CONTRIBUTING.md).
+* [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Acknowledgements
+
+Thanks to Suzanne Lao and Shameema Jafferjee Esufali for sharing their knowledge of the structure of ForestFEO's database.
