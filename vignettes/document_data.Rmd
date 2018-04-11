@@ -48,7 +48,7 @@ For example, if your data comes from Barro Colorado Island, and it is a ViewFull
 
 <img src="https://i.imgur.com/nFiBnrn.png" align="center" height=150 />
 
-The documentation of `site_generic_info` should include the following (e.g. `?`[bci_vft_random](https://forestgeo.github.io/fgeo.data/reference/vft_bci.html)):
+The documentation of `site_generic_info` should include the following (e.g. `?bci_vft_random`):
 
 * A specific description that applies to this particular dataset.
 * A section `@seealso`, linking to `generic_description` and to the [data_dictionary].
