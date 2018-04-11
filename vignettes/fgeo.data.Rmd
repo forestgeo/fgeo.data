@@ -1,0 +1,103 @@
+---
+title: "Get started"
+author: "Mauro Lepore"
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::html_vignette:
+    fig_caption: yes
+vignette: >
+  %\VignetteIndexEntry{Get started}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Overview
+
+__fgeo.data__ provides open datasets of ForestGEO. To get started run this:
+
+```{r}
+# install.packages("remotes")
+# remotes::install_github("forestgeo/fgeo.data")
+library(fgeo.data)
+```
+
+(See [installation](https://forestgeo.github.io/fgeo.data/index.html#installation))
+
+For an index of all available datasets and access see [Reference](https://forestgeo.github.io/fgeo.data/reference/index.html).
+
+## Example
+
+### ViewFullTable (`vft`)
+
+```{r, include=FALSE}
+knitr::kable(vft_description)
+```
+
+```{r}
+str(bci_vft_random, give.attr = FALSE)
+
+# Similar to `bci_vft_random`; truncating list output for space
+str(bci_vft_1ha, give.attr = FALSE, list.len = 5)
+```
+
+### ViewTaxonomy (`taxa`)
+
+```{r}
+str(bci_taxa, give.attr = FALSE)
+```
+
+### Census (`tree` and `stem`)
+
+```{r}
+str(bci_tree6_random, give.attr = FALSE)
+
+str(bci_stem7_1ha, give.attr = FALSE)
+```
+
+### Elevation (`elevation`)
+
+```{r}
+str(bci_elevation)
+```
+
+```{r}
+# IMPORTANT if reading raw data (e.g. .csv files from ForestGEO's database)
+
+# Raw data (normally you would have a .csv file stored in your computer)
+url <- "http://bit.ly/fgeo-data-bci-taxa"
+
+# TO AVOID ERRORS
+# Specify columns class explicitely (for an example showing only some columns)
+column_classes <- c(
+  ViewID = "integer", 
+  SpeciesID = "integer", 
+  SubspeciesID = "integer", 
+  Family = "character", 
+  Mnemonic = "character"
+)
+# Specify how to interprate missing values
+na_strings <- c("", "NA", "NULL")
+
+raw_bci_taxa <- read.delim(
+  file = url, 
+  na.strings = na_strings, 
+  colClasses = column_classes
+)
+
+some_rows <- some_columns <- 1:5
+raw_bci_taxa[some_rows, some_columns]
+
+# Note these are the same as `column_classes` defined above
+sapply(raw_bci_taxa[some_rows, some_columns], class)
+```
+
+## Using raw data (database output)
+
+* The raw data (database output) on which this data-package is based can be downloaded directly from http://bit.ly/database-output. This is useful for examples using the data exactly as it is delivered from the database to the users -- particularly for examples of reading .csv files and data cleaning. You can also download specific files, as follows. To find links to download each raw dataset individually see the help file of each dataset.

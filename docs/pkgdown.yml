@@ -2,7 +2,8 @@ pandoc: 2.1.1
 pkgdown: 0.1.0.9000
 pkgdown_sha: ba364393708b38fd6368f1d089586e54df3e1948
 articles:
-  documenting-datasets: documenting-datasets.html
+  document_data: document_data.html
+  fgeo.data: fgeo.data.html
 urls:
   reference: https://forestgeo.github.io/fgeo.data//reference
   article: https://forestgeo.github.io/fgeo.data//articles

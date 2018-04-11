@@ -21,16 +21,7 @@ navbar:
 
   type: default
 
-  left:
-    - text: Datasets Index
-      href: reference/index.html
-
   right:
-    - text: Documenting datasets
-      href: articles/documenting-datasets.html
-
-    - text: News
-      href: news/index.html
 
     - icon: fa-gavel
       href: https://github.com/maurolepore

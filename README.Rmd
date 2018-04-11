@@ -1,5 +1,5 @@
 ---
-output: github_document 
+output: github_document
 ---
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -19,6 +19,8 @@ knitr::opts_chunk$set(
 
 __fgeo.data__ provides open datasets of ForestGEO.
 
+## [See datasets](https://forestgeo.github.io/fgeo.data/articles/fgeo.data.html)
+
 ## Installation
 
 ```
@@ -32,54 +34,13 @@ For details on how to install packages from GitHub, see [this article](https://g
 
 ```{r}
 library(fgeo.data)
-
-str(bci_taxa, give.attr = FALSE)
-
-str(bci_vft_random, give.attr = FALSE)
-
-# Similar to `bci_vft_random`; truncating list output for space
-str(bci_vft_1ha, give.attr = FALSE, list.len = 5)
-
-str(bci_tree6_random, give.attr = FALSE)
-
-str(bci_stem7_1ha, give.attr = FALSE)
-
-str(bci_elevation)
 ```
 
-## Raw data (database output)
-
-* The raw data (database output) on which this data-package is based can be downloaded directly from http://bit.ly/database-output. This is useful for examples using the data exactly as it is delivered from the database to the users -- particularly for examples of reading .csv files and data cleaning. You can also download specific files, as follows. To find links to download each raw dataset individually see the help file of each dataset.
+### ViewFullTable (`vft`)
 
 ```{r}
-# IMPORTANT if reading raw data (e.g. .csv files from ForestGEO's database)
-
-# Raw data (normally you would have a .csv file stored in your computer)
-url <- "http://bit.ly/fgeo-data-bci-taxa"
-
-# TO AVOID ERRORS
-# Specify columns class explicitely (for an example showing only some columns)
-column_classes <- c(
-  ViewID = "integer", 
-  SpeciesID = "integer", 
-  SubspeciesID = "integer", 
-  Family = "character", 
-  Mnemonic = "character"
-)
-# Specify how to interprate missing values
-na_strings <- c("", "NA", "NULL")
-
-raw_bci_taxa <- read.delim(
-  file = url, 
-  na.strings = na_strings, 
-  colClasses = column_classes
-)
-
-some_rows <- some_columns <- 1:5
-raw_bci_taxa[some_rows, some_columns]
-
-# Note these are the same as `column_classes` defined above
-sapply(raw_bci_taxa[some_rows, some_columns], class)
+# Show first few columns to save space.
+str(bci_vft_random, give.attr = FALSE, list.len = 5)
 ```
 
 ## Code of Conduct
