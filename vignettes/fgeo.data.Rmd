@@ -32,13 +32,17 @@ library(fgeo.data)
 
 For an index of all available datasets and access see [Reference](https://forestgeo.github.io/fgeo.data/reference/index.html).
 
+## Data dictionary
+
+Find descriptions searching by table or column name.
+
+```{r, echo=FALSE}
+DT::datatable(data_dictionary)
+```
+
 ## Example
 
 ### ViewFullTable (`vft`)
-
-```{r, include=FALSE}
-knitr::kable(vft_description)
-```
 
 ```{r}
 str(bci_vft_random, give.attr = FALSE)

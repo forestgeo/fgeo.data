@@ -112,9 +112,5 @@ FIXME: Misisng from \code{bci_stem6_1ha}.
 }
 
 \seealso{
-census_bci
-
-More information on columns definition:
-\url{http://bit.ly/fgeo-tables-column-definition}; 
-\url{http://bit.ly/fgeo-data-dictionary}.
+\link{census_bci}, \link{data_dictionary}.
 }

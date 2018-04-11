@@ -122,9 +122,7 @@
 #' * `agb`: Same, but notice that some may be NA. FIXME: Remove from
 #' `bci_stem6_1ha`. It shouldn't be here as it is not in the output of `rtbl()`.
 #'
-#'
-#' @seealso census_bci
-#' @template column_definition
+#' @seealso [census_bci], [data_dictionary].
 #' 
 #' @name census_description
 NULL
@@ -141,7 +139,8 @@ NULL
 #'
 #' @format See examples.
 #'
-#' @seealso [bci_vft_1ha], [bci_vft_random], [census_description].
+#' @seealso [bci_vft_1ha], [bci_vft_random], [census_description],
+#'   [data_dictionary].
 #'
 #' @examples
 #' str(bci_stem6_1ha, give.attr = FALSE)

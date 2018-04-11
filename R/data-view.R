@@ -19,7 +19,7 @@
 #' * `bci_vft_random`: One thousand randomly-chosen trees (from the whole plot).
 #'   Raw .csv file available at \url{http://bit.ly/fgeo-data-bci-vft-random}).
 #'
-#' @seealso [vft_description], [unique_id].
+#' @seealso [vft_description], [data_dictionary].
 #'
 #' @examples
 #' str(bci_vft_1ha, give.attr = FALSE)
@@ -49,9 +49,6 @@ NULL
 #' a stem may be measured at more than one height. So some stems may have more
 #' than one measurement in a census, but at different hom.
 #' 
-#' @template column_definition
-#'
-#' @examples
-#' vft_description
-#' 
-"vft_description"
+#' @seealso [data_dictionary].
+#' @name vft_description
+NULL

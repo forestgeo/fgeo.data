@@ -31,6 +31,6 @@ show_some_values_of_each_column <- function(x) head(unique(x))
 lapply(bci_vft_random, show_some_values_of_each_column)
 }
 \seealso{
-\link{vft_description}, \link{unique_id}.
+\link{vft_description}, \link{data_dictionary}.
 }
 \keyword{datasets}

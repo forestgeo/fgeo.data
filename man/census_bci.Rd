@@ -48,6 +48,7 @@ str(bci_tree6_random, give.attr = FALSE)
 
 }
 \seealso{
-\link{bci_vft_1ha}, \link{bci_vft_random}, \link{census_description}.
+\link{bci_vft_1ha}, \link{bci_vft_random}, \link{census_description},
+\link{data_dictionary}.
 }
 \keyword{datasets}
