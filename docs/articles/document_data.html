@@ -103,11 +103,6 @@
     
     
 <div class="contents">
-<div id="warning" class="section level2">
-<h2 class="hasAnchor">
-<a href="#warning" class="anchor"></a>Warning</h2>
-<p>I’m working on a different approach to documenting datasets – one that is easier to maintain. I may remove this article or edit it to show the updated approach.</p>
-</div>
 <div id="documenting-datasets" class="section level2">
 <h2 class="hasAnchor">
 <a href="#documenting-datasets" class="anchor"></a>Documenting datasets</h2>
@@ -126,18 +121,10 @@
 <li>tree and stem, collectively: census.</li>
 </ul>
 </li>
-<li>
-<p>Definition of each column in the <code>generic_dataset</code>:</p>
-<ul>
-<li><p>Option 1 (preferred): Define each column via a “meta-dataset” named <code>generic_description</code> (e.g. <code>vft_description</code>), with columns <code>column</code> and <code>definition</code>, defining each column in your dataset. A good place to do this is in a Google sheet. For example, this <a href="https://docs.google.com/spreadsheets/d/1rny_Jy0Itmz6ZU8m5pDMXWphhS8LunS77KwXjUEwP4U/edit#gid=0">vft_description</a>: <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRAcvhlST4Jgo3KSH5p2vbu8osC1O8YEBzzq4f-qCZyKxoHbZeSY5qbtS8Ss6RgVysAl1C7N9QRJKtc/pubhtml?widget=true&amp;headers=false" width="600" height="400"></iframe></p></li>
-<li><p>Option 2: Define each column in the help file of <code>generic_description</code> (e.g. <code>?</code><a href="https://forestgeo.github.io/fgeo.data/reference/census_description.html">census_description</a>).</p></li>
-</ul>
-</li>
-<li>The help file of <code>generic_description</code> should include the following (e.g. <code>?</code><a href="https://forestgeo.github.io/fgeo.data/reference/vft_description.html">vft_description</a>):
+<li>A help file <code>generic_description</code> with the following (e.g. <code>?</code><a href="https://forestgeo.github.io/fgeo.data/reference/vft_description.html">vft_description</a>):
 <ul>
 <li>A generic description that applies to any similar dataset, from any ForestGEO site.</li>
-<li>A section <code>@seealso</code>, linking to specific datasets.</li>
-<li>If the meta-dataset <code>generic_description</code> exists, a section <code>@examples</code>, that prints <code>generic_description</code>.</li>
+<li>A section <code>@seealso</code>, linking to specific datasets and to the [data_dictionary].</li>
 </ul>
 </li>
 </ul>
@@ -157,8 +144,8 @@
 <p>The documentation of <code>site_generic_info</code> should include the following (e.g. <code>?</code><a href="https://forestgeo.github.io/fgeo.data/reference/vft_bci.html">bci_vft_random</a>):</p>
 <ul>
 <li>A specific description that applies to this particular dataset.</li>
-<li>A section <code>@seealso</code>, linking to <code>generic_description</code>.</li>
-<li>A section <code>@examples</code>, that prints <code>site_generic_info</code>.</li>
+<li>A section <code>@seealso</code>, linking to <code>generic_description</code> and to the [data_dictionary].</li>
+<li>A section <code>@examples</code> showing the structure of <code>site_generic_info</code>.</li>
 </ul>
 </div>
 </div>
@@ -170,8 +157,7 @@
       <h2 class="hasAnchor">
 <a href="#tocnav" class="anchor"></a>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
-<li><a href="#warning">Warning</a></li>
-      <li><a href="#documenting-datasets">Documenting datasets</a></li>
+<li><a href="#documenting-datasets">Documenting datasets</a></li>
       </ul>
 </div>
       </div>

@@ -17,7 +17,4 @@ str(bci_elevation)
 sapply(bci_elevation, class)
 str(bci_elevation$col)
 }
-\seealso{
-unique_id
-}
 \keyword{datasets}

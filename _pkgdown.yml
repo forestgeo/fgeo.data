@@ -35,7 +35,11 @@ navbar:
 
 
 reference:
-
+  
+  - title: Dictionary
+    contents:
+      - data_dictionary
+  
   - title: ViewFullTable
     contents:
       - vft_description

@@ -16,10 +16,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-## Warning
-
-I'm working on a different approach to documenting datasets -- one that is easier to maintain. I may remove this article or edit it to show the updated approach.
-
 ## Documenting datasets
 
 This section sets conventions to document datasets in the __fgeo.data__ package. This makes it easier to understand the existing datasets and provides some structure to facilitate the expansion of __fgeo.data__.
@@ -35,17 +31,9 @@ Generic datasets (e.g. ViwFullTable) should have these components:
     * stem: stem.
     * tree and stem, collectively: census.
 
-* Definition of each column in the `generic_dataset`:
-
-    * Option 1 (preferred): Define each column via a "meta-dataset" named `generic_description` (e.g. `vft_description`), with columns `column` and `definition`, defining each column in your dataset. A good place to do this is in a Google sheet. For example, this [vft_description](https://docs.google.com/spreadsheets/d/1rny_Jy0Itmz6ZU8m5pDMXWphhS8LunS77KwXjUEwP4U/edit#gid=0):
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRAcvhlST4Jgo3KSH5p2vbu8osC1O8YEBzzq4f-qCZyKxoHbZeSY5qbtS8Ss6RgVysAl1C7N9QRJKtc/pubhtml?widget=true&amp;headers=false" width=600 height=400></iframe>
-
-    * Option 2: Define each column in the help file of `generic_description` (e.g. `?`[census_description](https://forestgeo.github.io/fgeo.data/reference/census_description.html)).
-
-* The help file of `generic_description` should include the following (e.g. `?`[vft_description](https://forestgeo.github.io/fgeo.data/reference/vft_description.html)):
+* A help file `generic_description` with the following (e.g. `?`[vft_description](https://forestgeo.github.io/fgeo.data/reference/vft_description.html)):
     * A generic description that applies to any similar dataset, from any ForestGEO site.
-    * A section `@seealso`, linking to specific datasets.
-    * If the meta-dataset `generic_description` exists, a section `@examples`, that prints `generic_description`.
+    * A section `@seealso`, linking to specific datasets and to the [data_dictionary].
 
 ### Documenting specific datasets
 
@@ -63,5 +51,5 @@ For example, if your data comes from Barro Colorado Island, and it is a ViewFull
 The documentation of `site_generic_info` should include the following (e.g. `?`[bci_vft_random](https://forestgeo.github.io/fgeo.data/reference/vft_bci.html)):
 
 * A specific description that applies to this particular dataset.
-* A section `@seealso`, linking to `generic_description`.
-* A section `@examples`, that prints `site_generic_info`.
+* A section `@seealso`, linking to `generic_description` and to the [data_dictionary].
+* A section `@examples` showing the structure of `site_generic_info`.

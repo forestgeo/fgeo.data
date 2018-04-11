@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>General description of a ViewFullTable (vft). — vft_description • fgeo.data</title>
+<title>Data Dictionary of the ForestGEO database. — data_dictionary • fgeo.data</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -25,15 +25,10 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-<meta property="og:title" content="General description of a ViewFullTable (vft). — vft_description" />
+<meta property="og:title" content="Data Dictionary of the ForestGEO database. — data_dictionary" />
 
-<meta property="og:description" content="Reproduced from http://bit.ly/vft-definitions:
-ViewFullTable table. Merges all the relevant variables from the
-corresponding tables in the database back into a flat file. Each record
-represents one measurement and/or attribute of one stem of one tree of one
-plot from one census. Because buttresses can grow, for trees with buttresses,
-a stem may be measured at more than one height. So some stems may have more
-than one measurement in a census, but at different hom." />
+<meta property="og:description" content="This dataset is based on the Tree Database Data Dictionary available at
+http://ctfs.si.edu/Public/DataDict/data_dict.php." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -126,47 +121,56 @@ than one measurement in a census, but at different hom." />
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>General description of a ViewFullTable (vft).</h1>
-    <small>Source: <a href='https://github.com/forestgeo/fgeo.data/blob/master/R/data-view.R'><code>R/data-view.R</code></a></small>
+    <h1>Data Dictionary of the ForestGEO database.</h1>
+    <small>Source: <a href='https://github.com/forestgeo/fgeo.data/blob/master/R/data_dictionary.R'><code>R/data_dictionary.R</code></a></small>
     </div>
 
     
-    <p>Reproduced from <a href='http://bit.ly/vft-definitions'>http://bit.ly/vft-definitions</a>:</p>
-<p><em>ViewFullTable</em> table. Merges all the relevant variables from the
-corresponding tables in the database back into a flat file. Each record
-represents one measurement and/or attribute of one stem of one tree of one
-plot from one census. Because buttresses can grow, for trees with buttresses,
-a stem may be measured at more than one height. So some stems may have more
-than one measurement in a census, but at different hom.</p>
+    <p>This dataset is based on the Tree Database Data Dictionary available at
+<a href='http://ctfs.si.edu/Public/DataDict/data_dict.php'>http://ctfs.si.edu/Public/DataDict/data_dict.php</a>.</p>
     
 
+    <pre class="usage"><span class='no'>data_dictionary</span></pre>
         
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p><a href='data_dictionary.html'>data_dictionary</a>.</p>
+    <p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 242 rows and 3 columns.</p>
+    
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+
+    <p><a href='http://ctfs.si.edu/Public/DataDict/data_dict.php'>http://ctfs.si.edu/Public/DataDict/data_dict.php</a>.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>vft_description</span></div><div class='output co'>#&gt; # A tibble: 32 x 2
-#&gt;    column       definition                                                     
-#&gt;    &lt;chr&gt;        &lt;chr&gt;                                                          
-#&gt;  1 DBHID        Foreign Key to DBH table.                                      
-#&gt;  2 PlotName     Descriptive name of the site also referred to as the plot.     
-#&gt;  3 PlotID       Foreign Key to Site table.                                     
-#&gt;  4 Family       Taxonomic family name (from the Angiosperm Phylogeny Group - A~
-#&gt;  5 Genus        Genus of the plant, according to the APG system.               
-#&gt;  6 SpeciesName  Species part of Latin name, may be a morphospecies name.       
-#&gt;  7 Mnemonic     Code used in the field for designating the species, usually 6 ~
-#&gt;  8 Subspecies   Subspecies portion of the Latin name, may be a subspecies or v~
-#&gt;  9 SpeciesID    Foreign Key to Species table.                                  
-#&gt; 10 SubspeciesID Foreign Key to SubSpecies table, indicating the subspecies if ~
-#&gt; # ... with 22 more rows</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>head</span>(<span class='no'>data_dictionary</span>)</div><div class='output co'>#&gt; # A tibble: 6 x 3
+#&gt;   table  column           description                                          
+#&gt;   &lt;chr&gt;  &lt;chr&gt;            &lt;chr&gt;                                                
+#&gt; 1 Census CensusID         Primary key, an integer  automatically generated to ~
+#&gt; 2 Census PlotID           Foreign Key to Site table.                           
+#&gt; 3 Census PlotCensusNumber "Integer census number for an individual plot, 1=fir~
+#&gt; 4 Census StartDate        Date on which the first measurement of the census wa~
+#&gt; 5 Census EndDate          Date on which the last measurement of the census was~
+#&gt; 6 Census Description      Notes pertinent to the census or general description~</div><div class='input'>
+<span class='co'># Column names vary in subtle ways (e.g. SubSpeciesID vs. SubspeciesID)</span>
+<span class='no'>pattern</span> <span class='kw'>&lt;-</span> <span class='st'>"^subspeciesid$"</span>
+<span class='no'>matching</span> <span class='kw'>&lt;-</span> <span class='fu'>grepl</span>(<span class='no'>pattern</span>, <span class='no'>data_dictionary</span>$<span class='no'>column</span>, <span class='kw'>ignore.case</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
+<span class='no'>data_dictionary</span>[<span class='no'>matching</span>, ]</div><div class='output co'>#&gt; # A tibble: 5 x 3
+#&gt;   table            column       description                                    
+#&gt;   &lt;chr&gt;            &lt;chr&gt;        &lt;chr&gt;                                          
+#&gt; 1 SpeciesInventory SubSpeciesID Foreign Key to  SubSpecies table.              
+#&gt; 2 Specimen         SubSpeciesID Foreign Key to SubSpecies table.               
+#&gt; 3 SubSpecies       SubSpeciesID Primary key, an integer  automatically generat~
+#&gt; 4 Tree             SubSpeciesID Foreign Key to  SubSpecies table, indicating t~
+#&gt; 5 ViewTaxonomy     SubspeciesID Foreign Key to  SubSpecies table, indicating t~</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
-      <li><a href="#see-also">See also</a></li>
+      <li><a href="#format">Format</a></li>
+
+      <li><a href="#source">Source</a></li>
       
       <li><a href="#examples">Examples</a></li>
     </ul>
