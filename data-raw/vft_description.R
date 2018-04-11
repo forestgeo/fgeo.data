@@ -1,4 +1,4 @@
-# Source (editable): https://docs.google.com/spreadsheets/d/1rny_Jy0Itmz6ZU8m5pDMXWphhS8LunS77KwXjUEwP4U/edit?usp=sharing
+# Source (editable): http://bit.ly/2IHesHZ
 
 library(googlesheets)
 
