@@ -7,7 +7,7 @@
 # General
 git status
 git add .
-git commit -a -m "Commit message"
+git commit -a -m "Document issue 7"
 git pull
 git push
 
