@@ -31,41 +31,23 @@ any pair of censuses.
 \section{Definition of Variables in tree tables}{
 
 \itemize{
+\item \code{StemTag}: FIXME: RELOCATE. Tag number on the individual stem, if present.
 \item \code{treeID}: The unique tree identifier in CTFS database. Useful to be certain
 in matching trees.
-\item \code{stemID}: The unique stem identifier in CTFS database. Useful to be certain
-in matching stems. FIXME: Missing in \code{bci_tree6_1ha}
 \item \code{tag}: Tag number used in the field.
-\item \code{StemTag}: Tag number on the individual stem, if present.
 \item \code{sp}: The species mnemonic. To get full species names, the taxonomy table
-must be downloaded from the CTFS database:
-http://ctfs.arnarb.harvard.edu/CTFSReports
+must be downloaded from the CTFS database.
 \item \code{quadrat}: Quadrat designation.
 \item \code{gx}: The x coordinate within the plot, relative to one edge of the plot.
 \item \code{gy}: The y plot coordinate.
-\item \code{MeasureID}: The unique identifier of a single measurement in the CTFS
-database. FIXME: Missing in \code{bci_tree6_1ha}
-\item \code{CensusID}: The numeric identifier of the census.
+\item \code{stemID}: The unique stem identifier in CTFS database. Useful to be certain
+in matching stems.
 \item \code{dbh}: Diameter of one stem on the tree, the stem whose stemID is given.
-\item \code{pom}: The point-of-measure, where the diameter was taken, identical to hom,
-but a character variable with only 2 decimal places.
 \item \code{hom}: The height-of-measure, identical to pom but a numeric variable with
 full precision.
 \item \code{ExactDate}: The date on which a tree was measured.
-\item \code{DFstatus}: The codes for the measurement as recorded in the field.
-\itemize{
-\item \code{A}: Alive.
-\item \code{D}: Dead.
-\item \code{lost_stem} (deprecated): Lost stem. It usually means the stem was
-broken in the given census, while the tree had no other stem.  This
-status is deprecated;  it is safer to check \code{stemID} to determine whether
-a tree's measurement changed stems between censuses.
-\item \code{M}: Missing. It is used where there is no record of the corresponding
-value of \code{dbh}, so it is not certain whether the tree was alive or dead.
-\code{P}: Prior. It indicates a tree had not yet recruited at this census.
-}
 \item \code{codes}: The codes for the measurement as recorded in the field.
-\item \code{nostems}: The number of living stems on the date of measurement.
+\item \code{date}: The julian date, for date arithmetic.
 \item \code{status}: Indicates the status of the entire tree. For example, if any stem
 is alive, the tree is alive; if every stem is dead, the tree is dead:
 \itemize{
@@ -75,39 +57,22 @@ is alive, the tree is alive; if every stem is dead, the tree is dead:
 \item \code{P}: Prior. It indicates a tree had not yet recruited at this census.
 \item \code{G}: Gone. xxx to complete.
 }
-\item \code{date}: The julian date, for date arithmetic.
-\item \code{agb}: Above-ground-biomass of all stems on the tree, in Mg (equal to
-metric tons or 106 g). Note that \code{agb = 0} for dead trees. FIXME: This
-variable should probably be removed. It doesn't exist in the output of
-rtbl().
+\item \code{nostems}: The number of living stems on the date of measurement.
 }
 }
 
 \section{Definition of Variables in stem tables}{
 
-Compared to tree tables, the the variables are and mean the same. But notice
-some differences in \code{DFstatus} and \code{agb}; also notice the additional
-variables \code{codes} and \code{countPOM} and that the variable \code{nostems} does not
-exist for stem tables.
+Compared to tree tables, the the columns of stem tables and mean the same,
+except when specified below:
 \itemize{
-\item \code{treeID}, \code{stemID}, \code{tag}, \code{StemTag}, \code{sp}, \code{quadrat}, \code{gx}, \code{gy}: See tree
-table.
-\item \code{MeasureID}: The unique identifier of a single measurement in the CTFS
-database. FIXME: Missing in \code{bci_stem6_1ha}
-\item \code{CensusID}: See tree table. FIXME: Missing from \code{bci_stem6_1ha}.`
+\item \code{treeID}, \code{stemID}, \code{tag}, \code{StemTag}: See tree table.
+\item \code{sp}, \code{quadrat}, \code{gx}, \code{gy}. : See tree table.
 \item \code{dbh}: Diameter of the stem.
-\item \code{pom} FIXME: Misisng from \code{bci_stem6_1ha}, \code{hom}, \code{ExactDate}: See tree
-table.
-\item \code{DFstatus}: The codes are the same as in tree tables except that stems may
-have the additional status \code{G} (gone). \code{G} applies when a tree is alive and a
-stem which formerly had a measurement does not in this census. This happens
-in some plots, where individual stems do not have tags and cannot be tracked.
+\item \code{hom}, \code{ExactDate}: See tree table.
+\item \code{DFstatus}: FIXME: Check with Suzanne if it should be removed.
 \item \code{codes}: The codes for the measurement as recorded in the field.
-\item \code{countPOM}: The number of POMs (HOMs) for the same stem in this census.
-FIXME: Misisng from \code{bci_stem6_1ha}.
-\item \code{status}, \code{date}: See tree table.
-\item \code{agb}: Same, but notice that some may be NA. FIXME: Remove from
-\code{bci_stem6_1ha}. It shouldn't be here as it is not in the output of \code{rtbl()}.
+\item \code{date} \code{status}: See tree table.
 }
 }
 

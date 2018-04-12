@@ -128,3 +128,7 @@ rm(bci.tree7)
 ids_random <- unique(fgeo.data::bci_vft_random$TreeID)
 bci_tree7_random <- filter(bci_tree7, treeID %in% ids_random)
 use_data(bci_tree7_random, overwrite = TRUE)
+
+
+
+# FIXME: Redo my work RE https://github.com/forestgeo/fgeo.data/issues/7

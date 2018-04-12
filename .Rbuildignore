@@ -12,3 +12,6 @@
 ^inst/database-output$
 ^\.httr-oauth$
 ^man-roxygen$
+^full$
+^stem$
+^tmp\.sh$
