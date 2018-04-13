@@ -131,4 +131,50 @@ use_data(bci_tree7_random, overwrite = TRUE)
 
 
 
+# FIXME -------------------------------------------------------------------
 # FIXME: Redo my work RE https://github.com/forestgeo/fgeo.data/issues/7
+
+# * Move all calls to use_data() at the bottom of this script.
+# * Run all above.
+# * List all stem tables
+# * List all tree tables
+# * Map each list to remove the unwanted columns, which are described in 
+#   https://github.com/forestgeo/fgeo.data/issues/7.
+
+# The columns I want:
+stem <-
+  c(
+    "treeID",
+    "stemID",
+    "tag",
+    "StemTag",
+    "sp",
+    "quadrat",
+    "gx",
+    "gy",
+    "dbh",
+    "hom",
+    "ExactDate",
+    "DFstatus",
+    "codes",
+    "date",
+    "status"
+  )
+
+# The columns I want
+tree <- c(
+  "treeID",
+  "tag",
+  "sp",
+  "quadrat",
+  "gx",
+  "gy",
+  "stemID",
+  "dbh",
+  "hom",
+  "ExactDate",
+  "codes",
+  "date",
+  "status",
+  "nostems"
+)
