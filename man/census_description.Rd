@@ -81,6 +81,8 @@ value:
 measurement does not in this census.
 }
 \item \code{CensusID}: See tree table.
+\item \code{DFstatus}:  \code{DFstatus} in the R stem file is exactly Status in the
+ViewFullTable.
 }
 }
 

@@ -64,6 +64,8 @@
 #'     * `G`: Gone. Case when a tree is alive and a stem which formerly had a
 #'       measurement does not in this census.
 #'  * `CensusID`: See tree table.
+#'  * `DFstatus`:  `DFstatus` in the R stem file is exactly Status in the
+#'    ViewFullTable.
 #'
 #' @seealso [data_dictionary], [census_bci], 
 #' \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputFull.pdf},
@@ -130,15 +132,17 @@ census_unwanted <- function() {
   list(
     stem = c(
       "agb",
+      # Identical to hom, but a character variable with only 2 decimal places
+      # (from http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputFull.pdf)
       "pom",
       "countPOM",
-      "DFstatus",
       "MeasureID", "DBHID"
     ),
     tree = c(
       "agb", 
       "ba", 
       "pom", 
+      # DFstatus refers to the stem, not the tree.
       "DFstatus",
       "MeasureID", "DBHID"
     )
