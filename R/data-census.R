@@ -22,13 +22,6 @@
 #' any pair of censuses.
 #'
 #' @section Definition of Variables in tree tables:
-#' 
-#' 
-#' 
-#' * `StemTag`: FIXME: RELOCATE. Tag number on the individual stem, if present.
-#' 
-#' 
-#' 
 #' * `treeID`: The unique tree identifier in CTFS database. Useful to be certain
 #' in matching trees.
 #' * `tag`: Tag number used in the field.
@@ -57,7 +50,8 @@
 #' @section Definition of Variables in stem tables:
 #' Compared to tree tables, the the columns of stem tables and mean the same, 
 #' except when specified below:
-#' * `treeID`, `stemID`, `tag`, `StemTag`: See tree table.
+#' * `treeID`, `stemID`, `tag`: See tree table.
+#' * `StemTag`: Tag number on the individual stem, if present.
 #' * `sp`, `quadrat`, `gx`, `gy`. : See tree table.
 #' * `dbh`: Diameter of the stem.
 #' * `hom`, `ExactDate`: See tree table.
