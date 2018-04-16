@@ -31,7 +31,6 @@ any pair of censuses.
 \section{Definition of Variables in tree tables}{
 
 \itemize{
-\item \code{StemTag}: FIXME: RELOCATE. Tag number on the individual stem, if present.
 \item \code{treeID}: The unique tree identifier in CTFS database. Useful to be certain
 in matching trees.
 \item \code{tag}: Tag number used in the field.
@@ -66,7 +65,8 @@ is alive, the tree is alive; if every stem is dead, the tree is dead:
 Compared to tree tables, the the columns of stem tables and mean the same,
 except when specified below:
 \itemize{
-\item \code{treeID}, \code{stemID}, \code{tag}, \code{StemTag}: See tree table.
+\item \code{treeID}, \code{stemID}, \code{tag}: See tree table.
+\item \code{StemTag}: Tag number on the individual stem, if present.
 \item \code{sp}, \code{quadrat}, \code{gx}, \code{gy}. : See tree table.
 \item \code{dbh}: Diameter of the stem.
 \item \code{hom}, \code{ExactDate}: See tree table.

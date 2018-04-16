@@ -64,8 +64,6 @@
 #' @name census_description
 NULL
 
-
-
 #' Tree and stem tables from Barro Colorado Island (bci).
 #'
 #' For a general description see [census_description]. These datasets are tree
@@ -110,3 +108,29 @@ NULL
 "bci_tree6_random"
 #' @rdname census_bci
 "bci_tree7_random"
+
+
+
+#' Columns not wanted in census tables.
+#' 
+#' Avoid duplication. Used to create and test data.
+#' 
+#' RE https://github.com/forestgeo/fgeo.data/issues/7. 
+#' @noRd
+stem_unwanted <- function() {
+  c(
+    "agb",
+    "CensusID", 
+    "pom",
+    "countPOM"
+  )
+}
+tree_unwanted <- function() {
+  c(
+    "agb", 
+    "ba", 
+    "CensusID", 
+    "pom", 
+    "DFstatus"
+  )
+}

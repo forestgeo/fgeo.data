@@ -163,38 +163,20 @@ any pair of censuses.</p></li>
     <ul>
 <li><p><code>treeID</code>: The unique tree identifier in CTFS database. Useful to be certain
 in matching trees.</p></li>
-<li><p><code>stemID</code>: The unique stem identifier in CTFS database. Useful to be certain
-in matching stems. FIXME: Missing in <code>bci_tree6_1ha</code></p></li>
 <li><p><code>tag</code>: Tag number used in the field.</p></li>
-<li><p><code>StemTag</code>: Tag number on the individual stem, if present.</p></li>
 <li><p><code>sp</code>: The species mnemonic. To get full species names, the taxonomy table
-must be downloaded from the CTFS database:
-http://ctfs.arnarb.harvard.edu/CTFSReports</p></li>
+must be downloaded from the CTFS database.</p></li>
 <li><p><code>quadrat</code>: Quadrat designation.</p></li>
 <li><p><code>gx</code>: The x coordinate within the plot, relative to one edge of the plot.</p></li>
 <li><p><code>gy</code>: The y plot coordinate.</p></li>
-<li><p><code>MeasureID</code>: The unique identifier of a single measurement in the CTFS
-database. FIXME: Missing in <code>bci_tree6_1ha</code></p></li>
-<li><p><code>CensusID</code>: The numeric identifier of the census.</p></li>
+<li><p><code>stemID</code>: The unique stem identifier in CTFS database. Useful to be certain
+in matching stems.</p></li>
 <li><p><code>dbh</code>: Diameter of one stem on the tree, the stem whose stemID is given.</p></li>
-<li><p><code>pom</code>: The point-of-measure, where the diameter was taken, identical to hom,
-but a character variable with only 2 decimal places.</p></li>
 <li><p><code>hom</code>: The height-of-measure, identical to pom but a numeric variable with
 full precision.</p></li>
 <li><p><code>ExactDate</code>: The date on which a tree was measured.</p></li>
-<li><p><code>DFstatus</code>: The codes for the measurement as recorded in the field.</p><ul>
-<li><p><code>A</code>: Alive.</p></li>
-<li><p><code>D</code>: Dead.</p></li>
-<li><p><code>lost_stem</code> (deprecated): Lost stem. It usually means the stem was
-broken in the given census, while the tree had no other stem.  This
-status is deprecated;  it is safer to check <code>stemID</code> to determine whether
-a tree's measurement changed stems between censuses.</p></li>
-<li><p><code>M</code>: Missing. It is used where there is no record of the corresponding
-value of <code>dbh</code>, so it is not certain whether the tree was alive or dead.
-<code>P</code>: Prior. It indicates a tree had not yet recruited at this census.</p></li>
-</ul></li>
 <li><p><code>codes</code>: The codes for the measurement as recorded in the field.</p></li>
-<li><p><code>nostems</code>: The number of living stems on the date of measurement.</p></li>
+<li><p><code>date</code>: The julian date, for date arithmetic.</p></li>
 <li><p><code>status</code>: Indicates the status of the entire tree. For example, if any stem
 is alive, the tree is alive; if every stem is dead, the tree is dead:</p><ul>
 <li><p><code>A</code>: Alive.</p></li>
@@ -203,38 +185,22 @@ is alive, the tree is alive; if every stem is dead, the tree is dead:</p><ul>
 <li><p><code>P</code>: Prior. It indicates a tree had not yet recruited at this census.</p></li>
 <li><p><code>G</code>: Gone. xxx to complete.</p></li>
 </ul></li>
-<li><p><code>date</code>: The julian date, for date arithmetic.</p></li>
-<li><p><code>agb</code>: Above-ground-biomass of all stems on the tree, in Mg (equal to
-metric tons or 106 g). Note that <code>agb = 0</code> for dead trees. FIXME: This
-variable should probably be removed. It doesn't exist in the output of
-rtbl().</p></li>
+<li><p><code>nostems</code>: The number of living stems on the date of measurement.</p></li>
 </ul>
     
     <h2 class="hasAnchor" id="definition-of-variables-in-stem-tables"><a class="anchor" href="#definition-of-variables-in-stem-tables"></a>Definition of Variables in stem tables</h2>
 
     
-    <p>Compared to tree tables, the the variables are and mean the same. But notice
-some differences in <code>DFstatus</code> and <code>agb</code>; also notice the additional
-variables <code>codes</code> and <code>countPOM</code> and that the variable <code>nostems</code> does not
-exist for stem tables.</p><ul>
-<li><p><code>treeID</code>, <code>stemID</code>, <code>tag</code>, <code>StemTag</code>, <code>sp</code>, <code>quadrat</code>, <code>gx</code>, <code>gy</code>: See tree
-table.</p></li>
-<li><p><code>MeasureID</code>: The unique identifier of a single measurement in the CTFS
-database. FIXME: Missing in <code>bci_stem6_1ha</code></p></li>
-<li><p><code>CensusID</code>: See tree table. FIXME: Missing from <code>bci_stem6_1ha</code>.`</p></li>
+    <p>Compared to tree tables, the the columns of stem tables and mean the same,
+except when specified below:</p><ul>
+<li><p><code>treeID</code>, <code>stemID</code>, <code>tag</code>: See tree table.</p></li>
+<li><p><code>StemTag</code>: Tag number on the individual stem, if present.</p></li>
+<li><p><code>sp</code>, <code>quadrat</code>, <code>gx</code>, <code>gy</code>. : See tree table.</p></li>
 <li><p><code>dbh</code>: Diameter of the stem.</p></li>
-<li><p><code>pom</code> FIXME: Misisng from <code>bci_stem6_1ha</code>, <code>hom</code>, <code>ExactDate</code>: See tree
-table.</p></li>
-<li><p><code>DFstatus</code>: The codes are the same as in tree tables except that stems may
-have the additional status <code>G</code> (gone). <code>G</code> applies when a tree is alive and a
-stem which formerly had a measurement does not in this census. This happens
-in some plots, where individual stems do not have tags and cannot be tracked.</p></li>
+<li><p><code>hom</code>, <code>ExactDate</code>: See tree table.</p></li>
+<li><p><code>DFstatus</code>: FIXME: Check with Suzanne if it should be removed.</p></li>
 <li><p><code>codes</code>: The codes for the measurement as recorded in the field.</p></li>
-<li><p><code>countPOM</code>: The number of POMs (HOMs) for the same stem in this census.
-FIXME: Misisng from <code>bci_stem6_1ha</code>.</p></li>
-<li><p><code>status</code>, <code>date</code>: See tree table.</p></li>
-<li><p><code>agb</code>: Same, but notice that some may be NA. FIXME: Remove from
-<code>bci_stem6_1ha</code>. It shouldn't be here as it is not in the output of <code>rtbl()</code>.</p></li>
+<li><p><code>date</code> <code>status</code>: See tree table.</p></li>
 </ul>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
