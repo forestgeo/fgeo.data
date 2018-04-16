@@ -42,9 +42,9 @@
 #'   is alive, the tree is alive; if every stem is dead, the tree is dead:
 #'     * `A`: Alive.
 #'     * `D`: Dead.
-#'     * `M`: Missing.
+#'     * `M`: Missing. Case when `dbh` and `codes` for a tree was not given, so
+#'       it is not certain whether the tree was alive or dead.
 #'     * `P`: Prior. It indicates a tree had not yet recruited at this census.
-#'     * `G`: Gone. FIXME: to complete.
 #' * `nostems`: The number of living stems on the date of measurement.
 #'
 #' @section Definition of Variables in stem tables:
@@ -57,9 +57,14 @@
 #' * `hom`, `ExactDate`, `codes`, `date`: See tree table.
 #' * `status`: As in tree table, except that the status refers not to the entire
 #'   tree but to an individual stem. In a single tree some stems may be alive 
-#'   and others may be dead.
-#' 
-#' @seealso [census_bci], [data_dictionary].
+#'   and others may be dead. `status` in stem tables can take an additional
+#'   value:
+#'     * `G`: Gone. Case when a tree is alive and a stem which formerly had a
+#'       measurement does not in this census.
+#'
+#' @seealso [data_dictionary], [census_bci], 
+#' \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputFull.pdf},
+#' \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputStem.pdf}.
 #' 
 #' @name census_description
 NULL

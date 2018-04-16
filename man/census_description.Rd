@@ -52,9 +52,9 @@ is alive, the tree is alive; if every stem is dead, the tree is dead:
 \itemize{
 \item \code{A}: Alive.
 \item \code{D}: Dead.
-\item \code{M}: Missing.
+\item \code{M}: Missing. Case when \code{dbh} and \code{codes} for a tree was not given, so
+it is not certain whether the tree was alive or dead.
 \item \code{P}: Prior. It indicates a tree had not yet recruited at this census.
-\item \code{G}: Gone. FIXME: to complete.
 }
 \item \code{nostems}: The number of living stems on the date of measurement.
 }
@@ -72,10 +72,17 @@ except when specified below:
 \item \code{hom}, \code{ExactDate}, \code{codes}, \code{date}: See tree table.
 \item \code{status}: As in tree table, except that the status refers not to the entire
 tree but to an individual stem. In a single tree some stems may be alive
-and others may be dead.
+and others may be dead. \code{status} in stem tables can take an additional
+value:
+\itemize{
+\item \code{G}: Gone. Case when a tree is alive and a stem which formerly had a
+measurement does not in this census.
+}
 }
 }
 
 \seealso{
-\link{census_bci}, \link{data_dictionary}.
+\link{data_dictionary}, \link{census_bci},
+\url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputFull.pdf},
+\url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputStem.pdf}.
 }
