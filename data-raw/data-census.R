@@ -135,10 +135,9 @@ stem_tables <- list(
   bci_stem6_random = bci_stem6_random,
   bci_stem7_random = bci_stem7_random
 )
-stem_small <- purrr::map(stem_tables, remove_unwanted, stem_unwanted())
-purrr::map2(
-  .x = stem_small, .y = names(stem_small), ~assign(.y, .x, .GlobalEnv)
-)
+stem_tables %>% 
+  purrr::map(remove_unwanted, fgeo.data:::census_unwanted()$stem) %>% 
+  purrr::map2(.x = ., .y = names(.), ~assign(.y, .x, .GlobalEnv))
 
 tree_tables <- list(
   bci_tree6_1ha = bci_tree6_1ha,
@@ -146,9 +145,9 @@ tree_tables <- list(
   bci_tree6_random = bci_tree6_random,
   bci_tree7_random = bci_tree7_random
 )
-tree_small <- purrr::map(tree_tables, remove_unwanted, tree_unwanted())
-purrr::map2(
-  .x = tree_small, .y = names(tree_small), ~assign(.y, .x, .GlobalEnv)
+tree_tables %>% 
+  purrr::map(remove_unwanted, fgeo.data:::census_unwanted()$tree) %>% 
+  purrr::map2(.x = ., .y = names(.), ~assign(.y, .x, .GlobalEnv)
 )
 
 

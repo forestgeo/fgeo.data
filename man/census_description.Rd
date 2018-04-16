@@ -70,7 +70,6 @@ except when specified below:
 \item \code{sp}, \code{quadrat}, \code{gx}, \code{gy}. : See tree table.
 \item \code{dbh}: Diameter of the stem.
 \item \code{hom}, \code{ExactDate}: See tree table.
-\item \code{DFstatus}: FIXME: Check with Suzanne if it should be removed.
 \item \code{codes}: The codes for the measurement as recorded in the field.
 \item \code{date} \code{status}: See tree table.
 }

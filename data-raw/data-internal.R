@@ -1,5 +1,7 @@
-# Unique identifiers
-# Source: https://github.com/forestgeo/bciex/issues/10
+#' Unique identifiers
+#' Source: https://github.com/forestgeo/bciex/issues/10
+#' @keywords internal
+#' @noRd
 unique_id <- tibble::tribble(
   ~table,           ~column,
   "tree",          "TreeID",

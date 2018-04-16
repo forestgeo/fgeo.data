@@ -55,7 +55,6 @@
 #' * `sp`, `quadrat`, `gx`, `gy`. : See tree table.
 #' * `dbh`: Diameter of the stem.
 #' * `hom`, `ExactDate`: See tree table.
-#' * `DFstatus`: FIXME: Check with Suzanne if it should be removed.
 #' * `codes`: The codes for the measurement as recorded in the field.
 #' * `date` `status`: See tree table.
 #' 
@@ -115,22 +114,24 @@ NULL
 #' 
 #' Avoid duplication. Used to create and test data.
 #' 
-#' RE https://github.com/forestgeo/fgeo.data/issues/7. 
+#' RE https://github.com/forestgeo/fgeo.data/issues/7.
+#' @keywords internal
 #' @noRd
-stem_unwanted <- function() {
-  c(
-    "agb",
-    "CensusID", 
-    "pom",
-    "countPOM"
-  )
-}
-tree_unwanted <- function() {
-  c(
-    "agb", 
-    "ba", 
-    "CensusID", 
-    "pom", 
-    "DFstatus"
+census_unwanted <- function() {
+  list(
+    stem = c(
+      "agb",
+      "CensusID", 
+      "pom",
+      "countPOM",
+      "DFstatus"
+    ),
+    tree = c(
+      "agb", 
+      "ba", 
+      "CensusID", 
+      "pom", 
+      "DFstatus"
+    )
   )
 }
