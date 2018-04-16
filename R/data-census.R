@@ -124,14 +124,16 @@ census_unwanted <- function() {
       "CensusID", 
       "pom",
       "countPOM",
-      "DFstatus"
+      "DFstatus",
+      "MeasureID", "DBHID"
     ),
     tree = c(
       "agb", 
       "ba", 
       "CensusID", 
       "pom", 
-      "DFstatus"
+      "DFstatus",
+      "MeasureID", "DBHID"
     )
   )
 }
