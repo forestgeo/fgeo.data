@@ -23,7 +23,7 @@
 #'
 #' @section Definition of Variables in tree tables:
 #' * `treeID`: The unique tree identifier in CTFS database. Useful to be certain
-#' in matching trees.
+#'   in matching trees.
 #' * `tag`: Tag number used in the field.
 #' * `sp`: The species mnemonic. To get full species names, the taxonomy table
 #'   must be downloaded from the CTFS database.
@@ -46,6 +46,8 @@
 #'       it is not certain whether the tree was alive or dead.
 #'     * `P`: Prior. It indicates a tree had not yet recruited at this census.
 #' * `nostems`: The number of living stems on the date of measurement.
+#' * `CensusID`: An integer automatically generated to uniquely identify a 
+#'   census.
 #'
 #' @section Definition of Variables in stem tables:
 #' Compared to tree tables, the the columns of stem tables and mean the same, 
@@ -61,6 +63,7 @@
 #'   value:
 #'     * `G`: Gone. Case when a tree is alive and a stem which formerly had a
 #'       measurement does not in this census.
+#'  * `CensusID`: See tree table.
 #'
 #' @seealso [data_dictionary], [census_bci], 
 #' \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputFull.pdf},
@@ -127,7 +130,6 @@ census_unwanted <- function() {
   list(
     stem = c(
       "agb",
-      "CensusID", 
       "pom",
       "countPOM",
       "DFstatus",
@@ -136,7 +138,6 @@ census_unwanted <- function() {
     tree = c(
       "agb", 
       "ba", 
-      "CensusID", 
       "pom", 
       "DFstatus",
       "MeasureID", "DBHID"

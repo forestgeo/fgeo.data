@@ -57,6 +57,8 @@ it is not certain whether the tree was alive or dead.
 \item \code{P}: Prior. It indicates a tree had not yet recruited at this census.
 }
 \item \code{nostems}: The number of living stems on the date of measurement.
+\item \code{CensusID}: An integer automatically generated to uniquely identify a
+census.
 }
 }
 
@@ -78,6 +80,7 @@ value:
 \item \code{G}: Gone. Case when a tree is alive and a stem which formerly had a
 measurement does not in this census.
 }
+\item \code{CensusID}: See tree table.
 }
 }
 
