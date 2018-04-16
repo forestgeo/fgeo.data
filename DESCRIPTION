@@ -14,7 +14,8 @@ Depends:
 Suggests: 
     DT (>= 0.4),
     knitr (>= 1.20),
-    rmarkdown (>= 1.9)
+    rmarkdown (>= 1.9),
+    testthat
 VignetteBuilder: knitr
 Encoding: UTF-8
 LazyData: true
