@@ -54,7 +54,7 @@ is alive, the tree is alive; if every stem is dead, the tree is dead:
 \item \code{D}: Dead.
 \item \code{M}: Missing.
 \item \code{P}: Prior. It indicates a tree had not yet recruited at this census.
-\item \code{G}: Gone. xxx to complete.
+\item \code{G}: Gone. FIXME: to complete.
 }
 \item \code{nostems}: The number of living stems on the date of measurement.
 }
@@ -67,11 +67,12 @@ except when specified below:
 \itemize{
 \item \code{treeID}, \code{stemID}, \code{tag}: See tree table.
 \item \code{StemTag}: Tag number on the individual stem, if present.
-\item \code{sp}, \code{quadrat}, \code{gx}, \code{gy}. : See tree table.
+\item \code{sp}, \code{quadrat}, \code{gx}, \code{gy}: See tree table.
 \item \code{dbh}: Diameter of the stem.
-\item \code{hom}, \code{ExactDate}: See tree table.
-\item \code{codes}: The codes for the measurement as recorded in the field.
-\item \code{date} \code{status}: See tree table.
+\item \code{hom}, \code{ExactDate}, \code{codes}, \code{date}: See tree table.
+\item \code{status}: As in tree table, except that the status refers not to the entire
+tree but to an individual stem. In a single tree some stems may be alive
+and others may be dead.
 }
 }
 

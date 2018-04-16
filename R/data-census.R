@@ -44,7 +44,7 @@
 #'     * `D`: Dead.
 #'     * `M`: Missing.
 #'     * `P`: Prior. It indicates a tree had not yet recruited at this census.
-#'     * `G`: Gone. xxx to complete.
+#'     * `G`: Gone. FIXME: to complete.
 #' * `nostems`: The number of living stems on the date of measurement.
 #'
 #' @section Definition of Variables in stem tables:
@@ -52,11 +52,12 @@
 #' except when specified below:
 #' * `treeID`, `stemID`, `tag`: See tree table.
 #' * `StemTag`: Tag number on the individual stem, if present.
-#' * `sp`, `quadrat`, `gx`, `gy`. : See tree table.
+#' * `sp`, `quadrat`, `gx`, `gy`: See tree table.
 #' * `dbh`: Diameter of the stem.
-#' * `hom`, `ExactDate`: See tree table.
-#' * `codes`: The codes for the measurement as recorded in the field.
-#' * `date` `status`: See tree table.
+#' * `hom`, `ExactDate`, `codes`, `date`: See tree table.
+#' * `status`: As in tree table, except that the status refers not to the entire
+#'   tree but to an individual stem. In a single tree some stems may be alive 
+#'   and others may be dead.
 #' 
 #' @seealso [census_bci], [data_dictionary].
 #' 
