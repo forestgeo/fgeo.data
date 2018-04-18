@@ -36,6 +36,8 @@ show_some_values_of_each_column <- function(x) head(unique(x))
 lapply(luquillo_vft_random, show_some_values_of_each_column)
 }
 \seealso{
-\link{vft_description}, \link{data_dictionary}.
+\link{vft_description}, \link{data_dictionary},
+\url{http://bit.ly/fgeo-data-luquillo-vft-random},
+\url{http://bit.ly/fgeo-data-luquillo-vft-1ha}.
 }
 \keyword{datasets}
