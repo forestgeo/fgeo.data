@@ -11,7 +11,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# <img src="https://i.imgur.com/39pvr4n.png" align="right" height=44 /> fgeo.data
+# <img src="https://i.imgur.com/m8FNhQR.png" align="right" height=88 /> fgeo.data
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/fgeo.data)](https://cran.r-project.org/package=fgeo.data)
@@ -41,8 +41,12 @@ library(fgeo.data)
 ### ViewFullTable (`vft`)
 
 ```{r}
+vft <- luquillo_vft_random
+
 # Show first few columns to save space.
-str(bci_vft_random, give.attr = FALSE, list.len = 5)
+str(vft, give.attr = FALSE, list.len = 5)
+
+lapply(vft, function(x) head(unique(x)))
 ```
 
 ## Information
@@ -53,4 +57,6 @@ str(bci_vft_random, give.attr = FALSE, list.len = 5)
 
 ## Acknowledgements
 
-Thanks to Suzanne Lao and Shameema Jafferjee Esufali for sharing their knowledge of the structure of ForestGEO's database.
+* Thanks to Suzanne Lao and Shameema Jafferjee Esufali for sharing their knowledge of the structure of ForestGEO's database.
+
+* Thanks to Jess Zimmerman for sharing data from Luquillo.

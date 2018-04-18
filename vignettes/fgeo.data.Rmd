@@ -45,16 +45,16 @@ DT::datatable(data_dictionary)
 ### ViewFullTable (`vft`)
 
 ```{r}
-str(bci_vft_random, give.attr = FALSE)
+str(luquillo_vft_random, give.attr = FALSE)
 
-# Similar to `bci_vft_random`; truncating list output for space
-str(bci_vft_1ha, give.attr = FALSE, list.len = 5)
+# Similar to `luquillo_vft_random`; truncating list output for space
+str(luquillo_vft_1ha, give.attr = FALSE, list.len = 5)
 ```
 
 ### ViewTaxonomy (`taxa`)
 
 ```{r}
-str(bci_taxa, give.attr = FALSE)
+str(luquillo_taxa, give.attr = FALSE)
 ```
 
 ### Census (`tree` and `stem`)
@@ -72,6 +72,8 @@ str(bci_elevation)
 ```
 
 ```{r}
+
+# FIXME: Replace with data from Luquillo
 # IMPORTANT if reading raw data (e.g. .csv files from ForestGEO's database)
 
 # Raw data (normally you would have a .csv file stored in your computer)
@@ -89,17 +91,17 @@ column_classes <- c(
 # Specify how to interprate missing values
 na_strings <- c("", "NA", "NULL")
 
-raw_bci_taxa <- read.delim(
+raw_luquillo_taxa <- read.delim(
   file = url, 
   na.strings = na_strings, 
   colClasses = column_classes
 )
 
 some_rows <- some_columns <- 1:5
-raw_bci_taxa[some_rows, some_columns]
+raw_luquillo_taxa[some_rows, some_columns]
 
 # Note these are the same as `column_classes` defined above
-sapply(raw_bci_taxa[some_rows, some_columns], class)
+sapply(raw_luquillo_taxa[some_rows, some_columns], class)
 ```
 
 ## Using raw data (database output)
