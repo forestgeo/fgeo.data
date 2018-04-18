@@ -7,7 +7,7 @@ library(tidyverse)
 
 
 
-# ViewTaxonomy ------------------------------------------------------------
+# ViewTaxonomy # ------------------------------------------------------------
 
 luquillo_taxa <- luquillo::ViewTaxonomy_luquillo
 # Allow downloading as .csv
@@ -16,7 +16,7 @@ use_data(luquillo_taxa, overwrite = TRUE)
 
 
 
-# ViewFullTable -----------------------------------------------------------
+# ViewFullTable # -----------------------------------------------------------
 
 luquillo_vft <- luquillo::ViewFullTable_luquillo
 
@@ -74,6 +74,82 @@ use_data(luquillo_vft_1ha, overwrite = TRUE)
 
 
 
-# Census ------------------------------------------------------------------
 
 
+
+# Tree and stem tables ----------------------------------------------------
+
+load_ls <- function(path, env) {
+  path %>% 
+  purrr::map(fs::dir_ls) %>% 
+  purrr::map(fs::dir_ls) %>% 
+  purrr::reduce(c) %>% 
+  lapply(load, env)
+}
+
+compile_census <- function(.x, table) {
+  .x %>% 
+    purrr::keep(grepl(table, names(ls_1ha))) %>% 
+    purrr::map(as.tibble) %>% 
+    purrr::map(., 
+      ~dplyr::mutate(., CensusID = unique(CensusID[!is.na(CensusID)]))
+    ) %>% 
+    purrr::reduce(rbind)
+}
+
+
+
+# 1 hectare
+
+env_1ha <- new.env(parent = .GlobalEnv)
+here::here("data-raw/private/rtbl_1ha") %>% 
+  load_ls(env_1ha)
+ls_1ha <- as.list(env_1ha)
+
+# Tree: All tables compiled
+luquillo_tree_1ha <- compile_census(ls_1ha, "full")
+use_data(luquillo_tree_1ha, overwrite = TRUE)
+# Tree: One table for most examples
+luquillo_tree6_1ha <- ls_1ha$luquillo.full6
+use_data(luquillo_tree6_1ha, overwrite = TRUE)
+
+
+
+# Stem: All tables compiled
+luquillo_stem_1ha <- compile_census(ls_1ha, "stem")
+use_data(luquillo_stem_1ha, overwrite = TRUE)
+# Stem: One table for most examples
+luquillo_stem6_1ha <- ls_1ha$luquillo.stem6
+use_data(luquillo_stem6_1ha, overwrite = TRUE)
+
+
+
+# Random
+
+env_random <- new.env(parent = .GlobalEnv)
+here::here("data-raw/private/rtbl_random") %>% 
+  load_ls(env_random)
+ls_random <- as.list(env_random)
+
+# Tree: All tables compiled
+luquillo_tree_random <- compile_census(ls_random, "full")
+use_data(luquillo_tree_random, overwrite = TRUE)
+# Tree: One table for most examples
+luquillo_tree6_random <- ls_random$luquillo.full6
+use_data(luquillo_tree6_random, overwrite = TRUE)
+
+
+
+# Stem: All tables compiled
+luquillo_stem_random <- compile_census(ls_random, "stem")
+use_data(luquillo_stem_random, overwrite = TRUE)
+# Stem: One table for most examples
+luquillo_stem6_random <- ls_random$luquillo.stem6
+use_data(luquillo_stem6_random, overwrite = TRUE)
+
+
+
+# Species table -----------------------------------------------------------
+
+luquillo_spptable <- ls_1ha$luquillo.spptable
+use_data(luquillo_spptable, overwrite = TRUE)
