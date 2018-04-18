@@ -6,6 +6,8 @@
 #'
 #' @template thanks_luquillo
 #' 
+#' @seealso [data_dictionary], \url{http://bit.ly/fgeo-data-luquillo-taxa"}.
+#' 
 #' @examples
 #' str(luquillo_taxa, give.attr = FALSE)
 "luquillo_taxa"
@@ -21,7 +23,9 @@
 #' * `luquillo_vft_random`: One thousand randomly-chosen trees (from the entire
 #' plot).
 #'
-#' @seealso [vft_description], [data_dictionary].
+#' @seealso [vft_description], [data_dictionary], 
+#' \url{http://bit.ly/fgeo-data-luquillo-vft-random},
+#' \url{http://bit.ly/fgeo-data-luquillo-vft-1ha}.
 #'
 #' @template thanks_luquillo
 #' 

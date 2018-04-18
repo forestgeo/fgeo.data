@@ -71,13 +71,17 @@ str(bci_stem7_1ha, give.attr = FALSE)
 str(bci_elevation)
 ```
 
+## Using raw data (database output)
+
+Reading raw data from .csv files safely:
+
+* With [__readr__](https://fgeo.netlify.com/2018/03/13/2018-03-13-import-dataset/) (recommended).
+* [With only base R](https://fgeo.netlify.com/2018/03/15/2018-03-15-how-to-read-data-safely-with-only-base-r/).
+
 ```{r}
-
-# FIXME: Replace with data from Luquillo
-# IMPORTANT if reading raw data (e.g. .csv files from ForestGEO's database)
-
-# Raw data (normally you would have a .csv file stored in your computer)
-url <- "http://bit.ly/fgeo-data-bci-taxa"
+# ForestGEO's database delivers tab delimited files with extension .csv.
+# Instead of an url, you likely have a path to a directory in your computer.
+url <- "http://bit.ly/fgeo-data-luquillo-taxa"
 
 # TO AVOID ERRORS
 # Specify columns class explicitely (for an example showing only some columns)
@@ -103,7 +107,3 @@ raw_luquillo_taxa[some_rows, some_columns]
 # Note these are the same as `column_classes` defined above
 sapply(raw_luquillo_taxa[some_rows, some_columns], class)
 ```
-
-## Using raw data (database output)
-
-* The raw data (database output) on which this data-package is based can be downloaded directly from http://bit.ly/database-output. This is useful for examples using the data exactly as it is delivered from the database to the users -- particularly for examples of reading .csv files and data cleaning. You can also download specific files, as follows. To find links to download each raw dataset individually see the help file of each dataset.

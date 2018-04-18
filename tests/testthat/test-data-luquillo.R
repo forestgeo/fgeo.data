@@ -1,6 +1,8 @@
 context("data-luquillo.R")
 
 test_that("data has expected structure", {
+  skip_if_not_installed("fgeo.tool")
+  
   taxa <- fgeo.data::luquillo_taxa
   expect_true(any(grepl("data.frame", class(taxa))))
   expect_equal(names(taxa), names(fgeo.tool::type_taxa()))

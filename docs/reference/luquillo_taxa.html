@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Unique identifiers of the most commonly used tables. — unique_id • fgeo.data</title>
+<title>Complete ViewTaxonomy (taxa) table from Luquillo. — luquillo_taxa • fgeo.data</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -25,9 +25,9 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-<meta property="og:title" content="Unique identifiers of the most commonly used tables. — unique_id" />
+<meta property="og:title" content="Complete ViewTaxonomy (taxa) table from Luquillo. — luquillo_taxa" />
 
-<meta property="og:description" content="Unique identifiers of the most commonly used tables." />
+<meta property="og:description" content="Complete ViewTaxonomy (taxa) table from Luquillo." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -120,34 +120,63 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Unique identifiers of the most commonly used tables.</h1>
-    <small>Source: <a href='https://github.com/forestgeo/fgeo.data/blob/master/R/data-other.R'><code>R/data-other.R</code></a></small>
+    <h1>Complete ViewTaxonomy (taxa) table from Luquillo.</h1>
+    <small>Source: <a href='https://github.com/forestgeo/fgeo.data/blob/master/R/data-luquillo-view.R'><code>R/data-luquillo-view.R</code></a></small>
     </div>
 
     
-    <p>Unique identifiers of the most commonly used tables.</p>
+    <p>Complete ViewTaxonomy (taxa) table from Luquillo.</p>
     
 
-    <pre class="usage"><span class='no'>unique_id</span></pre>
+    <pre class="usage"><span class='no'>luquillo_taxa</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 3 rows and 2 columns.</p>
+    <p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 163 rows and 21 columns.</p>
+    
+    <h2 class="hasAnchor" id="acknowledgements"><a class="anchor" href="#acknowledgements"></a>Acknowledgements</h2>
+
+    
+    <p>Thanks to Jess Zimmerman for sharing data from Luquillo.</p>
+    
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <p><a href='data_dictionary.html'>data_dictionary</a>, <a href='http://bit.ly/fgeo-data-luquillo-taxa"'>http://bit.ly/fgeo-data-luquillo-taxa"</a>.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>unique_id</span></div><div class='output co'>#&gt; # A tibble: 3 x 2
-#&gt;   table         column
-#&gt;   &lt;chr&gt;         &lt;chr&gt; 
-#&gt; 1 tree          TreeID
-#&gt; 2 stem          StemID
-#&gt; 3 ViewFullTable DBHID </div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>luquillo_taxa</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	163 obs. of  21 variables:
+#&gt;  $ ViewID        : int  1 2 3 4 5 6 7 8 9 10 ...
+#&gt;  $ SpeciesID     : int  56 57 58 59 60 61 62 63 64 65 ...
+#&gt;  $ SubspeciesID  : chr  "NULL" "NULL" "NULL" "NULL" ...
+#&gt;  $ Family        : chr  "Fabaceae" "Euphorbiaceae" "Euphorbiaceae" "Fabaceae-papilionoideae" ...
+#&gt;  $ Mnemonic      : chr  "AESAME" "ALCFLO" "ALCLAT" "ANDINE" ...
+#&gt;  $ Genus         : chr  "Aeschynomene" "Alchorneopsis" "Alchornea" "Andira" ...
+#&gt;  $ SpeciesName   : chr  "americana" "floribunda" "latifolia" "inermis" ...
+#&gt;  $ Rank          : chr  "NULL" "NULL" "NULL" "NULL" ...
+#&gt;  $ Subspecies    : chr  "NULL" "NULL" "NULL" "NULL" ...
+#&gt;  $ Authority     : chr  "(Poir.) Rudd" "(Benth.) Müll. Arg." "Sw." "(W. Wright) Kunth ex DC." ...
+#&gt;  $ IDLevel       : chr  "species" "species" "species" "species" ...
+#&gt;  $ subspMnemonic : chr  "NULL" "NULL" "NULL" "NULL" ...
+#&gt;  $ subspAuthority: chr  "NULL" "NULL" "NULL" "NULL" ...
+#&gt;  $ FieldFamily   : chr  "Fabaceae" "Euphorbiaceae" "Euphorbiaceae" "Fabaceae" ...
+#&gt;  $ Lifeform      : chr  "NULL" "NULL" "NULL" "NULL" ...
+#&gt;  $ Description   : chr  "NULL" "NULL" "NULL" "NULL" ...
+#&gt;  $ wsg           : num  0.678 0.427 0.42 0.642 0.636 ...
+#&gt;  $ wsglevel      : chr  "family" "species" "species" "species" ...
+#&gt;  $ ListOfOldNames: chr  "NULL" "NULL" "NULL" "NULL" ...
+#&gt;  $ Specimens     : chr  "NULL" "NULL" "NULL" "NULL" ...
+#&gt;  $ Reference     : chr  "NULL" "NULL" "NULL" "NULL" ...</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
       <li><a href="#format">Format</a></li>
+
+      <li><a href="#acknowledgements">Acknowledgements</a></li>
+
+      <li><a href="#see-also">See also</a></li>
       
       <li><a href="#examples">Examples</a></li>
     </ul>

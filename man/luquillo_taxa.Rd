@@ -19,4 +19,7 @@ Thanks to Jess Zimmerman for sharing data from Luquillo.
 \examples{
 str(luquillo_taxa, give.attr = FALSE)
 }
+\seealso{
+\link{data_dictionary}, \url{http://bit.ly/fgeo-data-luquillo-taxa"}.
+}
 \keyword{datasets}
