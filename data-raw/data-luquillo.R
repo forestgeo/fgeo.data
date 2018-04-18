@@ -11,7 +11,7 @@ library(tidyverse)
 
 luquillo_taxa <- luquillo::ViewTaxonomy_luquillo
 # Allow downloading as .csv
-# write_csv(luquillo_taxa, here::here("data-raw/luquillo_taxa.csv"))
+# write_tsv(luquillo_taxa, here::here("data-raw/luquillo_taxa.csv"))
 use_data(luquillo_taxa, overwrite = TRUE)
 
 
@@ -63,13 +63,13 @@ tags_1ha <- luquillo_vft %>%
 
 luquillo_vft_random <- filter(luquillo_vft, Tag %in% tags_random)
 # Allow downloading as .csv
-# write_csv(luquillo_vft_random, here::here("data-raw/luquillo_vft_random.csv"))
+# write_tsv(luquillo_vft_random, here::here("data-raw/luquillo_vft_random.csv"))
 use_data(luquillo_vft_random, overwrite = TRUE)
 
 
 luquillo_vft_1ha <- filter(luquillo_vft, Tag %in% tags_1ha)
 # Allow downloading as .csv
-# write_csv(luquillo_vft_1ha, here::here("data-raw/luquillo_vft_1ha.csv"))
+# write_tsv(luquillo_vft_1ha, here::here("data-raw/luquillo_vft_1ha.csv"))
 use_data(luquillo_vft_1ha, overwrite = TRUE)
 
 
