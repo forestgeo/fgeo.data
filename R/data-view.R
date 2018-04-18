@@ -1,3 +1,5 @@
+# BCI ---------------------------------------------------------------------
+
 #' Complete ViewTaxonomy (taxa) table from Barro Colorado Island (bci).
 #'
 #' This is a slightly cleaned version of a ViewTaxonomy table. For a raw .csv
