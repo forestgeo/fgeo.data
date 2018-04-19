@@ -12,9 +12,18 @@ vignette: >
 ---
 
 ```{r setup, include = FALSE}
+set.seed(1014)
 knitr::opts_chunk$set(
+  echo = TRUE,
+  comment = "#>",
   collapse = TRUE,
-  comment = "#>"
+  cache = FALSE,
+  # Figures (http://r4ds.had.co.nz/)
+  out.width = "70%",
+  fig.align = "center",
+  fig.width = 6,
+  fig.asp = 0.618,
+  fig.show = "hold"
 )
 ```
 
@@ -57,20 +66,45 @@ str(luquillo_taxa, give.attr = FALSE)
 ### Census (`tree` and `stem`)
 
 ```{r}
-str(bci_tree6_random, give.attr = FALSE)
+str(luquillo_tree6_random, give.attr = FALSE)
+```
 
-str(bci_stem7_1ha, give.attr = FALSE)
+`luquillo_stem_1ha` combines multiple censuses in a sigle dataframe.
+
+```{r}
+lapply(luquillo_stem_1ha, function(column) head(unique(column)))
+```
+This dataset allows summaries by census. For example, you may want to know which quadrats have the largest number of alive trees per census:
+
+```{r}
+library(tidyverse)
+
+smry <- luquillo_stem_1ha %>% 
+  filter(status == "A", !is.na(dbh)) %>% 
+  group_by(CensusID, quadrat) %>% 
+  summarise(n = n())
+
+top_n(smry, 1)
+```
+
+```{r}
+ggplot(top_n(smry, 1), aes(CensusID, n)) + 
+  geom_col(fill = "lightgreen") +
+  geom_text(aes(label = quadrat)) +
+  labs(title = "Quadrat with greatest number of alive trees per census")
 ```
 
 ### Elevation (`elevation`)
 
 ```{r}
-str(bci_elevation)
+str(luquillo_elevation)
+
+head(luquillo_elevation$col)
 ```
 
-## Using raw data (database output)
+## Reading data from .csv fiels (e.g. the database output of ViewFullTable)
 
-Reading raw data from .csv files safely:
+To safely read raw data from .csv files, you need to know about the most important arguments of the functions you use to read the data. Below is a small example but you may also want to read these articles, showing two ways to read data:
 
 * With [__readr__](https://fgeo.netlify.com/2018/03/13/2018-03-13-import-dataset/) (recommended).
 * [With only base R](https://fgeo.netlify.com/2018/03/15/2018-03-15-how-to-read-data-safely-with-only-base-r/).

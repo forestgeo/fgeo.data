@@ -171,3 +171,13 @@ use_data(luquillo_stem6_random, overwrite = TRUE)
 
 luquillo_species <- ls_1ha$luquillo.spptable
 use_data(luquillo_species, overwrite = TRUE)
+
+
+
+# Elevation ---------------------------------------------------------------
+
+# Source: Suzanne Lao via http://bit.ly/2JaKqwi
+
+load(here::here("data-raw/CTFSElev_luquillo.rdata"))
+luquillo_elevation <- CTFSElev_luquillo
+use_data(luquillo_elevation)
