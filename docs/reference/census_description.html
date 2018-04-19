@@ -157,59 +157,55 @@ example, this structure makes helps to calculate demographic rates between
 any pair of censuses.</p></li>
 </ul>
     
-    <h2 class="hasAnchor" id="definition-of-variables-in-tree-tables"><a class="anchor" href="#definition-of-variables-in-tree-tables"></a>Definition of Variables in tree tables</h2>
+    <h2 class="hasAnchor" id="definition-of-variables-in-stem-tables"><a class="anchor" href="#definition-of-variables-in-stem-tables"></a>Definition of Variables in stem tables</h2>
 
     
-    <p>FIXME: Check if this is still OK (columns and order).</p><ul>
+    <ul>
 <li><p><code>treeID</code>: The unique tree identifier in CTFS database. Useful to be certain
 in matching trees.</p></li>
+<li><p><code>stemID</code>: The unique stem identifier in CTFS database. Useful to be certain
+in matching stems.</p></li>
 <li><p><code>tag</code>: Tag number used in the field.</p></li>
+<li><p><code>StemTag</code>: Tag number on the individual stem, if present.</p></li>
 <li><p><code>sp</code>: The species mnemonic. To get full species names, the taxonomy table
 must be downloaded from the CTFS database.</p></li>
 <li><p><code>quadrat</code>: Quadrat designation.</p></li>
 <li><p><code>gx</code>: The x coordinate within the plot, relative to one edge of the plot.</p></li>
 <li><p><code>gy</code>: The y plot coordinate.</p></li>
-<li><p><code>stemID</code>: The unique stem identifier in CTFS database. Useful to be certain
-in matching stems.</p></li>
+<li><p><code>MeasureID</code>: FIXME</p></li>
+<li><p><code>CensusID</code>: An integer automatically generated to uniquely identify a
+census.</p></li>
 <li><p><code>dbh</code>: Diameter of one stem on the tree, the stem whose stemID is given.</p></li>
+<li><p><code>pom</code>: FIXME</p></li>
 <li><p><code>hom</code>: The height-of-measure, identical to pom but a numeric variable with
 full precision.</p></li>
 <li><p><code>ExactDate</code>: The date on which a tree was measured.</p></li>
+<li><p><code>DFstatus</code>:  <code>DFstatus</code> in the R stem file is exactly Status in the
+ViewFullTable.</p></li>
 <li><p><code>codes</code>: The codes for the measurement as recorded in the field.</p></li>
-<li><p><code>date</code>: The julian date, for date arithmetic.</p></li>
-<li><p><code>status</code>: Indicates the status of the entire tree. For example, if any stem
-is alive, the tree is alive; if every stem is dead, the tree is dead:</p><ul>
+<li><p><code>countPOM</code>: FIXME</p></li>
+<li><p><code>status</code>: The status of each individual stem. In a single tree some stems
+may be alive and others may be dead.</p><ul>
 <li><p><code>A</code>: Alive.</p></li>
 <li><p><code>D</code>: Dead.</p></li>
 <li><p><code>M</code>: Missing. Case when <code>dbh</code> and <code>codes</code> for a tree was not given, so
 it is not certain whether the tree was alive or dead.</p></li>
 <li><p><code>P</code>: Prior. It indicates a tree had not yet recruited at this census.</p></li>
-</ul></li>
-<li><p><code>nostems</code>: The number of living stems on the date of measurement.</p></li>
-<li><p><code>CensusID</code>: An integer automatically generated to uniquely identify a
-census.</p></li>
-</ul>
-    
-    <h2 class="hasAnchor" id="definition-of-variables-in-stem-tables"><a class="anchor" href="#definition-of-variables-in-stem-tables"></a>Definition of Variables in stem tables</h2>
-
-    
-    <p>Compared to tree tables, the the columns of stem tables and mean the same,
-except when specified below:</p><ul>
-<li><p><code>treeID</code>, <code>stemID</code>, <code>tag</code>: See tree table.</p></li>
-<li><p><code>StemTag</code>: Tag number on the individual stem, if present.</p></li>
-<li><p><code>sp</code>, <code>quadrat</code>, <code>gx</code>, <code>gy</code>: See tree table.</p></li>
-<li><p><code>dbh</code>: Diameter of the stem.</p></li>
-<li><p><code>hom</code>, <code>ExactDate</code>, <code>codes</code>, <code>date</code>: See tree table.</p></li>
-<li><p><code>status</code>: As in tree table, except that the status refers not to the entire
-tree but to an individual stem. In a single tree some stems may be alive
-and others may be dead. <code>status</code> in stem tables can take an additional
-value:</p><ul>
 <li><p><code>G</code>: Gone. Case when a tree is alive and a stem which formerly had a
 measurement does not in this census.</p></li>
 </ul></li>
-<li><p><code>CensusID</code>: See tree table.</p></li>
-<li><p><code>DFstatus</code>:  <code>DFstatus</code> in the R stem file is exactly Status in the
-ViewFullTable.</p></li>
+<li><p><code>date</code>: The julian date, for date arithmetic.</p></li>
+</ul>
+    
+    <h2 class="hasAnchor" id="definition-of-variables-in-tree-tables"><a class="anchor" href="#definition-of-variables-in-tree-tables"></a>Definition of Variables in tree tables</h2>
+
+    
+    <p>Compared to stem tables, the the columns of tree tables and mean the same,
+except when specified below:</p><ul>
+<li><p><code>status</code>: Indicates the status of the entire tree. For example, if any stem
+is alive, the tree is alive; if every stem is dead, the tree is dead:</p></li>
+<li><p><code>dbh</code>: Diameter of the tree.</p></li>
+<li><p><code>nostems</code>: The number of living stems on the date of measurement.</p></li>
 </ul>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
@@ -226,9 +222,9 @@ ViewFullTable.</p></li>
       
       <li><a href="#details">Details</a></li>
 
-      <li><a href="#definition-of-variables-in-tree-tables">Definition of Variables in tree tables</a></li>
-
       <li><a href="#definition-of-variables-in-stem-tables">Definition of Variables in stem tables</a></li>
+
+      <li><a href="#definition-of-variables-in-tree-tables">Definition of Variables in tree tables</a></li>
 
       <li><a href="#see-also">See also</a></li>
           </ul>

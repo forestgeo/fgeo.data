@@ -77,7 +77,8 @@ lapply(luquillo_stem_1ha, function(column) head(unique(column)))
 This dataset allows summaries by census. For example, you may want to know which quadrats have the largest number of alive trees per census:
 
 ```{r}
-library(tidyverse)
+library(ggplot2)
+library(dplyr)
 
 smry <- luquillo_stem_1ha %>% 
   filter(status == "A", !is.na(dbh)) %>% 
