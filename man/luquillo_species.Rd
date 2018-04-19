@@ -3,12 +3,15 @@
 \docType{data}
 \name{luquillo_species}
 \alias{luquillo_species}
-\title{SPecies table from Luquillo.}
+\title{Species table from Luquillo.}
 \format{An object of class \code{data.frame} with 84 rows and 10 columns.}
 \usage{
 luquillo_species
 }
 \description{
-SPecies table from Luquillo.
+Species table from Luquillo.
+}
+\examples{
+str(luquillo_species, give.attr = FALSE)
 }
 \keyword{datasets}
