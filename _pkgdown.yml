@@ -43,16 +43,20 @@ reference:
   - title: ViewFullTable
     contents:
       - vft_description
+      - matches("luquillo_vft")
       - matches("bci_vft")
 
   - title: Census tree and stem
     contents:
       - census_description
+      - matches("luquillo_tree")
+      - matches("luquillo_stem")
       - matches("bci_tree")
       - matches("bci_stem")
       
   - title: Other
     contents:
+      - luquillo_taxa
       - bci_elevation
       - bci_taxa
-      - unique_id
+

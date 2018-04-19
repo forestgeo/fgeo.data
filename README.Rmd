@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 __fgeo.data__ provides open datasets of ForestGEO.
 
-## [See datasets](https://forestgeo.github.io/fgeo.data/articles/fgeo.data.html)
+## [See datasets](https://forestgeo.github.io/fgeo.data/reference/index.html)
 
 ## Installation
 

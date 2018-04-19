@@ -12,7 +12,7 @@ status](https://travis-ci.org/forestgeo/fgeo.data.svg?branch=master)](https://tr
 **fgeo.data** provides open datasets of
 ForestGEO.
 
-## [See datasets](https://forestgeo.github.io/fgeo.data/articles/fgeo.data.html)
+## [See datasets](https://forestgeo.github.io/fgeo.data/reference/index.html)
 
 ## Installation
 
