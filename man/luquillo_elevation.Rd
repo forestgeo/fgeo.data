@@ -3,7 +3,7 @@
 \docType{data}
 \name{luquillo_elevation}
 \alias{luquillo_elevation}
-\title{Elevation data from Luquillo}
+\title{Elevation data from Luquillo.}
 \format{An object of class \code{list} of length 4.}
 \usage{
 luquillo_elevation
@@ -13,8 +13,10 @@ This dataset can be downloaded directly from
 \url{http://bit.ly/fgeo-data-luquillo-elevation}.
 }
 \examples{
-str(luquillo_elevation)
+str(luquillo_elevation, , give.attr = FALSE)
+
 sapply(luquillo_elevation, class)
-str(luquillo_elevation$col)
+
+str(luquillo_elevation$col, give.attr = FALSE)
 }
 \keyword{datasets}

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Elevation data from Luquillo — luquillo_elevation • fgeo.data</title>
+<title>Elevation data from Luquillo. — luquillo_elevation • fgeo.data</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -25,7 +25,7 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-<meta property="og:title" content="Elevation data from Luquillo — luquillo_elevation" />
+<meta property="og:title" content="Elevation data from Luquillo. — luquillo_elevation" />
 
 <meta property="og:description" content="This dataset can be downloaded directly from
 http://bit.ly/fgeo-data-luquillo-elevation." />
@@ -121,7 +121,7 @@ http://bit.ly/fgeo-data-luquillo-elevation." />
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Elevation data from Luquillo</h1>
+    <h1>Elevation data from Luquillo.</h1>
     <small>Source: <a href='https://github.com/forestgeo/fgeo.data/blob/master/R/data-luquillo-other.R'><code>R/data-luquillo-other.R</code></a></small>
     </div>
 
@@ -138,15 +138,17 @@ http://bit.ly/fgeo-data-luquillo-elevation." />
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>luquillo_elevation</span>)</div><div class='output co'>#&gt; List of 4
+    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>luquillo_elevation</span>, , <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; List of 4
 #&gt;  $ col :'data.frame':	6565 obs. of  3 variables:
 #&gt;   ..$ x   : int [1:6565] 0 0 0 0 0 0 0 0 0 0 ...
 #&gt;   ..$ y   : int [1:6565] 0 5 10 15 20 25 30 35 40 45 ...
 #&gt;   ..$ elev: num [1:6565] 364 364 363 363 363 ...
 #&gt;  $ mat : num [1:101, 1:65] 364 364 363 363 363 ...
 #&gt;  $ xdim: int 320
-#&gt;  $ ydim: int 500</div><div class='input'><span class='fu'>sapply</span>(<span class='no'>luquillo_elevation</span>, <span class='no'>class</span>)</div><div class='output co'>#&gt;          col          mat         xdim         ydim 
-#&gt; "data.frame"     "matrix"    "integer"    "integer" </div><div class='input'><span class='fu'>str</span>(<span class='no'>luquillo_elevation</span>$<span class='no'>col</span>)</div><div class='output co'>#&gt; 'data.frame':	6565 obs. of  3 variables:
+#&gt;  $ ydim: int 500</div><div class='input'>
+<span class='fu'>sapply</span>(<span class='no'>luquillo_elevation</span>, <span class='no'>class</span>)</div><div class='output co'>#&gt;          col          mat         xdim         ydim 
+#&gt; "data.frame"     "matrix"    "integer"    "integer" </div><div class='input'>
+<span class='fu'>str</span>(<span class='no'>luquillo_elevation</span>$<span class='no'>col</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; 'data.frame':	6565 obs. of  3 variables:
 #&gt;  $ x   : int  0 0 0 0 0 0 0 0 0 0 ...
 #&gt;  $ y   : int  0 5 10 15 20 25 30 35 40 45 ...
 #&gt;  $ elev: num  364 364 363 363 363 ...</div></pre>
