@@ -22,6 +22,7 @@
 #' any pair of censuses.
 #'
 #' @section Definition of Variables in tree tables:
+#' FIXME: Check if this is still OK (columns and order).
 #' * `treeID`: The unique tree identifier in CTFS database. Useful to be certain
 #'   in matching trees.
 #' * `tag`: Tag number used in the field.

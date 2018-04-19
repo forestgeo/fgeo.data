@@ -30,6 +30,7 @@ any pair of censuses.
 }
 \section{Definition of Variables in tree tables}{
 
+FIXME: Check if this is still OK (columns and order).
 \itemize{
 \item \code{treeID}: The unique tree identifier in CTFS database. Useful to be certain
 in matching trees.

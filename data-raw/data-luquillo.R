@@ -92,6 +92,21 @@ use_data(luquillo_vft_4quad, overwrite = TRUE)
 
 # Tree and stem tables ----------------------------------------------------
 
+# Tables build with:
+# rtbl::rtbl(
+#   luquillo_vft_1ha,
+#   luquillo_taxa,
+#   plotname = "luquillo"
+# )
+#
+# rtbl::rtbl(
+#   luquillo_vft_random,
+#   luquillo_taxa,
+#   plotname = "luquillo"
+# )
+
+
+
 load_ls <- function(path, env) {
   path %>% 
   purrr::map(fs::dir_ls) %>% 
