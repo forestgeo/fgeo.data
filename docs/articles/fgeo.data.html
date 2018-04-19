@@ -277,33 +277,34 @@
 <a class="sourceLine" id="cb5-58" data-line-number="58"><span class="co">#&gt; $date</span></a>
 <a class="sourceLine" id="cb5-59" data-line-number="59"><span class="co">#&gt; [1] NA</span></a></code></pre></div>
 <p>This dataset allows summaries by census. For example, you may want to know which quadrats have the largest number of alive trees per census:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="co">#&gt; -- Attaching packages ----------------------------------------------- tidyverse 1.2.1 --</span></a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="co">#&gt; v ggplot2 2.2.1     v purrr   0.2.4</span></a>
-<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="co">#&gt; v tibble  1.4.2     v dplyr   0.7.4</span></a>
-<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="co">#&gt; v tidyr   0.8.0     v stringr 1.3.0</span></a>
-<a class="sourceLine" id="cb6-6" data-line-number="6"><span class="co">#&gt; v readr   1.1.1     v forcats 0.3.0</span></a>
-<a class="sourceLine" id="cb6-7" data-line-number="7"><span class="co">#&gt; -- Conflicts -------------------------------------------------- tidyverse_conflicts() --</span></a>
-<a class="sourceLine" id="cb6-8" data-line-number="8"><span class="co">#&gt; x dplyr::filter() masks stats::filter()</span></a>
-<a class="sourceLine" id="cb6-9" data-line-number="9"><span class="co">#&gt; x dplyr::lag()    masks stats::lag()</span></a>
-<a class="sourceLine" id="cb6-10" data-line-number="10"></a>
-<a class="sourceLine" id="cb6-11" data-line-number="11">smry &lt;-<span class="st"> </span>luquillo_stem_1ha <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb6-12" data-line-number="12"><span class="st">  </span><span class="kw">filter</span>(status <span class="op">==</span><span class="st"> "A"</span>, <span class="op">!</span><span class="kw">is.na</span>(dbh)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb6-13" data-line-number="13"><span class="st">  </span><span class="kw">group_by</span>(CensusID, quadrat) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb6-14" data-line-number="14"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n</span>())</a>
-<a class="sourceLine" id="cb6-15" data-line-number="15"></a>
-<a class="sourceLine" id="cb6-16" data-line-number="16"><span class="kw">top_n</span>(smry, <span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb6-17" data-line-number="17"><span class="co">#&gt; Selecting by n</span></a>
-<a class="sourceLine" id="cb6-18" data-line-number="18"><span class="co">#&gt; # A tibble: 6 x 3</span></a>
-<a class="sourceLine" id="cb6-19" data-line-number="19"><span class="co">#&gt; # Groups:   CensusID [6]</span></a>
-<a class="sourceLine" id="cb6-20" data-line-number="20"><span class="co">#&gt;   CensusID quadrat     n</span></a>
-<a class="sourceLine" id="cb6-21" data-line-number="21"><span class="co">#&gt;      &lt;int&gt; &lt;chr&gt;   &lt;int&gt;</span></a>
-<a class="sourceLine" id="cb6-22" data-line-number="22"><span class="co">#&gt; 1        1 622       264</span></a>
-<a class="sourceLine" id="cb6-23" data-line-number="23"><span class="co">#&gt; 2        2 822       265</span></a>
-<a class="sourceLine" id="cb6-24" data-line-number="24"><span class="co">#&gt; 3        3 1021      569</span></a>
-<a class="sourceLine" id="cb6-25" data-line-number="25"><span class="co">#&gt; 4        4 822       239</span></a>
-<a class="sourceLine" id="cb6-26" data-line-number="26"><span class="co">#&gt; 5        5 822       175</span></a>
-<a class="sourceLine" id="cb6-27" data-line-number="27"><span class="co">#&gt; 6        6 721       206</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="co">#&gt; Attaching package: 'dplyr'</span></a>
+<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="co">#&gt; The following objects are masked from 'package:stats':</span></a>
+<a class="sourceLine" id="cb6-6" data-line-number="6"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb6-7" data-line-number="7"><span class="co">#&gt;     filter, lag</span></a>
+<a class="sourceLine" id="cb6-8" data-line-number="8"><span class="co">#&gt; The following objects are masked from 'package:base':</span></a>
+<a class="sourceLine" id="cb6-9" data-line-number="9"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb6-10" data-line-number="10"><span class="co">#&gt;     intersect, setdiff, setequal, union</span></a>
+<a class="sourceLine" id="cb6-11" data-line-number="11"></a>
+<a class="sourceLine" id="cb6-12" data-line-number="12">smry &lt;-<span class="st"> </span>luquillo_stem_1ha <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb6-13" data-line-number="13"><span class="st">  </span><span class="kw">filter</span>(status <span class="op">==</span><span class="st"> "A"</span>, <span class="op">!</span><span class="kw">is.na</span>(dbh)) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb6-14" data-line-number="14"><span class="st">  </span><span class="kw">group_by</span>(CensusID, quadrat) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb6-15" data-line-number="15"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n</span>())</a>
+<a class="sourceLine" id="cb6-16" data-line-number="16"></a>
+<a class="sourceLine" id="cb6-17" data-line-number="17"><span class="kw">top_n</span>(smry, <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb6-18" data-line-number="18"><span class="co">#&gt; Selecting by n</span></a>
+<a class="sourceLine" id="cb6-19" data-line-number="19"><span class="co">#&gt; # A tibble: 6 x 3</span></a>
+<a class="sourceLine" id="cb6-20" data-line-number="20"><span class="co">#&gt; # Groups:   CensusID [6]</span></a>
+<a class="sourceLine" id="cb6-21" data-line-number="21"><span class="co">#&gt;   CensusID quadrat     n</span></a>
+<a class="sourceLine" id="cb6-22" data-line-number="22"><span class="co">#&gt;      &lt;int&gt; &lt;chr&gt;   &lt;int&gt;</span></a>
+<a class="sourceLine" id="cb6-23" data-line-number="23"><span class="co">#&gt; 1        1 622       264</span></a>
+<a class="sourceLine" id="cb6-24" data-line-number="24"><span class="co">#&gt; 2        2 822       265</span></a>
+<a class="sourceLine" id="cb6-25" data-line-number="25"><span class="co">#&gt; 3        3 1021      569</span></a>
+<a class="sourceLine" id="cb6-26" data-line-number="26"><span class="co">#&gt; 4        4 822       239</span></a>
+<a class="sourceLine" id="cb6-27" data-line-number="27"><span class="co">#&gt; 5        5 822       175</span></a>
+<a class="sourceLine" id="cb6-28" data-line-number="28"><span class="co">#&gt; 6        6 721       206</span></a></code></pre></div>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">ggplot</span>(<span class="kw">top_n</span>(smry, <span class="dv">1</span>), <span class="kw">aes</span>(CensusID, n)) <span class="op">+</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb7-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_col</span>(<span class="dt">fill =</span> <span class="st">"lightgreen"</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb7-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_text</span>(<span class="kw">aes</span>(<span class="dt">label =</span> quadrat)) <span class="op">+</span></a>

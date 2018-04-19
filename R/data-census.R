@@ -21,52 +21,48 @@
 #' example, this structure makes helps to calculate demographic rates between
 #' any pair of censuses.
 #'
-#' @section Definition of Variables in tree tables:
-#' FIXME: Check if this is still OK (columns and order).
+#' @section Definition of Variables in stem tables:
 #' * `treeID`: The unique tree identifier in CTFS database. Useful to be certain
 #'   in matching trees.
+#' * `stemID`: The unique stem identifier in CTFS database. Useful to be certain
+#'   in matching stems.
 #' * `tag`: Tag number used in the field.
+#' * `StemTag`: Tag number on the individual stem, if present.
 #' * `sp`: The species mnemonic. To get full species names, the taxonomy table
 #'   must be downloaded from the CTFS database.
 #' * `quadrat`: Quadrat designation.
 #' * `gx`: The x coordinate within the plot, relative to one edge of the plot.
 #' * `gy`: The y plot coordinate.
-#' * `stemID`: The unique stem identifier in CTFS database. Useful to be certain
-#'   in matching stems.
+#' * `MeasureID`: FIXME
+#' * `CensusID`: An integer automatically generated to uniquely identify a 
+#'   census.
 #' * `dbh`: Diameter of one stem on the tree, the stem whose stemID is given.
+#' * `pom`: FIXME
 #' * `hom`: The height-of-measure, identical to pom but a numeric variable with
 #'   full precision.
 #' * `ExactDate`: The date on which a tree was measured.
+#'  * `DFstatus`:  `DFstatus` in the R stem file is exactly Status in the
+#'    ViewFullTable.
 #' * `codes`: The codes for the measurement as recorded in the field.
-#' * `date`: The julian date, for date arithmetic.
-#' * `status`: Indicates the status of the entire tree. For example, if any stem
-#'   is alive, the tree is alive; if every stem is dead, the tree is dead:
+#' * `countPOM`: FIXME
+#' * `status`: The status of each individual stem. In a single tree some stems
+#'   may be alive and others may be dead.
 #'     * `A`: Alive.
 #'     * `D`: Dead.
 #'     * `M`: Missing. Case when `dbh` and `codes` for a tree was not given, so
 #'       it is not certain whether the tree was alive or dead.
 #'     * `P`: Prior. It indicates a tree had not yet recruited at this census.
-#' * `nostems`: The number of living stems on the date of measurement.
-#' * `CensusID`: An integer automatically generated to uniquely identify a 
-#'   census.
-#'
-#' @section Definition of Variables in stem tables:
-#' Compared to tree tables, the the columns of stem tables and mean the same, 
-#' except when specified below:
-#' * `treeID`, `stemID`, `tag`: See tree table.
-#' * `StemTag`: Tag number on the individual stem, if present.
-#' * `sp`, `quadrat`, `gx`, `gy`: See tree table.
-#' * `dbh`: Diameter of the stem.
-#' * `hom`, `ExactDate`, `codes`, `date`: See tree table.
-#' * `status`: As in tree table, except that the status refers not to the entire
-#'   tree but to an individual stem. In a single tree some stems may be alive 
-#'   and others may be dead. `status` in stem tables can take an additional
-#'   value:
 #'     * `G`: Gone. Case when a tree is alive and a stem which formerly had a
 #'       measurement does not in this census.
-#'  * `CensusID`: See tree table.
-#'  * `DFstatus`:  `DFstatus` in the R stem file is exactly Status in the
-#'    ViewFullTable.
+#' * `date`: The julian date, for date arithmetic.
+#'
+#' @section Definition of Variables in tree tables:
+#' Compared to stem tables, the the columns of tree tables and mean the same, 
+#' except when specified below:
+#' * `status`: Indicates the status of the entire tree. For example, if any stem
+#'   is alive, the tree is alive; if every stem is dead, the tree is dead:
+#' * `dbh`: Diameter of the tree.
+#' * `nostems`: The number of living stems on the date of measurement.
 #'
 #' @seealso [data_dictionary], [census_bci], 
 #' \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputFull.pdf},

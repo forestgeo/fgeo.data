@@ -28,62 +28,56 @@ example, this structure makes helps to calculate demographic rates between
 any pair of censuses.
 }
 }
-\section{Definition of Variables in tree tables}{
+\section{Definition of Variables in stem tables}{
 
-FIXME: Check if this is still OK (columns and order).
 \itemize{
 \item \code{treeID}: The unique tree identifier in CTFS database. Useful to be certain
 in matching trees.
+\item \code{stemID}: The unique stem identifier in CTFS database. Useful to be certain
+in matching stems.
 \item \code{tag}: Tag number used in the field.
+\item \code{StemTag}: Tag number on the individual stem, if present.
 \item \code{sp}: The species mnemonic. To get full species names, the taxonomy table
 must be downloaded from the CTFS database.
 \item \code{quadrat}: Quadrat designation.
 \item \code{gx}: The x coordinate within the plot, relative to one edge of the plot.
 \item \code{gy}: The y plot coordinate.
-\item \code{stemID}: The unique stem identifier in CTFS database. Useful to be certain
-in matching stems.
+\item \code{MeasureID}: FIXME
+\item \code{CensusID}: An integer automatically generated to uniquely identify a
+census.
 \item \code{dbh}: Diameter of one stem on the tree, the stem whose stemID is given.
+\item \code{pom}: FIXME
 \item \code{hom}: The height-of-measure, identical to pom but a numeric variable with
 full precision.
 \item \code{ExactDate}: The date on which a tree was measured.
+\item \code{DFstatus}:  \code{DFstatus} in the R stem file is exactly Status in the
+ViewFullTable.
 \item \code{codes}: The codes for the measurement as recorded in the field.
-\item \code{date}: The julian date, for date arithmetic.
-\item \code{status}: Indicates the status of the entire tree. For example, if any stem
-is alive, the tree is alive; if every stem is dead, the tree is dead:
+\item \code{countPOM}: FIXME
+\item \code{status}: The status of each individual stem. In a single tree some stems
+may be alive and others may be dead.
 \itemize{
 \item \code{A}: Alive.
 \item \code{D}: Dead.
 \item \code{M}: Missing. Case when \code{dbh} and \code{codes} for a tree was not given, so
 it is not certain whether the tree was alive or dead.
 \item \code{P}: Prior. It indicates a tree had not yet recruited at this census.
-}
-\item \code{nostems}: The number of living stems on the date of measurement.
-\item \code{CensusID}: An integer automatically generated to uniquely identify a
-census.
-}
-}
-
-\section{Definition of Variables in stem tables}{
-
-Compared to tree tables, the the columns of stem tables and mean the same,
-except when specified below:
-\itemize{
-\item \code{treeID}, \code{stemID}, \code{tag}: See tree table.
-\item \code{StemTag}: Tag number on the individual stem, if present.
-\item \code{sp}, \code{quadrat}, \code{gx}, \code{gy}: See tree table.
-\item \code{dbh}: Diameter of the stem.
-\item \code{hom}, \code{ExactDate}, \code{codes}, \code{date}: See tree table.
-\item \code{status}: As in tree table, except that the status refers not to the entire
-tree but to an individual stem. In a single tree some stems may be alive
-and others may be dead. \code{status} in stem tables can take an additional
-value:
-\itemize{
 \item \code{G}: Gone. Case when a tree is alive and a stem which formerly had a
 measurement does not in this census.
 }
-\item \code{CensusID}: See tree table.
-\item \code{DFstatus}:  \code{DFstatus} in the R stem file is exactly Status in the
-ViewFullTable.
+\item \code{date}: The julian date, for date arithmetic.
+}
+}
+
+\section{Definition of Variables in tree tables}{
+
+Compared to stem tables, the the columns of tree tables and mean the same,
+except when specified below:
+\itemize{
+\item \code{status}: Indicates the status of the entire tree. For example, if any stem
+is alive, the tree is alive; if every stem is dead, the tree is dead:
+\item \code{dbh}: Diameter of the tree.
+\item \code{nostems}: The number of living stems on the date of measurement.
 }
 }
 
