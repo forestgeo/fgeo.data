@@ -90,7 +90,6 @@ use_data(luquillo_vft_4quad, overwrite = TRUE)
 
 
 
-
 # Tree and stem tables ----------------------------------------------------
 
 load_ls <- function(path, env) {
@@ -120,19 +119,14 @@ here::here("data-raw/private/rtbl_1ha") %>%
   load_ls(env_1ha)
 ls_1ha <- as.list(env_1ha)
 
-# Tree: Censuses 4 and five compiled
-luquillo_tree_1ha <- compile_census(ls_1ha, "full")
-use_data(luquillo_tree_1ha, overwrite = TRUE)
-# Tree: One table for most examples
+# luquillo_tree_1ha not saved to save space. Tree can be reproduced from stem.
+
 luquillo_tree6_1ha <- ls_1ha$luquillo.full6
 use_data(luquillo_tree6_1ha, overwrite = TRUE)
 
-
-
-# Stem: Censuses 4 and five compiled
 luquillo_stem_1ha <- compile_census(ls_1ha, "stem")
 use_data(luquillo_stem_1ha, overwrite = TRUE)
-# Stem: One table for most examples
+
 luquillo_stem6_1ha <- ls_1ha$luquillo.stem6
 use_data(luquillo_stem6_1ha, overwrite = TRUE)
 
@@ -145,19 +139,14 @@ here::here("data-raw/private/rtbl_random") %>%
   load_ls(env_random)
 ls_random <- as.list(env_random)
 
-# Tree: All tables compiled
-luquillo_tree_random <- compile_census(ls_random, "full")
-use_data(luquillo_tree_random, overwrite = TRUE)
-# Tree: One table for most examples
+# luquillo_tree_random not saved to save space. It can be reproduced from stem.
+
 luquillo_tree6_random <- ls_random$luquillo.full6
 use_data(luquillo_tree6_random, overwrite = TRUE)
 
-
-
-# Stem: All tables compiled
 luquillo_stem_random <- compile_census(ls_random, "stem")
 use_data(luquillo_stem_random, overwrite = TRUE)
-# Stem: One table for most examples
+
 luquillo_stem6_random <- ls_random$luquillo.stem6
 use_data(luquillo_stem6_random, overwrite = TRUE)
 
