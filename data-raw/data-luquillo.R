@@ -169,5 +169,5 @@ use_data(luquillo_stem6_random, overwrite = TRUE)
 
 # Species table -----------------------------------------------------------
 
-luquillo_spptable <- ls_1ha$luquillo.spptable
-use_data(luquillo_spptable, overwrite = TRUE)
+luquillo_species <- ls_1ha$luquillo.spptable
+use_data(luquillo_species, overwrite = TRUE)
