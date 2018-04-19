@@ -121,21 +121,21 @@ remotes::install_github("forestgeo/fgeo.data")</a></code></pre>
 <div id="viewfulltable-vft" class="section level3">
 <h3 class="hasAnchor">
 <a href="#viewfulltable-vft" class="anchor"></a>ViewFullTable (<code>vft</code>)</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">vft &lt;-<span class="st"> </span>luquillo_vft_random</a>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">vft &lt;-<span class="st"> </span>luquillo_vft_4quad</a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"></a>
 <a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co"># Show first few columns to save space.</span></a>
 <a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw">str</span>(vft, <span class="dt">give.attr =</span> <span class="ot">FALSE</span>, <span class="dt">list.len =</span> <span class="dv">5</span>)</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt; Classes 'tbl_df', 'tbl' and 'data.frame':    5945 obs. of  32 variables:</span></a>
-<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt;  $ DBHID           : int  143 103518 217487 347333 439947 582850 158 103533 217498 384255 ...</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt; Classes 'tbl_df', 'tbl' and 'data.frame':    3302 obs. of  32 variables:</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt;  $ DBHID           : int  384550 384553 466764 384554 466765 611446 384555 466766 611447 384556 ...</span></a>
 <a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt;  $ PlotName        : chr  "luquillo" "luquillo" "luquillo" "luquillo" ...</span></a>
 <a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt;  $ PlotID          : int  1 1 1 1 1 1 1 1 1 1 ...</span></a>
-<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt;  $ Family          : chr  "Burseraceae" "Burseraceae" "Burseraceae" "Burseraceae" ...</span></a>
-<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt;  $ Genus           : chr  "Dacryodes" "Dacryodes" "Dacryodes" "Dacryodes" ...</span></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt;  $ Family          : chr  "Rubiaceae" "Urticaceae" "Urticaceae" "Urticaceae" ...</span></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt;  $ Genus           : chr  "Psychotria" "Cecropia" "Cecropia" "Cecropia" ...</span></a>
 <a class="sourceLine" id="cb3-11" data-line-number="11"><span class="co">#&gt;   [list output truncated]</span></a>
 <a class="sourceLine" id="cb3-12" data-line-number="12"></a>
 <a class="sourceLine" id="cb3-13" data-line-number="13"><span class="kw">lapply</span>(vft, <span class="cf">function</span>(x) <span class="kw">head</span>(<span class="kw">unique</span>(x)))</a>
 <a class="sourceLine" id="cb3-14" data-line-number="14"><span class="co">#&gt; $DBHID</span></a>
-<a class="sourceLine" id="cb3-15" data-line-number="15"><span class="co">#&gt; [1]    143 103518 217487 347333 439947 582850</span></a>
+<a class="sourceLine" id="cb3-15" data-line-number="15"><span class="co">#&gt; [1] 384550 384553 466764 384554 466765 611446</span></a>
 <a class="sourceLine" id="cb3-16" data-line-number="16"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-17" data-line-number="17"><span class="co">#&gt; $PlotName</span></a>
 <a class="sourceLine" id="cb3-18" data-line-number="18"><span class="co">#&gt; [1] "luquillo"</span></a>
@@ -144,96 +144,96 @@ remotes::install_github("forestgeo/fgeo.data")</a></code></pre>
 <a class="sourceLine" id="cb3-21" data-line-number="21"><span class="co">#&gt; [1] 1</span></a>
 <a class="sourceLine" id="cb3-22" data-line-number="22"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-23" data-line-number="23"><span class="co">#&gt; $Family</span></a>
-<a class="sourceLine" id="cb3-24" data-line-number="24"><span class="co">#&gt; [1] "Burseraceae" "Myrtaceae"   "Salicaceae"  "Meliaceae"   "Arecaceae"  </span></a>
-<a class="sourceLine" id="cb3-25" data-line-number="25"><span class="co">#&gt; [6] "Araliaceae" </span></a>
+<a class="sourceLine" id="cb3-24" data-line-number="24"><span class="co">#&gt; [1] "Rubiaceae"  "Urticaceae" "Araliaceae" "Salicaceae" "Lauraceae" </span></a>
+<a class="sourceLine" id="cb3-25" data-line-number="25"><span class="co">#&gt; [6] "Meliaceae" </span></a>
 <a class="sourceLine" id="cb3-26" data-line-number="26"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-27" data-line-number="27"><span class="co">#&gt; $Genus</span></a>
-<a class="sourceLine" id="cb3-28" data-line-number="28"><span class="co">#&gt; [1] "Dacryodes"  "Myrcia"     "Casearia"   "Guarea"     "Prestoea"  </span></a>
-<a class="sourceLine" id="cb3-29" data-line-number="29"><span class="co">#&gt; [6] "Schefflera"</span></a>
+<a class="sourceLine" id="cb3-28" data-line-number="28"><span class="co">#&gt; [1] "Psychotria" "Cecropia"   "Schefflera" "Casearia"   "Ocotea"    </span></a>
+<a class="sourceLine" id="cb3-29" data-line-number="29"><span class="co">#&gt; [6] "Guarea"    </span></a>
 <a class="sourceLine" id="cb3-30" data-line-number="30"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-31" data-line-number="31"><span class="co">#&gt; $SpeciesName</span></a>
-<a class="sourceLine" id="cb3-32" data-line-number="32"><span class="co">#&gt; [1] "excelsa"    "splendens"  "arborea"    "guidonia"   "acuminata" </span></a>
-<a class="sourceLine" id="cb3-33" data-line-number="33"><span class="co">#&gt; [6] "morototoni"</span></a>
+<a class="sourceLine" id="cb3-32" data-line-number="32"><span class="co">#&gt; [1] "berteroana"   "schreberiana" "morototoni"   "arborea"     </span></a>
+<a class="sourceLine" id="cb3-33" data-line-number="33"><span class="co">#&gt; [5] "leucoxylon"   "guidonia"    </span></a>
 <a class="sourceLine" id="cb3-34" data-line-number="34"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-35" data-line-number="35"><span class="co">#&gt; $Mnemonic</span></a>
-<a class="sourceLine" id="cb3-36" data-line-number="36"><span class="co">#&gt; [1] "DACEXC" "MYRSPL" "CASARB" "GUAGUI" "PREMON" "SCHMOR"</span></a>
+<a class="sourceLine" id="cb3-36" data-line-number="36"><span class="co">#&gt; [1] "PSYBER" "CECSCH" "SCHMOR" "CASARB" "OCOLEU" "GUAGUI"</span></a>
 <a class="sourceLine" id="cb3-37" data-line-number="37"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-38" data-line-number="38"><span class="co">#&gt; $Subspecies</span></a>
-<a class="sourceLine" id="cb3-39" data-line-number="39"><span class="co">#&gt; [1] "NULL"</span></a>
+<a class="sourceLine" id="cb3-39" data-line-number="39"><span class="co">#&gt; [1] NA</span></a>
 <a class="sourceLine" id="cb3-40" data-line-number="40"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-41" data-line-number="41"><span class="co">#&gt; $SpeciesID</span></a>
-<a class="sourceLine" id="cb3-42" data-line-number="42"><span class="co">#&gt; [1]  99 156  70 117 182 196</span></a>
+<a class="sourceLine" id="cb3-42" data-line-number="42"><span class="co">#&gt; [1] 184  74 196  70 161 117</span></a>
 <a class="sourceLine" id="cb3-43" data-line-number="43"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-44" data-line-number="44"><span class="co">#&gt; $SubspeciesID</span></a>
-<a class="sourceLine" id="cb3-45" data-line-number="45"><span class="co">#&gt; [1] "NULL"</span></a>
+<a class="sourceLine" id="cb3-45" data-line-number="45"><span class="co">#&gt; [1] NA</span></a>
 <a class="sourceLine" id="cb3-46" data-line-number="46"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-47" data-line-number="47"><span class="co">#&gt; $QuadratName</span></a>
-<a class="sourceLine" id="cb3-48" data-line-number="48"><span class="co">#&gt; [1] "113"  "1021" "921"  "821"  "213"  "413" </span></a>
+<a class="sourceLine" id="cb3-48" data-line-number="48"><span class="co">#&gt; [1] "721" "621" "722" "622"</span></a>
 <a class="sourceLine" id="cb3-49" data-line-number="49"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-50" data-line-number="50"><span class="co">#&gt; $QuadratID</span></a>
-<a class="sourceLine" id="cb3-51" data-line-number="51"><span class="co">#&gt; [1] 193 330 329 328 194 196</span></a>
+<a class="sourceLine" id="cb3-51" data-line-number="51"><span class="co">#&gt; [1] 327 326 343 342</span></a>
 <a class="sourceLine" id="cb3-52" data-line-number="52"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-53" data-line-number="53"><span class="co">#&gt; $PX</span></a>
-<a class="sourceLine" id="cb3-54" data-line-number="54"><span class="co">#&gt; [1]  10.31 182.89 164.61 148.96  38.30 143.24</span></a>
+<a class="sourceLine" id="cb3-54" data-line-number="54"><span class="co">#&gt; [1] 126.98 129.51 126.95 129.88 128.56 126.50</span></a>
 <a class="sourceLine" id="cb3-55" data-line-number="55"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-56" data-line-number="56"><span class="co">#&gt; $PY</span></a>
-<a class="sourceLine" id="cb3-57" data-line-number="57"><span class="co">#&gt; [1] 245.36 410.15 409.50 414.44 245.30 410.91</span></a>
+<a class="sourceLine" id="cb3-57" data-line-number="57"><span class="co">#&gt; [1] 404.11 404.53 405.74 408.94 409.08 411.04</span></a>
 <a class="sourceLine" id="cb3-58" data-line-number="58"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-59" data-line-number="59"><span class="co">#&gt; $QX</span></a>
-<a class="sourceLine" id="cb3-60" data-line-number="60"><span class="co">#&gt; [1] 10.31  2.89  4.61  8.96 18.30  3.24</span></a>
+<a class="sourceLine" id="cb3-60" data-line-number="60"><span class="co">#&gt; [1] 6.98 9.51 6.95 9.88 8.56 6.50</span></a>
 <a class="sourceLine" id="cb3-61" data-line-number="61"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-62" data-line-number="62"><span class="co">#&gt; $QY</span></a>
-<a class="sourceLine" id="cb3-63" data-line-number="63"><span class="co">#&gt; [1]  5.36 10.15  9.50 14.44  5.30 10.91</span></a>
+<a class="sourceLine" id="cb3-63" data-line-number="63"><span class="co">#&gt; [1]  4.11  4.53  5.74  8.94  9.08 11.04</span></a>
 <a class="sourceLine" id="cb3-64" data-line-number="64"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-65" data-line-number="65"><span class="co">#&gt; $TreeID</span></a>
-<a class="sourceLine" id="cb3-66" data-line-number="66"><span class="co">#&gt; [1] 104 119 180 602 631 647</span></a>
+<a class="sourceLine" id="cb3-66" data-line-number="66"><span class="co">#&gt; [1] 692 698 706 711 714 725</span></a>
 <a class="sourceLine" id="cb3-67" data-line-number="67"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-68" data-line-number="68"><span class="co">#&gt; $Tag</span></a>
-<a class="sourceLine" id="cb3-69" data-line-number="69"><span class="co">#&gt; [1] "10009"  "100104" "100171" "100649" "10069"  "100708"</span></a>
+<a class="sourceLine" id="cb3-69" data-line-number="69"><span class="co">#&gt; [1] "100768" "100774" "100781" "100786" "100789" "100799"</span></a>
 <a class="sourceLine" id="cb3-70" data-line-number="70"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-71" data-line-number="71"><span class="co">#&gt; $StemID</span></a>
-<a class="sourceLine" id="cb3-72" data-line-number="72"><span class="co">#&gt; [1] 143 158 222 223 224 225</span></a>
+<a class="sourceLine" id="cb3-72" data-line-number="72"><span class="co">#&gt; [1] 851 858 866 871 874 885</span></a>
 <a class="sourceLine" id="cb3-73" data-line-number="73"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-74" data-line-number="74"><span class="co">#&gt; $StemNumber</span></a>
 <a class="sourceLine" id="cb3-75" data-line-number="75"><span class="co">#&gt; [1] 0</span></a>
 <a class="sourceLine" id="cb3-76" data-line-number="76"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-77" data-line-number="77"><span class="co">#&gt; $StemTag</span></a>
-<a class="sourceLine" id="cb3-78" data-line-number="78"><span class="co">#&gt; [1]  10009 100104 100095 100096 100171 100174</span></a>
+<a class="sourceLine" id="cb3-78" data-line-number="78"><span class="co">#&gt; [1] 100768 100774 100781 100786 100789 100799</span></a>
 <a class="sourceLine" id="cb3-79" data-line-number="79"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-80" data-line-number="80"><span class="co">#&gt; $PrimaryStem</span></a>
-<a class="sourceLine" id="cb3-81" data-line-number="81"><span class="co">#&gt; [1] "NULL" "main"</span></a>
+<a class="sourceLine" id="cb3-81" data-line-number="81"><span class="co">#&gt; [1] NA</span></a>
 <a class="sourceLine" id="cb3-82" data-line-number="82"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-83" data-line-number="83"><span class="co">#&gt; $CensusID</span></a>
-<a class="sourceLine" id="cb3-84" data-line-number="84"><span class="co">#&gt; [1] 1 2 3 4 5 6</span></a>
+<a class="sourceLine" id="cb3-84" data-line-number="84"><span class="co">#&gt; [1] 4 5 6</span></a>
 <a class="sourceLine" id="cb3-85" data-line-number="85"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-86" data-line-number="86"><span class="co">#&gt; $PlotCensusNumber</span></a>
-<a class="sourceLine" id="cb3-87" data-line-number="87"><span class="co">#&gt; [1] 1 2 3 4 5 6</span></a>
+<a class="sourceLine" id="cb3-87" data-line-number="87"><span class="co">#&gt; [1] 4 5 6</span></a>
 <a class="sourceLine" id="cb3-88" data-line-number="88"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-89" data-line-number="89"><span class="co">#&gt; $DBH</span></a>
-<a class="sourceLine" id="cb3-90" data-line-number="90"><span class="co">#&gt; [1] 115 147 169 186 193 195</span></a>
+<a class="sourceLine" id="cb3-90" data-line-number="90"><span class="co">#&gt; [1]  NA 185 341 370 375 167</span></a>
 <a class="sourceLine" id="cb3-91" data-line-number="91"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-92" data-line-number="92"><span class="co">#&gt; $HOM</span></a>
-<a class="sourceLine" id="cb3-93" data-line-number="93"><span class="co">#&gt; [1] 1.20 1.30 1.40 1.45 1.25 1.26</span></a>
+<a class="sourceLine" id="cb3-93" data-line-number="93"><span class="co">#&gt; [1]   NA 1.30 1.28 1.95 1.43 1.33</span></a>
 <a class="sourceLine" id="cb3-94" data-line-number="94"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-95" data-line-number="95"><span class="co">#&gt; $ExactDate</span></a>
-<a class="sourceLine" id="cb3-96" data-line-number="96"><span class="co">#&gt; [1] "1991-06-11" "1996-01-08" "2001-03-29" "2006-08-01" "2011-11-02"</span></a>
-<a class="sourceLine" id="cb3-97" data-line-number="97"><span class="co">#&gt; [6] "2016-04-20"</span></a>
+<a class="sourceLine" id="cb3-96" data-line-number="96"><span class="co">#&gt; [1] "2006-11-21" "2012-01-31" "2006-11-20" "2016-07-28" "2016-07-29"</span></a>
+<a class="sourceLine" id="cb3-97" data-line-number="97"><span class="co">#&gt; [6] "2006-11-22"</span></a>
 <a class="sourceLine" id="cb3-98" data-line-number="98"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-99" data-line-number="99"><span class="co">#&gt; $Date</span></a>
-<a class="sourceLine" id="cb3-100" data-line-number="100"><span class="co">#&gt; [1] 11484 13156 15063 17014 18933 20564</span></a>
+<a class="sourceLine" id="cb3-100" data-line-number="100"><span class="co">#&gt; [1] 17126 19023 17125 20663 20664 17127</span></a>
 <a class="sourceLine" id="cb3-101" data-line-number="101"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-102" data-line-number="102"><span class="co">#&gt; $ListOfTSM</span></a>
-<a class="sourceLine" id="cb3-103" data-line-number="103"><span class="co">#&gt; [1] "MAIN;A"          "SPROUT;A"        "SPROUT;LS"       "MAIN;A;ST;T"    </span></a>
-<a class="sourceLine" id="cb3-104" data-line-number="104"><span class="co">#&gt; [5] "MAIN;A;LS;B"     "MAIN;A;LS;DP;ST"</span></a>
+<a class="sourceLine" id="cb3-103" data-line-number="103"><span class="co">#&gt; [1] "MAIN;DEADT"      "MAIN;A"          "MAIN;DEADT;R;ST" "MAIN;A;T"       </span></a>
+<a class="sourceLine" id="cb3-104" data-line-number="104"><span class="co">#&gt; [5] "MAIN;A;C"        "MAIN;DEADT;B"   </span></a>
 <a class="sourceLine" id="cb3-105" data-line-number="105"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-106" data-line-number="106"><span class="co">#&gt; $HighHOM</span></a>
 <a class="sourceLine" id="cb3-107" data-line-number="107"><span class="co">#&gt; [1] 1</span></a>
 <a class="sourceLine" id="cb3-108" data-line-number="108"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-109" data-line-number="109"><span class="co">#&gt; $LargeStem</span></a>
-<a class="sourceLine" id="cb3-110" data-line-number="110"><span class="co">#&gt; [1] "NULL"</span></a>
+<a class="sourceLine" id="cb3-110" data-line-number="110"><span class="co">#&gt; [1] NA</span></a>
 <a class="sourceLine" id="cb3-111" data-line-number="111"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb3-112" data-line-number="112"><span class="co">#&gt; $Status</span></a>
-<a class="sourceLine" id="cb3-113" data-line-number="113"><span class="co">#&gt; [1] "alive"        "stem dead"    "broken below" "dead"</span></a></code></pre></div>
+<a class="sourceLine" id="cb3-113" data-line-number="113"><span class="co">#&gt; [1] "dead"         "alive"        "broken below" "stem dead"</span></a></code></pre></div>
 </div>
 </div>
 <div id="information" class="section level2">

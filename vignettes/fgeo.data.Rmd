@@ -45,10 +45,7 @@ DT::datatable(data_dictionary)
 ### ViewFullTable (`vft`)
 
 ```{r}
-str(luquillo_vft_random, give.attr = FALSE)
-
-# Similar to `luquillo_vft_random`; truncating list output for space
-str(luquillo_vft_1ha, give.attr = FALSE, list.len = 5)
+str(luquillo_vft_4quad, give.attr = FALSE)
 ```
 
 ### ViewTaxonomy (`taxa`)

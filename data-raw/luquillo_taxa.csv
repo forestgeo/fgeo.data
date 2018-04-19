@@ -1,164 +1,164 @@
 ViewID	SpeciesID	SubspeciesID	Family	Mnemonic	Genus	SpeciesName	Rank	Subspecies	Authority	IDLevel	subspMnemonic	subspAuthority	FieldFamily	Lifeform	Description	wsg	wsglevel	ListOfOldNames	Specimens	Reference
-1	56	NULL	Fabaceae	AESAME	Aeschynomene	americana	NULL	NULL	(Poir.) Rudd	species	NULL	NULL	Fabaceae	NULL	NULL	0.678156	family	NULL	NULL	NULL
-2	57	NULL	Euphorbiaceae	ALCFLO	Alchorneopsis	floribunda	NULL	NULL	(Benth.) Müll. Arg.	species	NULL	NULL	Euphorbiaceae	NULL	NULL	0.426667	species	NULL	NULL	NULL
-3	58	NULL	Euphorbiaceae	ALCLAT	Alchornea	latifolia	NULL	NULL	Sw.	species	NULL	NULL	Euphorbiaceae	NULL	NULL	0.420263	species	NULL	NULL	NULL
-4	59	NULL	Fabaceae-papilionoideae	ANDINE	Andira	inermis	NULL	NULL	(W. Wright) Kunth ex DC.	species	NULL	NULL	Fabaceae	NULL	NULL	0.641952	species	NULL	NULL	NULL
-5	60	NULL	Rubiaceae	ANTOBT	Stenostomum	obtusifolium	NULL	NULL	(Urb.) Britton & P. Wilson	species	NULL	NULL	Rubiaceae	NULL	NULL	0.63564	family	NULL	NULL	NULL
-6	61	NULL	Myrsinaceae	ARDGLA	Ardisia	glauciflora	NULL	NULL	Urb.	species	NULL	NULL	Myrsinaceae	NULL	NULL	0.56	species	NULL	NULL	NULL
-7	62	NULL	Moraceae	ARTALT	Artocarpus	altilis	NULL	NULL	(Parkinson) Fosberg	species	NULL	NULL	Moraceae	NULL	NULL	0.424024	species	NULL	NULL	NULL
-8	63	NULL	Lauraceae	BEIPEN	Beilschmiedia	pendula	NULL	NULL	(Sw.) Hemsl.	species	NULL	NULL	Lauraceae	NULL	NULL	0.507	species	NULL	NULL	NULL
-9	64	NULL	Solanaceae	BRUPOR	Brunfelsia	portoricensis	NULL	NULL	Krug & Urb.	species	NULL	NULL	Solanaceae	NULL	NULL	0.783083	species	NULL	NULL	NULL
-10	65	NULL	Combretaceae	BUCTET	Buchenavia	tetraphylla	NULL	NULL	(Aubl.) R.A. Howard	species	NULL	NULL	Combretaceae	NULL	NULL	0.619444	species	NULL	NULL	NULL
-11	66	NULL	Malpighiaceae	BYRSPI	Byrsonima	spicata	NULL	NULL	(Cav.) DC.	species	NULL	NULL	Malpighiaceae	NULL	NULL	0.61373200000000006	species	NULL	NULL	NULL
-12	67	NULL	Malpighiaceae	BYRWAD	Byrsonima	wadsworthii	NULL	NULL	Little	species	NULL	NULL	Malpighiaceae	NULL	NULL	0.580272	species	NULL	NULL	NULL
-13	68	NULL	Clusiaceae	CALCAL	Calophyllum	brasiliense	NULL	NULL	Cambess.	species	NULL	NULL	Calophyllaceae	NULL	NULL	0.589067	species	NULL	NULL	NULL
-14	69	NULL	Melastomataceae	CALSQU	Henriettea	squamulosum	NULL	NULL	(Cogn.) Judd	species	NULL	NULL	Melastomataceae	NULL	NULL	0.619966	genus	NULL	NULL	NULL
-15	70	NULL	Salicaceae	CASARB	Casearia	arborea	NULL	NULL	(Rich.) Urb.	species	NULL	NULL	Salicaceae	NULL	NULL	0.573826	species	NULL	NULL	NULL
-16	71	NULL	Salicaceae	CASDEC	Casearia	decandra	NULL	NULL	Jacq.	species	NULL	NULL	Salicaceae	NULL	NULL	0.667433	species	NULL	NULL	NULL
-17	72	NULL	Salicaceae	CASGUI	Casearia	guianensis	NULL	NULL	(Aubl.) Urb.	species	NULL	NULL	Salicaceae	NULL	NULL	0.75481	species	NULL	NULL	NULL
-18	73	NULL	Salicaceae	CASSYL	Casearia	sylvestris	NULL	NULL	Sw.	species	NULL	NULL	Salicaceae	NULL	NULL	0.703346	species	NULL	NULL	NULL
-19	74	NULL	Urticaceae	CECSCH	Cecropia	schreberiana	NULL	NULL	Miq.	species	NULL	NULL	Urticaceae	NULL	NULL	0.262	species	NULL	NULL	NULL
-20	75	NULL	Malvaceae	CEIPEN	Ceiba	pentandra	NULL	NULL	Gaertn.	species	NULL	NULL	Malvaceae	NULL	NULL	0.305149	species	NULL	NULL	NULL
-21	76	NULL	Solanaceae	CESMAC	Cestrum	laurifolium	NULL	NULL	L'Hér.	species	NULL	NULL	Solanaceae	NULL	NULL	0.735971	genus	NULL	NULL	NULL
-22	77	NULL	Oleaceae	CHIDOM	Chionanthus	domingensis	NULL	NULL	Lam.	species	NULL	NULL	Oleaceae	NULL	NULL	0.865	species	NULL	NULL	NULL
-23	78	NULL	Rubiaceae	CHOVEN	Chione	venosa	NULL	NULL	(Sw.) Urb.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.626141	species	NULL	NULL	NULL
-24	79	NULL	Sapotaceae	CHRARG	Chrysophyllum	argenteum	NULL	NULL	Jacq.	species	NULL	NULL	Sapotaceae	NULL	NULL	0.764833	species	NULL	NULL	NULL
-25	80	NULL	Lauraceae	CINELO	Cinnamomum	elongatum	NULL	NULL	(Nees) Kosterm.	species	NULL	NULL	Lauraceae	NULL	NULL	0.64	species	NULL	NULL	NULL
-26	81	NULL	Lauraceae	CINMON	Cinnamomum	montanum	NULL	NULL	(Sw.) Bercht. & J. Presl	species	NULL	NULL	Lauraceae	NULL	NULL	0.56	species	NULL	NULL	NULL
-27	82	NULL	Rutaceae	CITAUR	Citrus	X aurantium	NULL	NULL	L.	species	NULL	NULL	Rutaceae	NULL	NULL	0.6625	genus	NULL	NULL	NULL
-28	83	NULL	Verbenaceae	CITCAU	Citharexylum	caudatum	NULL	NULL	L.	species	NULL	NULL	Verbenaceae	NULL	NULL	0.646687	species	NULL	NULL	NULL
-29	84	NULL	Verbenaceae	CITFRU	Citharexylum	spinosum	NULL	NULL	L.	species	NULL	NULL	Verbenaceae	NULL	NULL	0.660086	genus	NULL	NULL	NULL
-30	85	NULL	Asteraceae	CLIERO	Clibadium	erosum	NULL	NULL	(Sw.) DC.	species	NULL	NULL	Asteraceae	NULL	NULL	0.342031	species	NULL	NULL	NULL
-31	86	NULL	Clusiaceae	CLUCLU	Clusia	clusioides	NULL	NULL	(Griseb.) D'Arcy	species	NULL	NULL	Clusiaceae	NULL	NULL	0.65	species	NULL	NULL	NULL
-32	87	NULL	Clusiaceae	CLUROS	Clusia	rosea	NULL	NULL	Jacq.	species	NULL	NULL	Clusiaceae	NULL	NULL	0.624815	species	NULL	NULL	NULL
-33	88	NULL	Polygonaceae	COCPYR	Coccoloba	pyrifolia	NULL	NULL	Desf.	species	NULL	NULL	Polygonaceae	NULL	NULL	0.478217	species	NULL	NULL	NULL
-34	89	NULL	Polygonaceae	COCSPP	Coccoloba	spp	NULL	NULL	NA	species	NULL	NULL	Polygonaceae	NULL	NULL	0.671864	genus	NULL	NULL	NULL
-35	90	NULL	Polygonaceae	COCSWA	Coccoloba	swartzii	NULL	NULL	Meisn.	species	NULL	NULL	Polygonaceae	NULL	NULL	0.671864	genus	NULL	NULL	NULL
-36	91	NULL	Rubiaceae	COFARA	Coffea	arabica	NULL	NULL	L.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.618333	species	NULL	NULL	NULL
-37	92	NULL	Anacardiaceae	COMGLA	Comocladia	glabra	NULL	NULL	Spreng.	species	NULL	NULL	Anacardiaceae	NULL	NULL	0.760457	species	NULL	NULL	NULL
-38	93	NULL	Boraginaceae	CORBOR	Cordia	borinquensis	NULL	NULL	Urb.	species	NULL	NULL	Boraginaceae	NULL	NULL	0.70625	species	NULL	NULL	NULL
-39	94	NULL	Boraginaceae	CORSUL	Cordia	sulcata	NULL	NULL	DC.	species	NULL	NULL	Boraginaceae	NULL	NULL	0.604	species	NULL	NULL	NULL
-40	95	NULL	Euphorbiaceae	CROPOE	Croton	poecilanthus	NULL	NULL	Urb.	species	NULL	NULL	Euphorbiaceae	NULL	NULL	0.587742	species	NULL	NULL	NULL
-41	96	NULL	Rhizophoraceae	CSSGUI	Cassipourea	guianensis	NULL	NULL	Aubl.	species	NULL	NULL	Rhizophoraceae	NULL	NULL	0.75975	species	NULL	NULL	NULL
-42	97	NULL	Sapindaceae	CUPAME	Cupania	americana	NULL	NULL	L.	species	NULL	NULL	Sapindaceae	NULL	NULL	0.544167	species	NULL	NULL	NULL
-43	98	NULL	Cyrillaceae	CYRRAC	Cyrilla	racemiflora	NULL	NULL	L.	species	NULL	NULL	Cyrillaceae	NULL	NULL	0.58619	species	NULL	NULL	NULL
-44	99	NULL	Burseraceae	DACEXC	Dacryodes	excelsa	NULL	NULL	Vahl	species	NULL	NULL	Burseraceae	NULL	NULL	0.493168	species	NULL	NULL	NULL
-45	100	NULL	Thymelaeaceae	DAPPHI	Daphnopsis	philippiana	NULL	NULL	Krug & Urb.	species	NULL	NULL	Thymelaeaceae	NULL	NULL	0.300683	species	NULL	NULL	NULL
-46	101	NULL	Araliaceae	DENARB	Dendropanax	arboreus	NULL	NULL	(L.) Decne. & Planch.	species	NULL	NULL	Araliaceae	NULL	NULL	0.420594	species	NULL	NULL	NULL
-47	102	NULL	Euphorbiaceae	DITMYR	Ditta	myricoides	NULL	NULL	Griseb.	species	NULL	NULL	Euphorbiaceae	NULL	NULL	0.356778	species	NULL	NULL	NULL
-48	103	NULL	Putranjivaceae	DRYALB	Drypetes	alba	NULL	NULL	Poit.	species	NULL	NULL	Euphorbiaceae	NULL	NULL	0.696821	species	NULL	NULL	NULL
-49	104	NULL	Putranjivaceae	DRYGLA	Drypetes	glauca	NULL	NULL	Vahl	species	NULL	NULL	Euphorbiaceae	NULL	NULL	0.673058	species	NULL	NULL	NULL
-50	105	NULL	Myrtaceae	EUGDOM	Eugenia	domingensis	NULL	NULL	O. Berg	species	NULL	NULL	Myrtaceae	NULL	NULL	0.59	species	NULL	NULL	NULL
-51	106	NULL	Myrtaceae	EUGEGG	Eugenia	eggersii	NULL	NULL	Kiaersk.	species	NULL	NULL	Myrtaceae	NULL	NULL	0.6975	species	NULL	NULL	NULL
-52	107	NULL	Myrtaceae	EUGSTA	Eugenia	stahlii	NULL	NULL	(Kiaersk.) Krug & Urb.	species	NULL	NULL	Myrtaceae	NULL	NULL	0.709979	species	NULL	NULL	NULL
-53	108	NULL	Rubiaceae	FAROCC	Faramea	occidentalis	NULL	NULL	(L.) A. Rich.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.587889	species	NULL	NULL	NULL
-54	109	NULL	Moraceae	FICAME	Ficus	americana	NULL	NULL	Aubl.	species	NULL	NULL	Moraceae	NULL	NULL	0.4025	species	NULL	NULL	NULL
-55	110	NULL	Moraceae	FICCIT	Ficus	citrifolia	NULL	NULL	Mill.	species	NULL	NULL	Moraceae	NULL	NULL	0.4	species	NULL	NULL	NULL
-56	111	NULL	Moraceae	FICCRA	Ficus	crassinervia	NULL	NULL	Desf.ex Willd.	species	NULL	NULL	Moraceae	NULL	NULL	0.42	species	NULL	NULL	NULL
-57	112	NULL	Moraceae	FICSPP	Ficus	spp	NULL	NULL	NA	genus	NULL	NULL	Moraceae	NULL	NULL	0.423956	genus	NULL	NULL	NULL
-58	113	NULL	Moraceae	FICTRI	Ficus	trigonata	NULL	NULL	L.	species	NULL	NULL	Moraceae	NULL	NULL	0.423956	genus	NULL	NULL	NULL
-59	114	NULL	Rubiaceae	GENAME	Genipa	americana	NULL	NULL	L.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.632074	species	NULL	NULL	NULL
-60	115	NULL	Rubiaceae	GONSPI	Gonzalagunia	 hirsuta	NULL	NULL	(Jacq.) K. Schum.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.693723	genus	NULL	NULL	NULL
-61	116	NULL	Meliaceae	GUAGLA	Guarea	glabra	NULL	NULL	Vahl	species	NULL	NULL	Meliaceae	NULL	NULL	0.477806	species	NULL	NULL	NULL
-62	117	NULL	Meliaceae	GUAGUI	Guarea	guidonia	NULL	NULL	(L.) Sleumer	species	NULL	NULL	Meliaceae	NULL	NULL	0.567514	species	NULL	NULL	NULL
-63	118	NULL	Malvaceae	GUAULM	Guazuma	ulmifolia	NULL	NULL	Lam.	species	NULL	NULL	Malvaceae	NULL	NULL	0.522209	species	NULL	NULL	NULL
-64	119	NULL	Rubiaceae	GUEVAL	Guettarda	valenzuelana	NULL	NULL	A. Rich.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.627409	species	NULL	NULL	NULL
-65	120	NULL	Annonaceae	GUTCAR	Guatteria	caribaea	NULL	NULL	Urb.	species	NULL	NULL	Annonaceae	NULL	NULL	0.707667	species	NULL	NULL	NULL
-66	121	NULL	Rubiaceae	HAMAXI	Hamelia	axillaris	NULL	NULL	Sw.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.6175	species	NULL	NULL	NULL
-67	122	NULL	Melastomataceae	HENFAS	Henriettea	fascicularis	NULL	NULL	(Sw.) M. Gómez	species	NULL	NULL	Melastomataceae	NULL	NULL	0.479899	species	NULL	NULL	NULL
-68	123	NULL	Melastomataceae	HETCYM	Clidemia	eggersii	NULL	NULL	(Cogn.) F.S. Axelrod	species	NULL	NULL	Melastomataceae	NULL	NULL	0.670511	family	NULL	NULL	NULL
-69	124	NULL	Malvaceae	HIBTIL	Talipariti	tiliaceum	NULL	NULL	(L.) Fryxell	species	NULL	NULL	Malvaceae	NULL	NULL	0.475734	family	NULL	NULL	NULL
-70	125	NULL	Chrysobalanaceae	HIRRUG	Hirtella	rugosa	NULL	NULL	Pers.	species	NULL	NULL	Chrysobalanaceae	NULL	NULL	0.885519	species	NULL	NULL	NULL
-71	126	NULL	Salicaceae	HOMRAC	Homalium	racemosum	NULL	NULL	Jacq.	species	NULL	NULL	Salicaceae	NULL	NULL	0.793889	species	NULL	NULL	NULL
-72	127	NULL	Aquifoliaceae	ILESID	Ilex	sideroxyloides	NULL	NULL	(Sw.) Griseb. 	species	NULL	NULL	Aquifoliaceae	NULL	NULL	0.755488	species	NULL	NULL	NULL
-73	128	NULL	Fabaceae-mimosoideae	INGLAU	Inga	laurina	NULL	NULL	(Sw.) Willd.	species	NULL	NULL	Fabaceae	NULL	NULL	0.653333	species	NULL	NULL	NULL
-74	129	NULL	Fabaceae-mimosoideae	INGVER	Inga	vera	NULL	NULL	Willd.	species	NULL	NULL	Fabaceae	NULL	NULL	0.58	species	NULL	NULL	NULL
-75	130	NULL	Rubiaceae	IXOFER	Ixora	ferrea	NULL	NULL	(J.F. Gmel.) Benth.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.65	species	NULL	NULL	NULL
-76	131	NULL	Salicaceae	LAEPRO	Laetia	procera	NULL	NULL	(Poepp.) Eichler	species	NULL	NULL	Salicaceae	NULL	NULL	0.647255	species	NULL	NULL	NULL
-77	132	NULL	Fabaceae-papilionoideae	LONLAT	Lonchocarpus	heptaphyllus	NULL	NULL	(Poir.) DC.	species	NULL	NULL	Fabaceae	NULL	NULL	0.68675	species	NULL	NULL	NULL
-78	133	NULL	Onagraceae	LUDOCT	Ludwigia	octovalvis	NULL	NULL	(Jacq.) P.H. Raven	species	NULL	NULL	Onagraceae	NULL	NULL	0.696	family	NULL	NULL	NULL
-79	134	NULL	Rhamnaceae	MAEEMI	Maesopsis	eminii	NULL	NULL	Engl.	species	NULL	NULL	Rhamnaceae	NULL	NULL	0.3835	species	NULL	NULL	NULL
-80	135	NULL	Magnoliaceae	MAGSPL	Magnolia	splendens	NULL	NULL	Urb.	species	NULL	NULL	Magnoliaceae	NULL	NULL	0.585	species	NULL	NULL	NULL
-81	136	NULL	Malpighiaceae	MALFUR	Malpighia	fucata	NULL	NULL	Ker Gawl.	species	NULL	NULL	Malpighiaceae	NULL	NULL	0.569233	genus	NULL	NULL	NULL
-82	137	NULL	Sapotaceae	MANBID	Manilkara	bidentata	NULL	NULL	(A. DC.) A. Chev.	species	NULL	NULL	Sapotaceae	NULL	NULL	0.872014	species	NULL	NULL	NULL
-83	138	NULL	Anacardiaceae	MANIND	Mangifera	indica	NULL	NULL	L.	species	NULL	NULL	Anacardiaceae	NULL	NULL	0.555828	species	NULL	NULL	NULL
-84	139	NULL	Phyllanthaceae	MARNOB	Margaritaria	nobilis	NULL	NULL	L.f.	species	NULL	NULL	Euphorbiaceae	NULL	NULL	0.59636	species	NULL	NULL	NULL
-85	140	NULL	Sapindaceae	MATDOM	Matayba	domingensis	NULL	NULL	(DC.) Radlk	species	NULL	NULL	Sapindaceae	NULL	NULL	0.697	species	NULL	NULL	NULL
-86	141	NULL	Celastraceae	MAYELO	Maytenus	elongata	NULL	NULL	Britton	species	NULL	NULL	Celastraceae	NULL	NULL	0.710898	species	NULL	NULL	NULL
-87	142	NULL	Sabiaceae	MELHER	Meliosma	herbertii	NULL	NULL	Rolfe	species	NULL	NULL	Sabiaceae	NULL	NULL	0.435	species	NULL	NULL	NULL
-88	143	NULL	Melastomataceae	MICAFF	Miconia	affinis	NULL	NULL	DC.	species	NULL	NULL	Melastomataceae	NULL	NULL	0.618877	genus	NULL	NULL	NULL
-89	144	NULL	Melastomataceae	MICIMP	Miconia	impetiolaris	NULL	NULL	(Sw.) D. Don ex DC.	species	NULL	NULL	Melastomataceae	NULL	NULL	0.747025	species	NULL	NULL	NULL
-90	145	NULL	Melastomataceae	MICMIR	Miconia	mirabilis	NULL	NULL	(Aubl.) L.O. Williams	species	NULL	NULL	Melastomataceae	NULL	NULL	0.603167	species	NULL	NULL	NULL
-91	146	NULL	Melastomataceae	MICPRA	Miconia	prasina	NULL	NULL	(Sw.) DC.	species	NULL	NULL	Melastomataceae	NULL	NULL	0.688234	species	NULL	NULL	NULL
-92	147	NULL	Melastomataceae	MICRAC	Miconia	racemosa	NULL	NULL	(Aubl.) DC.	species	NULL	NULL	Melastomataceae	NULL	NULL	0.449723	species	NULL	NULL	NULL
-93	148	NULL	Melastomataceae	MICTET	Miconia	tetrandra	NULL	NULL	(Sw.) D. Don	species	NULL	NULL	Melastomataceae	NULL	NULL	0.703	species	NULL	NULL	NULL
-94	149	NULL	Fabaceae-mimosoideae	MIMPUD	Mimosa	pudica	NULL	NULL	L.	species	NULL	NULL	Mimosoideae	NULL	NULL	0.8235	genus	NULL	NULL	NULL
-95	150	NULL	Sapotaceae	MIRCHR	Micropholis	guyanensis	NULL	NULL	(A.DC.) Pierre	species	NULL	NULL	Sapotaceae	NULL	NULL	0.657273	species	NULL	NULL	NULL
-96	151	NULL	Sapotaceae	MIRGAR	Micropholis	garciniifolia	NULL	NULL	Pierre	species	NULL	NULL	Sapotaceae	NULL	NULL	0.67	species	NULL	NULL	NULL
-97	152	NULL	Myrsinaceae	MYRCOR	Myrsine	coriacea	NULL	NULL	(Sw.) R. Br. ex Roem. & Schult.	species	NULL	NULL	Myrsinaceae	NULL	NULL	0.643556	species	NULL	NULL	NULL
-98	153	NULL	Myrtaceae	MYRDEF	Myrcia	deflexa	NULL	NULL	(Poir.) DC.	species	NULL	NULL	Myrtaceae	NULL	NULL	0.8	species	NULL	NULL	NULL
-99	154	NULL	Myrtaceae	MYRFAL	Myrcia	fallax	NULL	NULL	(Rich.) D.C.	species	NULL	NULL	Myrtaceae	NULL	NULL	0.885141	species	NULL	NULL	NULL
-100	155	NULL	Myrtaceae	MYRLEP	Myrcia	amazonica	NULL	NULL	DC.	species	NULL	NULL	Myrtaceae	NULL	NULL	0.814458	genus	NULL	NULL	NULL
-101	156	NULL	Myrtaceae	MYRSPL	Myrcia	splendens	NULL	NULL	(Sw.) DC.	species	NULL	NULL	Myrtaceae	NULL	NULL	0.76777	species	NULL	NULL	NULL
-102	157	NULL	Asteraceae	NEULOB	Neurolaena	lobata	NULL	NULL	(L.) Cass.	species	NULL	NULL	Asteraceae	NULL	NULL	0.636096	family	NULL	NULL	NULL
-103	158	NULL	Malvaceae	OCHPYR	Ochroma	pyramidale	NULL	NULL	(Cav. Ex Lam.) Urb.	species	NULL	NULL	Malvaceae	NULL	NULL	0.158128	species	NULL	NULL	NULL
-104	159	NULL	Lauraceae	OCOFLO	Ocotea	floribunda	NULL	NULL	(Sw.) Mez	species	NULL	NULL	Lauraceae	NULL	NULL	0.401425	species	NULL	NULL	NULL
-105	160	NULL	Lauraceae	OCOGLO	Nectandra	hihua	NULL	NULL	(Ruiz & Pav.) Rohwer	species	NULL	NULL	Lauraceae	NULL	NULL	0.57169	genus	NULL	NULL	NULL
-106	161	NULL	Lauraceae	OCOLEU	Ocotea	leucoxylon	NULL	NULL	(Sw.) Laness.	species	NULL	NULL	Lauraceae	NULL	NULL	0.46175	species	NULL	NULL	NULL
-107	162	NULL	Lauraceae	OCOMOS	Ocotea	moschata	NULL	NULL	(Meisn) Mez.	species	NULL	NULL	Lauraceae	NULL	NULL	0.595333	species	NULL	NULL	NULL
-108	163	NULL	Lauraceae	OCOPOR	Ocotea	portoricensis	NULL	NULL	Mez	species	NULL	NULL	Lauraceae	NULL	NULL	0.59	species	NULL	NULL	NULL
-109	164	NULL	Lauraceae	OCOSIN	Nectandra	turbacensis	NULL	NULL	(Knuth) Nees	species	NULL	NULL	Lauraceae	NULL	NULL	0.57169	genus	NULL	NULL	NULL
-110	165	NULL	Lauraceae	OCOSPA	Ocotea	spathulata	NULL	NULL	Mez	species	NULL	NULL	Lauraceae	NULL	NULL	0.620759	species	NULL	NULL	NULL
-111	166	NULL	Fabaceae-papilionoideae	ORMKRU	Ormosia	krugii	NULL	NULL	Urb.	species	NULL	NULL	Fabaceae	NULL	NULL	0.491429	species	NULL	NULL	NULL
-112	167	NULL	Annonaceae	OXALAU	Oxandra	laurifolia	NULL	NULL	(Sw.) A. Rich.	species	NULL	NULL	Annonaceae	NULL	NULL	0.588845	species	NULL	NULL	NULL
-113	168	NULL	Rubiaceae	PALCRO	Palicourea	crocea	NULL	NULL	(Sw.)Schult	species	NULL	NULL	Rubiaceae	NULL	NULL	0.52667	genus	NULL	NULL	NULL
-114	169	NULL	Rubiaceae	PALRIP	Palicourea	croceoides	NULL	NULL	Ham.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.52667	genus	NULL	NULL	NULL
-115	170	NULL	Phytolaccaceae	PHYICO	Phytolacca	rivinoides	NULL	NULL	Kunth & C.D. Bouché	species	NULL	NULL	Phytolaccaceae	NULL	NULL	0.258	genus	NULL	NULL	NULL
-116	171	NULL	Piperaceae	PIPADU	Piper	aduncum	NULL	NULL	L.	species	NULL	NULL	Piperaceae	NULL	NULL	0.4	species	NULL	NULL	NULL
-117	172	NULL	Piperaceae	PIPAMA	Piper	amalago	NULL	NULL	L.	species	NULL	NULL	Piperaceae	NULL	NULL	0.401667	species	NULL	NULL	NULL
-118	173	NULL	Piperaceae	PIPBLA	Piper	blattarum	NULL	NULL	Spreng.	species	NULL	NULL	Piperaceae	NULL	NULL	0.455534	species	NULL	NULL	NULL
-119	174	NULL	Piperaceae	PIPGLA	Piper	glabrescens	NULL	NULL	(Miq.) C.DC.	species	NULL	NULL	Piperaceae	NULL	NULL	0.288269	species	NULL	NULL	NULL
-120	175	NULL	Piperaceae	PIPHIS	Piper	hispidum	NULL	NULL	Sw.	species	NULL	NULL	Piperaceae	NULL	NULL	0.392696	species	NULL	NULL	NULL
-121	176	NULL	Piperaceae	PIPJAC	Piper	jacquemontianum	NULL	NULL	Knuth	species	NULL	NULL	Piperaceae	NULL	NULL	0.39	species	NULL	NULL	NULL
-122	177	NULL	Nyctaginaceae	PISBOR	Pisonia	sp. 1 borinquena	NULL	NULL	(undescribed)	species	NULL	NULL	Nyctaginaceae	NULL	NULL	0.584404	none	NULL	NULL	NULL
-123	178	NULL	Canellaceae	PLEMAC	Pleodendron	macranthum	NULL	NULL	(Baill.) Tiegh.	species	NULL	NULL	Canellaceae	NULL	NULL	0.736333	family	NULL	NULL	NULL
-124	179	NULL	Asteraceae	PLUSYM	Pluchea	carolinensis	NULL	NULL	(Jacq.) G. Don	species	NULL	NULL	Asteraceae	NULL	NULL	0.636096	family	NULL	NULL	NULL
-125	180	NULL	Piperaceae	POTPEL	Piper	peltatum	NULL	NULL	L.	species	NULL	NULL	Piperaceae	NULL	NULL	0.382514	genus	NULL	NULL	NULL
-126	181	NULL	Piperaceae	POTUMB	Piper	umbellatum	NULL	NULL	L.	species	NULL	NULL	Piperaceae	NULL	NULL	0.308309	species	NULL	NULL	NULL
-127	182	NULL	Arecaceae	PREMON	Prestoea	acuminata	NULL	NULL	(Willd.) H.E. Moore	species	NULL	NULL	Arecaceae	NULL	NULL	0.279657	genus	NULL	NULL	NULL
-128	183	NULL	Moraceae	PSESPU	Pseudolmedia	spuria	NULL	NULL	(Sw.) Griseb.	species	NULL	NULL	Moraceae	NULL	NULL	0.675	species	NULL	NULL	NULL
-129	184	NULL	Rubiaceae	PSYBER	Psychotria	berteroana	NULL	NULL	DC.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.524742	genus	NULL	NULL	NULL
-130	185	NULL	Rubiaceae	PSYBRA	Psychotria	brachiata	NULL	NULL	Sw.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.376259	species	NULL	NULL	NULL
-131	186	NULL	Rubiaceae	PSYDEF	Psychotria	deflexa	NULL	NULL	DC.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.480397	species	NULL	NULL	NULL
-132	187	NULL	Rubiaceae	PSYGRA	Psychotria	grandis	NULL	NULL	Sw.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.294816	species	NULL	NULL	NULL
-133	188	NULL	Fabaceae-papilionoideae	PTEOFF	Pterocarpus	officinalis	NULL	NULL	Jacq.	species	NULL	NULL	Fabaceae	NULL	NULL	0.379868	species	NULL	NULL	NULL
-134	189	NULL	Malvaceae	QUATUR	Quararibea	turbinata	NULL	NULL	(Sw.) Poir	species	NULL	NULL	Malvaceae	NULL	NULL	0.57829	species	NULL	NULL	NULL
-135	190	NULL	Apocynaceae	RAUNIT	Rauvolfia	nitida	NULL	NULL	Jacq.	species	NULL	NULL	Apocynaceae	NULL	NULL	0.465	species	NULL	NULL	NULL
-136	191	NULL	Clusiaceae	RHEPOR	Garcinia	portoricensis	NULL	NULL	(Urb.) Alain	species	NULL	NULL	Clusiaceae	NULL	NULL	0.833585	species	NULL	NULL	NULL
-137	192	NULL	Rubiaceae	RONPOR	Rondeletia	portoricensis	NULL	NULL	Krug & Urb.	species	NULL	NULL	Rubiaceae	NULL	NULL	0.775	species	NULL	NULL	NULL
-138	193	NULL	Arecaceae	ROYBOR	Roystonea	borinquena	NULL	NULL	O.F. Cook	species	NULL	NULL	Arecaceae	NULL	NULL	0.82	species	NULL	NULL	NULL
-139	194	NULL	Salicaceae	SAMSPI	Samyda	spinulosa	NULL	NULL	Vent.	species	NULL	NULL	Salicaceae	NULL	NULL	0.756121	genus	NULL	NULL	NULL
-140	195	NULL	Euphorbiaceae	SAPLAU	Sapium	laurocerasus	NULL	NULL	Desf.	species	NULL	NULL	Euphorbiaceae	NULL	NULL	0.380714	species	NULL	NULL	NULL
-141	196	NULL	Araliaceae	SCHMOR	Schefflera	morototoni	NULL	NULL	(Aubl.) Maguire	species	NULL	NULL	Araliaceae	NULL	NULL	0.453891	species	NULL	NULL	NULL
-142	197	NULL	Simaroubaceae	SIMAMA	Simarouba	amara	NULL	NULL	Aubl.	species	NULL	NULL	Simaroubaceae	NULL	NULL	0.384643	species	NULL	NULL	NULL
-143	198	NULL	Elaeocarpaceae	SLOBER	Sloanea	berteroana	NULL	NULL	Choisy ex DC.	species	NULL	NULL	Elaeocarpaceae	NULL	NULL	0.624723	genus	NULL	NULL	NULL
-144	199	NULL	Solanaceae	SOLRUG	Solanum	rugosum	NULL	NULL	Dunal	species	NULL	NULL	Solanaceae	NULL	NULL	0.4925	species	NULL	NULL	NULL
-145	200	NULL	Solanaceae	SOLTOR	Solanum	torvum	NULL	NULL	Sw.	species	NULL	NULL	Solanaceae	NULL	NULL	0.463333	species	NULL	NULL	NULL
-146	201	NULL	Bignoniaceae	SPACAM	Spathodea	campanulata	NULL	NULL	P. Beauv.	species	NULL	NULL	Bignoniaceae	NULL	NULL	0.34396	species	NULL	NULL	NULL
-147	202	NULL	Meliaceae	SWIMAC	Swietenia	macrophylla	NULL	NULL	King	species	NULL	NULL	Meliaceae	NULL	NULL	0.522409	species	NULL	NULL	NULL
-148	203	NULL	Symplocaceae	SYMMAR	Symplocos	martinicensis	NULL	NULL	Jacq.	species	NULL	NULL	Symplocaceae	NULL	NULL	0.726609	species	NULL	NULL	NULL
-149	204	NULL	Myrtaceae	SYZJAM	Syzygium	jambos	NULL	NULL	(L.) Alston	species	NULL	NULL	Myrtaceae	NULL	NULL	0.682282	species	NULL	NULL	NULL
-150	205	NULL	Bignoniaceae	TABHET	Tabebuia	heterophylla	NULL	NULL	(DC.) Britton	species	NULL	NULL	Bignoniaceae	NULL	NULL	0.589445	species	NULL	NULL	NULL
-151	206	NULL	Pentaphylacaceae	TERLUQ	Ternstroemia	luquillensis	NULL	NULL	Krug & Urb.	species	NULL	NULL	Theaceae	NULL	NULL	0.618091	genus	NULL	NULL	NULL
-152	207	NULL	Burseraceae	TETBAL	Tetragastris	balsamifera	NULL	NULL	Oken	species	NULL	NULL	Burseraceae	NULL	NULL	0.591348	species	NULL	NULL	NULL
-153	208	NULL	Melastomataceae	TETURB	Tetrazygia	urbanii	NULL	NULL	Cogn.	species	NULL	NULL	Melastomataceae	NULL	NULL	0.670511	family	NULL	NULL	NULL
-154	209	NULL	Cannabaceae	TREMIC	Trema	micrantha	NULL	NULL	(L.) Blume	species	NULL	NULL	Ulmaceae	NULL	NULL	0.319417	species	NULL	NULL	NULL
-155	210	NULL	Meliaceae	TRIPAL	Trichilia	pallida	NULL	NULL	Sw.	species	NULL	NULL	Meliaceae	NULL	NULL	0.698125	species	NULL	NULL	NULL
-156	211	NULL	Tapisciaceae	TUROCC	Turpinia	occidentalis	NULL	NULL	(Sw.) G. Don	species	NULL	NULL	Staphyleaceae	NULL	NULL	0.354805	species	NULL	NULL	NULL
-157	212	NULL	Unknown	UNIDEN	Unidentified	SPECIES	NULL	NULL	NA	species	NULL	NULL	unknown	NULL	NULL	0.584404	none	NULL	NULL	NULL
-158	213	NULL	Urticaceae	UREBAC	Urera	baccifera	NULL	NULL	(L.) Gaudich. Ex Wedd.	species	NULL	NULL	Urticaceae	NULL	NULL	0.275078	species	NULL	NULL	NULL
-159	214	NULL	Lamiaceae	VITDIV	Vitex	divaricata	NULL	NULL	Sw.	species	NULL	NULL	Lamiaceae 	NULL	NULL	0.62375	species	NULL	NULL	NULL
-160	215	NULL	Myrsinaceae	WALPEN	Wallenia	lamarckiana	NULL	NULL	(A. DC.) Mex	species	NULL	NULL	Myrsinaceae	NULL	NULL	0.648781	family	NULL	NULL	NULL
-161	216	NULL	Salicaceae	XYLSCH	Xylosma	schwaneckeana	NULL	NULL	(Krug & Urb.) Urb.	species	NULL	NULL	Salicaceae	NULL	NULL	0.719491	genus	NULL	NULL	NULL
-162	217	NULL	Rutaceae	ZANMAR	Zanthoxylum	martinicense	NULL	NULL	(Lam.) DC.	species	NULL	NULL	Rutaceae	NULL	NULL	0.58425	species	NULL	NULL	NULL
-163	218	NULL	Aquifoliaceae	ILENIT	Ilex	nitida	NULL	NULL	(Vahl) Maxim.	species	NULL	NULL	Aquifoliaceae	NULL	NULL	0.569156	genus	NULL	NULL	NULL
+1	56	NA	Fabaceae	AESAME	Aeschynomene	americana	NA	NA	(Poir.) Rudd	species	NA	NA	Fabaceae	NA	NA	0.678156	family	NA	NA	NA
+2	57	NA	Euphorbiaceae	ALCFLO	Alchorneopsis	floribunda	NA	NA	(Benth.) Müll. Arg.	species	NA	NA	Euphorbiaceae	NA	NA	0.426667	species	NA	NA	NA
+3	58	NA	Euphorbiaceae	ALCLAT	Alchornea	latifolia	NA	NA	Sw.	species	NA	NA	Euphorbiaceae	NA	NA	0.420263	species	NA	NA	NA
+4	59	NA	Fabaceae-papilionoideae	ANDINE	Andira	inermis	NA	NA	(W. Wright) Kunth ex DC.	species	NA	NA	Fabaceae	NA	NA	0.641952	species	NA	NA	NA
+5	60	NA	Rubiaceae	ANTOBT	Stenostomum	obtusifolium	NA	NA	(Urb.) Britton & P. Wilson	species	NA	NA	Rubiaceae	NA	NA	0.63564	family	NA	NA	NA
+6	61	NA	Myrsinaceae	ARDGLA	Ardisia	glauciflora	NA	NA	Urb.	species	NA	NA	Myrsinaceae	NA	NA	0.56	species	NA	NA	NA
+7	62	NA	Moraceae	ARTALT	Artocarpus	altilis	NA	NA	(Parkinson) Fosberg	species	NA	NA	Moraceae	NA	NA	0.424024	species	NA	NA	NA
+8	63	NA	Lauraceae	BEIPEN	Beilschmiedia	pendula	NA	NA	(Sw.) Hemsl.	species	NA	NA	Lauraceae	NA	NA	0.507	species	NA	NA	NA
+9	64	NA	Solanaceae	BRUPOR	Brunfelsia	portoricensis	NA	NA	Krug & Urb.	species	NA	NA	Solanaceae	NA	NA	0.783083	species	NA	NA	NA
+10	65	NA	Combretaceae	BUCTET	Buchenavia	tetraphylla	NA	NA	(Aubl.) R.A. Howard	species	NA	NA	Combretaceae	NA	NA	0.619444	species	NA	NA	NA
+11	66	NA	Malpighiaceae	BYRSPI	Byrsonima	spicata	NA	NA	(Cav.) DC.	species	NA	NA	Malpighiaceae	NA	NA	0.61373200000000006	species	NA	NA	NA
+12	67	NA	Malpighiaceae	BYRWAD	Byrsonima	wadsworthii	NA	NA	Little	species	NA	NA	Malpighiaceae	NA	NA	0.580272	species	NA	NA	NA
+13	68	NA	Clusiaceae	CALCAL	Calophyllum	brasiliense	NA	NA	Cambess.	species	NA	NA	Calophyllaceae	NA	NA	0.589067	species	NA	NA	NA
+14	69	NA	Melastomataceae	CALSQU	Henriettea	squamulosum	NA	NA	(Cogn.) Judd	species	NA	NA	Melastomataceae	NA	NA	0.619966	genus	NA	NA	NA
+15	70	NA	Salicaceae	CASARB	Casearia	arborea	NA	NA	(Rich.) Urb.	species	NA	NA	Salicaceae	NA	NA	0.573826	species	NA	NA	NA
+16	71	NA	Salicaceae	CASDEC	Casearia	decandra	NA	NA	Jacq.	species	NA	NA	Salicaceae	NA	NA	0.667433	species	NA	NA	NA
+17	72	NA	Salicaceae	CASGUI	Casearia	guianensis	NA	NA	(Aubl.) Urb.	species	NA	NA	Salicaceae	NA	NA	0.75481	species	NA	NA	NA
+18	73	NA	Salicaceae	CASSYL	Casearia	sylvestris	NA	NA	Sw.	species	NA	NA	Salicaceae	NA	NA	0.703346	species	NA	NA	NA
+19	74	NA	Urticaceae	CECSCH	Cecropia	schreberiana	NA	NA	Miq.	species	NA	NA	Urticaceae	NA	NA	0.262	species	NA	NA	NA
+20	75	NA	Malvaceae	CEIPEN	Ceiba	pentandra	NA	NA	Gaertn.	species	NA	NA	Malvaceae	NA	NA	0.305149	species	NA	NA	NA
+21	76	NA	Solanaceae	CESMAC	Cestrum	laurifolium	NA	NA	L'Hér.	species	NA	NA	Solanaceae	NA	NA	0.735971	genus	NA	NA	NA
+22	77	NA	Oleaceae	CHIDOM	Chionanthus	domingensis	NA	NA	Lam.	species	NA	NA	Oleaceae	NA	NA	0.865	species	NA	NA	NA
+23	78	NA	Rubiaceae	CHOVEN	Chione	venosa	NA	NA	(Sw.) Urb.	species	NA	NA	Rubiaceae	NA	NA	0.626141	species	NA	NA	NA
+24	79	NA	Sapotaceae	CHRARG	Chrysophyllum	argenteum	NA	NA	Jacq.	species	NA	NA	Sapotaceae	NA	NA	0.764833	species	NA	NA	NA
+25	80	NA	Lauraceae	CINELO	Cinnamomum	elongatum	NA	NA	(Nees) Kosterm.	species	NA	NA	Lauraceae	NA	NA	0.64	species	NA	NA	NA
+26	81	NA	Lauraceae	CINMON	Cinnamomum	montanum	NA	NA	(Sw.) Bercht. & J. Presl	species	NA	NA	Lauraceae	NA	NA	0.56	species	NA	NA	NA
+27	82	NA	Rutaceae	CITAUR	Citrus	X aurantium	NA	NA	L.	species	NA	NA	Rutaceae	NA	NA	0.6625	genus	NA	NA	NA
+28	83	NA	Verbenaceae	CITCAU	Citharexylum	caudatum	NA	NA	L.	species	NA	NA	Verbenaceae	NA	NA	0.646687	species	NA	NA	NA
+29	84	NA	Verbenaceae	CITFRU	Citharexylum	spinosum	NA	NA	L.	species	NA	NA	Verbenaceae	NA	NA	0.660086	genus	NA	NA	NA
+30	85	NA	Asteraceae	CLIERO	Clibadium	erosum	NA	NA	(Sw.) DC.	species	NA	NA	Asteraceae	NA	NA	0.342031	species	NA	NA	NA
+31	86	NA	Clusiaceae	CLUCLU	Clusia	clusioides	NA	NA	(Griseb.) D'Arcy	species	NA	NA	Clusiaceae	NA	NA	0.65	species	NA	NA	NA
+32	87	NA	Clusiaceae	CLUROS	Clusia	rosea	NA	NA	Jacq.	species	NA	NA	Clusiaceae	NA	NA	0.624815	species	NA	NA	NA
+33	88	NA	Polygonaceae	COCPYR	Coccoloba	pyrifolia	NA	NA	Desf.	species	NA	NA	Polygonaceae	NA	NA	0.478217	species	NA	NA	NA
+34	89	NA	Polygonaceae	COCSPP	Coccoloba	spp	NA	NA	NA	species	NA	NA	Polygonaceae	NA	NA	0.671864	genus	NA	NA	NA
+35	90	NA	Polygonaceae	COCSWA	Coccoloba	swartzii	NA	NA	Meisn.	species	NA	NA	Polygonaceae	NA	NA	0.671864	genus	NA	NA	NA
+36	91	NA	Rubiaceae	COFARA	Coffea	arabica	NA	NA	L.	species	NA	NA	Rubiaceae	NA	NA	0.618333	species	NA	NA	NA
+37	92	NA	Anacardiaceae	COMGLA	Comocladia	glabra	NA	NA	Spreng.	species	NA	NA	Anacardiaceae	NA	NA	0.760457	species	NA	NA	NA
+38	93	NA	Boraginaceae	CORBOR	Cordia	borinquensis	NA	NA	Urb.	species	NA	NA	Boraginaceae	NA	NA	0.70625	species	NA	NA	NA
+39	94	NA	Boraginaceae	CORSUL	Cordia	sulcata	NA	NA	DC.	species	NA	NA	Boraginaceae	NA	NA	0.604	species	NA	NA	NA
+40	95	NA	Euphorbiaceae	CROPOE	Croton	poecilanthus	NA	NA	Urb.	species	NA	NA	Euphorbiaceae	NA	NA	0.587742	species	NA	NA	NA
+41	96	NA	Rhizophoraceae	CSSGUI	Cassipourea	guianensis	NA	NA	Aubl.	species	NA	NA	Rhizophoraceae	NA	NA	0.75975	species	NA	NA	NA
+42	97	NA	Sapindaceae	CUPAME	Cupania	americana	NA	NA	L.	species	NA	NA	Sapindaceae	NA	NA	0.544167	species	NA	NA	NA
+43	98	NA	Cyrillaceae	CYRRAC	Cyrilla	racemiflora	NA	NA	L.	species	NA	NA	Cyrillaceae	NA	NA	0.58619	species	NA	NA	NA
+44	99	NA	Burseraceae	DACEXC	Dacryodes	excelsa	NA	NA	Vahl	species	NA	NA	Burseraceae	NA	NA	0.493168	species	NA	NA	NA
+45	100	NA	Thymelaeaceae	DAPPHI	Daphnopsis	philippiana	NA	NA	Krug & Urb.	species	NA	NA	Thymelaeaceae	NA	NA	0.300683	species	NA	NA	NA
+46	101	NA	Araliaceae	DENARB	Dendropanax	arboreus	NA	NA	(L.) Decne. & Planch.	species	NA	NA	Araliaceae	NA	NA	0.420594	species	NA	NA	NA
+47	102	NA	Euphorbiaceae	DITMYR	Ditta	myricoides	NA	NA	Griseb.	species	NA	NA	Euphorbiaceae	NA	NA	0.356778	species	NA	NA	NA
+48	103	NA	Putranjivaceae	DRYALB	Drypetes	alba	NA	NA	Poit.	species	NA	NA	Euphorbiaceae	NA	NA	0.696821	species	NA	NA	NA
+49	104	NA	Putranjivaceae	DRYGLA	Drypetes	glauca	NA	NA	Vahl	species	NA	NA	Euphorbiaceae	NA	NA	0.673058	species	NA	NA	NA
+50	105	NA	Myrtaceae	EUGDOM	Eugenia	domingensis	NA	NA	O. Berg	species	NA	NA	Myrtaceae	NA	NA	0.59	species	NA	NA	NA
+51	106	NA	Myrtaceae	EUGEGG	Eugenia	eggersii	NA	NA	Kiaersk.	species	NA	NA	Myrtaceae	NA	NA	0.6975	species	NA	NA	NA
+52	107	NA	Myrtaceae	EUGSTA	Eugenia	stahlii	NA	NA	(Kiaersk.) Krug & Urb.	species	NA	NA	Myrtaceae	NA	NA	0.709979	species	NA	NA	NA
+53	108	NA	Rubiaceae	FAROCC	Faramea	occidentalis	NA	NA	(L.) A. Rich.	species	NA	NA	Rubiaceae	NA	NA	0.587889	species	NA	NA	NA
+54	109	NA	Moraceae	FICAME	Ficus	americana	NA	NA	Aubl.	species	NA	NA	Moraceae	NA	NA	0.4025	species	NA	NA	NA
+55	110	NA	Moraceae	FICCIT	Ficus	citrifolia	NA	NA	Mill.	species	NA	NA	Moraceae	NA	NA	0.4	species	NA	NA	NA
+56	111	NA	Moraceae	FICCRA	Ficus	crassinervia	NA	NA	Desf.ex Willd.	species	NA	NA	Moraceae	NA	NA	0.42	species	NA	NA	NA
+57	112	NA	Moraceae	FICSPP	Ficus	spp	NA	NA	NA	genus	NA	NA	Moraceae	NA	NA	0.423956	genus	NA	NA	NA
+58	113	NA	Moraceae	FICTRI	Ficus	trigonata	NA	NA	L.	species	NA	NA	Moraceae	NA	NA	0.423956	genus	NA	NA	NA
+59	114	NA	Rubiaceae	GENAME	Genipa	americana	NA	NA	L.	species	NA	NA	Rubiaceae	NA	NA	0.632074	species	NA	NA	NA
+60	115	NA	Rubiaceae	GONSPI	Gonzalagunia	 hirsuta	NA	NA	(Jacq.) K. Schum.	species	NA	NA	Rubiaceae	NA	NA	0.693723	genus	NA	NA	NA
+61	116	NA	Meliaceae	GUAGLA	Guarea	glabra	NA	NA	Vahl	species	NA	NA	Meliaceae	NA	NA	0.477806	species	NA	NA	NA
+62	117	NA	Meliaceae	GUAGUI	Guarea	guidonia	NA	NA	(L.) Sleumer	species	NA	NA	Meliaceae	NA	NA	0.567514	species	NA	NA	NA
+63	118	NA	Malvaceae	GUAULM	Guazuma	ulmifolia	NA	NA	Lam.	species	NA	NA	Malvaceae	NA	NA	0.522209	species	NA	NA	NA
+64	119	NA	Rubiaceae	GUEVAL	Guettarda	valenzuelana	NA	NA	A. Rich.	species	NA	NA	Rubiaceae	NA	NA	0.627409	species	NA	NA	NA
+65	120	NA	Annonaceae	GUTCAR	Guatteria	caribaea	NA	NA	Urb.	species	NA	NA	Annonaceae	NA	NA	0.707667	species	NA	NA	NA
+66	121	NA	Rubiaceae	HAMAXI	Hamelia	axillaris	NA	NA	Sw.	species	NA	NA	Rubiaceae	NA	NA	0.6175	species	NA	NA	NA
+67	122	NA	Melastomataceae	HENFAS	Henriettea	fascicularis	NA	NA	(Sw.) M. Gómez	species	NA	NA	Melastomataceae	NA	NA	0.479899	species	NA	NA	NA
+68	123	NA	Melastomataceae	HETCYM	Clidemia	eggersii	NA	NA	(Cogn.) F.S. Axelrod	species	NA	NA	Melastomataceae	NA	NA	0.670511	family	NA	NA	NA
+69	124	NA	Malvaceae	HIBTIL	Talipariti	tiliaceum	NA	NA	(L.) Fryxell	species	NA	NA	Malvaceae	NA	NA	0.475734	family	NA	NA	NA
+70	125	NA	Chrysobalanaceae	HIRRUG	Hirtella	rugosa	NA	NA	Pers.	species	NA	NA	Chrysobalanaceae	NA	NA	0.885519	species	NA	NA	NA
+71	126	NA	Salicaceae	HOMRAC	Homalium	racemosum	NA	NA	Jacq.	species	NA	NA	Salicaceae	NA	NA	0.793889	species	NA	NA	NA
+72	127	NA	Aquifoliaceae	ILESID	Ilex	sideroxyloides	NA	NA	(Sw.) Griseb. 	species	NA	NA	Aquifoliaceae	NA	NA	0.755488	species	NA	NA	NA
+73	128	NA	Fabaceae-mimosoideae	INGLAU	Inga	laurina	NA	NA	(Sw.) Willd.	species	NA	NA	Fabaceae	NA	NA	0.653333	species	NA	NA	NA
+74	129	NA	Fabaceae-mimosoideae	INGVER	Inga	vera	NA	NA	Willd.	species	NA	NA	Fabaceae	NA	NA	0.58	species	NA	NA	NA
+75	130	NA	Rubiaceae	IXOFER	Ixora	ferrea	NA	NA	(J.F. Gmel.) Benth.	species	NA	NA	Rubiaceae	NA	NA	0.65	species	NA	NA	NA
+76	131	NA	Salicaceae	LAEPRO	Laetia	procera	NA	NA	(Poepp.) Eichler	species	NA	NA	Salicaceae	NA	NA	0.647255	species	NA	NA	NA
+77	132	NA	Fabaceae-papilionoideae	LONLAT	Lonchocarpus	heptaphyllus	NA	NA	(Poir.) DC.	species	NA	NA	Fabaceae	NA	NA	0.68675	species	NA	NA	NA
+78	133	NA	Onagraceae	LUDOCT	Ludwigia	octovalvis	NA	NA	(Jacq.) P.H. Raven	species	NA	NA	Onagraceae	NA	NA	0.696	family	NA	NA	NA
+79	134	NA	Rhamnaceae	MAEEMI	Maesopsis	eminii	NA	NA	Engl.	species	NA	NA	Rhamnaceae	NA	NA	0.3835	species	NA	NA	NA
+80	135	NA	Magnoliaceae	MAGSPL	Magnolia	splendens	NA	NA	Urb.	species	NA	NA	Magnoliaceae	NA	NA	0.585	species	NA	NA	NA
+81	136	NA	Malpighiaceae	MALFUR	Malpighia	fucata	NA	NA	Ker Gawl.	species	NA	NA	Malpighiaceae	NA	NA	0.569233	genus	NA	NA	NA
+82	137	NA	Sapotaceae	MANBID	Manilkara	bidentata	NA	NA	(A. DC.) A. Chev.	species	NA	NA	Sapotaceae	NA	NA	0.872014	species	NA	NA	NA
+83	138	NA	Anacardiaceae	MANIND	Mangifera	indica	NA	NA	L.	species	NA	NA	Anacardiaceae	NA	NA	0.555828	species	NA	NA	NA
+84	139	NA	Phyllanthaceae	MARNOB	Margaritaria	nobilis	NA	NA	L.f.	species	NA	NA	Euphorbiaceae	NA	NA	0.59636	species	NA	NA	NA
+85	140	NA	Sapindaceae	MATDOM	Matayba	domingensis	NA	NA	(DC.) Radlk	species	NA	NA	Sapindaceae	NA	NA	0.697	species	NA	NA	NA
+86	141	NA	Celastraceae	MAYELO	Maytenus	elongata	NA	NA	Britton	species	NA	NA	Celastraceae	NA	NA	0.710898	species	NA	NA	NA
+87	142	NA	Sabiaceae	MELHER	Meliosma	herbertii	NA	NA	Rolfe	species	NA	NA	Sabiaceae	NA	NA	0.435	species	NA	NA	NA
+88	143	NA	Melastomataceae	MICAFF	Miconia	affinis	NA	NA	DC.	species	NA	NA	Melastomataceae	NA	NA	0.618877	genus	NA	NA	NA
+89	144	NA	Melastomataceae	MICIMP	Miconia	impetiolaris	NA	NA	(Sw.) D. Don ex DC.	species	NA	NA	Melastomataceae	NA	NA	0.747025	species	NA	NA	NA
+90	145	NA	Melastomataceae	MICMIR	Miconia	mirabilis	NA	NA	(Aubl.) L.O. Williams	species	NA	NA	Melastomataceae	NA	NA	0.603167	species	NA	NA	NA
+91	146	NA	Melastomataceae	MICPRA	Miconia	prasina	NA	NA	(Sw.) DC.	species	NA	NA	Melastomataceae	NA	NA	0.688234	species	NA	NA	NA
+92	147	NA	Melastomataceae	MICRAC	Miconia	racemosa	NA	NA	(Aubl.) DC.	species	NA	NA	Melastomataceae	NA	NA	0.449723	species	NA	NA	NA
+93	148	NA	Melastomataceae	MICTET	Miconia	tetrandra	NA	NA	(Sw.) D. Don	species	NA	NA	Melastomataceae	NA	NA	0.703	species	NA	NA	NA
+94	149	NA	Fabaceae-mimosoideae	MIMPUD	Mimosa	pudica	NA	NA	L.	species	NA	NA	Mimosoideae	NA	NA	0.8235	genus	NA	NA	NA
+95	150	NA	Sapotaceae	MIRCHR	Micropholis	guyanensis	NA	NA	(A.DC.) Pierre	species	NA	NA	Sapotaceae	NA	NA	0.657273	species	NA	NA	NA
+96	151	NA	Sapotaceae	MIRGAR	Micropholis	garciniifolia	NA	NA	Pierre	species	NA	NA	Sapotaceae	NA	NA	0.67	species	NA	NA	NA
+97	152	NA	Myrsinaceae	MYRCOR	Myrsine	coriacea	NA	NA	(Sw.) R. Br. ex Roem. & Schult.	species	NA	NA	Myrsinaceae	NA	NA	0.643556	species	NA	NA	NA
+98	153	NA	Myrtaceae	MYRDEF	Myrcia	deflexa	NA	NA	(Poir.) DC.	species	NA	NA	Myrtaceae	NA	NA	0.8	species	NA	NA	NA
+99	154	NA	Myrtaceae	MYRFAL	Myrcia	fallax	NA	NA	(Rich.) D.C.	species	NA	NA	Myrtaceae	NA	NA	0.885141	species	NA	NA	NA
+100	155	NA	Myrtaceae	MYRLEP	Myrcia	amazonica	NA	NA	DC.	species	NA	NA	Myrtaceae	NA	NA	0.814458	genus	NA	NA	NA
+101	156	NA	Myrtaceae	MYRSPL	Myrcia	splendens	NA	NA	(Sw.) DC.	species	NA	NA	Myrtaceae	NA	NA	0.76777	species	NA	NA	NA
+102	157	NA	Asteraceae	NEULOB	Neurolaena	lobata	NA	NA	(L.) Cass.	species	NA	NA	Asteraceae	NA	NA	0.636096	family	NA	NA	NA
+103	158	NA	Malvaceae	OCHPYR	Ochroma	pyramidale	NA	NA	(Cav. Ex Lam.) Urb.	species	NA	NA	Malvaceae	NA	NA	0.158128	species	NA	NA	NA
+104	159	NA	Lauraceae	OCOFLO	Ocotea	floribunda	NA	NA	(Sw.) Mez	species	NA	NA	Lauraceae	NA	NA	0.401425	species	NA	NA	NA
+105	160	NA	Lauraceae	OCOGLO	Nectandra	hihua	NA	NA	(Ruiz & Pav.) Rohwer	species	NA	NA	Lauraceae	NA	NA	0.57169	genus	NA	NA	NA
+106	161	NA	Lauraceae	OCOLEU	Ocotea	leucoxylon	NA	NA	(Sw.) Laness.	species	NA	NA	Lauraceae	NA	NA	0.46175	species	NA	NA	NA
+107	162	NA	Lauraceae	OCOMOS	Ocotea	moschata	NA	NA	(Meisn) Mez.	species	NA	NA	Lauraceae	NA	NA	0.595333	species	NA	NA	NA
+108	163	NA	Lauraceae	OCOPOR	Ocotea	portoricensis	NA	NA	Mez	species	NA	NA	Lauraceae	NA	NA	0.59	species	NA	NA	NA
+109	164	NA	Lauraceae	OCOSIN	Nectandra	turbacensis	NA	NA	(Knuth) Nees	species	NA	NA	Lauraceae	NA	NA	0.57169	genus	NA	NA	NA
+110	165	NA	Lauraceae	OCOSPA	Ocotea	spathulata	NA	NA	Mez	species	NA	NA	Lauraceae	NA	NA	0.620759	species	NA	NA	NA
+111	166	NA	Fabaceae-papilionoideae	ORMKRU	Ormosia	krugii	NA	NA	Urb.	species	NA	NA	Fabaceae	NA	NA	0.491429	species	NA	NA	NA
+112	167	NA	Annonaceae	OXALAU	Oxandra	laurifolia	NA	NA	(Sw.) A. Rich.	species	NA	NA	Annonaceae	NA	NA	0.588845	species	NA	NA	NA
+113	168	NA	Rubiaceae	PALCRO	Palicourea	crocea	NA	NA	(Sw.)Schult	species	NA	NA	Rubiaceae	NA	NA	0.52667	genus	NA	NA	NA
+114	169	NA	Rubiaceae	PALRIP	Palicourea	croceoides	NA	NA	Ham.	species	NA	NA	Rubiaceae	NA	NA	0.52667	genus	NA	NA	NA
+115	170	NA	Phytolaccaceae	PHYICO	Phytolacca	rivinoides	NA	NA	Kunth & C.D. Bouché	species	NA	NA	Phytolaccaceae	NA	NA	0.258	genus	NA	NA	NA
+116	171	NA	Piperaceae	PIPADU	Piper	aduncum	NA	NA	L.	species	NA	NA	Piperaceae	NA	NA	0.4	species	NA	NA	NA
+117	172	NA	Piperaceae	PIPAMA	Piper	amalago	NA	NA	L.	species	NA	NA	Piperaceae	NA	NA	0.401667	species	NA	NA	NA
+118	173	NA	Piperaceae	PIPBLA	Piper	blattarum	NA	NA	Spreng.	species	NA	NA	Piperaceae	NA	NA	0.455534	species	NA	NA	NA
+119	174	NA	Piperaceae	PIPGLA	Piper	glabrescens	NA	NA	(Miq.) C.DC.	species	NA	NA	Piperaceae	NA	NA	0.288269	species	NA	NA	NA
+120	175	NA	Piperaceae	PIPHIS	Piper	hispidum	NA	NA	Sw.	species	NA	NA	Piperaceae	NA	NA	0.392696	species	NA	NA	NA
+121	176	NA	Piperaceae	PIPJAC	Piper	jacquemontianum	NA	NA	Knuth	species	NA	NA	Piperaceae	NA	NA	0.39	species	NA	NA	NA
+122	177	NA	Nyctaginaceae	PISBOR	Pisonia	sp. 1 borinquena	NA	NA	(undescribed)	species	NA	NA	Nyctaginaceae	NA	NA	0.584404	none	NA	NA	NA
+123	178	NA	Canellaceae	PLEMAC	Pleodendron	macranthum	NA	NA	(Baill.) Tiegh.	species	NA	NA	Canellaceae	NA	NA	0.736333	family	NA	NA	NA
+124	179	NA	Asteraceae	PLUSYM	Pluchea	carolinensis	NA	NA	(Jacq.) G. Don	species	NA	NA	Asteraceae	NA	NA	0.636096	family	NA	NA	NA
+125	180	NA	Piperaceae	POTPEL	Piper	peltatum	NA	NA	L.	species	NA	NA	Piperaceae	NA	NA	0.382514	genus	NA	NA	NA
+126	181	NA	Piperaceae	POTUMB	Piper	umbellatum	NA	NA	L.	species	NA	NA	Piperaceae	NA	NA	0.308309	species	NA	NA	NA
+127	182	NA	Arecaceae	PREMON	Prestoea	acuminata	NA	NA	(Willd.) H.E. Moore	species	NA	NA	Arecaceae	NA	NA	0.279657	genus	NA	NA	NA
+128	183	NA	Moraceae	PSESPU	Pseudolmedia	spuria	NA	NA	(Sw.) Griseb.	species	NA	NA	Moraceae	NA	NA	0.675	species	NA	NA	NA
+129	184	NA	Rubiaceae	PSYBER	Psychotria	berteroana	NA	NA	DC.	species	NA	NA	Rubiaceae	NA	NA	0.524742	genus	NA	NA	NA
+130	185	NA	Rubiaceae	PSYBRA	Psychotria	brachiata	NA	NA	Sw.	species	NA	NA	Rubiaceae	NA	NA	0.376259	species	NA	NA	NA
+131	186	NA	Rubiaceae	PSYDEF	Psychotria	deflexa	NA	NA	DC.	species	NA	NA	Rubiaceae	NA	NA	0.480397	species	NA	NA	NA
+132	187	NA	Rubiaceae	PSYGRA	Psychotria	grandis	NA	NA	Sw.	species	NA	NA	Rubiaceae	NA	NA	0.294816	species	NA	NA	NA
+133	188	NA	Fabaceae-papilionoideae	PTEOFF	Pterocarpus	officinalis	NA	NA	Jacq.	species	NA	NA	Fabaceae	NA	NA	0.379868	species	NA	NA	NA
+134	189	NA	Malvaceae	QUATUR	Quararibea	turbinata	NA	NA	(Sw.) Poir	species	NA	NA	Malvaceae	NA	NA	0.57829	species	NA	NA	NA
+135	190	NA	Apocynaceae	RAUNIT	Rauvolfia	nitida	NA	NA	Jacq.	species	NA	NA	Apocynaceae	NA	NA	0.465	species	NA	NA	NA
+136	191	NA	Clusiaceae	RHEPOR	Garcinia	portoricensis	NA	NA	(Urb.) Alain	species	NA	NA	Clusiaceae	NA	NA	0.833585	species	NA	NA	NA
+137	192	NA	Rubiaceae	RONPOR	Rondeletia	portoricensis	NA	NA	Krug & Urb.	species	NA	NA	Rubiaceae	NA	NA	0.775	species	NA	NA	NA
+138	193	NA	Arecaceae	ROYBOR	Roystonea	borinquena	NA	NA	O.F. Cook	species	NA	NA	Arecaceae	NA	NA	0.82	species	NA	NA	NA
+139	194	NA	Salicaceae	SAMSPI	Samyda	spinulosa	NA	NA	Vent.	species	NA	NA	Salicaceae	NA	NA	0.756121	genus	NA	NA	NA
+140	195	NA	Euphorbiaceae	SAPLAU	Sapium	laurocerasus	NA	NA	Desf.	species	NA	NA	Euphorbiaceae	NA	NA	0.380714	species	NA	NA	NA
+141	196	NA	Araliaceae	SCHMOR	Schefflera	morototoni	NA	NA	(Aubl.) Maguire	species	NA	NA	Araliaceae	NA	NA	0.453891	species	NA	NA	NA
+142	197	NA	Simaroubaceae	SIMAMA	Simarouba	amara	NA	NA	Aubl.	species	NA	NA	Simaroubaceae	NA	NA	0.384643	species	NA	NA	NA
+143	198	NA	Elaeocarpaceae	SLOBER	Sloanea	berteroana	NA	NA	Choisy ex DC.	species	NA	NA	Elaeocarpaceae	NA	NA	0.624723	genus	NA	NA	NA
+144	199	NA	Solanaceae	SOLRUG	Solanum	rugosum	NA	NA	Dunal	species	NA	NA	Solanaceae	NA	NA	0.4925	species	NA	NA	NA
+145	200	NA	Solanaceae	SOLTOR	Solanum	torvum	NA	NA	Sw.	species	NA	NA	Solanaceae	NA	NA	0.463333	species	NA	NA	NA
+146	201	NA	Bignoniaceae	SPACAM	Spathodea	campanulata	NA	NA	P. Beauv.	species	NA	NA	Bignoniaceae	NA	NA	0.34396	species	NA	NA	NA
+147	202	NA	Meliaceae	SWIMAC	Swietenia	macrophylla	NA	NA	King	species	NA	NA	Meliaceae	NA	NA	0.522409	species	NA	NA	NA
+148	203	NA	Symplocaceae	SYMMAR	Symplocos	martinicensis	NA	NA	Jacq.	species	NA	NA	Symplocaceae	NA	NA	0.726609	species	NA	NA	NA
+149	204	NA	Myrtaceae	SYZJAM	Syzygium	jambos	NA	NA	(L.) Alston	species	NA	NA	Myrtaceae	NA	NA	0.682282	species	NA	NA	NA
+150	205	NA	Bignoniaceae	TABHET	Tabebuia	heterophylla	NA	NA	(DC.) Britton	species	NA	NA	Bignoniaceae	NA	NA	0.589445	species	NA	NA	NA
+151	206	NA	Pentaphylacaceae	TERLUQ	Ternstroemia	luquillensis	NA	NA	Krug & Urb.	species	NA	NA	Theaceae	NA	NA	0.618091	genus	NA	NA	NA
+152	207	NA	Burseraceae	TETBAL	Tetragastris	balsamifera	NA	NA	Oken	species	NA	NA	Burseraceae	NA	NA	0.591348	species	NA	NA	NA
+153	208	NA	Melastomataceae	TETURB	Tetrazygia	urbanii	NA	NA	Cogn.	species	NA	NA	Melastomataceae	NA	NA	0.670511	family	NA	NA	NA
+154	209	NA	Cannabaceae	TREMIC	Trema	micrantha	NA	NA	(L.) Blume	species	NA	NA	Ulmaceae	NA	NA	0.319417	species	NA	NA	NA
+155	210	NA	Meliaceae	TRIPAL	Trichilia	pallida	NA	NA	Sw.	species	NA	NA	Meliaceae	NA	NA	0.698125	species	NA	NA	NA
+156	211	NA	Tapisciaceae	TUROCC	Turpinia	occidentalis	NA	NA	(Sw.) G. Don	species	NA	NA	Staphyleaceae	NA	NA	0.354805	species	NA	NA	NA
+157	212	NA	Unknown	UNIDEN	Unidentified	SPECIES	NA	NA	NA	species	NA	NA	unknown	NA	NA	0.584404	none	NA	NA	NA
+158	213	NA	Urticaceae	UREBAC	Urera	baccifera	NA	NA	(L.) Gaudich. Ex Wedd.	species	NA	NA	Urticaceae	NA	NA	0.275078	species	NA	NA	NA
+159	214	NA	Lamiaceae	VITDIV	Vitex	divaricata	NA	NA	Sw.	species	NA	NA	Lamiaceae 	NA	NA	0.62375	species	NA	NA	NA
+160	215	NA	Myrsinaceae	WALPEN	Wallenia	lamarckiana	NA	NA	(A. DC.) Mex	species	NA	NA	Myrsinaceae	NA	NA	0.648781	family	NA	NA	NA
+161	216	NA	Salicaceae	XYLSCH	Xylosma	schwaneckeana	NA	NA	(Krug & Urb.) Urb.	species	NA	NA	Salicaceae	NA	NA	0.719491	genus	NA	NA	NA
+162	217	NA	Rutaceae	ZANMAR	Zanthoxylum	martinicense	NA	NA	(Lam.) DC.	species	NA	NA	Rutaceae	NA	NA	0.58425	species	NA	NA	NA
+163	218	NA	Aquifoliaceae	ILENIT	Ilex	nitida	NA	NA	(Vahl) Maxim.	species	NA	NA	Aquifoliaceae	NA	NA	0.569156	genus	NA	NA	NA

@@ -33,21 +33,21 @@ library(fgeo.data)
 ### ViewFullTable (`vft`)
 
 ``` r
-vft <- luquillo_vft_random
+vft <- luquillo_vft_4quad
 
 # Show first few columns to save space.
 str(vft, give.attr = FALSE, list.len = 5)
-#> Classes 'tbl_df', 'tbl' and 'data.frame':    5945 obs. of  32 variables:
-#>  $ DBHID           : int  143 103518 217487 347333 439947 582850 158 103533 217498 384255 ...
+#> Classes 'tbl_df', 'tbl' and 'data.frame':    3302 obs. of  32 variables:
+#>  $ DBHID           : int  384550 384553 466764 384554 466765 611446 384555 466766 611447 384556 ...
 #>  $ PlotName        : chr  "luquillo" "luquillo" "luquillo" "luquillo" ...
 #>  $ PlotID          : int  1 1 1 1 1 1 1 1 1 1 ...
-#>  $ Family          : chr  "Burseraceae" "Burseraceae" "Burseraceae" "Burseraceae" ...
-#>  $ Genus           : chr  "Dacryodes" "Dacryodes" "Dacryodes" "Dacryodes" ...
+#>  $ Family          : chr  "Rubiaceae" "Urticaceae" "Urticaceae" "Urticaceae" ...
+#>  $ Genus           : chr  "Psychotria" "Cecropia" "Cecropia" "Cecropia" ...
 #>   [list output truncated]
 
 lapply(vft, function(x) head(unique(x)))
 #> $DBHID
-#> [1]    143 103518 217487 347333 439947 582850
+#> [1] 384550 384553 466764 384554 466765 611446
 #> 
 #> $PlotName
 #> [1] "luquillo"
@@ -56,96 +56,96 @@ lapply(vft, function(x) head(unique(x)))
 #> [1] 1
 #> 
 #> $Family
-#> [1] "Burseraceae" "Myrtaceae"   "Salicaceae"  "Meliaceae"   "Arecaceae"  
-#> [6] "Araliaceae" 
+#> [1] "Rubiaceae"  "Urticaceae" "Araliaceae" "Salicaceae" "Lauraceae" 
+#> [6] "Meliaceae" 
 #> 
 #> $Genus
-#> [1] "Dacryodes"  "Myrcia"     "Casearia"   "Guarea"     "Prestoea"  
-#> [6] "Schefflera"
+#> [1] "Psychotria" "Cecropia"   "Schefflera" "Casearia"   "Ocotea"    
+#> [6] "Guarea"    
 #> 
 #> $SpeciesName
-#> [1] "excelsa"    "splendens"  "arborea"    "guidonia"   "acuminata" 
-#> [6] "morototoni"
+#> [1] "berteroana"   "schreberiana" "morototoni"   "arborea"     
+#> [5] "leucoxylon"   "guidonia"    
 #> 
 #> $Mnemonic
-#> [1] "DACEXC" "MYRSPL" "CASARB" "GUAGUI" "PREMON" "SCHMOR"
+#> [1] "PSYBER" "CECSCH" "SCHMOR" "CASARB" "OCOLEU" "GUAGUI"
 #> 
 #> $Subspecies
-#> [1] "NULL"
+#> [1] NA
 #> 
 #> $SpeciesID
-#> [1]  99 156  70 117 182 196
+#> [1] 184  74 196  70 161 117
 #> 
 #> $SubspeciesID
-#> [1] "NULL"
+#> [1] NA
 #> 
 #> $QuadratName
-#> [1] "113"  "1021" "921"  "821"  "213"  "413" 
+#> [1] "721" "621" "722" "622"
 #> 
 #> $QuadratID
-#> [1] 193 330 329 328 194 196
+#> [1] 327 326 343 342
 #> 
 #> $PX
-#> [1]  10.31 182.89 164.61 148.96  38.30 143.24
+#> [1] 126.98 129.51 126.95 129.88 128.56 126.50
 #> 
 #> $PY
-#> [1] 245.36 410.15 409.50 414.44 245.30 410.91
+#> [1] 404.11 404.53 405.74 408.94 409.08 411.04
 #> 
 #> $QX
-#> [1] 10.31  2.89  4.61  8.96 18.30  3.24
+#> [1] 6.98 9.51 6.95 9.88 8.56 6.50
 #> 
 #> $QY
-#> [1]  5.36 10.15  9.50 14.44  5.30 10.91
+#> [1]  4.11  4.53  5.74  8.94  9.08 11.04
 #> 
 #> $TreeID
-#> [1] 104 119 180 602 631 647
+#> [1] 692 698 706 711 714 725
 #> 
 #> $Tag
-#> [1] "10009"  "100104" "100171" "100649" "10069"  "100708"
+#> [1] "100768" "100774" "100781" "100786" "100789" "100799"
 #> 
 #> $StemID
-#> [1] 143 158 222 223 224 225
+#> [1] 851 858 866 871 874 885
 #> 
 #> $StemNumber
 #> [1] 0
 #> 
 #> $StemTag
-#> [1]  10009 100104 100095 100096 100171 100174
+#> [1] 100768 100774 100781 100786 100789 100799
 #> 
 #> $PrimaryStem
-#> [1] "NULL" "main"
+#> [1] NA
 #> 
 #> $CensusID
-#> [1] 1 2 3 4 5 6
+#> [1] 4 5 6
 #> 
 #> $PlotCensusNumber
-#> [1] 1 2 3 4 5 6
+#> [1] 4 5 6
 #> 
 #> $DBH
-#> [1] 115 147 169 186 193 195
+#> [1]  NA 185 341 370 375 167
 #> 
 #> $HOM
-#> [1] 1.20 1.30 1.40 1.45 1.25 1.26
+#> [1]   NA 1.30 1.28 1.95 1.43 1.33
 #> 
 #> $ExactDate
-#> [1] "1991-06-11" "1996-01-08" "2001-03-29" "2006-08-01" "2011-11-02"
-#> [6] "2016-04-20"
+#> [1] "2006-11-21" "2012-01-31" "2006-11-20" "2016-07-28" "2016-07-29"
+#> [6] "2006-11-22"
 #> 
 #> $Date
-#> [1] 11484 13156 15063 17014 18933 20564
+#> [1] 17126 19023 17125 20663 20664 17127
 #> 
 #> $ListOfTSM
-#> [1] "MAIN;A"          "SPROUT;A"        "SPROUT;LS"       "MAIN;A;ST;T"    
-#> [5] "MAIN;A;LS;B"     "MAIN;A;LS;DP;ST"
+#> [1] "MAIN;DEADT"      "MAIN;A"          "MAIN;DEADT;R;ST" "MAIN;A;T"       
+#> [5] "MAIN;A;C"        "MAIN;DEADT;B"   
 #> 
 #> $HighHOM
 #> [1] 1
 #> 
 #> $LargeStem
-#> [1] "NULL"
+#> [1] NA
 #> 
 #> $Status
-#> [1] "alive"        "stem dead"    "broken below" "dead"
+#> [1] "dead"         "alive"        "broken below" "stem dead"
 ```
 
 ## Information

@@ -9,7 +9,8 @@
 luquillo_taxa
 }
 \description{
-Complete ViewTaxonomy (taxa) table from Luquillo.
+Compared to the raw data in text format, this dataset replaced NULL values
+with missing values, and its columns have a specific type.
 }
 \section{Acknowledgements}{
 

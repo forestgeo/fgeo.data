@@ -41,7 +41,7 @@ library(fgeo.data)
 ### ViewFullTable (`vft`)
 
 ```{r}
-vft <- luquillo_vft_random
+vft <- luquillo_vft_4quad
 
 # Show first few columns to save space.
 str(vft, give.attr = FALSE, list.len = 5)
