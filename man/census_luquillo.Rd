@@ -9,6 +9,7 @@
 \alias{luquillo_stem_1ha}
 \alias{luquillo_stem6_1ha}
 \alias{luquillo_stem6_random}
+\alias{luquillo_stem_random_tiny}
 \title{Tree and stem tables from Luquillo.}
 \format{See examples.}
 \usage{
@@ -23,6 +24,8 @@ luquillo_stem_1ha
 luquillo_stem6_1ha
 
 luquillo_stem6_random
+
+luquillo_stem_random_tiny
 }
 \description{
 Tree and stem tables from Luquillo. These is how to interpret the names of
@@ -56,6 +59,8 @@ short_str(luquillo_stem_1ha)
 short_str(luquillo_stem6_1ha)
 
 short_str(luquillo_stem6_random)
+
+short_str(luquillo_stem_random_tiny)
 
 }
 \seealso{
