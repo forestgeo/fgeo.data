@@ -29,7 +29,7 @@ luquillo_stem_random_tiny
 }
 \description{
 Tree and stem tables from Luquillo produced with
-\href{https://forestgeo.github.io/rtbl/}{rtbl} 0.0.0.9000. These is how to
+\href{https://github.com/forestgeo/rtbl/releases/tag/0.0.0.9000}{rtbl 0.0.0.9000}. These is how to
 interpret the names of the datasets:
 \itemize{
 \item The number following 'tree' or 'stem' indicates that the data corresponds

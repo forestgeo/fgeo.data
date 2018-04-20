@@ -1,7 +1,7 @@
 #' Tree and stem tables from Luquillo.
 #'
 #' Tree and stem tables from Luquillo produced with 
-#' [__rtbl__](https://forestgeo.github.io/rtbl/) 0.0.0.9000. These is how to
+#' [__rtbl__ 0.0.0.9000](https://github.com/forestgeo/rtbl/releases/tag/0.0.0.9000). These is how to
 #' interpret the names of the datasets:
 #' * The number following 'tree' or 'stem' indicates that the data corresponds
 #' to that specific census number.
