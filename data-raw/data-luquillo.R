@@ -136,13 +136,13 @@ ls_1ha <- as.list(env_1ha)
 
 # luquillo_tree_1ha not saved to save space. Tree can be reproduced from stem.
 
-luquillo_tree6_1ha <- ls_1ha$luquillo.full6
+luquillo_tree6_1ha <- as.tibble(ls_1ha$luquillo.full6)
 use_data(luquillo_tree6_1ha, overwrite = TRUE)
 
 luquillo_stem_1ha <- compile_census(ls_1ha, "stem")
 use_data(luquillo_stem_1ha, overwrite = TRUE)
 
-luquillo_stem6_1ha <- ls_1ha$luquillo.stem6
+luquillo_stem6_1ha <- as.tibble(ls_1ha$luquillo.stem6)
 use_data(luquillo_stem6_1ha, overwrite = TRUE)
 
 
@@ -156,20 +156,20 @@ ls_random <- as.list(env_random)
 
 # luquillo_tree_random not saved to save space. It can be reproduced from stem.
 
-luquillo_tree6_random <- ls_random$luquillo.full6
+luquillo_tree6_random <- as.tibble(ls_random$luquillo.full6)
 use_data(luquillo_tree6_random, overwrite = TRUE)
 
 luquillo_stem_random <- compile_census(ls_random, "stem")
 use_data(luquillo_stem_random, overwrite = TRUE)
 
-luquillo_stem6_random <- ls_random$luquillo.stem6
+luquillo_stem6_random <- as.tibble(ls_random$luquillo.stem6)
 use_data(luquillo_stem6_random, overwrite = TRUE)
 
 
 
 # Species table -----------------------------------------------------------
 
-luquillo_species <- ls_1ha$luquillo.spptable
+luquillo_species <- as.tibble(ls_1ha$luquillo.spptable)
 use_data(luquillo_species, overwrite = TRUE)
 
 
@@ -180,7 +180,8 @@ use_data(luquillo_species, overwrite = TRUE)
 
 load(here::here("data-raw/CTFSElev_luquillo.rdata"))
 luquillo_elevation <- CTFSElev_luquillo
-use_data(luquillo_elevation)
+luquillo_elevation$col <- as.tibble(luquillo_elevation$col)
+use_data(luquillo_elevation, overwrite = TRUE)
 
 
 

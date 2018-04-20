@@ -4,7 +4,7 @@
 \name{luquillo_species}
 \alias{luquillo_species}
 \title{Species table from Luquillo.}
-\format{An object of class \code{data.frame} with 84 rows and 10 columns.}
+\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 84 rows and 10 columns.}
 \usage{
 luquillo_species
 }

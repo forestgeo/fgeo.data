@@ -139,16 +139,26 @@ http://bit.ly/fgeo-data-luquillo-elevation." />
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>luquillo_elevation</span>, , <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; List of 4
-#&gt;  $ col :'data.frame':	6565 obs. of  3 variables:
+#&gt;  $ col :Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	6565 obs. of  3 variables:
 #&gt;   ..$ x   : int [1:6565] 0 0 0 0 0 0 0 0 0 0 ...
 #&gt;   ..$ y   : int [1:6565] 0 5 10 15 20 25 30 35 40 45 ...
 #&gt;   ..$ elev: num [1:6565] 364 364 363 363 363 ...
 #&gt;  $ mat : num [1:101, 1:65] 364 364 363 363 363 ...
 #&gt;  $ xdim: int 320
 #&gt;  $ ydim: int 500</div><div class='input'>
-<span class='fu'>sapply</span>(<span class='no'>luquillo_elevation</span>, <span class='no'>class</span>)</div><div class='output co'>#&gt;          col          mat         xdim         ydim 
-#&gt; "data.frame"     "matrix"    "integer"    "integer" </div><div class='input'>
-<span class='fu'>str</span>(<span class='no'>luquillo_elevation</span>$<span class='no'>col</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; 'data.frame':	6565 obs. of  3 variables:
+<span class='fu'>sapply</span>(<span class='no'>luquillo_elevation</span>, <span class='no'>class</span>)</div><div class='output co'>#&gt; $col
+#&gt; [1] "tbl_df"     "tbl"        "data.frame"
+#&gt; 
+#&gt; $mat
+#&gt; [1] "matrix"
+#&gt; 
+#&gt; $xdim
+#&gt; [1] "integer"
+#&gt; 
+#&gt; $ydim
+#&gt; [1] "integer"
+#&gt; </div><div class='input'>
+<span class='fu'>str</span>(<span class='no'>luquillo_elevation</span>$<span class='no'>col</span>, <span class='kw'>give.attr</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	6565 obs. of  3 variables:
 #&gt;  $ x   : int  0 0 0 0 0 0 0 0 0 0 ...
 #&gt;  $ y   : int  0 5 10 15 20 25 30 35 40 45 ...
 #&gt;  $ elev: num  364 364 363 363 363 ...</div></pre>

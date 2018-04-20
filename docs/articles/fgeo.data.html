@@ -193,7 +193,7 @@
 <h2 class="hasAnchor">
 <a href="#census-tree-and-stem" class="anchor"></a>Census (<code>tree</code> and <code>stem</code>)</h2>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">str</span>(luquillo_tree6_random, <span class="dt">give.attr =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt; 'data.frame':    1004 obs. of  19 variables:</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt; Classes 'tbl_df', 'tbl' and 'data.frame':    1004 obs. of  19 variables:</span></a>
 <a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">#&gt;  $ treeID   : int  104 119 180 602 631 647 1086 1144 1168 1380 ...</span></a>
 <a class="sourceLine" id="cb4-4" data-line-number="4"><span class="co">#&gt;  $ stemID   : int  143 158 225 736 775 793 1339 1410 1438 1702 ...</span></a>
 <a class="sourceLine" id="cb4-5" data-line-number="5"><span class="co">#&gt;  $ tag      : chr  "10009" "100104" "100171" "100649" ...</span></a>
@@ -323,7 +323,7 @@
 <a href="#elevation-elevation" class="anchor"></a>Elevation (<code>elevation</code>)</h2>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw">str</span>(luquillo_elevation)</a>
 <a class="sourceLine" id="cb9-2" data-line-number="2"><span class="co">#&gt; List of 4</span></a>
-<a class="sourceLine" id="cb9-3" data-line-number="3"><span class="co">#&gt;  $ col :'data.frame':    6565 obs. of  3 variables:</span></a>
+<a class="sourceLine" id="cb9-3" data-line-number="3"><span class="co">#&gt;  $ col :Classes 'tbl_df', 'tbl' and 'data.frame':    6565 obs. of  3 variables:</span></a>
 <a class="sourceLine" id="cb9-4" data-line-number="4"><span class="co">#&gt;   ..$ x   : int [1:6565] 0 0 0 0 0 0 0 0 0 0 ...</span></a>
 <a class="sourceLine" id="cb9-5" data-line-number="5"><span class="co">#&gt;   ..$ y   : int [1:6565] 0 5 10 15 20 25 30 35 40 45 ...</span></a>
 <a class="sourceLine" id="cb9-6" data-line-number="6"><span class="co">#&gt;   ..$ elev: num [1:6565] 364 364 363 363 363 ...</span></a>
@@ -332,13 +332,15 @@
 <a class="sourceLine" id="cb9-9" data-line-number="9"><span class="co">#&gt;  $ ydim: int 500</span></a>
 <a class="sourceLine" id="cb9-10" data-line-number="10"></a>
 <a class="sourceLine" id="cb9-11" data-line-number="11"><span class="kw">head</span>(luquillo_elevation<span class="op">$</span>col)</a>
-<a class="sourceLine" id="cb9-12" data-line-number="12"><span class="co">#&gt;   x  y   elev</span></a>
-<a class="sourceLine" id="cb9-13" data-line-number="13"><span class="co">#&gt; 1 0  0 364.30</span></a>
-<a class="sourceLine" id="cb9-14" data-line-number="14"><span class="co">#&gt; 2 0  5 363.86</span></a>
-<a class="sourceLine" id="cb9-15" data-line-number="15"><span class="co">#&gt; 3 0 10 363.48</span></a>
-<a class="sourceLine" id="cb9-16" data-line-number="16"><span class="co">#&gt; 4 0 15 363.19</span></a>
-<a class="sourceLine" id="cb9-17" data-line-number="17"><span class="co">#&gt; 5 0 20 363.00</span></a>
-<a class="sourceLine" id="cb9-18" data-line-number="18"><span class="co">#&gt; 6 0 25 363.03</span></a></code></pre></div>
+<a class="sourceLine" id="cb9-12" data-line-number="12"><span class="co">#&gt; # A tibble: 6 x 3</span></a>
+<a class="sourceLine" id="cb9-13" data-line-number="13"><span class="co">#&gt;       x     y  elev</span></a>
+<a class="sourceLine" id="cb9-14" data-line-number="14"><span class="co">#&gt;   &lt;int&gt; &lt;int&gt; &lt;dbl&gt;</span></a>
+<a class="sourceLine" id="cb9-15" data-line-number="15"><span class="co">#&gt; 1     0     0  364.</span></a>
+<a class="sourceLine" id="cb9-16" data-line-number="16"><span class="co">#&gt; 2     0     5  364.</span></a>
+<a class="sourceLine" id="cb9-17" data-line-number="17"><span class="co">#&gt; 3     0    10  363.</span></a>
+<a class="sourceLine" id="cb9-18" data-line-number="18"><span class="co">#&gt; 4     0    15  363.</span></a>
+<a class="sourceLine" id="cb9-19" data-line-number="19"><span class="co">#&gt; 5     0    20  363.</span></a>
+<a class="sourceLine" id="cb9-20" data-line-number="20"><span class="co">#&gt; 6     0    25  363.</span></a></code></pre></div>
 </div>
 <div id="habitat-habitat" class="section level2">
 <h2 class="hasAnchor">
