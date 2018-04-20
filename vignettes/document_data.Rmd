@@ -44,7 +44,7 @@ Datasets from a specific site should be named with the format `site_generic_info
 
 * `info` should be a single short string indicating the most prominent characteristic of the specific dataset -- commonly referring to the criteria used to subset a larger dataset (e.g. `luquillo_stem6_random`).
 
-For example, if your data comes from Barro Colorado Island, and it is a ViewFullTable containing a random subset of a few trees, a good name for it would be `luquillo_vft_random`. This format works well with auto-completion in RStudio.
+For example, if your data comes from Luquillo, and it is a ViewFullTable containing a random subset of a few trees, a good name for it would be `luquillo_vft_random`. This format works well with auto-completion in RStudio.
 
 <img src="https://i.imgur.com/7a1kObr.png" align="center" height=150 />
 
