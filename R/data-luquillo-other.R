@@ -17,3 +17,12 @@
 #' str(luquillo_elevation$col, give.attr = FALSE)
 "luquillo_elevation"
 
+
+#' Habitat data from luquillo.
+#' 
+#' Habitat data from luquillo created by dividing elevation data in 5 elevation
+#' chunks.
+#' 
+#' @examples
+#' str(luquillo_habitat)
+"luquillo_habitat"

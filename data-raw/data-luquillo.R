@@ -181,3 +181,65 @@ use_data(luquillo_species, overwrite = TRUE)
 load(here::here("data-raw/CTFSElev_luquillo.rdata"))
 luquillo_elevation <- CTFSElev_luquillo
 use_data(luquillo_elevation)
+
+
+
+# Habitat -----------------------------------------------------------------
+
+# > We don't have habitat data.  We have soil maps, topographic classes, and
+# land use, etc.  Probably easiest if you use elevation chunks. 
+# --Jess K. Zimmerman
+
+# On Fri, Mar 24, 2017 at 4:28 PM, Davies, Stuart J. <DaviesS@si.edu> wrote:
+# One quick way to make habitats is just divide quadrats into 4 or 5 equal elevation chunks.
+
+library(tidyverse)
+luquillo_habitat <- luquillo_elevation$col %>%
+  mutate(elev, habitats = cut_number(elev, n = 5)) %>%
+  select(-elev) %>% 
+  as.tibble()
+use_data(luquillo_habitat, overwrite = TRUE)
+
+
+
+# Toy ---------------------------------------------------------------------
+set.seed(123)
+library(tidyverse)
+
+luquillo_stem_random <- luquillo_stem_random %>% as.tibble()
+
+# Most and least abundant species
+top_sp <- luquillo_stem_random %>% 
+  count(sp) %>% 
+  top_n(3) %>% 
+  pull(sp) %>% 
+  sample(3)
+bottom_sp <- luquillo_stem_random %>% 
+  count(sp) %>% 
+  top_n(-3) %>% 
+  pull(sp) %>% 
+  sample(3)
+keep_sp <- c(top_sp, bottom_sp)
+
+# Two quadrats where the kept species are most abundant
+two_abundant_quads <- luquillo_stem_random %>% 
+  filter(sp %in% keep_sp) %>% 
+  filter(!is.na(dbh)) %>% 
+  count(quadrat) %>% 
+  top_n(2) %>% 
+  pull(quadrat) %>% 
+  sample(2)
+
+sp_quad <- luquillo_stem_random %>% 
+  filter(
+    sp %in% keep_sp,
+    quadrat %in% two_abundant_quads
+  )
+missing_0 <- sp_quad %>% filter(!is.na(dbh))
+tag_missing <- sp_quad %>% filter(is.na(dbh)) %>% sample_frac(0.1)
+
+luquillo_stem_random_tiny <- missing_0 %>% 
+  rbind(tag_missing) %>% 
+  rbind(tag_missing)
+
+use_data(luquillo_stem_random_tiny, overwrite = TRUE)

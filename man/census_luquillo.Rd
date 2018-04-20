@@ -9,6 +9,7 @@
 \alias{luquillo_stem_1ha}
 \alias{luquillo_stem6_1ha}
 \alias{luquillo_stem6_random}
+\alias{luquillo_stem_random_tiny}
 \title{Tree and stem tables from Luquillo.}
 \format{See examples.}
 \usage{
@@ -23,10 +24,13 @@ luquillo_stem_1ha
 luquillo_stem6_1ha
 
 luquillo_stem6_random
+
+luquillo_stem_random_tiny
 }
 \description{
-Tree and stem tables from Luquillo. These is how to interpret the names of
-the datasets:
+Tree and stem tables from Luquillo produced with
+\href{https://github.com/forestgeo/rtbl/releases/tag/0.0.0.9000}{rtbl 0.0.0.9000}. These is how to
+interpret the names of the datasets:
 \itemize{
 \item The number following 'tree' or 'stem' indicates that the data corresponds
 to that specific census number.
@@ -34,6 +38,8 @@ to that specific census number.
 \item Datasets labeled with '1ha' contain all trees in only one hectare.
 \item Datasets labeled with 'random' contain a total of 1,000 trees chosen at
 random from the entire plot.
+\item Datasets labeled with 'tiny' are cherry-picked to produce a tiny set of
+data useful for most examples.
 }
 }
 \details{
@@ -56,6 +62,8 @@ short_str(luquillo_stem_1ha)
 short_str(luquillo_stem6_1ha)
 
 short_str(luquillo_stem6_random)
+
+short_str(luquillo_stem_random_tiny)
 
 }
 \seealso{

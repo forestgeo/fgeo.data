@@ -42,16 +42,20 @@ must be downloaded from the CTFS database.
 \item \code{quadrat}: Quadrat designation.
 \item \code{gx}: The x coordinate within the plot, relative to one edge of the plot.
 \item \code{gy}: The y plot coordinate.
-\item \code{MeasureID}: FIXME
+\item \code{MeasureID}: An integer automatically generated to uniquely identify a
+single DBH measurement. In the future this column may be renamed as
+\code{DBHID}.
 \item \code{CensusID}: An integer automatically generated to uniquely identify a
 census.
 \item \code{dbh}: Diameter of one stem on the tree, the stem whose stemID is given.
-\item \code{pom}: FIXME
+\item \code{pom}: Same as \code{hom} but rounded to two decimal places and of type
+character.
 \item \code{hom}: The height-of-measure, identical to pom but a numeric variable with
 full precision.
 \item \code{ExactDate}: The date on which a tree was measured.
 \item \code{DFstatus}:  \code{DFstatus} in the R stem file is exactly Status in the
-ViewFullTable.
+ViewFullTable. Refers to the stem, not the tree -- so in tree tables it is
+not useful.
 \item \code{codes}: The codes for the measurement as recorded in the field.
 \item \code{countPOM}: FIXME
 \item \code{status}: The status of each individual stem. In a single tree some stems
@@ -78,6 +82,14 @@ except when specified below:
 is alive, the tree is alive; if every stem is dead, the tree is dead:
 \item \code{dbh}: Diameter of the tree.
 \item \code{nostems}: The number of living stems on the date of measurement.
+}
+
+NOTES:
+\itemize{
+\item \code{StemTag} is particularly useful for you to know whether the largest
+stemtag changed from one census to the other.
+\item \code{DFstatus} is particularly not helpful as it refers to the status of the
+stem, not the tree.
 }
 }
 

@@ -49,32 +49,32 @@ Find descriptions searching by table or column name.
 DT::datatable(data_dictionary)
 ```
 
-## Example
-
-### ViewFullTable (`vft`)
+## ViewFullTable (`vft`)
 
 ```{r}
 str(luquillo_vft_4quad, give.attr = FALSE)
 ```
 
-### ViewTaxonomy (`taxa`)
+## ViewTaxonomy (`taxa`)
 
 ```{r}
 str(luquillo_taxa, give.attr = FALSE)
 ```
 
-### Census (`tree` and `stem`)
+## Census (`tree` and `stem`)
 
 ```{r}
 str(luquillo_tree6_random, give.attr = FALSE)
 ```
 
-`luquillo_stem_1ha` combines multiple censuses in a sigle dataframe.
+Some datasets combine multiple censuses in a sigle dataframe.
 
 ```{r}
 lapply(luquillo_stem_1ha, function(column) head(unique(column)))
 ```
-This dataset allows summaries by census. For example, you may want to know which quadrats have the largest number of alive trees per census:
+This allows summaries and visualizations by census. 
+
+For example, you may want to know which quadrats have the largest number of alive trees per census:
 
 ```{r}
 library(ggplot2)
@@ -95,13 +95,49 @@ ggplot(top_n(smry, 1), aes(CensusID, n)) +
   labs(title = "Quadrat with greatest number of alive trees per census")
 ```
 
-### Elevation (`elevation`)
+```{r, out.width="90%"}
+luquillo_stem_random_tiny %>% 
+  filter(quadrat == "517") %>% 
+  ggplot(aes(gx, gy)) + 
+  geom_point(aes(size = dbh, color = tag)) +
+  facet_wrap("CensusID") +
+  coord_fixed()
+```
+
+## Elevation (`elevation`)
 
 ```{r}
 str(luquillo_elevation)
 
 head(luquillo_elevation$col)
 ```
+
+## Habitat (`habitat`)
+
+```{r}
+str(luquillo_habitat)
+```
+
+If you don't have habitat data, you can create it by creating some categories of similar elevation.
+
+```{r}
+hab <- luquillo_elevation$col %>%
+  mutate(elev, habitats = cut_number(elev, n = 5)) %>%
+  select(-elev) %>% 
+  as_tibble()
+hab
+
+levels(hab$habitats)
+
+# You may rename the levels
+levels(hab$habitats) <- letters[1:5]
+
+levels(hab$habitats)
+
+str(hab)
+```
+
+
 
 ## Reading data from .csv fiels (e.g. the database output of ViewFullTable)
 
