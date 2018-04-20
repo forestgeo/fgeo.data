@@ -1,13 +1,16 @@
 #' Tree and stem tables from Luquillo.
 #'
-#' Tree and stem tables from Luquillo. These is how to interpret the names of 
-#' the datasets:
+#' Tree and stem tables from Luquillo produced with 
+#' [__rtbl__](https://forestgeo.github.io/rtbl/) 0.0.0.9000. These is how to
+#' interpret the names of the datasets:
 #' * The number following 'tree' or 'stem' indicates that the data corresponds
 #' to that specific census number.
 #' * Datasets without a number contain multiple censuses.
 #' * Datasets labeled with '1ha' contain all trees in only one hectare.
 #' * Datasets labeled with 'random' contain a total of 1,000 trees chosen at
 #' random from the entire plot.
+#' * Datasets labeled with 'tiny' are cherry-picked to produce a tiny set of 
+#' data useful for most examples.
 #' 
 #' For a general description see [census_description].
 #'

@@ -33,16 +33,20 @@
 #' * `quadrat`: Quadrat designation.
 #' * `gx`: The x coordinate within the plot, relative to one edge of the plot.
 #' * `gy`: The y plot coordinate.
-#' * `MeasureID`: FIXME
+#' * `MeasureID`: An integer automatically generated to uniquely identify a
+#'   single DBH measurement. In the future this column may be renamed as 
+#'   `DBHID`. 
 #' * `CensusID`: An integer automatically generated to uniquely identify a 
 #'   census.
 #' * `dbh`: Diameter of one stem on the tree, the stem whose stemID is given.
-#' * `pom`: FIXME
+#' * `pom`: Same as `hom` but rounded to two decimal places and of type 
+#'   character.
 #' * `hom`: The height-of-measure, identical to pom but a numeric variable with
 #'   full precision.
 #' * `ExactDate`: The date on which a tree was measured.
 #'  * `DFstatus`:  `DFstatus` in the R stem file is exactly Status in the
-#'    ViewFullTable.
+#'    ViewFullTable. Refers to the stem, not the tree -- so in tree tables it is
+#'    not useful. 
 #' * `codes`: The codes for the measurement as recorded in the field.
 #' * `countPOM`: FIXME
 #' * `status`: The status of each individual stem. In a single tree some stems
@@ -63,6 +67,12 @@
 #'   is alive, the tree is alive; if every stem is dead, the tree is dead:
 #' * `dbh`: Diameter of the tree.
 #' * `nostems`: The number of living stems on the date of measurement.
+#' 
+#' NOTES: 
+#' * `StemTag` is particularly useful for you to know whether the largest
+#' stemtag changed from one census to the other.
+#' * `DFstatus` is particularly not helpful as it refers to the status of the 
+#'   stem, not the tree.
 #'
 #' @seealso [data_dictionary], [census_bci], 
 #' \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputFull.pdf},
