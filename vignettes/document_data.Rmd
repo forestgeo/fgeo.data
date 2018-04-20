@@ -1,6 +1,6 @@
 ---
 title: "Documenting datasets"
-author: "Vignette Author"
+author: "Mauro Lepore"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -39,16 +39,16 @@ Generic datasets (e.g. ViwFullTable) should have these components:
 
 Datasets from a specific site should be named with the format `site_generic_info`:
 
-* `site` should be a single string uniquely identifying your site among all other sites in the ForestGEO network; it may be a well know nickname (e.g. bci). 
+* `site` should be a single string uniquely identifying your site among all other sites in the ForestGEO network; it may be a well know nickname (e.g. luquillo). 
 * `generic` should be one of the same as in _`generic`_`_description`. 
 
-* `info` should be a single short string indicating the most prominent characteristic of the specific dataset -- commonly referring to the criteria used to subset a larger dataset (e.g. `bci_stem6_random`).
+* `info` should be a single short string indicating the most prominent characteristic of the specific dataset -- commonly referring to the criteria used to subset a larger dataset (e.g. `luquillo_stem6_random`).
 
-For example, if your data comes from Barro Colorado Island, and it is a ViewFullTable containing a random subset of a few trees, a good name for it would be `bci_vft_random`. This format works well with auto-completion in RStudio.
+For example, if your data comes from Barro Colorado Island, and it is a ViewFullTable containing a random subset of a few trees, a good name for it would be `luquillo_vft_random`. This format works well with auto-completion in RStudio.
 
 <img src="https://i.imgur.com/nFiBnrn.png" align="center" height=150 />
 
-The documentation of `site_generic_info` should include the following (e.g. `?bci_vft_random`):
+The documentation of `site_generic_info` should include the following (e.g. `?luquillo_vft_random`):
 
 * A specific description that applies to this particular dataset.
 * A section `@seealso`, linking to `generic_description` and to the [data_dictionary].
