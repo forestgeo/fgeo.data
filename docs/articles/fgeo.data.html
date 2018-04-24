@@ -346,10 +346,35 @@
 <h2 class="hasAnchor">
 <a href="#habitat-habitat" class="anchor"></a>Habitat (<code>habitat</code>)</h2>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw">str</span>(luquillo_habitat)</a>
-<a class="sourceLine" id="cb10-2" data-line-number="2"><span class="co">#&gt; Classes 'tbl_df', 'tbl' and 'data.frame':    503 obs. of  3 variables:</span></a>
+<a class="sourceLine" id="cb10-2" data-line-number="2"><span class="co">#&gt; Classes 'grouped_df', 'tbl_df', 'tbl' and 'data.frame':  400 obs. of  3 variables:</span></a>
 <a class="sourceLine" id="cb10-3" data-line-number="3"><span class="co">#&gt;  $ x       : num  0 0 0 0 0 0 0 0 0 0 ...</span></a>
-<a class="sourceLine" id="cb10-4" data-line-number="4"><span class="co">#&gt;  $ y       : num  0 20 40 40 60 80 80 100 120 140 ...</span></a>
-<a class="sourceLine" id="cb10-5" data-line-number="5"><span class="co">#&gt;  $ habitats: int  1 1 1 2 2 2 1 1 1 1 ...</span></a></code></pre></div>
+<a class="sourceLine" id="cb10-4" data-line-number="4"><span class="co">#&gt;  $ y       : num  0 20 40 60 80 100 120 140 160 180 ...</span></a>
+<a class="sourceLine" id="cb10-5" data-line-number="5"><span class="co">#&gt;  $ habitats: int  4 4 4 4 4 3 3 3 3 4 ...</span></a>
+<a class="sourceLine" id="cb10-6" data-line-number="6"><span class="co">#&gt;  - attr(*, "vars")= chr "x"</span></a>
+<a class="sourceLine" id="cb10-7" data-line-number="7"><span class="co">#&gt;  - attr(*, "drop")= logi TRUE</span></a>
+<a class="sourceLine" id="cb10-8" data-line-number="8"><span class="co">#&gt;  - attr(*, "indices")=List of 16</span></a>
+<a class="sourceLine" id="cb10-9" data-line-number="9"><span class="co">#&gt;   ..$ : int  0 1 2 3 4 5 6 7 8 9 ...</span></a>
+<a class="sourceLine" id="cb10-10" data-line-number="10"><span class="co">#&gt;   ..$ : int  25 26 27 28 29 30 31 32 33 34 ...</span></a>
+<a class="sourceLine" id="cb10-11" data-line-number="11"><span class="co">#&gt;   ..$ : int  50 51 52 53 54 55 56 57 58 59 ...</span></a>
+<a class="sourceLine" id="cb10-12" data-line-number="12"><span class="co">#&gt;   ..$ : int  75 76 77 78 79 80 81 82 83 84 ...</span></a>
+<a class="sourceLine" id="cb10-13" data-line-number="13"><span class="co">#&gt;   ..$ : int  100 101 102 103 104 105 106 107 108 109 ...</span></a>
+<a class="sourceLine" id="cb10-14" data-line-number="14"><span class="co">#&gt;   ..$ : int  125 126 127 128 129 130 131 132 133 134 ...</span></a>
+<a class="sourceLine" id="cb10-15" data-line-number="15"><span class="co">#&gt;   ..$ : int  150 151 152 153 154 155 156 157 158 159 ...</span></a>
+<a class="sourceLine" id="cb10-16" data-line-number="16"><span class="co">#&gt;   ..$ : int  175 176 177 178 179 180 181 182 183 184 ...</span></a>
+<a class="sourceLine" id="cb10-17" data-line-number="17"><span class="co">#&gt;   ..$ : int  200 201 202 203 204 205 206 207 208 209 ...</span></a>
+<a class="sourceLine" id="cb10-18" data-line-number="18"><span class="co">#&gt;   ..$ : int  225 226 227 228 229 230 231 232 233 234 ...</span></a>
+<a class="sourceLine" id="cb10-19" data-line-number="19"><span class="co">#&gt;   ..$ : int  250 251 252 253 254 255 256 257 258 259 ...</span></a>
+<a class="sourceLine" id="cb10-20" data-line-number="20"><span class="co">#&gt;   ..$ : int  275 276 277 278 279 280 281 282 283 284 ...</span></a>
+<a class="sourceLine" id="cb10-21" data-line-number="21"><span class="co">#&gt;   ..$ : int  300 301 302 303 304 305 306 307 308 309 ...</span></a>
+<a class="sourceLine" id="cb10-22" data-line-number="22"><span class="co">#&gt;   ..$ : int  325 326 327 328 329 330 331 332 333 334 ...</span></a>
+<a class="sourceLine" id="cb10-23" data-line-number="23"><span class="co">#&gt;   ..$ : int  350 351 352 353 354 355 356 357 358 359 ...</span></a>
+<a class="sourceLine" id="cb10-24" data-line-number="24"><span class="co">#&gt;   ..$ : int  375 376 377 378 379 380 381 382 383 384 ...</span></a>
+<a class="sourceLine" id="cb10-25" data-line-number="25"><span class="co">#&gt;  - attr(*, "group_sizes")= int  25 25 25 25 25 25 25 25 25 25 ...</span></a>
+<a class="sourceLine" id="cb10-26" data-line-number="26"><span class="co">#&gt;  - attr(*, "biggest_group_size")= int 25</span></a>
+<a class="sourceLine" id="cb10-27" data-line-number="27"><span class="co">#&gt;  - attr(*, "labels")='data.frame':   16 obs. of  1 variable:</span></a>
+<a class="sourceLine" id="cb10-28" data-line-number="28"><span class="co">#&gt;   ..$ x: num  0 20 40 60 80 100 120 140 160 180 ...</span></a>
+<a class="sourceLine" id="cb10-29" data-line-number="29"><span class="co">#&gt;   ..- attr(*, "vars")= chr "x"</span></a>
+<a class="sourceLine" id="cb10-30" data-line-number="30"><span class="co">#&gt;   ..- attr(*, "drop")= logi TRUE</span></a></code></pre></div>
 </div>
 <div id="reading-data-from--csv-fiels-e-g-the-database-output-of-viewfulltable" class="section level2">
 <h2 class="hasAnchor">
