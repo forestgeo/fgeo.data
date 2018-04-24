@@ -21,6 +21,10 @@ Thanks to Jess Zimmerman for sharing data from Luquillo.
 str(luquillo_taxa, give.attr = FALSE)
 }
 \seealso{
-\link{data_dictionary}, \url{http://bit.ly/fgeo-data-luquillo-taxa"}.
+\itemize{
+\item \link{data_dictionary}
+\item \url{http://bit.ly/fgeo-data-luquillo-taxa"}.
+\item \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
+}
 }
 \keyword{datasets}

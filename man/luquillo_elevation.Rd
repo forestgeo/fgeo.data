@@ -19,4 +19,7 @@ sapply(luquillo_elevation, class)
 
 str(luquillo_elevation$col, give.attr = FALSE)
 }
+\seealso{
+\url{https://forestgeo.si.edu/sites/north-america/luquillo}.
+}
 \keyword{datasets}

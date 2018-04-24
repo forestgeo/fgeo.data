@@ -67,6 +67,11 @@ short_str(luquillo_stem_random_tiny)
 
 }
 \seealso{
-\link{luquillo_vft_4quad}, \link{census_description}, \link{data_dictionary}.
+\itemize{
+\item \link{luquillo_vft_4quad}.
+\item \link{census_description}.
+\item \link{data_dictionary}.
+\item \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
+}
 }
 \keyword{datasets}

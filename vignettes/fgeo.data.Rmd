@@ -118,27 +118,6 @@ head(luquillo_elevation$col)
 str(luquillo_habitat)
 ```
 
-If you don't have habitat data, you can create it by creating some categories of similar elevation.
-
-```{r}
-hab <- luquillo_elevation$col %>%
-  mutate(elev, habitats = cut_number(elev, n = 5)) %>%
-  select(-elev) %>% 
-  as_tibble()
-hab
-
-levels(hab$habitats)
-
-# You may rename the levels
-levels(hab$habitats) <- letters[1:5]
-
-levels(hab$habitats)
-
-str(hab)
-```
-
-
-
 ## Reading data from .csv fiels (e.g. the database output of ViewFullTable)
 
 To safely read raw data from .csv files, you need to know about the most important arguments of the functions you use to read the data. Below is a small example but you may also want to read these articles, showing two ways to read data:

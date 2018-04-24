@@ -30,8 +30,12 @@ show_some_values_of_each_column <- function(x) head(unique(x))
 lapply(luquillo_vft_4quad, show_some_values_of_each_column)
 }
 \seealso{
-\link{vft_description}, \link{data_dictionary},
-\url{http://bit.ly/fgeo-data-luquillo-vft-random},
-\url{http://bit.ly/fgeo-data-luquillo-vft-1ha}.
+\itemize{
+\item \link{vft_description}.
+\item \link{data_dictionary}.
+\item \url{http://bit.ly/fgeo-data-luquillo-vft-random}.
+\item \url{http://bit.ly/fgeo-data-luquillo-vft-1ha}.
+\item \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
+}
 }
 \keyword{datasets}

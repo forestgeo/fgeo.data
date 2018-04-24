@@ -195,10 +195,19 @@ use_data(luquillo_elevation, overwrite = TRUE)
 # One quick way to make habitats is just divide quadrats into 4 or 5 equal elevation chunks.
 
 library(tidyverse)
-luquillo_habitat <- luquillo_elevation$col %>%
-  mutate(elev, habitats = cut_number(elev, n = 5)) %>%
-  select(-elev) %>% 
-  as.tibble()
+luquillo_habitat <- luquillo_elevation$col %>% 
+  mutate(
+    # The natural gridsize is 20 -- the quadrat dimensions
+    x = plyr::round_any(x, 20),
+    y = plyr::round_any(y, 20),
+    habitats = as.integer(ggplot2::cut_number(elev, 4)),
+    elev = NULL
+  ) %>% 
+  unique() %>% 
+  as.tibble() %>% 
+  # The measurement is at the lower left corner of each quadrat. For reference
+  # see range(bciex::bci_habitat$x), and range(bciex::bci_habitat$y)
+  filter(x < 320, y < 500)
 use_data(luquillo_habitat, overwrite = TRUE)
 
 

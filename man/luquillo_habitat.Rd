@@ -4,15 +4,21 @@
 \name{luquillo_habitat}
 \alias{luquillo_habitat}
 \title{Habitat data from luquillo.}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 6565 rows and 3 columns.}
+\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 503 rows and 3 columns.}
 \usage{
 luquillo_habitat
 }
 \description{
-Habitat data from luquillo created by dividing elevation data in 5 elevation
+Habitat data from luquillo created by dividing elevation data in multiple
 chunks.
 }
 \examples{
 str(luquillo_habitat)
+}
+\seealso{
+\itemize{
+\item luquillo_elevation.
+\item \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
+}
 }
 \keyword{datasets}

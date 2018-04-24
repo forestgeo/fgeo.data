@@ -22,7 +22,7 @@
 
 #' Habitat data from luquillo.
 #' 
-#' Habitat data from luquillo created by dividing elevation data in 5 elevation
+#' Habitat data from luquillo created by dividing elevation data in multiple
 #' chunks.
 #' 
 #' @seealso

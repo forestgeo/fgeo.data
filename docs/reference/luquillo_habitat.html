@@ -27,7 +27,7 @@
 <script src="../pkgdown.js"></script>
 <meta property="og:title" content="Habitat data from luquillo. — luquillo_habitat" />
 
-<meta property="og:description" content="Habitat data from luquillo created by dividing elevation data in 5 elevation
+<meta property="og:description" content="Habitat data from luquillo created by dividing elevation data in multiple
 chunks." />
 <meta name="twitter:card" content="summary" />
 
@@ -126,7 +126,7 @@ chunks." />
     </div>
 
     
-    <p>Habitat data from luquillo created by dividing elevation data in 5 elevation
+    <p>Habitat data from luquillo created by dividing elevation data in multiple
 chunks.</p>
     
 
@@ -134,20 +134,29 @@ chunks.</p>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 6565 rows and 3 columns.</p>
+    <p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 503 rows and 3 columns.</p>
+    
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <ul>
+<li><p>luquillo_elevation.</p></li>
+<li><p><a href='https://forestgeo.si.edu/sites/north-america/luquillo'>https://forestgeo.si.edu/sites/north-america/luquillo</a>.</p></li>
+</ul>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>luquillo_habitat</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	6565 obs. of  3 variables:
-#&gt;  $ x       : int  0 0 0 0 0 0 0 0 0 0 ...
-#&gt;  $ y       : int  0 5 10 15 20 25 30 35 40 45 ...
-#&gt;  $ habitats: Factor w/ 5 levels "[335,362]","(362,372]",..: 2 2 2 2 2 2 2 2 2 2 ...</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>luquillo_habitat</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	503 obs. of  3 variables:
+#&gt;  $ x       : num  0 0 0 0 0 0 0 0 0 0 ...
+#&gt;  $ y       : num  0 20 40 40 60 80 80 100 120 140 ...
+#&gt;  $ habitats: int  1 1 1 2 2 2 1 1 1 1 ...</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
       <li><a href="#format">Format</a></li>
+
+      <li><a href="#see-also">See also</a></li>
       
       <li><a href="#examples">Examples</a></li>
     </ul>
