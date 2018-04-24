@@ -7,7 +7,10 @@
 #'
 #' @template thanks_luquillo
 #' 
-#' @seealso [data_dictionary], \url{http://bit.ly/fgeo-data-luquillo-taxa"}.
+#' @seealso 
+#' * [data_dictionary]
+#' * \url{http://bit.ly/fgeo-data-luquillo-taxa"}.
+#' * \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 #' 
 #' @examples
 #' str(luquillo_taxa, give.attr = FALSE)
@@ -25,9 +28,12 @@
 #' Compared to the raw data in text format, this dataset replaced NULL values 
 #' with missing values, and its columns have a specific type.
 #'
-#' @seealso [vft_description], [data_dictionary], 
-#' \url{http://bit.ly/fgeo-data-luquillo-vft-random},
-#' \url{http://bit.ly/fgeo-data-luquillo-vft-1ha}.
+#' @seealso 
+#' * [vft_description].
+#' * [data_dictionary].
+#' * \url{http://bit.ly/fgeo-data-luquillo-vft-random}.
+#' * \url{http://bit.ly/fgeo-data-luquillo-vft-1ha}.
+#' * \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 #'
 #' @template thanks_luquillo
 #' 

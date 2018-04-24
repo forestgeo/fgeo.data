@@ -8,6 +8,8 @@
 #'
 #' This dataset can be downloaded directly from
 #' \url{http://bit.ly/fgeo-data-luquillo-elevation}.
+#' 
+#' @seealso \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 #'
 #' @examples
 #' str(luquillo_elevation, , give.attr = FALSE)
@@ -22,6 +24,10 @@
 #' 
 #' Habitat data from luquillo created by dividing elevation data in 5 elevation
 #' chunks.
+#' 
+#' @seealso
+#' * luquillo_elevation.
+#' * \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 #' 
 #' @examples
 #' str(luquillo_habitat)

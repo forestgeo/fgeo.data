@@ -16,7 +16,11 @@
 #'
 #' @format See examples.
 #'
-#' @seealso [luquillo_vft_4quad], [census_description], [data_dictionary].
+#' @seealso 
+#' * [luquillo_vft_4quad].
+#' * [census_description].
+#' * [data_dictionary].
+#' * \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 #'
 #' @examples
 #' # Save space
