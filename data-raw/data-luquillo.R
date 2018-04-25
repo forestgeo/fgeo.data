@@ -194,23 +194,9 @@ use_data(luquillo_elevation, overwrite = TRUE)
 # On Fri, Mar 24, 2017 at 4:28 PM, Davies, Stuart J. <DaviesS@si.edu> wrote:
 # One quick way to make habitats is just divide quadrats into 4 or 5 equal elevation chunks.
 
-luquillo_habitat <- luquillo_elevation$col %>%
-  as.tibble() %>% 
-  mutate(
-    # The natural gridsize is 20 -- the quadrat dimensions
-    x = plyr::round_any(x, 20),
-    y = plyr::round_any(y, 20)
-  ) %>% 
-  unique() %>% 
-  group_by(x, y) %>%
-  summarise(elev = mean(elev)) %>% 
-  mutate(
-    habitats = as.integer(ggplot2::cut_number(elev, 4)),
-    elev = NULL
-  ) %>% 
-  # The measurement is at the lower left corner of each quadrat. For reference
-  # see range(bciex::bci_habitat$x), and range(bciex::bci_habitat$y)
-  filter(x < 320, y < 500)
+luquillo_habitat <- fgeo.tool::create_habitat(
+  fgeo.data::luquillo_elevation, 20, 4
+)
 use_data(luquillo_habitat, overwrite = TRUE)
 
 

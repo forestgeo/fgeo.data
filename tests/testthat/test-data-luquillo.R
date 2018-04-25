@@ -20,3 +20,11 @@ test_that("data has expected names", {
   expect_equal(names(taxa), names(fgeo.tool::type_taxa()))
   expect_equal(names(vft_1ha), names(fgeo.tool::type_vft()))
 })
+
+test_that("data creation can be reproduced", {
+  skip_if_not_installed("fgeo.tool")
+  expect_equal(
+    hab, fgeo.tool::create_habitat(fgeo.data::luquillo_elevation, 20, 4)
+  )
+  expect_false(dplyr::is_grouped_df(hab))
+})
