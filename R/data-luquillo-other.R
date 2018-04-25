@@ -27,6 +27,7 @@
 #' 
 #' @seealso
 #' * luquillo_elevation.
+#' * `fgeo.tool::create_habitat()`.
 #' * \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 #' 
 #' @examples
