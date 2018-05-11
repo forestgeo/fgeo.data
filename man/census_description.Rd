@@ -94,7 +94,7 @@ stem, not the tree.
 }
 
 \seealso{
-\link{data_dictionary}, \link{census_bci},
+\link{data_dictionary}, \link{census_luquillo},
 \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputFull.pdf},
 \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputStem.pdf}.
 }

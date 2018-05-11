@@ -74,7 +74,7 @@
 #' * `DFstatus` is particularly not helpful as it refers to the status of the 
 #'   stem, not the tree.
 #'
-#' @seealso [data_dictionary], [census_bci], 
+#' @seealso [data_dictionary], [census_luquillo], 
 #' \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputFull.pdf},
 #' \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputStem.pdf}.
 #' 
