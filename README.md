@@ -1,16 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# <img src="https://i.imgur.com/m8FNhQR.png" align="right" height=88 /> fgeo.data
+# <img src="https://i.imgur.com/m8FNhQR.png" align="right" height=88 /> Open datasets of ForestGEO
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/fgeo.data)](https://cran.r-project.org/package=fgeo.data)
 [![Travis build
 status](https://travis-ci.org/forestgeo/fgeo.data.svg?branch=master)](https://travis-ci.org/forestgeo/fgeo.data)
-
-**fgeo.data** provides open datasets of
-ForestGEO.
 
 ## [See datasets](https://forestgeo.github.io/fgeo.data/reference/index.html)
 
