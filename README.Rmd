@@ -17,9 +17,9 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/fgeo.data)](https://cran.r-project.org/package=fgeo.data)
 [![Travis build status](https://travis-ci.org/forestgeo/fgeo.data.svg?branch=master)](https://travis-ci.org/forestgeo/fgeo.data)
 
-## [See datasets](https://forestgeo.github.io/fgeo.data/reference/index.html)
-
 ## Installation
+
+[Install all __fgeo__ packages in one step](https://forestgeo.github.io/fgeo/index.html#installation)
 
 ```
 # install.packages("remotes")
@@ -30,22 +30,16 @@ For details on how to install packages from GitHub, see [this article](https://g
 
 ## Example
 
-(See columns definitions with `?data_dictionary`.)
-
 ```{r}
 library(fgeo.data)
-```
-
-### ViewFullTable (`vft`)
-
-```{r}
-vft <- luquillo_vft_4quad
 
 # Show first few columns to save space.
-str(vft, give.attr = FALSE, list.len = 5)
+str(luquillo_vft_4quad, give.attr = FALSE, list.len = 5)
 
-lapply(vft, function(x) head(unique(x)))
+# See ?data_dictionary
 ```
+
+[Get started with __fgeo__](https://forestgeo.github.io/fgeo/articles/fgeo.html)
 
 ## Information
 
