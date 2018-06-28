@@ -5,7 +5,8 @@
 #' Compared to the raw data in text format, this dataset replaced NULL values 
 #' with missing values, and its columns have a specific type.
 #'
-#' @template thanks_luquillo
+#' @section Acknowledgments:
+#' Thanks to Jess Zimmerman for sharing data from Luquillo.
 #' 
 #' @seealso 
 #' * [data_dictionary]
@@ -35,8 +36,9 @@
 #' * \url{http://bit.ly/fgeo-data-luquillo-vft-1ha}.
 #' * \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 #'
-#' @template thanks_luquillo
-#' 
+#' @section Acknowledgments:
+#' Thanks to Jess Zimmerman for sharing data from Luquillo.
+#'  
 #' @examples
 #' str(luquillo_vft_4quad, give.attr = FALSE)
 #'

@@ -18,7 +18,7 @@ one through six, see links under section See also.
 Compared to the raw data in text format, this dataset replaced NULL values
 with missing values, and its columns have a specific type.
 }
-\section{Acknowledgements}{
+\section{Acknowledgments}{
 
 Thanks to Jess Zimmerman for sharing data from Luquillo.
 }
