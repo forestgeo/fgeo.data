@@ -70,9 +70,10 @@
 #' 
 #' NOTES: 
 #' * `StemTag` is particularly useful for you to know whether the largest
-#' stemtag changed from one census to the other.
-#' * `DFstatus` is particularly not helpful as it refers to the status of the 
-#'   stem, not the tree.
+#' `StemTag` changed from one census to the other.
+#' * `DFstatus` refers to the status of the stem -- not the tree -- as recorded
+#' in the field (compare to `status` or `Status` which is not a direct
+#' observation but _calculated_ from the history of the stem).
 #'
 #' @seealso [data_dictionary], [census_luquillo], 
 #' \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputFull.pdf},

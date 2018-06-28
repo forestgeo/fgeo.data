@@ -87,9 +87,10 @@ is alive, the tree is alive; if every stem is dead, the tree is dead:
 NOTES:
 \itemize{
 \item \code{StemTag} is particularly useful for you to know whether the largest
-stemtag changed from one census to the other.
-\item \code{DFstatus} is particularly not helpful as it refers to the status of the
-stem, not the tree.
+\code{StemTag} changed from one census to the other.
+\item \code{DFstatus} refers to the status of the stem -- not the tree -- as recorded
+in the field (compare to \code{status} or \code{Status} which is not a direct
+observation but \emph{calculated} from the history of the stem).
 }
 }
 

@@ -23,7 +23,7 @@
 #'
 #' Subset of a ViewFullTable (vft) from Luquillo. Included are all trees in four
 #' quadrats (coordinates: `PX` between (>=) 100 and 140; and `PY` between 400
-#' and 440) of cencuses four through 6. For bigger datasets, including censuses
+#' and 440) of censuses four through 6. For bigger datasets, including censuses
 #' one through six, see links under section See also.
 #' 
 #' Compared to the raw data in text format, this dataset replaced NULL values 

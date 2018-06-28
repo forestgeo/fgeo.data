@@ -208,7 +208,7 @@
 <a class="sourceLine" id="cb4-19" data-line-number="19"><span class="co">#&gt;  $ nostems  : num  1 1 2 1 1 1 1 1 1 1 ...</span></a>
 <a class="sourceLine" id="cb4-20" data-line-number="20"><span class="co">#&gt;  $ status   : chr  "A" "A" "A" "A" ...</span></a>
 <a class="sourceLine" id="cb4-21" data-line-number="21"><span class="co">#&gt;  $ date     : num  NA NA NA NA NA NA NA NA NA NA ...</span></a></code></pre></div>
-<p>Some datasets combine multiple censuses in a sigle dataframe.</p>
+<p>Some datasets combine multiple censuses in a single dataframe.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">lapply</span>(luquillo_stem_1ha, <span class="cf">function</span>(column) <span class="kw">head</span>(<span class="kw">unique</span>(column)))</a>
 <a class="sourceLine" id="cb5-2" data-line-number="2"><span class="co">#&gt; $treeID</span></a>
 <a class="sourceLine" id="cb5-3" data-line-number="3"><span class="co">#&gt; [1] 46 47 49 50 51 54</span></a>
@@ -346,9 +346,9 @@
 <a class="sourceLine" id="cb10-4" data-line-number="4"><span class="co">#&gt;  $ gy      : int  0 5 10 15 20 25 30 35 40 45 ...</span></a>
 <a class="sourceLine" id="cb10-5" data-line-number="5"><span class="co">#&gt;  $ habitats: int  1 1 1 1 1 1 1 1 1 1 ...</span></a></code></pre></div>
 </div>
-<div id="reading-data-from--csv-fiels-e-g-the-database-output-of-viewfulltable" class="section level2">
+<div id="reading-data-from--csv-files-e-g-the-database-output-of-viewfulltable" class="section level2">
 <h2 class="hasAnchor">
-<a href="#reading-data-from--csv-fiels-e-g-the-database-output-of-viewfulltable" class="anchor"></a>Reading data from .csv fiels (e.g. the database output of ViewFullTable)</h2>
+<a href="#reading-data-from--csv-files-e-g-the-database-output-of-viewfulltable" class="anchor"></a>Reading data from .csv files (e.g. the database output of ViewFullTable)</h2>
 <p>To safely read raw data from .csv files, you need to know about the most important arguments of the functions you use to read the data. Below is a small example but you may also want to read these articles, showing two ways to read data:</p>
 <ul>
 <li>With <a href="https://fgeo.netlify.com/2018/03/13/2018-03-13-import-dataset/"><strong>readr</strong></a> (recommended).</li>
@@ -405,7 +405,7 @@
       <li><a href="#census-tree-and-stem">Census (<code>tree</code> and <code>stem</code>)</a></li>
       <li><a href="#elevation-elevation">Elevation (<code>elevation</code>)</a></li>
       <li><a href="#habitat-habitat">Habitat (<code>habitat</code>)</a></li>
-      <li><a href="#reading-data-from--csv-fiels-e-g-the-database-output-of-viewfulltable">Reading data from .csv fiels (e.g. the database output of ViewFullTable)</a></li>
+      <li><a href="#reading-data-from--csv-files-e-g-the-database-output-of-viewfulltable">Reading data from .csv files (e.g. the database output of ViewFullTable)</a></li>
       </ul>
 </div>
       </div>

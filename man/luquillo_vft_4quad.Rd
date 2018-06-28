@@ -11,7 +11,7 @@ luquillo_vft_4quad
 \description{
 Subset of a ViewFullTable (vft) from Luquillo. Included are all trees in four
 quadrats (coordinates: \code{PX} between (>=) 100 and 140; and \code{PY} between 400
-and 440) of cencuses four through 6. For bigger datasets, including censuses
+and 440) of censuses four through 6. For bigger datasets, including censuses
 one through six, see links under section See also.
 }
 \details{

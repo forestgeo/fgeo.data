@@ -65,7 +65,7 @@ str(luquillo_taxa, give.attr = FALSE)
 str(luquillo_tree6_random, give.attr = FALSE)
 ```
 
-Some datasets combine multiple censuses in a sigle dataframe.
+Some datasets combine multiple censuses in a single dataframe.
 
 ```{r}
 lapply(luquillo_stem_1ha, function(column) head(unique(column)))
@@ -116,7 +116,7 @@ head(luquillo_elevation$col)
 str(luquillo_habitat)
 ```
 
-## Reading data from .csv fiels (e.g. the database output of ViewFullTable)
+## Reading data from .csv files (e.g. the database output of ViewFullTable)
 
 To safely read raw data from .csv files, you need to know about the most important arguments of the functions you use to read the data. Below is a small example but you may also want to read these articles, showing two ways to read data:
 
