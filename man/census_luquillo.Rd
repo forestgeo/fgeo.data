@@ -53,6 +53,8 @@ short_str <- function(x) {
 
 short_str(luquillo_tree6_random)
 
+short_str(luquillo_tree5_random)
+
 short_str(luquillo_tree6_1ha)
 
 short_str(luquillo_stem_random)
