@@ -165,6 +165,9 @@ use_data(luquillo_tree6_random, overwrite = TRUE)
 luquillo_stem_random <- compile_census(ls_random, "stem")
 use_data(luquillo_stem_random, overwrite = TRUE)
 
+luquillo_stem5_random <- as.tibble(ls_random$luquillo.stem5)
+use_data(luquillo_stem5_random, overwrite = TRUE)
+
 luquillo_stem6_random <- as.tibble(ls_random$luquillo.stem6)
 use_data(luquillo_stem6_random, overwrite = TRUE)
 

@@ -40,6 +40,8 @@
 #' 
 #' short_str(luquillo_stem6_1ha)
 #' 
+#' short_str(luquillo_stem5_random)
+#' 
 #' short_str(luquillo_stem6_random)
 #' 
 #' short_str(luquillo_stem_random_tiny)
