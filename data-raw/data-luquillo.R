@@ -156,6 +156,9 @@ ls_random <- as.list(env_random)
 
 # luquillo_tree_random not saved to save space. It can be reproduced from stem.
 
+luquillo_tree5_random <- as.tibble(ls_random$luquillo.full5)
+use_data(luquillo_tree5_random, overwrite = TRUE)
+
 luquillo_tree6_random <- as.tibble(ls_random$luquillo.full6)
 use_data(luquillo_tree6_random, overwrite = TRUE)
 
