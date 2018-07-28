@@ -50,6 +50,11 @@
 NULL
 
 #' @rdname census_luquillo
+"luquillo_stem5_random"
+#' @rdname census_luquillo
+"luquillo_tree5_random"
+
+#' @rdname census_luquillo
 "luquillo_tree6_random"
 #' @rdname census_luquillo
 "luquillo_tree6_1ha"
@@ -58,9 +63,12 @@ NULL
 "luquillo_stem_random"
 #' @rdname census_luquillo
 "luquillo_stem_1ha"
+
 #' @rdname census_luquillo
 "luquillo_stem6_1ha"
 #' @rdname census_luquillo
 "luquillo_stem6_random"
+
 #' @rdname census_luquillo
 "luquillo_stem_random_tiny"
+

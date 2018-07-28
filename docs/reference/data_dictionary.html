@@ -147,25 +147,25 @@ http://ctfs.si.edu/Public/DataDict/data_dict.php." />
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>head</span>(<span class='no'>data_dictionary</span>)</div><div class='output co'>#&gt; # A tibble: 6 x 3
-#&gt;   table  column           description                                          
-#&gt;   &lt;chr&gt;  &lt;chr&gt;            &lt;chr&gt;                                                
-#&gt; 1 Census CensusID         Primary key, an integer  automatically generated to ~
-#&gt; 2 Census PlotID           Foreign Key to Site table.                           
-#&gt; 3 Census PlotCensusNumber "Integer census number for an individual plot, 1=fir~
-#&gt; 4 Census StartDate        Date on which the first measurement of the census wa~
-#&gt; 5 Census EndDate          Date on which the last measurement of the census was~
-#&gt; 6 Census Description      Notes pertinent to the census or general description~</div><div class='input'>
+#&gt;   table  column        description                                             
+#&gt;   &lt;chr&gt;  &lt;chr&gt;         &lt;chr&gt;                                                   
+#&gt; 1 Census CensusID      Primary key, an integer  automatically generated to uni~
+#&gt; 2 Census PlotID        Foreign Key to Site table.                              
+#&gt; 3 Census PlotCensusNu~ "Integer census number for an individual plot, 1=first ~
+#&gt; 4 Census StartDate     Date on which the first measurement of the census was t~
+#&gt; 5 Census EndDate       Date on which the last measurement of the census was ta~
+#&gt; 6 Census Description   Notes pertinent to the census or general description of~</div><div class='input'>
 <span class='co'># Column names vary in subtle ways (e.g. SubSpeciesID vs. SubspeciesID)</span>
 <span class='no'>pattern</span> <span class='kw'>&lt;-</span> <span class='st'>"^subspeciesid$"</span>
 <span class='no'>matching</span> <span class='kw'>&lt;-</span> <span class='fu'>grepl</span>(<span class='no'>pattern</span>, <span class='no'>data_dictionary</span>$<span class='no'>column</span>, <span class='kw'>ignore.case</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 <span class='no'>data_dictionary</span>[<span class='no'>matching</span>, ]</div><div class='output co'>#&gt; # A tibble: 5 x 3
-#&gt;   table            column       description                                    
-#&gt;   &lt;chr&gt;            &lt;chr&gt;        &lt;chr&gt;                                          
-#&gt; 1 SpeciesInventory SubSpeciesID Foreign Key to  SubSpecies table.              
-#&gt; 2 Specimen         SubSpeciesID Foreign Key to SubSpecies table.               
-#&gt; 3 SubSpecies       SubSpeciesID Primary key, an integer  automatically generat~
-#&gt; 4 Tree             SubSpeciesID Foreign Key to  SubSpecies table, indicating t~
-#&gt; 5 ViewTaxonomy     SubspeciesID Foreign Key to  SubSpecies table, indicating t~</div><div class='input'>
+#&gt;   table        column     description                                          
+#&gt;   &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt;                                                
+#&gt; 1 SpeciesInve~ SubSpecie~ Foreign Key to  SubSpecies table.                    
+#&gt; 2 Specimen     SubSpecie~ Foreign Key to SubSpecies table.                     
+#&gt; 3 SubSpecies   SubSpecie~ Primary key, an integer  automatically generated  to~
+#&gt; 4 Tree         SubSpecie~ Foreign Key to  SubSpecies table, indicating the sub~
+#&gt; 5 ViewTaxonomy Subspecie~ Foreign Key to  SubSpecies table, indicating the sub~</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">

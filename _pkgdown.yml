@@ -50,11 +50,11 @@ reference:
       - census_description
       - matches("luquillo_tree")
       - matches("luquillo_stem")
-      
+
   - title: Other
     contents:
       - luquillo_taxa
       - luquillo_elevation
       - luquillo_habitat
-
+      - luquillo_species
 

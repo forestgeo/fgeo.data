@@ -4,7 +4,7 @@
 \name{luquillo_habitat}
 \alias{luquillo_habitat}
 \title{Habitat data from luquillo.}
-\format{An object of class \code{fgeo_habitat} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 6400 rows and 3 columns.}
+\format{An object of class \code{fgeo_habitat} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 503 rows and 3 columns.}
 \usage{
 luquillo_habitat
 }

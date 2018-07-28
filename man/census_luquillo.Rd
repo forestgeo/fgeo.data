@@ -3,6 +3,8 @@
 \docType{data}
 \name{census_luquillo}
 \alias{census_luquillo}
+\alias{luquillo_stem5_random}
+\alias{luquillo_tree5_random}
 \alias{luquillo_tree6_random}
 \alias{luquillo_tree6_1ha}
 \alias{luquillo_stem_random}
@@ -13,6 +15,10 @@
 \title{Tree and stem tables from Luquillo.}
 \format{See examples.}
 \usage{
+luquillo_stem5_random
+
+luquillo_tree5_random
+
 luquillo_tree6_random
 
 luquillo_tree6_1ha
