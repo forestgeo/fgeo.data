@@ -23,8 +23,11 @@ test_that("data has expected names", {
 
 test_that("data creation can be reproduced", {
   skip_if_not_installed("fgeo.tool")
-  expect_equal(
-    hab, fgeo.tool::fgeo_habitat(fgeo.data::luquillo_elevation, 20, 4)
+  stored <- hab
+  update <- fgeo.tool::fgeo_habitat(
+    fgeo.data::luquillo_elevation, gridsize = 20, n = 4, only_elev = FALSE,
+    edgecorrect = TRUE
   )
-  expect_false(dplyr::is_grouped_df(hab))
+  expect_equal(stored, update)
+  expect_is(stored, "fgeo_habitat")
 })

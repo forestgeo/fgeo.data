@@ -201,7 +201,8 @@ use_data(luquillo_elevation, overwrite = TRUE)
 # One quick way to make habitats is just divide quadrats into 4 or 5 equal elevation chunks.
 
 luquillo_habitat <- fgeo.tool::fgeo_habitat(
-  fgeo.data::luquillo_elevation, 20, 4
+  fgeo.data::luquillo_elevation, gridsize = 20, n = 4, only_elev = FALSE,
+  edgecorrect = TRUE
 )
 use_data(luquillo_habitat, overwrite = TRUE)
 
