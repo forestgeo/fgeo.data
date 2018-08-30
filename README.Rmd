@@ -22,8 +22,8 @@ knitr::opts_chunk$set(
 [Install all __fgeo__ packages in one step](https://forestgeo.github.io/fgeo/index.html#installation)
 
 ```
-# install.packages("remotes")
-remotes::install_github("forestgeo/fgeo.data")
+# install.packages("devtools")
+devtools::install_github("forestgeo/fgeo.data")
 ```
 
 For details on how to install packages from GitHub, see [this article](https://goo.gl/dQKEeg).

@@ -1,6 +1,6 @@
 pandoc: 2.1.1
-pkgdown: 1.1.0
-pkgdown_sha: ~
+pkgdown: 1.1.0.9000
+pkgdown_sha: b2798656f04ce282edea3e12734ba5588c6acd6e
 articles:
   document_data: document_data.html
   fgeo.data: fgeo.data.html

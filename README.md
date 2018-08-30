@@ -14,8 +14,8 @@ status](https://travis-ci.org/forestgeo/fgeo.data.svg?branch=master)](https://tr
 [Install all **fgeo** packages in one
 step](https://forestgeo.github.io/fgeo/index.html#installation)
 
-    # install.packages("remotes")
-    remotes::install_github("forestgeo/fgeo.data")
+    # install.packages("devtools")
+    devtools::install_github("forestgeo/fgeo.data")
 
 For details on how to install packages from GitHub, see [this
 article](https://goo.gl/dQKEeg).
