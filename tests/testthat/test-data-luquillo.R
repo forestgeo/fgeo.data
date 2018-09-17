@@ -31,3 +31,4 @@ test_that("data creation can be reproduced", {
   expect_equal(stored, update)
   expect_is(stored, "fgeo_habitat")
 })
+
