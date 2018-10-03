@@ -188,7 +188,7 @@
 <h2 class="hasAnchor">
 <a href="#census-tree-and-stem" class="anchor"></a>Census (<code>tree</code> and <code>stem</code>)</h2>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">str</span>(luquillo_tree6_random, <span class="dt">give.attr =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt; Classes 'tbl_df', 'tbl' and 'data.frame':    1004 obs. of  19 variables:</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt; Classes 'tbl_df', 'tbl' and 'data.frame':    1000 obs. of  19 variables:</span></a>
 <a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">#&gt;  $ treeID   : int  104 119 180 602 631 647 1086 1144 1168 1380 ...</span></a>
 <a class="sourceLine" id="cb4-4" data-line-number="4"><span class="co">#&gt;  $ stemID   : int  143 158 225 736 775 793 1339 1410 1438 1702 ...</span></a>
 <a class="sourceLine" id="cb4-5" data-line-number="5"><span class="co">#&gt;  $ tag      : chr  "10009" "100104" "100171" "100649" ...</span></a>
@@ -202,12 +202,12 @@
 <a class="sourceLine" id="cb4-13" data-line-number="13"><span class="co">#&gt;  $ dbh      : num  195 44.9 46.1 33.1 139 248 176 75 613 NA ...</span></a>
 <a class="sourceLine" id="cb4-14" data-line-number="14"><span class="co">#&gt;  $ pom      : chr  "1.45" "1.25" "1.35" "1.3" ...</span></a>
 <a class="sourceLine" id="cb4-15" data-line-number="15"><span class="co">#&gt;  $ hom      : num  1.45 1.26 1.34 1.3 1.25 1.35 1.42 1.3 1.25 NA ...</span></a>
-<a class="sourceLine" id="cb4-16" data-line-number="16"><span class="co">#&gt;  $ ExactDate: num  16911 17017 17017 17011 16912 ...</span></a>
+<a class="sourceLine" id="cb4-16" data-line-number="16"><span class="co">#&gt;  $ ExactDate: Date, format: "2016-04-20" "2016-08-04" ...</span></a>
 <a class="sourceLine" id="cb4-17" data-line-number="17"><span class="co">#&gt;  $ DFstatus : chr  "alive" "alive" "alive" "alive" ...</span></a>
 <a class="sourceLine" id="cb4-18" data-line-number="18"><span class="co">#&gt;  $ codes    : chr  "MAIN;A" "MAIN;A" "SPROUT;A" "MAIN;A" ...</span></a>
 <a class="sourceLine" id="cb4-19" data-line-number="19"><span class="co">#&gt;  $ nostems  : num  1 1 2 1 1 1 1 1 1 1 ...</span></a>
 <a class="sourceLine" id="cb4-20" data-line-number="20"><span class="co">#&gt;  $ status   : chr  "A" "A" "A" "A" ...</span></a>
-<a class="sourceLine" id="cb4-21" data-line-number="21"><span class="co">#&gt;  $ date     : num  NA NA NA NA NA NA NA NA NA NA ...</span></a></code></pre></div>
+<a class="sourceLine" id="cb4-21" data-line-number="21"><span class="co">#&gt;  $ date     : num  20564 20670 20670 20664 20565 ...</span></a></code></pre></div>
 <p>Some datasets combine multiple censuses in a single dataframe.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">lapply</span>(luquillo_stem_1ha, <span class="cf">function</span>(column) <span class="kw">head</span>(<span class="kw">unique</span>(column)))</a>
 <a class="sourceLine" id="cb5-2" data-line-number="2"><span class="co">#&gt; $treeID</span></a>
@@ -250,24 +250,25 @@
 <a class="sourceLine" id="cb5-39" data-line-number="39"><span class="co">#&gt; [1] 1.30 1.50   NA 1.45 1.33 1.37</span></a>
 <a class="sourceLine" id="cb5-40" data-line-number="40"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb5-41" data-line-number="41"><span class="co">#&gt; $ExactDate</span></a>
-<a class="sourceLine" id="cb5-42" data-line-number="42"><span class="co">#&gt; [1] 8610 8609 8611 8623 8614 8622</span></a>
-<a class="sourceLine" id="cb5-43" data-line-number="43"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb5-44" data-line-number="44"><span class="co">#&gt; $DFstatus</span></a>
-<a class="sourceLine" id="cb5-45" data-line-number="45"><span class="co">#&gt; [1] "alive"        NA             "stem dead"    "broken below"</span></a>
-<a class="sourceLine" id="cb5-46" data-line-number="46"><span class="co">#&gt; [5] "dead"        </span></a>
-<a class="sourceLine" id="cb5-47" data-line-number="47"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb5-48" data-line-number="48"><span class="co">#&gt; $codes</span></a>
-<a class="sourceLine" id="cb5-49" data-line-number="49"><span class="co">#&gt; [1] "MAIN;A"       "SPROUT;A"     "MAIN;A;NR"    NA            </span></a>
-<a class="sourceLine" id="cb5-50" data-line-number="50"><span class="co">#&gt; [5] "SPROUT;LS"    "SPROUT;LS;DP"</span></a>
-<a class="sourceLine" id="cb5-51" data-line-number="51"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb5-52" data-line-number="52"><span class="co">#&gt; $countPOM</span></a>
-<a class="sourceLine" id="cb5-53" data-line-number="53"><span class="co">#&gt; [1]  1 NA</span></a>
-<a class="sourceLine" id="cb5-54" data-line-number="54"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb5-55" data-line-number="55"><span class="co">#&gt; $status</span></a>
-<a class="sourceLine" id="cb5-56" data-line-number="56"><span class="co">#&gt; [1] "A" "P" "G" "D"</span></a>
-<a class="sourceLine" id="cb5-57" data-line-number="57"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb5-58" data-line-number="58"><span class="co">#&gt; $date</span></a>
-<a class="sourceLine" id="cb5-59" data-line-number="59"><span class="co">#&gt; [1] NA</span></a></code></pre></div>
+<a class="sourceLine" id="cb5-42" data-line-number="42"><span class="co">#&gt; [1] "1993-07-29" "1993-07-28" "1993-07-30" "1993-08-11" "1993-08-02"</span></a>
+<a class="sourceLine" id="cb5-43" data-line-number="43"><span class="co">#&gt; [6] "1993-08-10"</span></a>
+<a class="sourceLine" id="cb5-44" data-line-number="44"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb5-45" data-line-number="45"><span class="co">#&gt; $DFstatus</span></a>
+<a class="sourceLine" id="cb5-46" data-line-number="46"><span class="co">#&gt; [1] "alive"        NA             "stem dead"    "broken below"</span></a>
+<a class="sourceLine" id="cb5-47" data-line-number="47"><span class="co">#&gt; [5] "dead"        </span></a>
+<a class="sourceLine" id="cb5-48" data-line-number="48"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb5-49" data-line-number="49"><span class="co">#&gt; $codes</span></a>
+<a class="sourceLine" id="cb5-50" data-line-number="50"><span class="co">#&gt; [1] "MAIN;A"       "SPROUT;A"     "MAIN;A;NR"    NA            </span></a>
+<a class="sourceLine" id="cb5-51" data-line-number="51"><span class="co">#&gt; [5] "SPROUT;LS"    "SPROUT;LS;DP"</span></a>
+<a class="sourceLine" id="cb5-52" data-line-number="52"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb5-53" data-line-number="53"><span class="co">#&gt; $countPOM</span></a>
+<a class="sourceLine" id="cb5-54" data-line-number="54"><span class="co">#&gt; [1]  1 NA</span></a>
+<a class="sourceLine" id="cb5-55" data-line-number="55"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb5-56" data-line-number="56"><span class="co">#&gt; $status</span></a>
+<a class="sourceLine" id="cb5-57" data-line-number="57"><span class="co">#&gt; [1] "A" "P" "G" "D"</span></a>
+<a class="sourceLine" id="cb5-58" data-line-number="58"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb5-59" data-line-number="59"><span class="co">#&gt; $date</span></a>
+<a class="sourceLine" id="cb5-60" data-line-number="60"><span class="co">#&gt; [1] 12263 12262 12264 12276 12267 12275</span></a></code></pre></div>
 <p>This allows summaries and visualizations by census.</p>
 <p>For example, you may want to know which quadrats have the largest number of alive trees per census:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
@@ -305,12 +306,12 @@
 <a class="sourceLine" id="cb7-5" data-line-number="5"><span class="co">#&gt; Selecting by n</span></a></code></pre></div>
 <p><img src="fgeo.data_files/figure-html/unnamed-chunk-8-1.png" width="70%" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">luquillo_stem_random_tiny <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="st">  </span><span class="kw">filter</span>(quadrat <span class="op">==</span><span class="st"> "517"</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="st">  </span><span class="kw">filter</span>(quadrat <span class="op">==</span><span class="st"> "1017"</span>) <span class="op">%&gt;%</span></a>
 <a class="sourceLine" id="cb8-3" data-line-number="3"><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(gx, gy)) <span class="op">+</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb8-4" data-line-number="4"><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">size =</span> dbh, <span class="dt">color =</span> tag)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb8-5" data-line-number="5"><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="st">"CensusID"</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb8-6" data-line-number="6"><span class="st">  </span><span class="kw">coord_fixed</span>()</a>
-<a class="sourceLine" id="cb8-7" data-line-number="7"><span class="co">#&gt; Warning: Removed 10 rows containing missing values (geom_point).</span></a></code></pre></div>
+<a class="sourceLine" id="cb8-7" data-line-number="7"><span class="co">#&gt; Warning: Removed 12 rows containing missing values (geom_point).</span></a></code></pre></div>
 <p><img src="fgeo.data_files/figure-html/unnamed-chunk-9-1.png" width="90%" style="display: block; margin: auto;"></p>
 </div>
 <div id="elevation-elevation" class="section level2">

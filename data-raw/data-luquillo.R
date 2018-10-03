@@ -250,16 +250,10 @@ two_abundant_quads <- luquillo_stem_random %>%
   pull(quadrat) %>% 
   sample(2)
 
-sp_quad <- luquillo_stem_random %>% 
+luquillo_stem_random <- luquillo_stem_random %>% 
   filter(
     sp %in% keep_sp,
     quadrat %in% two_abundant_quads
   )
-missing_0 <- sp_quad %>% filter(!is.na(dbh))
-tag_missing <- sp_quad %>% filter(is.na(dbh)) %>% sample_frac(0.1)
-
-luquillo_stem_random_tiny <- missing_0 %>% 
-  rbind(tag_missing) %>% 
-  rbind(tag_missing)
 
 use_data(luquillo_stem_random_tiny, overwrite = TRUE)

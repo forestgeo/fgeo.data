@@ -95,7 +95,7 @@ ggplot(top_n(smry, 1), aes(CensusID, n)) +
 
 ```{r, out.width="90%"}
 luquillo_stem_random_tiny %>% 
-  filter(quadrat == "517") %>% 
+  filter(quadrat == "1017") %>%
   ggplot(aes(gx, gy)) + 
   geom_point(aes(size = dbh, color = tag)) +
   facet_wrap("CensusID") +
