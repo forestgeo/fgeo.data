@@ -1,8 +1,10 @@
 # Source: Suzanne via
-# * https://goo.gl/34Ywjw (ViewFullTable)
-# * https://goo.gl/hkiKUW (ViewTaxonomy)
+# * ViewFullTable:
+# https://github.com/forestgeo/fgeo.data/issues/24#issuecomment-400262852
+# * ViewTaxonomy: https://goo.gl/hkiKUW
 
 set.seed(123)
+library(luquillo)
 library(tidyverse)
 
 
@@ -21,17 +23,13 @@ use_data(luquillo_taxa, overwrite = TRUE)
 luquillo_vft <- luquillo::ViewFullTable_luquillo
 
 # Choose 1000 tags at random from the entire plot
-
 tags_random <- luquillo_vft %>% 
   filter(CensusID == 6) %>%
   pull(Tag) %>% 
   unique() %>% 
   sample(1000, replace = FALSE)
 
-
-
 # Choose all tags from the most abundant hectare
-
 # Find abundance hectare
 ha <- luquillo_vft %>% 
  mutate(
@@ -44,12 +42,11 @@ ha <- luquillo_vft %>%
  select(matches("x|y")) %>% 
  arrange(xn, yn)
 
-# Confirm
+# Confirm visually
 p <- luquillo_vft %>% 
  filter(!is.na(DBH)) %>% 
  sample_n(10000) %>% 
  ggplot(aes(PX, PY)) + geom_point()
-
 # Most abundant hectare is x = (100,200]; y = (400,500]
 
 tags_1ha <- luquillo_vft %>% 
@@ -57,10 +54,7 @@ tags_1ha <- luquillo_vft %>%
   pull(Tag) %>% 
   unique()
 
-
-
 # Keep chosen tags exclusively
-
 luquillo_vft_random <- filter(luquillo_vft, Tag %in% tags_random)
 # Allow downloading entire vft (all censuses) as .csv
 write_tsv(luquillo_vft_random, here::here("data-raw/luquillo_vft_random.csv"))
@@ -81,31 +75,51 @@ use_data(luquillo_vft_4quad, overwrite = TRUE)
 
 
 
-
-
-
-
-
-
-
-
-
 # Tree and stem tables ----------------------------------------------------
 
-# Tables build with:
-# rtbl::rtbl(
-#   luquillo_vft_1ha,
-#   luquillo_taxa,
-#   plotname = "luquillo"
-# )
-#
-# rtbl::rtbl(
-#   luquillo_vft_random,
-#   luquillo_taxa,
-#   plotname = "luquillo"
-# )
+# Build new tables: 1ha
+# Remove old tables
+path_1ha <- here::here("data-raw/private/rtbl_1ha")
+fs::dir_delete(path_1ha)
+
+# Create folders in working directory
+rtbl::rtbl(
+  luquillo_vft_1ha,
+  luquillo_taxa,
+  plotname = "luquillo"
+)
+
+# Move folders to a private directory
+folders <- c("stem", "full", "RAnalyticalTables")
+fs::dir_create(path_1ha)
+purrr::map(folders, fs::file_move, path_1ha)
 
 
+
+# Build new tables: random
+path_random <- here::here("data-raw/private/rtbl_random")
+fs::dir_delete(path_random)
+
+# Create folders in working directory
+rtbl::rtbl(
+  luquillo_vft_random,
+  luquillo_taxa,
+  plotname = "luquillo"
+)
+
+# Move folders to a private directory
+purrr::map(folders, fs::file_move, path_random)
+
+# FIXME: stem tables end up in wrong directory. This code does the fix had-hoc
+path_random <- here::here("data-raw/private/rtbl_random")
+stem_tables <- fs::dir_ls(path_random, regexp = "stem..rdata")
+path_stem <- fs::path(path_random, "stem")
+fs::dir_create(path_stem)
+purrr::map(stem_tables, fs::file_move, path_stem)
+
+
+
+# Load and use_data()
 
 load_ls <- function(path, env) {
   path %>% 

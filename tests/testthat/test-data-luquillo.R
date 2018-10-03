@@ -1,5 +1,8 @@
 context("data-luquillo.R")
 
+library(dplyr)
+library(rlang)
+
 taxa <- fgeo.data::luquillo_taxa
 vft_1ha <- fgeo.data::luquillo_vft_4quad
 elev <- fgeo.data::luquillo_elevation
@@ -32,3 +35,36 @@ test_that("data creation can be reproduced", {
   expect_is(stored, "fgeo_habitat")
 })
 
+
+
+multiple_treeid <- function(vft) {
+  vft %>% 
+    set_names(tolower) %>% 
+    dplyr::select(treeid, tag) %>% 
+    unique() %>% 
+    arrange(tag) %>% 
+    group_by(tag) %>% 
+    summarize(n_treeid = n_distinct(treeid)) %>% 
+    filter(n_treeid > 1)
+}
+
+multiple_tag <- function(vft) {
+  vft %>% 
+    set_names(tolower) %>% 
+    dplyr::select(treeid, tag) %>% 
+    unique() %>% 
+    arrange(tag) %>% 
+    group_by(treeid) %>% 
+    summarize(n_tag = n_distinct(tag)) %>% 
+    filter(n_tag > 1)
+}
+
+test_that("vft and census have just 1 treeid per tag and 1 tag per treeid", {
+  expect_equal(nrow(multiple_tag(vft_1ha)), 0)
+  expect_equal(nrow(multiple_tag(fgeo.data::luquillo_stem5_random)), 0)
+  expect_equal(nrow(multiple_tag(fgeo.data::luquillo_tree5_random)), 0)
+  
+  expect_equal(nrow(multiple_treeid(vft_1ha)), 0)
+  expect_equal(nrow(multiple_treeid(fgeo.data::luquillo_stem5_random)), 0)
+  expect_equal(nrow(multiple_treeid(fgeo.data::luquillo_tree5_random)), 0)
+})
