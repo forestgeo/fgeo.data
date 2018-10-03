@@ -2,6 +2,7 @@ context("data-luquillo.R")
 
 library(dplyr)
 library(rlang)
+library(lubridate)
 
 taxa <- fgeo.data::luquillo_taxa
 vft_1ha <- fgeo.data::luquillo_vft_4quad
@@ -67,4 +68,20 @@ test_that("vft and census have just 1 treeid per tag and 1 tag per treeid", {
   expect_equal(nrow(multiple_treeid(vft_1ha)), 0)
   expect_equal(nrow(multiple_treeid(fgeo.data::luquillo_stem5_random)), 0)
   expect_equal(nrow(multiple_treeid(fgeo.data::luquillo_tree5_random)), 0)
+})
+
+test_that("vft and census have valid dates", {
+  expect_date_format <- function(x) {
+    date_format <- "^....-..-..$"
+    expect_true(any(grepl(date_format, x)))
+  }
+  
+  expect_date_format(as_date(vft_1ha$Date))
+  expect_date_format(vft_1ha$ExactDate)
+  
+  expect_date_format(fgeo.data::luquillo_tree5_random$ExactDate)
+  expect_date_format(as_date(fgeo.data::luquillo_tree5_random$date))
+  
+  expect_date_format(fgeo.data::luquillo_stem6_1ha$ExactDate)
+  expect_date_format(as_date(fgeo.data::luquillo_stem6_1ha$date))
 })
