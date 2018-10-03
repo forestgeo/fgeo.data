@@ -2,7 +2,6 @@ context("data-luquillo.R")
 
 library(dplyr)
 library(rlang)
-library(lubridate)
 
 taxa <- fgeo.data::luquillo_taxa
 vft_1ha <- fgeo.data::luquillo_vft_4quad
@@ -71,6 +70,9 @@ test_that("vft and census have just 1 treeid per tag and 1 tag per treeid", {
 })
 
 test_that("vft and census have valid dates", {
+  skip_if_not_installed("lubridate")
+  library(lubridate)
+  
   expect_date_format <- function(x) {
     date_format <- "^....-..-..$"
     expect_true(any(grepl(date_format, x)))
