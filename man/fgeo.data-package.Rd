@@ -21,6 +21,7 @@ Useful links:
 
 Other contributors:
 \itemize{
+  \item Jess Zimmerman \email{jesskz@ites.upr.edu} [data contributor]
   \item CTFS-ForestGEO \email{ForestGEO@si.edu} [copyright holder, funder]
 }
 

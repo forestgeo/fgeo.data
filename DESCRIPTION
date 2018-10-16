@@ -3,6 +3,7 @@ Title: Open Datasets of ForestGEO
 Version: 0.0.0.9003
 Authors@R: c(
     person("Mauro", "Lepore", , "leporem@si.edu", role = c("aut", "ctr", "cre")),
+    person("Jess", "Zimmerman", , "jesskz@ites.upr.edu", role = c("dtc")),
     person("CTFS-ForestGEO", , , "ForestGEO@si.edu", role = c("cph", "fnd"))
     )
 Description: Open datasets of ForestGEO.
