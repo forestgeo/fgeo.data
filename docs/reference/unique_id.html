@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Habitat data from luquillo. — luquillo_habitat • fgeo.data</title>
+<title>Unique identifiers of the most commonly used tables. — unique_id • fgeo.data</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -30,10 +30,9 @@
 
 
 
-<meta property="og:title" content="Habitat data from luquillo. — luquillo_habitat" />
+<meta property="og:title" content="Unique identifiers of the most commonly used tables. — unique_id" />
 
-<meta property="og:description" content="Habitat data from luquillo created by dividing elevation data in multiple
-chunks." />
+<meta property="og:description" content="Unique identifiers of the most commonly used tables." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -122,38 +121,35 @@ chunks." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Habitat data from luquillo.</h1>
-    <small class="dont-index">Source: <a href='https://github.com/forestgeo/fgeo.data/blob/master/R/data-luquillo-other.R'><code>R/data-luquillo-other.R</code></a></small>
-    <div class="hidden name"><code>luquillo_habitat.Rd</code></div>
+    <h1>Unique identifiers of the most commonly used tables.</h1>
+    <small class="dont-index">Source: <a href='https://github.com/forestgeo/fgeo.data/blob/master/R/data-other.R'><code>R/data-other.R</code></a></small>
+    <div class="hidden name"><code>unique_id.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Habitat data from luquillo created by dividing elevation data in multiple
-chunks.</p>
+    <p>Unique identifiers of the most commonly used tables.</p>
     
     </div>
 
-    <pre class="usage"><span class='no'>luquillo_habitat</span></pre>
+    <pre class="usage"><span class='no'>unique_id</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An object of class <code>fgeo_habitat</code> (inherits from <code>tbl_df</code>, <code>tbl</code>, <code>data.frame</code>) with 400 rows and 3 columns.</p>
+    <p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 3 rows and 2 columns.</p>
     
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <div class='dont-index'><ul>
-<li><p>luquillo_elevation.</p></li>
-<li><p><code><a href='http://www.rdocumentation.org/packages/fgeo.tool/topics/fgeo_habitat'>fgeo.tool::fgeo_habitat()</a></code>.</p></li>
-<li><p><a href='https://forestgeo.si.edu/sites/north-america/luquillo'>https://forestgeo.si.edu/sites/north-america/luquillo</a>.</p></li>
-</ul></div>
+    <p><a href='https://github.com/forestgeo/bciex/issues/10'>https://github.com/forestgeo/bciex/issues/10</a></p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>luquillo_habitat</span>)</div><div class='output co'>#&gt; Classes 'fgeo_habitat', 'tbl_df', 'tbl' and 'data.frame':	400 obs. of  3 variables:
-#&gt;  $ gx      : num  0 0 0 0 0 0 0 0 0 0 ...
-#&gt;  $ gy      : num  0 20 40 60 80 100 120 140 160 180 ...
-#&gt;  $ habitats: int  1 1 1 1 1 1 1 1 1 1 ...</div></pre>
+    <pre class="examples"><div class='input'><span class='no'>unique_id</span></div><div class='output co'>#&gt; # A tibble: 3 x 2
+#&gt;   table         column
+#&gt;   &lt;chr&gt;         &lt;chr&gt; 
+#&gt; 1 tree          TreeID
+#&gt; 2 stem          StemID
+#&gt; 3 ViewFullTable DBHID </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -161,7 +157,7 @@ chunks.</p>
       
       <li><a href="#format">Format</a></li>
 
-      <li><a href="#see-also">See also</a></li>
+      <li><a href="#source">Source</a></li>
       
       <li><a href="#examples">Examples</a></li>
     </ul>
