@@ -21,5 +21,9 @@ str(luquillo_elevation$col, give.attr = FALSE)
 }
 \seealso{
 \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
+
+Other additional datasets: \code{\link{luquillo_habitat}},
+  \code{\link{luquillo_species}}
 }
+\concept{additional datasets}
 \keyword{datasets}

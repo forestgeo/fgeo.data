@@ -17,4 +17,8 @@ Unique identifiers of the most commonly used tables.
 \examples{
 unique_id
 }
+\seealso{
+Other metadata: \code{\link{data_dictionary}}
+}
+\concept{metadata}
 \keyword{datasets}

@@ -21,5 +21,9 @@ str(luquillo_habitat)
 \item \code{fgeo.tool::fgeo_habitat()}.
 \item \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 }
+
+Other additional datasets: \code{\link{luquillo_elevation}},
+  \code{\link{luquillo_species}}
 }
+\concept{additional datasets}
 \keyword{datasets}

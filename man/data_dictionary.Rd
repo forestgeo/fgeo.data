@@ -22,6 +22,9 @@ head(data_dictionary)
 pattern <- "^subspeciesid$"
 matching <- grepl(pattern, data_dictionary$column, ignore.case = TRUE)
 data_dictionary[matching, ]
-
 }
+\seealso{
+Other metadata: \code{\link{unique_id}}
+}
+\concept{metadata}
 \keyword{datasets}

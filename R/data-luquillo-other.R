@@ -1,5 +1,7 @@
 #' Species table from Luquillo.
 #' 
+#' @family additional datasets
+#' 
 #' @examples 
 #' str(luquillo_species, give.attr = FALSE)
 "luquillo_species"
@@ -10,6 +12,8 @@
 #' \url{http://bit.ly/fgeo-data-luquillo-elevation}.
 #' 
 #' @seealso \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
+#' 
+#' @family additional datasets
 #'
 #' @examples
 #' str(luquillo_elevation, , give.attr = FALSE)
@@ -29,6 +33,8 @@
 #' * luquillo_elevation.
 #' * `fgeo.tool::fgeo_habitat()`.
 #' * \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
+#' 
+#' @family additional datasets
 #' 
 #' @examples
 #' str(luquillo_habitat)

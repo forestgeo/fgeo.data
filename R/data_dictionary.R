@@ -12,6 +12,6 @@
 #' pattern <- "^subspeciesid$"
 #' matching <- grepl(pattern, data_dictionary$column, ignore.case = TRUE)
 #' data_dictionary[matching, ]
-#'
+#' @family metadata
 "data_dictionary"
 

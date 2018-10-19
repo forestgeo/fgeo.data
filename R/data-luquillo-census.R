@@ -45,7 +45,8 @@
 #' short_str(luquillo_stem6_random)
 #' 
 #' short_str(luquillo_stem_random_tiny)
-#'
+#' 
+#' @family census tables
 #' @name census_luquillo
 NULL
 

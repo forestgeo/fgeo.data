@@ -79,5 +79,7 @@
 #' \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputFull.pdf},
 #' \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputStem.pdf}.
 #' 
+#' @family census tables
+#' 
 #' @name census_description
 NULL

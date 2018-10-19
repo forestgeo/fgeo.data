@@ -37,5 +37,9 @@ lapply(luquillo_vft_4quad, show_some_values_of_each_column)
 \item \url{http://bit.ly/fgeo-data-luquillo-vft-1ha}.
 \item \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 }
+
+Other View tables: \code{\link{luquillo_taxa}},
+  \code{\link{vft_description}}
 }
+\concept{View tables}
 \keyword{datasets}

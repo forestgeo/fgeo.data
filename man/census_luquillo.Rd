@@ -83,5 +83,8 @@ short_str(luquillo_stem_random_tiny)
 \item \link{data_dictionary}.
 \item \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 }
+
+Other census tables: \code{\link{census_description}}
 }
+\concept{census tables}
 \keyword{datasets}

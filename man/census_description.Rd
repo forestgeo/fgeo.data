@@ -98,4 +98,7 @@ observation but \emph{calculated} from the history of the stem).
 \link{data_dictionary}, \link{census_luquillo},
 \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputFull.pdf},
 \url{http://ctfs.si.edu/Public/CTFSRPackage/files/help/RoutputStem.pdf}.
+
+Other census tables: \code{\link{census_luquillo}}
 }
+\concept{census tables}

@@ -26,5 +26,9 @@ str(luquillo_taxa, give.attr = FALSE)
 \item \url{http://bit.ly/fgeo-data-luquillo-taxa"}.
 \item \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 }
+
+Other View tables: \code{\link{luquillo_vft_4quad}},
+  \code{\link{vft_description}}
 }
+\concept{View tables}
 \keyword{datasets}

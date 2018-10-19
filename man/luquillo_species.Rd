@@ -14,4 +14,9 @@ Species table from Luquillo.
 \examples{
 str(luquillo_species, give.attr = FALSE)
 }
+\seealso{
+Other additional datasets: \code{\link{luquillo_elevation}},
+  \code{\link{luquillo_habitat}}
+}
+\concept{additional datasets}
 \keyword{datasets}

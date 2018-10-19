@@ -13,6 +13,8 @@
 #' * \url{http://bit.ly/fgeo-data-luquillo-taxa"}.
 #' * \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 #' 
+#' @family View tables
+#' 
 #' @examples
 #' str(luquillo_taxa, give.attr = FALSE)
 "luquillo_taxa"
@@ -38,6 +40,8 @@
 #'
 #' @section Acknowledgments:
 #' Thanks to Jess Zimmerman for sharing data from Luquillo.
+#' 
+#' @family View tables
 #'  
 #' @examples
 #' str(luquillo_vft_4quad, give.attr = FALSE)

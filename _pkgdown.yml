@@ -36,26 +36,21 @@ navbar:
 
 reference:
   
-  - title: Dictionary
+  - title: Metadata
     contents:
-      - data_dictionary
+      - has_concept("metadata")
   
-  - title: ViewFullTable
+  - title: Database View tables
     contents:
       - vft_description
-      - matches("luquillo_vft")
+      - has_concept("View tables")
 
-  - title: Census tree and stem
+  - title: Census tables (tree and stem)
     contents:
       - census_description
-      - matches("luquillo_tree")
-      - matches("luquillo_stem")
+      - has_concept("census tables")
 
-  - title: Other
+  - title: Additional datasets
     contents:
-      - luquillo_taxa
-      - luquillo_elevation
-      - luquillo_habitat
-      - luquillo_species
-      - unique_id
+      - has_concept("additional datasets")
 

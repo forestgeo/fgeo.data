@@ -15,4 +15,8 @@ than one measurement in a census, but at different hom.
 }
 \seealso{
 \link{data_dictionary}.
+
+Other View tables: \code{\link{luquillo_taxa}},
+  \code{\link{luquillo_vft_4quad}}
 }
+\concept{View tables}

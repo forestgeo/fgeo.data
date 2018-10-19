@@ -9,5 +9,6 @@
 #' than one measurement in a census, but at different hom.
 #' 
 #' @seealso [data_dictionary].
+#' @family View tables
 #' @name vft_description
 NULL
