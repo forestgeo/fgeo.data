@@ -22,7 +22,7 @@ This section sets conventions to document datasets in the __fgeo.data__ package.
 
 ### Documenting generic datasets
 
-Generic datasets (e.g. ViwFullTable) should have these components:
+Generic datasets (e.g. ViewFullTable) should have these components:
 
 * A short nickname for the generic table (e.g. vft). If the name is already short (e.g. stem), use the full name (e.g. stem). These are some conventional generic names and nicknames:
     * ViewFullTable: vft.
@@ -33,7 +33,7 @@ Generic datasets (e.g. ViwFullTable) should have these components:
 
 * A help file `generic_description` with the following (e.g. `?`[vft_description](https://forestgeo.github.io/fgeo.data/reference/vft_description.html)):
     * A generic description that applies to any similar dataset, from any ForestGEO site.
-    * A section `@seealso`, linking to specific datasets and to the [data_dictionary].
+    * A section `@seealso`, linking to specific datasets and to the [data_dictionary](https://forestgeo.github.io/fgeo.data/reference/data_dictionary.html).
 
 ### Documenting specific datasets
 
@@ -51,5 +51,5 @@ For example, if your data comes from Luquillo, and it is a ViewFullTable contain
 The documentation of `site_generic_info` should include the following (e.g. `?luquillo_vft_random`):
 
 * A specific description that applies to this particular dataset.
-* A section `@seealso`, linking to `generic_description` and to the [data_dictionary].
+* A section `@seealso`, linking to `generic_description` and to the [data_dictionary](https://forestgeo.github.io/fgeo.data/reference/data_dictionary.html).
 * A section `@examples` showing the structure of `site_generic_info`.
