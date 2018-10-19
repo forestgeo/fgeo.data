@@ -1,6 +1,6 @@
 Package: fgeo.data
 Title: Open Datasets of ForestGEO
-Version: 0.0.0.9004
+Version: 0.0.0.9005
 Authors@R: 
     c(person(given = "Mauro",
              family = "Lepore",
