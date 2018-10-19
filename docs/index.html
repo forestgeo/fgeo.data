@@ -99,27 +99,31 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p><a href="https://forestgeo.github.io/fgeo/index.html#installation">Install all <strong>fgeo</strong> packages in one step</a></p>
+<p>Install the pre-release version of <strong>fgeo.data</strong>:</p>
+<pre><code><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github"># install.packages("devtools")
+devtools::install_github("forestgeo/fgeo.data@pre-release")</a></code></pre>
+<p>Or install the development version of <strong>fgeo.data</strong>:</p>
 <pre><code><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github"># install.packages("devtools")
 devtools::install_github("forestgeo/fgeo.data")</a></code></pre>
+<p>Or <a href="https://forestgeo.github.io/fgeo/index.html#installation">install all <strong>fgeo</strong> packages in one step</a>.</p>
 <p>For details on how to install packages from GitHub, see <a href="https://goo.gl/dQKEeg">this article</a>.</p>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example" class="anchor"></a>Example</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(fgeo.data)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="co"># Show first few columns to save space.</span></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="kw">str</span>(luquillo_vft_4quad, <span class="dt">give.attr =</span> <span class="ot">FALSE</span>, <span class="dt">list.len =</span> <span class="dv">5</span>)</a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="co">#&gt; Classes 'tbl_df', 'tbl' and 'data.frame':    3302 obs. of  32 variables:</span></a>
-<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="co">#&gt;  $ DBHID           : int  384550 384553 466764 384554 466765 611446 384555 466766 611447 384556 ...</span></a>
-<a class="sourceLine" id="cb2-7" data-line-number="7"><span class="co">#&gt;  $ PlotName        : chr  "luquillo" "luquillo" "luquillo" "luquillo" ...</span></a>
-<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="co">#&gt;  $ PlotID          : int  1 1 1 1 1 1 1 1 1 1 ...</span></a>
-<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="co">#&gt;  $ Family          : chr  "Rubiaceae" "Urticaceae" "Urticaceae" "Urticaceae" ...</span></a>
-<a class="sourceLine" id="cb2-10" data-line-number="10"><span class="co">#&gt;  $ Genus           : chr  "Psychotria" "Cecropia" "Cecropia" "Cecropia" ...</span></a>
-<a class="sourceLine" id="cb2-11" data-line-number="11"><span class="co">#&gt;   [list output truncated]</span></a>
-<a class="sourceLine" id="cb2-12" data-line-number="12"></a>
-<a class="sourceLine" id="cb2-13" data-line-number="13"><span class="co"># See ?data_dictionary</span></a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(fgeo.data)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co"># Show first few columns to save space.</span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw">str</span>(luquillo_vft_4quad, <span class="dt">give.attr =</span> <span class="ot">FALSE</span>, <span class="dt">list.len =</span> <span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt; Classes 'tbl_df', 'tbl' and 'data.frame':    3302 obs. of  32 variables:</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt;  $ DBHID           : int  384550 384553 466764 384554 466765 611446 384555 466766 611447 384556 ...</span></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt;  $ PlotName        : chr  "luquillo" "luquillo" "luquillo" "luquillo" ...</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt;  $ PlotID          : int  1 1 1 1 1 1 1 1 1 1 ...</span></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt;  $ Family          : chr  "Rubiaceae" "Urticaceae" "Urticaceae" "Urticaceae" ...</span></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt;  $ Genus           : chr  "Psychotria" "Cecropia" "Cecropia" "Cecropia" ...</span></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11"><span class="co">#&gt;   [list output truncated]</span></a>
+<a class="sourceLine" id="cb3-12" data-line-number="12"></a>
+<a class="sourceLine" id="cb3-13" data-line-number="13"><span class="co"># See ?data_dictionary</span></a></code></pre></div>
 <p><a href="https://forestgeo.github.io/fgeo/articles/fgeo.html">Get started with <strong>fgeo</strong></a></p>
 </div>
 <div id="information" class="section level2">

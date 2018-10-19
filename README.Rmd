@@ -19,12 +19,21 @@ knitr::opts_chunk$set(
 
 ## Installation
 
-[Install all __fgeo__ packages in one step](https://forestgeo.github.io/fgeo/index.html#installation)
+Install the pre-release version of __fgeo.data__:
+
+```
+# install.packages("devtools")
+devtools::install_github("forestgeo/fgeo.data@pre-release")
+```
+ 
+Or install the development version of __fgeo.data__:
 
 ```
 # install.packages("devtools")
 devtools::install_github("forestgeo/fgeo.data")
 ```
+
+Or [install all __fgeo__ packages in one step](https://forestgeo.github.io/fgeo/index.html#installation).
 
 For details on how to install packages from GitHub, see [this article](https://goo.gl/dQKEeg).
 

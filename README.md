@@ -11,11 +11,18 @@ status](https://travis-ci.org/forestgeo/fgeo.data.svg?branch=master)](https://tr
 
 ## Installation
 
-[Install all **fgeo** packages in one
-step](https://forestgeo.github.io/fgeo/index.html#installation)
+Install the pre-release version of **fgeo.data**:
+
+    # install.packages("devtools")
+    devtools::install_github("forestgeo/fgeo.data@pre-release")
+
+Or install the development version of **fgeo.data**:
 
     # install.packages("devtools")
     devtools::install_github("forestgeo/fgeo.data")
+
+Or [install all **fgeo** packages in one
+step](https://forestgeo.github.io/fgeo/index.html#installation).
 
 For details on how to install packages from GitHub, see [this
 article](https://goo.gl/dQKEeg).
