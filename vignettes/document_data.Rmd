@@ -32,14 +32,14 @@ Generic datasets (e.g. ViewFullTable) should have these components:
     * tree and stem, collectively: census.
 
 * A help file `generic_description` with the following (e.g. `?`[vft_description](https://forestgeo.github.io/fgeo.data/reference/vft_description.html)):
-    * A generic description that applies to any similar dataset, from any ForestGEO site.
+    * A generic description that applies to any similar dataset from any ForestGEO site.
     * A section `@seealso`, linking to specific datasets and to the [data_dictionary](https://forestgeo.github.io/fgeo.data/reference/data_dictionary.html).
 
 ### Documenting specific datasets
 
 Datasets from a specific site should be named with the format `site_generic_info`:
 
-* `site` should be a single string uniquely identifying your site among all other sites in the ForestGEO network; it may be a well know nickname (e.g. luquillo). 
+* `site` should be a single string uniquely identifying your site among all other sites in the ForestGEO network; it may be a well known nickname (e.g. luquillo). 
 * `generic` should be one of the same as in _`generic`_`_description`. 
 
 * `info` should be a single short string indicating the most prominent characteristic of the specific dataset -- commonly referring to the criteria used to subset a larger dataset (e.g. `luquillo_stem6_random`).
