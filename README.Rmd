@@ -61,4 +61,4 @@ str(luquillo_vft_4quad, give.attr = FALSE, list.len = 5)
 
 * Thanks to Suzanne Lao and Shameema Jafferjee Esufali for sharing their knowledge of the structure of ForestGEO's database.
 
-* Thanks to Jess Zimmerman for sharing data from Luquillo.
+* Thanks to Jess Zimmerman for sharing data from Luquillo
