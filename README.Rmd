@@ -56,9 +56,3 @@ str(luquillo_vft_4quad, give.attr = FALSE, list.len = 5)
 * [Contributing](CONTRIBUTING.md).
 * [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
 
-## Acknowledgements
-
-* Thanks to Suzanne Lao and Shameema Jafferjee Esufali for sharing their knowledge of the structure of ForestGEO's database.
-
-* Thanks to Jess Zimmerman for sharing data from Luquillo.
-
