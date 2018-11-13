@@ -2,12 +2,7 @@
 .Rhistory
 .RData
 tmp.R
-tmp.html
 data-raw/private
 inst/doc
 .httr-oauth
-rsconnect
-stem
-full
-
 inst/private
