@@ -8,7 +8,6 @@
 \alias{luquillo_tree6_random}
 \alias{luquillo_tree6_1ha}
 \alias{luquillo_stem_random}
-\alias{luquillo_stem_1ha}
 \alias{luquillo_stem6_1ha}
 \alias{luquillo_stem6_random}
 \alias{luquillo_stem_random_tiny}
@@ -24,8 +23,6 @@ luquillo_tree6_random
 luquillo_tree6_1ha
 
 luquillo_stem_random
-
-luquillo_stem_1ha
 
 luquillo_stem6_1ha
 
@@ -64,8 +61,6 @@ short_str(luquillo_tree5_random)
 short_str(luquillo_tree6_1ha)
 
 short_str(luquillo_stem_random)
-
-short_str(luquillo_stem_1ha)
 
 short_str(luquillo_stem6_1ha)
 

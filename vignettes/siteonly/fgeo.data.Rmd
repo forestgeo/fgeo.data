@@ -68,7 +68,7 @@ str(luquillo_tree6_random, give.attr = FALSE)
 Some datasets combine multiple censuses in a single dataframe.
 
 ```{r}
-lapply(luquillo_stem_1ha, function(column) head(unique(column)))
+lapply(luquillo_stem_random, function(column) head(unique(column)))
 ```
 This allows summaries and visualizations by census. 
 
@@ -78,7 +78,7 @@ For example, you may want to know which quadrats have the largest number of aliv
 library(ggplot2)
 library(dplyr)
 
-smry <- luquillo_stem_1ha %>% 
+smry <- luquillo_stem_random %>% 
   filter(status == "A", !is.na(dbh)) %>% 
   group_by(CensusID, quadrat) %>% 
   summarise(n = n())
