@@ -153,9 +153,6 @@ ls_1ha <- as.list(env_1ha)
 luquillo_tree6_1ha <- as.tibble(ls_1ha$luquillo.full6)
 use_data(luquillo_tree6_1ha, overwrite = TRUE)
 
-luquillo_stem_1ha <- compile_census(ls_1ha, "stem")
-use_data(luquillo_stem_1ha, overwrite = TRUE)
-
 luquillo_stem6_1ha <- as.tibble(ls_1ha$luquillo.stem6)
 use_data(luquillo_stem6_1ha, overwrite = TRUE)
 

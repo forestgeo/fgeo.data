@@ -36,8 +36,6 @@
 #' 
 #' short_str(luquillo_stem_random)
 #' 
-#' short_str(luquillo_stem_1ha)
-#' 
 #' short_str(luquillo_stem6_1ha)
 #' 
 #' short_str(luquillo_stem5_random)
@@ -62,8 +60,6 @@ NULL
 
 #' @rdname census_luquillo
 "luquillo_stem_random"
-#' @rdname census_luquillo
-"luquillo_stem_1ha"
 
 #' @rdname census_luquillo
 "luquillo_stem6_1ha"
