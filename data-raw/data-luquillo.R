@@ -74,6 +74,8 @@ luquillo_vft_4quad <- luquillo_vft_1ha %>%
   filter(between(PX, 100, 140), between(PY, 400, 440)) %>% 
   # Keep only two censuses
   filter(CensusID  %in% 4:6)
+
+attr(luquillo_vft_4quad, "spec") <- NULL
 use_data(luquillo_vft_4quad, overwrite = TRUE)
 
 
