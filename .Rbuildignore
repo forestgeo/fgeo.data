@@ -1,3 +1,5 @@
+^\.buildignore$
+^vignettes$
 ^appveyor\.yml$
 ^.*\.Rproj$
 ^\.Rproj\.user$
@@ -11,9 +13,5 @@
 ^man-roxygen$
 ^\.httr-oauth$
 
-^tmp\.R$
-^tmp\.sh$
-
-^inst/private$
 ^inst/database-output$
 ^inst/issues$

@@ -27,7 +27,7 @@ test_that("data has expected names", {
 test_that("data creation can be reproduced", {
   skip_if_not_installed("fgeo.tool")
   stored <- hab
-  update <- fgeo.tool::fgeo_habitat(
+  update <- fgeo.analyze::fgeo_habitat(
     fgeo.data::luquillo_elevation, gridsize = 20, n = 4, only_elev = FALSE,
     edgecorrect = TRUE
   )
@@ -86,4 +86,23 @@ test_that("vft and census have valid dates", {
   
   expect_date_format(fgeo.data::luquillo_stem6_1ha$ExactDate)
   expect_date_format(as_date(fgeo.data::luquillo_stem6_1ha$date))
+})
+
+test_that("no data has attribute 'spec' which comes from reading with readr", {
+  datasets <- ls("package:fgeo.data")
+  pkg_get <- function(x, pkg) {
+    get(x, asNamespace(pkg))
+  }
+  dts <- purrr::map(datasets, ~pkg_get(.x, "fgeo.data")) %>% 
+    purrr::set_names(datasets)
+  
+  attr_names <- purrr::map(dts, ~names(attributes(.x)))
+  result <- names(attr_names[purrr::map_lgl(attr_names, ~any("spec" %in% .x))])
+  visualize_result <- function(x) {
+    if (identical(x, character(0))) {
+      return(cat("Nothing to show"))
+    }
+    cat("Must remove 'spec' attribute: ", result)
+  }
+  expect_output(visualize_result(result), "Nothing to show")
 })

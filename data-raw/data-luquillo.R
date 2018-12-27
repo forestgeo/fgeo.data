@@ -12,6 +12,9 @@ library(tidyverse)
 # ViewTaxonomy # ------------------------------------------------------------
 
 luquillo_taxa <- luquillo::ViewTaxonomy_luquillo
+# "spec" must have come from reading with readr.
+attr(luquillo_taxa, "spec") <- NULL
+
 # Allow downloading as .csv.
 write_tsv(luquillo_taxa, here::here("data-raw/luquillo_taxa.csv"))
 use_data(luquillo_taxa, overwrite = TRUE)
@@ -71,16 +74,19 @@ luquillo_vft_4quad <- luquillo_vft_1ha %>%
   filter(between(PX, 100, 140), between(PY, 400, 440)) %>% 
   # Keep only two censuses
   filter(CensusID  %in% 4:6)
+
+attr(luquillo_vft_4quad, "spec") <- NULL
 use_data(luquillo_vft_4quad, overwrite = TRUE)
 
 
 
 # Tree and stem tables ----------------------------------------------------
 
+if (fs::dir_exists("data-raw/private/")) {
+  fs::dir_delete("data-raw/private/")
+}
+
 # Build new tables: 1ha
-# Remove old tables
-path_1ha <- here::here("data-raw/private/rtbl_1ha")
-fs::dir_delete(path_1ha)
 
 # Create folders in working directory
 rtbl::rtbl(
@@ -90,15 +96,14 @@ rtbl::rtbl(
 )
 
 # Move folders to a private directory
-folders <- c("stem", "full", "RAnalyticalTables")
+path_1ha <- here::here("data-raw/private/rtbl_1ha")
 fs::dir_create(path_1ha)
+folders <- c("stem", "full", "RAnalyticalTables")
 purrr::map(folders, fs::file_move, path_1ha)
 
 
 
 # Build new tables: random
-path_random <- here::here("data-raw/private/rtbl_random")
-fs::dir_delete(path_random)
 
 # Create folders in working directory
 rtbl::rtbl(
@@ -108,6 +113,7 @@ rtbl::rtbl(
 )
 
 # Move folders to a private directory
+path_random <- here::here("data-raw/private/rtbl_random")
 purrr::map(folders, fs::file_move, path_random)
 
 # FIXME: stem tables end up in wrong directory. This code does the fix had-hoc
@@ -182,7 +188,9 @@ use_data(luquillo_stem5_random, overwrite = TRUE)
 luquillo_stem6_random <- as.tibble(ls_random$luquillo.stem6)
 use_data(luquillo_stem6_random, overwrite = TRUE)
 
-
+if (fs::dir_exists("data-raw/private/")) {
+  fs::dir_delete("data-raw/private/")
+}
 
 # Species table -----------------------------------------------------------
 
@@ -209,9 +217,10 @@ use_data(luquillo_elevation, overwrite = TRUE)
 # --Jess K. Zimmerman
 
 # On Fri, Mar 24, 2017 at 4:28 PM, Davies, Stuart J. <DaviesS@si.edu> wrote:
-# One quick way to make habitats is just divide quadrats into 4 or 5 equal elevation chunks.
+# One quick way to make habitats is just divide quadrats into 4 or 5 equal
+# elevation chunks.
 
-luquillo_habitat <- fgeo.tool::fgeo_habitat(
+luquillo_habitat <- fgeo.analyze::fgeo_habitat(
   fgeo.data::luquillo_elevation, gridsize = 20, n = 4, only_elev = FALSE,
   edgecorrect = TRUE
 )
@@ -247,7 +256,7 @@ two_abundant_quads <- luquillo_stem_random %>%
   pull(quadrat) %>% 
   sample(2)
 
-luquillo_stem_random <- luquillo_stem_random %>% 
+luquillo_stem_random_tiny <- luquillo_stem_random %>% 
   filter(
     sp %in% keep_sp,
     quadrat %in% two_abundant_quads
