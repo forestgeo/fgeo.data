@@ -42,10 +42,11 @@ For details on how to install packages from GitHub, see [this article](https://g
 ```{r}
 library(fgeo.data)
 
-# Show first few columns to save space.
-str(luquillo_vft_4quad, give.attr = FALSE, list.len = 5)
+str(data_dictionary)
 
-# See ?data_dictionary
+str(luquillo_tree5_random)
+
+str(luquillo_elevation)
 ```
 
 [Get started with __fgeo__](https://forestgeo.github.io/fgeo/articles/fgeo.html)

@@ -111,17 +111,43 @@ devtools::install_github("forestgeo/fgeo.data")</a></code></pre>
 <a href="#example" class="anchor"></a>Example</h2>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(fgeo.data)</a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co"># Show first few columns to save space.</span></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/str">str</a></span>(luquillo_vft_4quad, <span class="dt">give.attr =</span> <span class="ot">FALSE</span>, <span class="dt">list.len =</span> <span class="dv">5</span>)</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt; Classes 'tbl_df', 'tbl' and 'data.frame':    3302 obs. of  32 variables:</span></a>
-<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt;  $ DBHID           : int  384550 384553 466764 384554 466765 611446 384555 466766 611447 384556 ...</span></a>
-<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt;  $ PlotName        : chr  "luquillo" "luquillo" "luquillo" "luquillo" ...</span></a>
-<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt;  $ PlotID          : int  1 1 1 1 1 1 1 1 1 1 ...</span></a>
-<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt;  $ Family          : chr  "Rubiaceae" "Urticaceae" "Urticaceae" "Urticaceae" ...</span></a>
-<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt;  $ Genus           : chr  "Psychotria" "Cecropia" "Cecropia" "Cecropia" ...</span></a>
-<a class="sourceLine" id="cb3-11" data-line-number="11"><span class="co">#&gt;   [list output truncated]</span></a>
-<a class="sourceLine" id="cb3-12" data-line-number="12"></a>
-<a class="sourceLine" id="cb3-13" data-line-number="13"><span class="co"># See ?data_dictionary</span></a></code></pre></div>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/str">str</a></span>(data_dictionary)</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co">#&gt; Classes 'tbl_df', 'tbl' and 'data.frame':    242 obs. of  3 variables:</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt;  $ table      : chr  "Census" "Census" "Census" "Census" ...</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt;  $ column     : chr  "CensusID" "PlotID" "PlotCensusNumber" "StartDate" ...</span></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt;  $ description: chr  "Primary key, an integer  automatically generated to uniquely identify a census." "Foreign Key to Site table." "Integer census number for an individual plot, 1=first census, 2=second census, etc. If there are more than one "| __truncated__ "Date on which the first measurement of the census was taken." ...</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/str">str</a></span>(luquillo_tree5_random)</a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt; Classes 'tbl_df', 'tbl' and 'data.frame':    1000 obs. of  19 variables:</span></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11"><span class="co">#&gt;  $ treeID   : int  104 119 180 602 631 647 1086 1144 1168 1380 ...</span></a>
+<a class="sourceLine" id="cb3-12" data-line-number="12"><span class="co">#&gt;  $ stemID   : int  143 158 225 736 775 793 1339 1410 1438 114352 ...</span></a>
+<a class="sourceLine" id="cb3-13" data-line-number="13"><span class="co">#&gt;  $ tag      : chr  "10009" "100104" "100171" "100649" ...</span></a>
+<a class="sourceLine" id="cb3-14" data-line-number="14"><span class="co">#&gt;  $ StemTag  : chr  "10009" "100104" "100174" "100649" ...</span></a>
+<a class="sourceLine" id="cb3-15" data-line-number="15"><span class="co">#&gt;  $ sp       : chr  "DACEXC" "MYRSPL" "CASARB" "GUAGUI" ...</span></a>
+<a class="sourceLine" id="cb3-16" data-line-number="16"><span class="co">#&gt;  $ quadrat  : chr  "113" "1021" "921" "821" ...</span></a>
+<a class="sourceLine" id="cb3-17" data-line-number="17"><span class="co">#&gt;  $ gx       : num  10.3 182.9 164.6 149 38.3 ...</span></a>
+<a class="sourceLine" id="cb3-18" data-line-number="18"><span class="co">#&gt;  $ gy       : num  245 410 410 414 245 ...</span></a>
+<a class="sourceLine" id="cb3-19" data-line-number="19"><span class="co">#&gt;  $ MeasureID: int  439947 466597 466623 466727 439989 466743 440021 466889 440031 466957 ...</span></a>
+<a class="sourceLine" id="cb3-20" data-line-number="20"><span class="co">#&gt;  $ CensusID : int  5 5 5 5 5 5 5 5 5 5 ...</span></a>
+<a class="sourceLine" id="cb3-21" data-line-number="21"><span class="co">#&gt;  $ dbh      : num  193 40.4 45 33 140 246 176 74 604 NA ...</span></a>
+<a class="sourceLine" id="cb3-22" data-line-number="22"><span class="co">#&gt;  $ pom      : chr  "1.4" "1.25" "1.3" "1.3" ...</span></a>
+<a class="sourceLine" id="cb3-23" data-line-number="23"><span class="co">#&gt;  $ hom      : num  1.4 1.26 1.32 1.3 1.24 1.25 1.45 1.3 1.31 NA ...</span></a>
+<a class="sourceLine" id="cb3-24" data-line-number="24"><span class="co">#&gt;  $ ExactDate: Date, format: "2011-11-02" "2012-02-06" ...</span></a>
+<a class="sourceLine" id="cb3-25" data-line-number="25"><span class="co">#&gt;  $ DFstatus : chr  "alive" "alive" "alive" "alive" ...</span></a>
+<a class="sourceLine" id="cb3-26" data-line-number="26"><span class="co">#&gt;  $ codes    : chr  "MAIN;A" "MAIN;A" "SPROUT;A" "MAIN;A" ...</span></a>
+<a class="sourceLine" id="cb3-27" data-line-number="27"><span class="co">#&gt;  $ nostems  : num  1 1 2 1 1 1 1 1 1 2 ...</span></a>
+<a class="sourceLine" id="cb3-28" data-line-number="28"><span class="co">#&gt;  $ status   : chr  "A" "A" "A" "A" ...</span></a>
+<a class="sourceLine" id="cb3-29" data-line-number="29"><span class="co">#&gt;  $ date     : num  18933 19029 19026 19024 18933 ...</span></a>
+<a class="sourceLine" id="cb3-30" data-line-number="30"></a>
+<a class="sourceLine" id="cb3-31" data-line-number="31"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/str">str</a></span>(luquillo_elevation)</a>
+<a class="sourceLine" id="cb3-32" data-line-number="32"><span class="co">#&gt; List of 4</span></a>
+<a class="sourceLine" id="cb3-33" data-line-number="33"><span class="co">#&gt;  $ col :Classes 'tbl_df', 'tbl' and 'data.frame':    6565 obs. of  3 variables:</span></a>
+<a class="sourceLine" id="cb3-34" data-line-number="34"><span class="co">#&gt;   ..$ x   : int [1:6565] 0 0 0 0 0 0 0 0 0 0 ...</span></a>
+<a class="sourceLine" id="cb3-35" data-line-number="35"><span class="co">#&gt;   ..$ y   : int [1:6565] 0 5 10 15 20 25 30 35 40 45 ...</span></a>
+<a class="sourceLine" id="cb3-36" data-line-number="36"><span class="co">#&gt;   ..$ elev: num [1:6565] 364 364 363 363 363 ...</span></a>
+<a class="sourceLine" id="cb3-37" data-line-number="37"><span class="co">#&gt;  $ mat : num [1:101, 1:65] 364 364 363 363 363 ...</span></a>
+<a class="sourceLine" id="cb3-38" data-line-number="38"><span class="co">#&gt;  $ xdim: int 320</span></a>
+<a class="sourceLine" id="cb3-39" data-line-number="39"><span class="co">#&gt;  $ ydim: int 500</span></a></code></pre></div>
 <p><a href="https://forestgeo.github.io/fgeo/articles/fgeo.html">Get started with <strong>fgeo</strong></a></p>
 </div>
 <div id="information" class="section level2">
