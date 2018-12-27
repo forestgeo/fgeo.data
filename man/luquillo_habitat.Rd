@@ -18,7 +18,7 @@ str(luquillo_habitat)
 \seealso{
 \itemize{
 \item luquillo_elevation.
-\item \code{fgeo.tool::fgeo_habitat()}.
+\item \code{fgeo.analyze::fgeo_habitat()}.
 \item \url{https://forestgeo.si.edu/sites/north-america/luquillo}.
 }
 

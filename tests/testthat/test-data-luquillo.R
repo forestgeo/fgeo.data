@@ -27,7 +27,7 @@ test_that("data has expected names", {
 test_that("data creation can be reproduced", {
   skip_if_not_installed("fgeo.tool")
   stored <- hab
-  update <- fgeo.tool::fgeo_habitat(
+  update <- fgeo.analyze::fgeo_habitat(
     fgeo.data::luquillo_elevation, gridsize = 20, n = 4, only_elev = FALSE,
     edgecorrect = TRUE
   )

@@ -212,7 +212,8 @@ use_data(luquillo_elevation, overwrite = TRUE)
 # --Jess K. Zimmerman
 
 # On Fri, Mar 24, 2017 at 4:28 PM, Davies, Stuart J. <DaviesS@si.edu> wrote:
-# One quick way to make habitats is just divide quadrats into 4 or 5 equal elevation chunks.
+# One quick way to make habitats is just divide quadrats into 4 or 5 equal
+# elevation chunks.
 
 luquillo_habitat <- fgeo.analyze::fgeo_habitat(
   fgeo.data::luquillo_elevation, gridsize = 20, n = 4, only_elev = FALSE,
