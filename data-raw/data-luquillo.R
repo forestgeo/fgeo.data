@@ -12,6 +12,9 @@ library(tidyverse)
 # ViewTaxonomy # ------------------------------------------------------------
 
 luquillo_taxa <- luquillo::ViewTaxonomy_luquillo
+# "spec" must have come from reading with readr.
+attr(luquillo_taxa, "spec") <- NULL
+
 # Allow downloading as .csv.
 write_tsv(luquillo_taxa, here::here("data-raw/luquillo_taxa.csv"))
 use_data(luquillo_taxa, overwrite = TRUE)
