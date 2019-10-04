@@ -17,6 +17,10 @@ knitr::opts_chunk$set(
 [![Travis build status](https://travis-ci.org/forestgeo/fgeo.data.svg?branch=master)](https://travis-ci.org/forestgeo/fgeo.data)
 [![CRAN status](https://www.r-pkg.org/badges/version/fgeo.data)](https://cran.r-project.org/package=fgeo.data)
 
+## What is ForestGEO?
+
+ForestGEO is the Forest Global Earth Observatory, aiming to provide a framework for long-term forest research. Alongside data on forest plots, users can access: field protocols, data protocols, data entry software, and a complete guide.
+
 ## Installation
 
 Install the pre-release version of __fgeo.data__:
